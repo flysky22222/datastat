@@ -4,10 +4,7 @@
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
   const STATUS_LABEL = { open: "待处理", merged: "已合入", closed: "已关闭" };
-  // 优先级：P0 最高 → P3 最低，"" 表示未定
-  const PRIORITIES = ["P0", "P1", "P2", "P3"];
   const PRI_RANK = { P0: 0, P1: 1, P2: 2, P3: 3, "": 9 };
-  const LS_KEY = "datastat.priority.v1";
 
   const ICONS = {
     list: '<svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h9M5 8h9M5 12h9M2 4h.01M2 8h.01M2 12h.01"/></svg>',
@@ -21,26 +18,14 @@
 
   const state = {
     data: null, records: [],
-    baseline: {},   // priority.json：仓库基线（合入后的共享优先级）
-    local: {},      // localStorage：本地未提交的优先级改动
     status: "all", assignee: "all", priFilter: "all",
     dateField: "createdAt", from: "", to: "", query: "",
   };
 
-  // 有效优先级：本地覆盖优先，其次基线
-  const eff = num => (Object.prototype.hasOwnProperty.call(state.local, num) ? state.local[num] : (state.baseline[num] || ""));
-  const loadLocal = () => { try { return JSON.parse(localStorage.getItem(LS_KEY) || "{}"); } catch (e) { return {}; } };
-  const saveLocal = () => { try { localStorage.setItem(LS_KEY, JSON.stringify(state.local)); } catch (e) {} };
-
-  Promise.all([
-    fetch("./data.json?t=" + Date.now()).then(r => { if (!r.ok) throw new Error("data.json " + r.status); return r.json(); }),
-    fetch("./priority.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
-  ]).then(([d, pri]) => {
-    state.data = d; state.records = d.records || [];
-    state.baseline = pri || {};
-    state.local = loadLocal();
-    init();
-  }).catch(e => { $("#reqList").innerHTML = `<div class="empty">数据加载失败：${esc(e.message || e)}</div>`; });
+  fetch("./data.json?t=" + Date.now())
+    .then(r => { if (!r.ok) throw new Error("data.json " + r.status); return r.json(); })
+    .then(d => { state.data = d; state.records = d.records || []; init(); })
+    .catch(e => { $("#reqList").innerHTML = `<div class="empty">数据加载失败：${esc(e.message || e)}</div>`; });
 
   function init() {
     const d = state.data;
@@ -83,71 +68,17 @@
     const s = $("#search");
     s.addEventListener("input", () => { state.query = s.value.trim().toLowerCase(); render(); });
 
-    // 优先级编辑（事件委托）
-    $("#reqList").addEventListener("change", e => {
-      const sel = e.target.closest("select.pri-edit"); if (!sel) return;
-      const num = sel.dataset.num, val = sel.value;
-      if (val === (state.baseline[num] || "")) delete state.local[num]; // 跟基线相同 → 不算改动
-      else state.local[num] = val;
-      saveLocal(); renderPriBar(); render();
-    });
-    // 工具条按钮
-    $("#priBar").addEventListener("click", e => {
-      const btn = e.target.closest("button"); if (!btn) return;
-      if (btn.id === "copyChanges") doCopyChanges(btn);
-      else if (btn.id === "discardChanges") {
-        if (changedNums().length && !confirm("撤销所有本地未提交的优先级改动？")) return;
-        state.local = {}; saveLocal(); renderPriBar(); render();
-      }
-    });
-
     render();
   }
 
   function setActive(sel, btn) { document.querySelectorAll(sel).forEach(b => b.classList.toggle("active", b === btn)); }
 
-  // 本地相对基线发生改动的编号
-  function changedNums() {
-    return Object.keys(state.local).filter(n => state.local[n] !== (state.baseline[n] || ""));
-  }
-  // 导出：合入后应写进 priority.json 的完整映射（基线 ∪ 本地，去掉空值）
-  function fullPriorityMap() {
-    const map = {};
-    state.records.forEach(r => { const p = eff(r.number); if (p) map[r.number] = p; });
-    return map;
-  }
-
-  function doCopyChanges(btn) {
-    const json = JSON.stringify(fullPriorityMap(), null, 1);
-    const done = () => { const t = btn.textContent; btn.textContent = "已复制 ✓"; setTimeout(() => btn.textContent = t, 1600); };
-    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(json).then(done, () => fallbackCopy(json, done));
-    else fallbackCopy(json, done);
-  }
-  function fallbackCopy(text, done) {
-    const ta = document.createElement("textarea"); ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
-    document.body.appendChild(ta); ta.select();
-    try { document.execCommand("copy"); done(); } catch (e) { alert("复制失败，请手动复制：\n\n" + text); }
-    document.body.removeChild(ta);
-  }
-
-  function renderPriBar() {
-    const bar = $("#priBar");
-    const changed = changedNums().length;
-    bar.hidden = false;
-    bar.innerHTML = `<div class="pri-bar-inner">
-      <span class="pri-bar-tip">${ico("flag")} 优先级可直接在表格里改。改动先存在本地浏览器，点「复制变更」把 JSON 发给我 → 我提 PR 更新 <code>priority.json</code> → 你合入后成为共享基线。</span>
-      <span class="pri-bar-stat">${changed ? `<b>${changed}</b> 条本地未提交` : "本地无未提交改动"}</span>
-      <button id="copyChanges" class="btn-pri" ${changed ? "" : "disabled"}>复制变更 JSON</button>
-      <button id="discardChanges" class="btn-pri ghost" ${changed ? "" : "disabled"}>撤销本地改动</button>
-    </div>`;
-  }
-
   function selectRecords() {
     let out = state.records.slice();
     if (state.status !== "all") out = out.filter(r => r.status === state.status);
     if (state.priFilter !== "all") {
-      if (state.priFilter === "none") out = out.filter(r => !eff(r.number));
-      else out = out.filter(r => eff(r.number) === state.priFilter);
+      if (state.priFilter === "none") out = out.filter(r => !r.priority);
+      else out = out.filter(r => r.priority === state.priFilter);
     }
     if (state.assignee === "__none__") out = out.filter(r => !r.assignees || !r.assignees.length);
     else if (state.assignee !== "all") out = out.filter(r => (r.assignees || []).includes(state.assignee));
@@ -164,8 +95,8 @@
       out = out.filter(r => r.title.toLowerCase().includes(q) || String(r.number).includes(q)
         || (r.assignees || []).some(a => a.toLowerCase().includes(q)));
     }
-    // 排序：优先级高的在前，未定沉底；同级按创建时间倒序
-    out.sort((a, b) => (PRI_RANK[eff(a.number)] - PRI_RANK[eff(b.number)]) || (a.createdAt < b.createdAt ? 1 : -1));
+    // 排序：优先级高→低（未定沉底），同级按创建时间倒序
+    out.sort((a, b) => (PRI_RANK[a.priority || ""] - PRI_RANK[b.priority || ""]) || (a.createdAt < b.createdAt ? 1 : -1));
     return out;
   }
 
@@ -174,7 +105,6 @@
     renderPersonChart(recs);
     renderStats(recs);
     renderTable(recs);
-    if ($("#priBar").hidden) renderPriBar();
     $("#empty").hidden = recs.length > 0;
   }
 
@@ -206,7 +136,7 @@
     const unassigned = recs.filter(r => !r.assignees || !r.assignees.length).length;
     const done = by("merged"), total = recs.length;
     const doneRate = total ? Math.round(done / total * 100) : 0;
-    const prioritized = recs.filter(r => eff(r.number)).length;
+    const prioritized = recs.filter(r => r.priority).length;
     const card = (icon, v, k, sub) => `<div class="stat"><div class="stat-h">${ico(icon)}<span class="k">${k}</span></div><div class="v">${v}</div>${sub ? `<div class="sub">${sub}</div>` : ""}</div>`;
     $("#stats").innerHTML =
       card("list", total, "需求总数", `<span class="s-succ">需求 ${typ("需求")}</span><span class="s-fail">缺陷 ${typ("缺陷")}</span><span>任务 ${typ("任务")}</span>`) +
@@ -221,13 +151,9 @@
     const el = $("#reqList");
     if (!recs.length) { el.innerHTML = ""; return; }
     const st = s => `<span class="badge ${s}">${STATUS_LABEL[s] || s}</span>`;
-    const priSelect = r => {
-      const cur = eff(r.number);
-      const dirty = changedNums().includes(String(r.number));
-      const o = [`<option value=""${cur === "" ? " selected" : ""}>未定</option>`]
-        .concat(PRIORITIES.map(p => `<option value="${p}"${cur === p ? " selected" : ""}>${p}</option>`)).join("");
-      return `<select class="pri-edit pri-${cur || "none"}${dirty ? " dirty" : ""}" data-num="${r.number}" title="${dirty ? "本地未提交" : ""}">${o}</select>`;
-    };
+    const priBadge = p => p
+      ? `<span class="pri-badge pri-${p}">${p}</span>`
+      : `<span class="pri-badge pri-none">未定</span>`;
     const asgCell = r => {
       const a = r.assignees || [];
       if (!a.length) return `<span class="none">未分配</span>`;
@@ -235,19 +161,20 @@
     };
     const rows = recs.map(r => `<tr>
       <td class="req-num"><a href="${esc(r.url)}" target="_blank" rel="noopener">#${r.number}</a></td>
-      <td class="req-pri">${priSelect(r)}</td>
+      <td class="req-pri">${priBadge(r.priority)}</td>
       <td><span class="tag t-${esc(r.type)}">${esc(r.type)}</span></td>
       <td class="req-title"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>
         ${r.labels && r.labels.length ? `<span class="req-labels">${r.labels.map(esc).join(" · ")}</span>` : ""}</td>
       <td>${st(r.status)}</td>
       <td class="req-asg">${asgCell(r)}</td>
       <td class="req-date">${r.createdAt || "—"}</td>
+      <td class="req-date req-plan">${r.plannedAt ? `<span class="plan-at">${r.plannedAt}</span>` : '<span class="none">—</span>'}</td>
       <td class="req-date req-done">${r.closedAt ? `<span class="done-at">${r.closedAt}</span>` : '<span class="none">—</span>'}</td>
     </tr>`).join("");
     el.innerHTML = `<div class="req-head"><h2>${ico("list")} 数据中台需求列表</h2>
       <span class="meta">共 ${recs.length} 条 · 待处理 ${recs.filter(r => r.status === "open").length} · 已合入 ${recs.filter(r => r.status === "merged").length} · 已关闭 ${recs.filter(r => r.status === "closed").length}</span></div>
       <div class="tbl-wrap"><table><thead><tr>
-        <th>编号</th><th>优先级</th><th>类型</th><th>需求标题</th><th>状态</th><th>负责人</th><th>创建时间</th><th>完成时间</th>
+        <th>编号</th><th>优先级</th><th>类型</th><th>需求标题</th><th>状态</th><th>负责人</th><th>创建时间</th><th>计划完成时间</th><th>完成时间</th>
       </tr></thead><tbody>${rows}</tbody></table></div>`;
   }
 })();

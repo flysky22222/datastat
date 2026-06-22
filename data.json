@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-22 09:36",
+ "generatedAt": "2026-06-22 10:23",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 45,
@@ -13,7 +13,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "flysky22222",
    "labels": [
     "enhancement",
@@ -22,8 +24,10 @@
    ],
    "comments": 3,
    "createdAt": "2026-06-20",
-   "updatedAt": "2026-06-20",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 985,
@@ -43,7 +47,9 @@
    "comments": 4,
    "createdAt": "2026-06-19",
    "updatedAt": "2026-06-19",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 969,
@@ -64,7 +70,9 @@
    "comments": 13,
    "createdAt": "2026-06-18",
    "updatedAt": "2026-06-20",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 966,
@@ -75,16 +83,21 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Kaede10"
+   ],
    "author": "zeshengzong",
    "labels": [
+    "accepted",
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 6,
+   "comments": 7,
    "createdAt": "2026-06-18",
-   "updatedAt": "2026-06-20",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 943,
@@ -95,7 +108,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "Mjennie",
    "labels": [
     "sig/infratructure",
@@ -103,8 +118,10 @@
    ],
    "comments": 4,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-17",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 941,
@@ -115,7 +132,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "ssignik",
    "labels": [
     "accepted",
@@ -124,8 +143,10 @@
    ],
    "comments": 8,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-17",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 936,
@@ -139,13 +160,16 @@
    "assignees": [],
    "author": "Yikun",
    "labels": [
+    "accepted",
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 10,
+   "comments": 11,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-20",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 927,
@@ -163,10 +187,12 @@
     "accepted",
     "sig/infratructure"
    ],
-   "comments": 115,
+   "comments": 118,
    "createdAt": "2026-06-16",
    "updatedAt": "2026-06-22",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 916,
@@ -177,7 +203,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "sunshuang1866",
    "labels": [
     "accepted",
@@ -186,8 +214,10 @@
    ],
    "comments": 6,
    "createdAt": "2026-06-16",
-   "updatedAt": "2026-06-16",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 879,
@@ -210,7 +240,9 @@
    "comments": 6,
    "createdAt": "2026-06-13",
    "updatedAt": "2026-06-15",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 878,
@@ -221,7 +253,9 @@
    "state": "open",
    "stateReason": null,
    "type": "其他",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "flysky22222",
    "labels": [
     "enhancement",
@@ -231,8 +265,10 @@
    ],
    "comments": 26,
    "createdAt": "2026-06-13",
-   "updatedAt": "2026-06-20",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 850,
@@ -243,7 +279,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "flysky22222",
    "labels": [
     "sig/infratructure",
@@ -251,8 +289,10 @@
    ],
    "comments": 6,
    "createdAt": "2026-06-12",
-   "updatedAt": "2026-06-15",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 844,
@@ -263,7 +303,9 @@
    "state": "open",
    "stateReason": null,
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "Creyson-peng"
+   ],
    "author": "zhongjun2",
    "labels": [
     "accepted",
@@ -272,8 +314,10 @@
    ],
    "comments": 21,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-21",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 842,
@@ -294,7 +338,9 @@
    "comments": 33,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-16",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 840,
@@ -317,7 +363,9 @@
    "comments": 7,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-15",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 837,
@@ -328,7 +376,9 @@
    "state": "open",
    "stateReason": null,
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "Creyson-peng"
+   ],
    "author": "zhongjun2",
    "labels": [
     "accepted",
@@ -337,8 +387,10 @@
    ],
    "comments": 4,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-11",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 820,
@@ -349,7 +401,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "Tian-Fantasea",
    "labels": [
     "accepted",
@@ -358,8 +412,10 @@
    ],
    "comments": 65,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-15",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 818,
@@ -370,7 +426,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Kaede10"
+   ],
    "author": "zeshengzong",
    "labels": [
     "accepted",
@@ -379,8 +437,10 @@
    ],
    "comments": 35,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-11",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 725,
@@ -399,7 +459,9 @@
    "comments": 11,
    "createdAt": "2026-06-09",
    "updatedAt": "2026-06-09",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 714,
@@ -422,7 +484,9 @@
    "comments": 31,
    "createdAt": "2026-06-09",
    "updatedAt": "2026-06-11",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 650,
@@ -443,7 +507,9 @@
    "comments": 26,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-16",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 590,
@@ -454,7 +520,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "zhongjun2",
    "labels": [
     "accepted",
@@ -462,8 +530,10 @@
    ],
    "comments": 5,
    "createdAt": "2026-06-03",
-   "updatedAt": "2026-06-03",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 489,
@@ -486,30 +556,9 @@
    "comments": 108,
    "createdAt": "2026-06-01",
    "updatedAt": "2026-06-18",
-   "closedAt": ""
-  },
-  {
-   "number": 487,
-   "title": "新增 AI 协作与合规度量指标，并上线社区度量看板",
-   "rawTitle": "[需求] 新增 AI 协作与合规度量指标，并上线社区度量看板",
-   "url": "https://github.com/opensourceways/backlog/issues/487",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 16,
-   "createdAt": "2026-06-01",
-   "updatedAt": "2026-06-15",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 486,
@@ -532,7 +581,9 @@
    "comments": 7,
    "createdAt": "2026-06-01",
    "updatedAt": "2026-06-15",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 448,
@@ -555,7 +606,9 @@
    "comments": 93,
    "createdAt": "2026-05-30",
    "updatedAt": "2026-06-02",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 441,
@@ -578,7 +631,9 @@
    "comments": 134,
    "createdAt": "2026-05-29",
    "updatedAt": "2026-06-16",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 392,
@@ -590,7 +645,8 @@
    "stateReason": null,
    "type": "需求",
    "assignees": [
-    "zhongjun2"
+    "zhongjun2",
+    "Kaede10"
    ],
    "author": "liangmin-2026",
    "labels": [
@@ -600,8 +656,10 @@
    ],
    "comments": 34,
    "createdAt": "2026-05-18",
-   "updatedAt": "2026-06-12",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 336,
@@ -612,15 +670,19 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Kaede10"
+   ],
    "author": "zhongjun2",
    "labels": [
     "sig/infratructure"
    ],
    "comments": 1,
    "createdAt": "2026-05-11",
-   "updatedAt": "2026-06-08",
-   "closedAt": ""
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 335,
@@ -643,7 +705,9 @@
    "comments": 4,
    "createdAt": "2026-05-11",
    "updatedAt": "2026-06-20",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 276,
@@ -665,7 +729,9 @@
    "comments": 60,
    "createdAt": "2026-04-27",
    "updatedAt": "2026-06-20",
-   "closedAt": ""
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 905,
@@ -676,7 +742,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "Creyson-peng"
+   ],
    "author": "zhongjun2",
    "labels": [
     "bug",
@@ -685,8 +753,10 @@
    ],
    "comments": 46,
    "createdAt": "2026-06-15",
-   "updatedAt": "2026-06-18",
-   "closedAt": "2026-06-18"
+   "updatedAt": "2026-06-22",
+   "closedAt": "2026-06-18",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 904,
@@ -697,7 +767,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "Kaede10"
+   ],
    "author": "Kaede10",
    "labels": [
     "accepted",
@@ -707,7 +779,9 @@
    "comments": 34,
    "createdAt": "2026-06-15",
    "updatedAt": "2026-06-22",
-   "closedAt": "2026-06-22"
+   "closedAt": "2026-06-22",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 806,
@@ -728,7 +802,9 @@
    "comments": 11,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-11",
-   "closedAt": "2026-06-11"
+   "closedAt": "2026-06-11",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 767,
@@ -751,7 +827,9 @@
    "comments": 13,
    "createdAt": "2026-06-10",
    "updatedAt": "2026-06-11",
-   "closedAt": "2026-06-11"
+   "closedAt": "2026-06-11",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 764,
@@ -762,7 +840,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "Creyson-peng"
+   ],
    "author": "Creyson-peng",
    "labels": [
     "accepted",
@@ -771,8 +851,10 @@
    ],
    "comments": 20,
    "createdAt": "2026-06-10",
-   "updatedAt": "2026-06-11",
-   "closedAt": "2026-06-11"
+   "updatedAt": "2026-06-22",
+   "closedAt": "2026-06-11",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 729,
@@ -783,7 +865,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "flysky22222",
    "labels": [
     "accepted",
@@ -791,8 +875,10 @@
    ],
    "comments": 106,
    "createdAt": "2026-06-09",
-   "updatedAt": "2026-06-11",
-   "closedAt": "2026-06-11"
+   "updatedAt": "2026-06-22",
+   "closedAt": "2026-06-11",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 665,
@@ -803,7 +889,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "flysky22222",
    "labels": [
     "accepted",
@@ -811,8 +899,10 @@
    ],
    "comments": 51,
    "createdAt": "2026-06-04",
-   "updatedAt": "2026-06-11",
-   "closedAt": "2026-06-11"
+   "updatedAt": "2026-06-22",
+   "closedAt": "2026-06-11",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 611,
@@ -835,7 +925,9 @@
    "comments": 153,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-11",
-   "closedAt": "2026-06-11"
+   "closedAt": "2026-06-11",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 594,
@@ -846,7 +938,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "Kaede10"
+   ],
    "author": "Kaede10",
    "labels": [
     "bug",
@@ -854,8 +948,35 @@
    ],
    "comments": 2,
    "createdAt": "2026-06-03",
-   "updatedAt": "2026-06-10",
-   "closedAt": "2026-06-10"
+   "updatedAt": "2026-06-22",
+   "closedAt": "2026-06-10",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 487,
+   "title": "新增 AI 协作与合规度量指标，并上线社区度量看板",
+   "rawTitle": "[需求] 新增 AI 协作与合规度量指标，并上线社区度量看板",
+   "url": "https://github.com/opensourceways/backlog/issues/487",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 16,
+   "createdAt": "2026-06-01",
+   "updatedAt": "2026-06-22",
+   "closedAt": "2026-06-22",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 383,
@@ -878,7 +999,9 @@
    "comments": 9,
    "createdAt": "2026-05-15",
    "updatedAt": "2026-06-20",
-   "closedAt": "2026-06-20"
+   "closedAt": "2026-06-20",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 362,
@@ -901,7 +1024,9 @@
    "comments": 10,
    "createdAt": "2026-05-13",
    "updatedAt": "2026-06-20",
-   "closedAt": "2026-06-20"
+   "closedAt": "2026-06-20",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 314,
@@ -923,7 +1048,9 @@
    "comments": 56,
    "createdAt": "2026-05-08",
    "updatedAt": "2026-06-11",
-   "closedAt": "2026-06-11"
+   "closedAt": "2026-06-11",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 108,
@@ -947,7 +1074,9 @@
    "comments": 4,
    "createdAt": "2026-03-28",
    "updatedAt": "2026-06-20",
-   "closedAt": "2026-06-20"
+   "closedAt": "2026-06-20",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 597,
@@ -967,7 +1096,9 @@
    "comments": 2,
    "createdAt": "2026-06-03",
    "updatedAt": "2026-06-03",
-   "closedAt": "2026-06-03"
+   "closedAt": "2026-06-03",
+   "priority": "",
+   "plannedAt": ""
   }
  ]
 }
