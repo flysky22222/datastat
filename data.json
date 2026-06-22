@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-22 16:54",
+ "generatedAt": "2026-06-22 17:07",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 46,
@@ -313,7 +313,7 @@
    "stateReason": null,
    "type": "需求",
    "assignees": [
-    "ssignik"
+    "Mjennie"
    ],
    "author": "Tian-Fantasea",
    "labels": [
@@ -323,7 +323,7 @@
    ],
    "comments": 7,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-15",
+   "updatedAt": "2026-06-22",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -617,7 +617,7 @@
     "enhancement",
     "accepted"
    ],
-   "comments": 1,
+   "comments": 2,
    "createdAt": "2026-04-27",
    "updatedAt": "2026-06-22",
    "closedAt": "",
