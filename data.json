@@ -1,5 +1,5 @@
 {
- "generatedAt": "2000-01-01 00:00",
+ "generatedAt": "2026-06-22 11:09",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 45,
@@ -26,7 +26,7 @@
    "createdAt": "2026-06-20",
    "updatedAt": "2026-06-22",
    "closedAt": "",
-   "priority": "",
+   "priority": "High",
    "plannedAt": "2026-06-30"
   },
   {
@@ -170,7 +170,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 11,
+   "comments": 13,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-06-22",
    "closedAt": "",
