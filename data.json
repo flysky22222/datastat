@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-22 10:23",
+ "generatedAt": "2026-06-22 10:47",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 45,
@@ -26,7 +26,7 @@
    "createdAt": "2026-06-20",
    "updatedAt": "2026-06-22",
    "closedAt": "",
-   "priority": "",
+   "priority": "High",
    "plannedAt": "2026-06-30"
   },
   {
@@ -96,7 +96,7 @@
    "createdAt": "2026-06-18",
    "updatedAt": "2026-06-22",
    "closedAt": "",
-   "priority": "",
+   "priority": "High",
    "plannedAt": "2026-06-30"
   },
   {
@@ -168,7 +168,7 @@
    "createdAt": "2026-06-17",
    "updatedAt": "2026-06-22",
    "closedAt": "",
-   "priority": "",
+   "priority": "High",
    "plannedAt": "2026-06-30"
   },
   {
@@ -187,7 +187,7 @@
     "accepted",
     "sig/infratructure"
    ],
-   "comments": 118,
+   "comments": 120,
    "createdAt": "2026-06-16",
    "updatedAt": "2026-06-22",
    "closedAt": "",
@@ -316,7 +316,7 @@
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-22",
    "closedAt": "",
-   "priority": "",
+   "priority": "High",
    "plannedAt": "2026-06-30"
   },
   {
@@ -411,31 +411,6 @@
     "feature-request"
    ],
    "comments": 65,
-   "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-22",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 818,
-   "title": "领域主流项目适配集成引用度指标，支持一个社区按照多个关键词，前缀，后缀统计匹配",
-   "rawTitle": "[需求] 领域主流项目适配集成引用度指标，支持一个社区按照多个关键词，前缀，后缀统计匹配",
-   "url": "https://github.com/opensourceways/backlog/issues/818",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "zeshengzong",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 35,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-22",
    "closedAt": "",
@@ -778,6 +753,31 @@
    ],
    "comments": 34,
    "createdAt": "2026-06-15",
+   "updatedAt": "2026-06-22",
+   "closedAt": "2026-06-22",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 818,
+   "title": "领域主流项目适配集成引用度指标，支持一个社区按照多个关键词，前缀，后缀统计匹配",
+   "rawTitle": "[需求] 领域主流项目适配集成引用度指标，支持一个社区按照多个关键词，前缀，后缀统计匹配",
+   "url": "https://github.com/opensourceways/backlog/issues/818",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 35,
+   "createdAt": "2026-06-11",
    "updatedAt": "2026-06-22",
    "closedAt": "2026-06-22",
    "priority": "",
