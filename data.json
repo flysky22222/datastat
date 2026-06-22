@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-22 11:09",
+ "generatedAt": "2026-06-22 11:21",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 45,
@@ -195,7 +195,7 @@
     "accepted",
     "sig/infratructure"
    ],
-   "comments": 120,
+   "comments": 121,
    "createdAt": "2026-06-16",
    "updatedAt": "2026-06-22",
    "closedAt": "",
@@ -273,30 +273,6 @@
    ],
    "comments": 26,
    "createdAt": "2026-06-13",
-   "updatedAt": "2026-06-22",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 850,
-   "title": "测试测试 ---  数据中台服务把首页的总览  改成  运营总览",
-   "rawTitle": "[需求] 测试测试 ---  数据中台服务把首页的总览  改成  运营总览",
-   "url": "https://github.com/opensourceways/backlog/issues/850",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "flysky22222",
-   "labels": [
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 6,
-   "createdAt": "2026-06-12",
    "updatedAt": "2026-06-22",
    "closedAt": "",
    "priority": "",
@@ -718,6 +694,30 @@
    ],
    "comments": 34,
    "createdAt": "2026-06-15",
+   "updatedAt": "2026-06-22",
+   "closedAt": "2026-06-22",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 850,
+   "title": "测试测试 ---  数据中台服务把首页的总览  改成  运营总览",
+   "rawTitle": "[需求] 测试测试 ---  数据中台服务把首页的总览  改成  运营总览",
+   "url": "https://github.com/opensourceways/backlog/issues/850",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 6,
+   "createdAt": "2026-06-12",
    "updatedAt": "2026-06-22",
    "closedAt": "2026-06-22",
    "priority": "",
