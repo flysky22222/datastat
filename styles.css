@@ -306,17 +306,24 @@ tr.jumpable td:first-child::after { content: " ↓"; color: var(--accent); font-
 .req-head .meta { color: var(--text-faint); font-size: 12.5px; margin-left: auto; }
 
 /* ── datastat：优先级编辑 + 完成时间 + 人均完成柱状图 ── */
-.chip[data-pri="P0"].active { color: var(--failed); }
-.chip[data-pri="P1"].active { color: var(--partial); }
-.chip[data-pri="P2"].active { color: var(--accent); }
-.chip[data-pri="P3"].active { color: var(--text-dim); }
+.chip[data-pri="Urgent"].active { color: var(--failed); }
+.chip[data-pri="High"].active { color: var(--partial); }
+.chip[data-pri="Medium"].active { color: var(--accent); }
+.chip[data-pri="Low"].active { color: var(--text-dim); }
 
-/* 优先级徽标（只读，来自 backlog Project 的 Priority 字段） */
-.pri-badge { display: inline-block; min-width: 30px; text-align: center; font-size: 11.5px; font-weight: 700; padding: 2px 9px; border-radius: 999px; }
-.pri-badge.pri-P0 { color: #fff; background: var(--failed); }
-.pri-badge.pri-P1 { color: var(--partial); background: var(--partial-bg); }
-.pri-badge.pri-P2 { color: var(--accent); background: var(--accent-soft); }
-.pri-badge.pri-P3 { color: var(--text-dim); background: var(--unknown-bg); }
+/* 顶部：柱状图 + 统计卡片 同一排 */
+.top-row { display: grid; grid-template-columns: minmax(300px, 1.15fr) 2fr; gap: 16px; align-items: stretch; margin-bottom: 28px; }
+.top-row .person-chart { margin: 0; }
+.top-row .person-chart .chart-card { height: 100%; }
+.top-row .stats { margin: 0; }
+@media (max-width: 900px) { .top-row { grid-template-columns: 1fr; } }
+
+/* 优先级徽标（只读，来自 backlog Project 的 Priority 字段：Urgent/High/Medium/Low） */
+.pri-badge { display: inline-block; min-width: 30px; text-align: center; font-size: 11.5px; font-weight: 700; padding: 2px 9px; border-radius: 999px; white-space: nowrap; }
+.pri-badge.pri-Urgent { color: #fff; background: var(--failed); }
+.pri-badge.pri-High { color: var(--partial); background: var(--partial-bg); }
+.pri-badge.pri-Medium { color: var(--accent); background: var(--accent-soft); }
+.pri-badge.pri-Low { color: var(--text-dim); background: var(--unknown-bg); }
 .pri-badge.pri-none { color: var(--text-faint); background: transparent; font-weight: 500; }
 
 /* 计划完成时间 / 完成时间列 */
@@ -332,7 +339,7 @@ tr.jumpable td:first-child::after { content: " ↓"; color: var(--accent); font-
 .vbar { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: 0 0 auto; width: 72px; }
 .vbar-v { font-weight: 750; font-size: 16px; color: var(--text); font-variant-numeric: tabular-nums; }
 .vbar-track { width: 38px; height: 120px; display: flex; align-items: flex-end; background: var(--bg-soft); border-radius: 6px; overflow: hidden; }
-.vbar-track > i { display: block; width: 100%; border-radius: 6px 6px 0 0; background: linear-gradient(180deg, #4fb98a, var(--success)); transition: height .3s; }
+.vbar-track > i { display: block; width: 100%; border-radius: 6px 6px 0 0; background: var(--accent); transition: height .3s; }
 .vbar-l { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 11.5px; color: var(--text-dim); max-width: 72px; }
 .vbar-l img { width: 26px; height: 26px; border-radius: 50%; }
 .vbar-l span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 70px; }

@@ -4,7 +4,10 @@
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
   const STATUS_LABEL = { open: "待处理", merged: "已合入", closed: "已关闭" };
-  const PRI_RANK = { P0: 0, P1: 1, P2: 2, P3: 3, "": 9 };
+  // 优先级取自 backlog 的 Project「Priority」字段：Urgent > High > Medium > Low
+  const PRI_RANK = { Urgent: 0, High: 1, Medium: 2, Low: 3, "": 9 };
+  // 与 ttfhw 报告站 ECharts 主题(metrics/v5.json)一致的配色序列
+  const PALETTE = ["#5470c6", "#91cc75", "#fac858", "#ee6666", "#73c0de", "#3ba272", "#fc8452", "#9a60b4", "#ea7ccc", "#5470c6"];
 
   const ICONS = {
     list: '<svg class="ico" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h9M5 8h9M5 12h9M2 4h.01M2 8h.01M2 12h.01"/></svg>',
@@ -109,21 +112,23 @@
     $("#empty").hidden = recs.length > 0;
   }
 
-  // 顶部柱状图：每个人「已合入(完成)」的需求个数，一人一柱
+  // 顶部柱状图：各负责人的需求个数，一人一柱；随当前所有筛选条件联动
   function renderPersonChart(recs) {
     const el = $("#byPerson");
-    const done = recs.filter(r => r.status === "merged");
     const cnt = {};
-    done.forEach(r => (r.assignees || []).forEach(a => { cnt[a] = (cnt[a] || 0) + 1; }));
+    recs.forEach(r => (r.assignees || []).forEach(a => { cnt[a] = (cnt[a] || 0) + 1; }));
     const people = Object.keys(cnt).sort((a, b) => cnt[b] - cnt[a] || a.localeCompare(b));
-    const head = `<div class="chart-card"><h3>${ico("check")} 各负责人完成需求数（已合入）<span class="hint">当前筛选下共完成 ${done.length} 条</span></h3>`;
-    if (!people.length) { el.innerHTML = head + `<div class="empty mini">当前筛选下暂无已合入需求</div></div>`; return; }
+    // 标题随状态筛选体现口径（如「已合入」时即各人完成数）
+    const scope = state.status === "all" ? "" : `（${STATUS_LABEL[state.status]}）`;
+    const head = `<div class="chart-card"><h3>${ico("check")} 各负责人需求数${scope}<span class="hint">随筛选联动 · 当前 ${recs.length} 条</span></h3>`;
+    if (!people.length) { el.innerHTML = head + `<div class="empty mini">当前筛选下没有已分配负责人的需求</div></div>`; return; }
     const max = Math.max.apply(null, people.map(p => cnt[p]));
-    const bars = people.map(p => {
+    const bars = people.map((p, i) => {
       const h = Math.round(cnt[p] / max * 100);
-      return `<div class="vbar" title="${esc(p)}：完成 ${cnt[p]} 条">
+      const c = PALETTE[i % PALETTE.length];
+      return `<div class="vbar" title="${esc(p)}：${cnt[p]} 条">
         <span class="vbar-v">${cnt[p]}</span>
-        <div class="vbar-track"><i style="height:${Math.max(h, 4)}%"></i></div>
+        <div class="vbar-track"><i style="height:${Math.max(h, 4)}%;background:${c}"></i></div>
         <span class="vbar-l"><img src="https://avatars.githubusercontent.com/${esc(p)}?s=32" alt="" loading="lazy" /><span>${esc(p)}</span></span>
       </div>`;
     }).join("");
@@ -137,14 +142,12 @@
     const unassigned = recs.filter(r => !r.assignees || !r.assignees.length).length;
     const done = by("merged"), total = recs.length;
     const doneRate = total ? Math.round(done / total * 100) : 0;
-    const prioritized = recs.filter(r => r.priority).length;
     const card = (icon, v, k, sub) => `<div class="stat"><div class="stat-h">${ico(icon)}<span class="k">${k}</span></div><div class="v">${v}</div>${sub ? `<div class="sub">${sub}</div>` : ""}</div>`;
     $("#stats").innerHTML =
       card("list", total, "需求总数", `<span class="s-succ">需求 ${typ("需求")}</span><span class="s-fail">缺陷 ${typ("缺陷")}</span><span>任务 ${typ("任务")}</span>`) +
       card("clock", by("open"), "待处理 (open)", `进行中 / 未关闭`) +
       card("check", `${done}`, "已合入", `完成率 ${doneRate}%`) +
       card("tag", by("closed"), "已关闭", `不做 / 已取消`) +
-      card("flag", prioritized, "已定优先级", `共 ${total} 条`) +
       card("user", asgSet.size, "涉及负责人", `未分配 ${unassigned} 条`);
   }
 
