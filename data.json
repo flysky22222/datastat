@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-22 10:47",
+ "generatedAt": "2026-06-22 10:53",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 45,
@@ -38,7 +38,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Kaede10"
+   ],
    "author": "sunshuang1866",
    "labels": [
     "sig/infratructure",
@@ -46,7 +48,7 @@
    ],
    "comments": 4,
    "createdAt": "2026-06-19",
-   "updatedAt": "2026-06-19",
+   "updatedAt": "2026-06-22",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -60,7 +62,9 @@
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "flysky22222",
    "labels": [
     "bug",
@@ -69,7 +73,7 @@
    ],
    "comments": 13,
    "createdAt": "2026-06-18",
-   "updatedAt": "2026-06-20",
+   "updatedAt": "2026-06-22",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -157,7 +161,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "Yikun",
    "labels": [
     "accepted",
@@ -620,7 +626,6 @@
    "stateReason": null,
    "type": "需求",
    "assignees": [
-    "zhongjun2",
     "Kaede10"
    ],
    "author": "liangmin-2026",
@@ -792,7 +797,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "accepted",
@@ -801,7 +808,7 @@
    ],
    "comments": 11,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-11",
+   "updatedAt": "2026-06-22",
    "closedAt": "2026-06-11",
    "priority": "",
    "plannedAt": "2026-06-30"
