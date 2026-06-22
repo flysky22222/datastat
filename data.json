@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-22 10:55",
+ "generatedAt": "2026-06-22 11:02",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 45,
@@ -50,7 +50,7 @@
    "createdAt": "2026-06-19",
    "updatedAt": "2026-06-22",
    "closedAt": "",
-   "priority": "",
+   "priority": "Medium",
    "plannedAt": "2026-06-30"
   },
   {
@@ -96,7 +96,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 7,
+   "comments": 8,
    "createdAt": "2026-06-18",
    "updatedAt": "2026-06-22",
    "closedAt": "",
@@ -186,7 +186,9 @@
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "Mjennie",
    "labels": [
     "bug",
@@ -326,29 +328,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 842,
-   "title": "数据中台服务的 总览页面 内外用户没有展示",
-   "rawTitle": "[缺陷]  数据中台服务的 总览页面 内外用户没有展示",
-   "url": "https://github.com/opensourceways/backlog/issues/842",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [],
-   "author": "zhongjun2",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 33,
-   "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-16",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 840,
    "title": "当issue被打上triaged或triage-review两个分类但没有评论回复时，也当作看板的响应率",
    "rawTitle": "[需求] 当issue被打上triaged或triage-review两个分类但没有评论回复时，也当作看板的响应率",
@@ -424,27 +403,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 725,
-   "title": "验证 claude 引擎接入（空跑，勿改代码）",
-   "rawTitle": "[任务] 验证 claude 引擎接入（空跑，勿改代码）",
-   "url": "https://github.com/opensourceways/backlog/issues/725",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [],
-   "author": "flysky22222",
-   "labels": [
-    "sig/infratructure"
-   ],
-   "comments": 11,
-   "createdAt": "2026-06-09",
-   "updatedAt": "2026-06-09",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 714,
    "title": "增加issue优先级标题采集，更新Issue严重缺陷识别逻辑",
    "rawTitle": "[需求] 增加issue优先级标题采集，更新Issue严重缺陷识别逻辑",
@@ -478,7 +436,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "Tian-Fantasea",
    "labels": [
     "accepted",
@@ -487,7 +447,7 @@
    ],
    "comments": 26,
    "createdAt": "2026-06-04",
-   "updatedAt": "2026-06-16",
+   "updatedAt": "2026-06-22",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -764,6 +724,31 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 842,
+   "title": "数据中台服务的 总览页面 内外用户没有展示",
+   "rawTitle": "[缺陷]  数据中台服务的 总览页面 内外用户没有展示",
+   "url": "https://github.com/opensourceways/backlog/issues/842",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 33,
+   "createdAt": "2026-06-11",
+   "updatedAt": "2026-06-22",
+   "closedAt": "2026-06-22",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 818,
    "title": "领域主流项目适配集成引用度指标，支持一个社区按照多个关键词，前缀，后缀统计匹配",
    "rawTitle": "[需求] 领域主流项目适配集成引用度指标，支持一个社区按照多个关键词，前缀，后缀统计匹配",
@@ -884,6 +869,29 @@
    "createdAt": "2026-06-09",
    "updatedAt": "2026-06-22",
    "closedAt": "2026-06-11",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 725,
+   "title": "验证 claude 引擎接入（空跑，勿改代码）",
+   "rawTitle": "[任务] 验证 claude 引擎接入（空跑，勿改代码）",
+   "url": "https://github.com/opensourceways/backlog/issues/725",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "sig/infratructure"
+   ],
+   "comments": 11,
+   "createdAt": "2026-06-09",
+   "updatedAt": "2026-06-22",
+   "closedAt": "2026-06-22",
    "priority": "",
    "plannedAt": "2026-06-30"
   },

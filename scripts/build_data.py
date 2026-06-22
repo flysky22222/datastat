@@ -138,6 +138,17 @@ recs.sort(key=lambda r: (order.get(r["status"], 3), r["createdAt"]))
 recs.sort(key=lambda r: r["createdAt"], reverse=True)
 recs.sort(key=lambda r: order.get(r["status"], 3))
 
+# 记录内容无变化则不改文件（保留旧 generatedAt），避免定时跑出现无意义提交
+old = {}
+if os.path.exists(OUT):
+    try:
+        old = json.load(open(OUT, encoding="utf-8"))
+    except Exception:
+        old = {}
+if old.get("records") == recs:
+    print(f"记录无变化（{len(recs)} 条），保持文件不变，不提交")
+    sys.exit(0)
+
 # 生成时间用北京时间(UTC+8)
 now = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=8)
 out = {

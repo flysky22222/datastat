@@ -343,3 +343,21 @@ tr.jumpable td:first-child::after { content: " ↓"; color: var(--accent); font-
 .vbar-l { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 11px; color: var(--text-dim); max-width: 100%; }
 .vbar-l img { width: 24px; height: 24px; border-radius: 50%; }
 .vbar-l span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+
+/* ── 表头漏斗筛选 ── */
+.th-f { white-space: nowrap; }
+.th-f span { vertical-align: middle; }
+.funnel { vertical-align: middle; margin-left: 5px; padding: 2px; border: 0; background: transparent; color: var(--text-faint); cursor: pointer; border-radius: 4px; line-height: 0; }
+.funnel:hover { color: var(--accent); background: var(--accent-soft); }
+.funnel.active { color: #fff; background: var(--accent); }
+.funnel-pop { position: fixed; z-index: 100; min-width: 180px; max-width: 260px; background: var(--bg); border: 1px solid var(--border-strong); border-radius: 10px; box-shadow: var(--shadow-md); padding: 8px; }
+.fp-head { display: flex; align-items: center; justify-content: space-between; padding: 2px 6px 8px; border-bottom: 1px solid var(--border); margin-bottom: 6px; }
+.fp-head > span { font-size: 12px; font-weight: 600; color: var(--text-dim); }
+.fp-acts button { border: 0; background: transparent; color: var(--accent); font-size: 12px; cursor: pointer; padding: 2px 5px; border-radius: 5px; }
+.fp-acts button:hover { background: var(--accent-soft); }
+.fp-list { max-height: 280px; overflow-y: auto; display: flex; flex-direction: column; gap: 1px; }
+.fp-item { display: flex; align-items: center; gap: 8px; padding: 5px 7px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+.fp-item:hover { background: var(--bg-soft); }
+.fp-item input { cursor: pointer; margin: 0; }
+.fp-item span { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fp-item b { color: var(--text-faint); font-weight: 600; font-size: 11.5px; font-variant-numeric: tabular-nums; }
