@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>数据中台需求看板 · om-datacenter</title>
+  <meta name="description" content="opensourceways/backlog 中 project:om-datacenter（数据中台）相关需求看板，支持按状态 / 负责人 / 时间范围筛选" />
+  <link rel="stylesheet" href="./styles.css?v=20260622a" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="logo">DATA</span>
+        <div class="brand-text">
+          <h1>数据中台需求看板</h1>
+          <p>project:om-datacenter · 来源 opensourceways/backlog · 按状态 / 负责人 / 时间筛选</p>
+        </div>
+      </div>
+      <div class="header-meta">
+        <span id="genAt" class="gen-at"></span>
+        <a class="repo-link" href="https://github.com/opensourceways/backlog/issues?q=label%3Aproject%3Aom-datacenter" target="_blank" rel="noopener">opensourceways/backlog ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="controls-inner">
+      <div class="control-group">
+        <label>状态</label>
+        <div id="statusChips" class="chips">
+          <button class="chip active" data-status="all">全部</button>
+          <button class="chip" data-status="open">待处理</button>
+          <button class="chip" data-status="merged">已合入</button>
+          <button class="chip" data-status="closed">已关闭</button>
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="asgSel">负责人</label>
+        <select id="asgSel" class="select"></select>
+      </div>
+      <div class="control-group">
+        <label for="dateField">时间</label>
+        <select id="dateField" class="select">
+          <option value="createdAt">创建时间</option>
+          <option value="updatedAt">更新时间</option>
+          <option value="closedAt">关闭时间</option>
+        </select>
+        <div class="daterange">
+          <input id="dateFrom" type="date" />
+          <span class="sep">至</span>
+          <input id="dateTo" type="date" />
+        </div>
+        <button id="resetBtn" class="btn-reset" type="button">重置</button>
+      </div>
+      <div class="control-group grow">
+        <input id="search" class="search" type="search" placeholder="搜索标题 / 编号…" />
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section id="stats" class="stats"></section>
+    <section id="reqList" class="req-section"></section>
+    <div id="empty" class="empty" hidden>当前筛选条件下没有需求。</div>
+  </main>
+
+  <footer class="site-footer">
+    <p>数据聚合自 <code>opensourceways/backlog</code> 中标记 <code>project:om-datacenter</code> 的 issue（需求 / 缺陷 / 任务），含 open / 已合入 / 已关闭全部状态。</p>
+  </footer>
+
+  <script src="./app.js?v=20260622a"></script>
+</body>
+</html>
