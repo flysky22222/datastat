@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>数据中台需求看板 · om-datacenter</title>
   <meta name="description" content="opensourceways/backlog 中 project:om-datacenter（数据中台）相关需求看板，支持按状态 / 负责人 / 时间范围筛选" />
-  <link rel="stylesheet" href="./styles.css?v=20260622a" />
+  <link rel="stylesheet" href="./styles.css?v=20260622b" />
 </head>
 <body>
   <header class="site-header">
@@ -36,6 +36,17 @@
         </div>
       </div>
       <div class="control-group">
+        <label>优先级</label>
+        <div id="priChips" class="chips">
+          <button class="chip active" data-pri="all">全部</button>
+          <button class="chip" data-pri="P0">P0</button>
+          <button class="chip" data-pri="P1">P1</button>
+          <button class="chip" data-pri="P2">P2</button>
+          <button class="chip" data-pri="P3">P3</button>
+          <button class="chip" data-pri="none">未定</button>
+        </div>
+      </div>
+      <div class="control-group">
         <label for="asgSel">负责人</label>
         <select id="asgSel" class="select"></select>
       </div>
@@ -60,7 +71,9 @@
   </div>
 
   <main class="container">
+    <section id="byPerson" class="person-chart"></section>
     <section id="stats" class="stats"></section>
+    <div id="priBar" class="pri-bar" hidden></div>
     <section id="reqList" class="req-section"></section>
     <div id="empty" class="empty" hidden>当前筛选条件下没有需求。</div>
   </main>
@@ -69,6 +82,6 @@
     <p>数据聚合自 <code>opensourceways/backlog</code> 中标记 <code>project:om-datacenter</code> 的 issue（需求 / 缺陷 / 任务），含 open / 已合入 / 已关闭全部状态。</p>
   </footer>
 
-  <script src="./app.js?v=20260622a"></script>
+  <script src="./app.js?v=20260622b"></script>
 </body>
 </html>

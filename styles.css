@@ -304,3 +304,47 @@ tr.jumpable td:first-child::after { content: " ↓"; color: var(--accent); font-
 .req-head { display: flex; align-items: baseline; gap: 12px; margin: 28px 0 14px; flex-wrap: wrap; padding-bottom: 8px; border-bottom: 2px solid var(--text); }
 .req-head h2 { margin: 0; font-size: 17px; font-weight: 700; display: flex; align-items: center; gap: 7px; }
 .req-head .meta { color: var(--text-faint); font-size: 12.5px; margin-left: auto; }
+
+/* ── datastat：优先级编辑 + 完成时间 + 人均完成柱状图 ── */
+.chip[data-pri="P0"].active { color: var(--failed); }
+.chip[data-pri="P1"].active { color: var(--partial); }
+.chip[data-pri="P2"].active { color: var(--accent); }
+.chip[data-pri="P3"].active { color: var(--text-dim); }
+
+/* 优先级行内编辑下拉 */
+.req-pri select.pri-edit { appearance: none; border: 1px solid var(--border-strong); border-radius: 7px; padding: 3px 22px 3px 9px; font-size: 12px; font-weight: 700; cursor: pointer; background: var(--bg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='none' stroke='%239aa0ad' stroke-width='2'%3E%3Cpath d='M1 3l4 4 4-4'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 7px center; }
+.req-pri select.pri-edit:hover { border-color: var(--accent); }
+.req-pri select.pri-P0 { color: var(--failed); border-color: #f0b3b0; background-color: var(--failed-bg); }
+.req-pri select.pri-P1 { color: var(--partial); border-color: #eac98e; background-color: var(--partial-bg); }
+.req-pri select.pri-P2 { color: var(--accent); border-color: #b9c4ec; background-color: var(--accent-soft); }
+.req-pri select.pri-P3 { color: var(--text-dim); }
+.req-pri select.pri-none { color: var(--text-faint); font-weight: 500; }
+.req-pri select.dirty { box-shadow: 0 0 0 2px #fde68a; }
+
+/* 优先级工具条 */
+.pri-bar { margin: 0 0 18px; }
+.pri-bar-inner { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: var(--bg-sub); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; }
+.pri-bar-tip { color: var(--text-dim); font-size: 12.5px; flex: 1; min-width: 240px; line-height: 1.5; }
+.pri-bar-stat { font-size: 12.5px; color: var(--text-dim); } .pri-bar-stat b { color: var(--partial); }
+.btn-pri { border: 1px solid var(--accent); background: var(--accent); color: #fff; border-radius: 8px; padding: 6px 13px; font-size: 12.5px; font-weight: 600; cursor: pointer; }
+.btn-pri:hover { filter: brightness(.95); }
+.btn-pri.ghost { background: var(--bg); color: var(--text-dim); border-color: var(--border-strong); }
+.btn-pri:disabled { opacity: .45; cursor: not-allowed; }
+
+/* 完成时间列 */
+.req-done .done-at { color: var(--success); font-weight: 600; font-variant-numeric: tabular-nums; }
+.req-done .none { color: var(--text-faint); }
+
+/* 顶部人均完成柱状图（纯 CSS） */
+.person-chart { margin-bottom: 24px; }
+.person-chart .chart-card { padding: 16px 20px 12px; }
+.person-chart h3 .hint { font-size: 11px; font-weight: 400; color: var(--text-faint); margin-left: 8px; }
+.vbars { display: flex; align-items: flex-end; gap: 22px; padding: 8px 4px 0; overflow-x: auto; min-height: 180px; }
+.vbar { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: 0 0 auto; width: 72px; }
+.vbar-v { font-weight: 750; font-size: 16px; color: var(--text); font-variant-numeric: tabular-nums; }
+.vbar-track { width: 38px; height: 120px; display: flex; align-items: flex-end; background: var(--bg-soft); border-radius: 6px; overflow: hidden; }
+.vbar-track > i { display: block; width: 100%; border-radius: 6px 6px 0 0; background: linear-gradient(180deg, #4fb98a, var(--success)); transition: height .3s; }
+.vbar-l { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 11.5px; color: var(--text-dim); max-width: 72px; }
+.vbar-l img { width: 26px; height: 26px; border-radius: 50%; }
+.vbar-l span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 70px; }
