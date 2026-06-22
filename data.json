@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-06-22 16:43",
+ "generatedAt": "2026-06-22 16:54",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 45,
+ "total": 46,
  "records": [
   {
    "number": 988,
@@ -595,6 +595,30 @@
    ],
    "comments": 4,
    "createdAt": "2026-05-11",
+   "updatedAt": "2026-06-22",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 280,
+   "title": ": 支持评估社区Issue答复质量",
+   "rawTitle": "[需求]: 支持评估社区Issue答复质量",
+   "url": "https://github.com/opensourceways/backlog/issues/280",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "enhancement",
+    "accepted"
+   ],
+   "comments": 1,
+   "createdAt": "2026-04-27",
    "updatedAt": "2026-06-22",
    "closedAt": "",
    "priority": "",
