@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-22 19:38",
+ "generatedAt": "2026-06-23 00:39",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 46,
@@ -22,7 +22,7 @@
     "accepted",
     "sig/infratructure"
    ],
-   "comments": 7,
+   "comments": 14,
    "createdAt": "2026-06-20",
    "updatedAt": "2026-06-22",
    "closedAt": "",
@@ -96,7 +96,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 20,
+   "comments": 23,
    "createdAt": "2026-06-18",
    "updatedAt": "2026-06-22",
    "closedAt": "",
@@ -145,7 +145,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 8,
+   "comments": 9,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-06-22",
    "closedAt": "",
@@ -195,7 +195,7 @@
     "accepted",
     "sig/infratructure"
    ],
-   "comments": 145,
+   "comments": 152,
    "createdAt": "2026-06-16",
    "updatedAt": "2026-06-22",
    "closedAt": "",
@@ -421,7 +421,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 31,
+   "comments": 43,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-22",
    "closedAt": "",
@@ -470,9 +470,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 108,
+   "comments": 114,
    "createdAt": "2026-06-01",
-   "updatedAt": "2026-06-18",
+   "updatedAt": "2026-06-22",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
