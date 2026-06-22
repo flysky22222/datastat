@@ -93,7 +93,8 @@
     if (state.query) {
       const q = state.query;
       out = out.filter(r => r.title.toLowerCase().includes(q) || String(r.number).includes(q)
-        || (r.assignees || []).some(a => a.toLowerCase().includes(q)));
+        || (r.assignees || []).some(a => a.toLowerCase().includes(q))
+        || (r.author || "").toLowerCase().includes(q));
     }
     // 排序：优先级高→低（未定沉底），同级按创建时间倒序
     out.sort((a, b) => (PRI_RANK[a.priority || ""] - PRI_RANK[b.priority || ""]) || (a.createdAt < b.createdAt ? 1 : -1));
@@ -154,11 +155,13 @@
     const priBadge = p => p
       ? `<span class="pri-badge pri-${p}">${p}</span>`
       : `<span class="pri-badge pri-none">未定</span>`;
+    const userLink = login => `<a class="av" href="https://github.com/${esc(login)}" target="_blank" rel="noopener"><img src="https://avatars.githubusercontent.com/${esc(login)}?s=36" alt="" loading="lazy" />${esc(login)}</a>`;
     const asgCell = r => {
       const a = r.assignees || [];
       if (!a.length) return `<span class="none">未分配</span>`;
-      return a.map(login => `<a class="av" href="https://github.com/${esc(login)}" target="_blank" rel="noopener"><img src="https://avatars.githubusercontent.com/${esc(login)}?s=36" alt="" loading="lazy" />${esc(login)}</a>`).join("<br>");
+      return a.map(userLink).join("<br>");
     };
+    const authorCell = r => r.author ? userLink(r.author) : `<span class="none">—</span>`;
     const rows = recs.map(r => `<tr>
       <td class="req-num"><a href="${esc(r.url)}" target="_blank" rel="noopener">#${r.number}</a></td>
       <td class="req-pri">${priBadge(r.priority)}</td>
@@ -166,6 +169,7 @@
       <td class="req-title"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>
         ${r.labels && r.labels.length ? `<span class="req-labels">${r.labels.map(esc).join(" · ")}</span>` : ""}</td>
       <td>${st(r.status)}</td>
+      <td class="req-asg">${authorCell(r)}</td>
       <td class="req-asg">${asgCell(r)}</td>
       <td class="req-date">${r.createdAt || "—"}</td>
       <td class="req-date req-plan">${r.plannedAt ? `<span class="plan-at">${r.plannedAt}</span>` : '<span class="none">—</span>'}</td>
@@ -174,7 +178,7 @@
     el.innerHTML = `<div class="req-head"><h2>${ico("list")} 数据中台需求列表</h2>
       <span class="meta">共 ${recs.length} 条 · 待处理 ${recs.filter(r => r.status === "open").length} · 已合入 ${recs.filter(r => r.status === "merged").length} · 已关闭 ${recs.filter(r => r.status === "closed").length}</span></div>
       <div class="tbl-wrap"><table><thead><tr>
-        <th>编号</th><th>优先级</th><th>类型</th><th>需求标题</th><th>状态</th><th>负责人</th><th>创建时间</th><th>计划完成时间</th><th>完成时间</th>
+        <th>编号</th><th>优先级</th><th>类型</th><th>需求标题</th><th>状态</th><th>提出人</th><th>负责人</th><th>创建时间</th><th>计划完成时间</th><th>完成时间</th>
       </tr></thead><tbody>${rows}</tbody></table></div>`;
   }
 })();
