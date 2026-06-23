@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-23 09:37",
+ "generatedAt": "2026-06-23 09:50",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 46,
@@ -398,30 +398,6 @@
    ],
    "comments": 43,
    "createdAt": "2026-06-04",
-   "updatedAt": "2026-06-22",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 590,
-   "title": "CANN社区D1开发者度量新增Discussions渠道",
-   "rawTitle": "[需求] CANN社区D1开发者度量新增Discussions渠道",
-   "url": "https://github.com/opensourceways/backlog/issues/590",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 5,
-   "createdAt": "2026-06-03",
    "updatedAt": "2026-06-22",
    "closedAt": "",
    "priority": "",
@@ -940,6 +916,30 @@
    "createdAt": "2026-06-03",
    "updatedAt": "2026-06-22",
    "closedAt": "2026-06-10",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 590,
+   "title": "CANN社区D1开发者度量新增Discussions渠道",
+   "rawTitle": "[需求] CANN社区D1开发者度量新增Discussions渠道",
+   "url": "https://github.com/opensourceways/backlog/issues/590",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 6,
+   "createdAt": "2026-06-03",
+   "updatedAt": "2026-06-23",
+   "closedAt": "2026-06-23",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
