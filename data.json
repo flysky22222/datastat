@@ -1,9 +1,55 @@
 {
- "generatedAt": "2026-06-23 10:30",
+ "generatedAt": "2026-06-23 17:24",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 46,
+ "total": 49,
  "records": [
+  {
+   "number": 1049,
+   "title": "HPCKit数据中台看板，需支持采集仓库下载量详情",
+   "rawTitle": "[需求] HPCKit数据中台看板，需支持采集仓库下载量详情",
+   "url": "https://github.com/opensourceways/backlog/issues/1049",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "123-prog",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 4,
+   "createdAt": "2026-06-23",
+   "updatedAt": "2026-06-23",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1043,
+   "title": "HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
+   "rawTitle": "[需求] HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
+   "url": "https://github.com/opensourceways/backlog/issues/1043",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "123-prog",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 4,
+   "createdAt": "2026-06-23",
+   "updatedAt": "2026-06-23",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 985,
    "title": "更新openGauss社区健康度看板核心仓库列表",
@@ -71,9 +117,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 23,
+   "comments": 32,
    "createdAt": "2026-06-18",
-   "updatedAt": "2026-06-22",
+   "updatedAt": "2026-06-23",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -120,9 +166,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 9,
+   "comments": 17,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-22",
+   "updatedAt": "2026-06-23",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -145,7 +191,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 18,
+   "comments": 27,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-06-23",
    "closedAt": "",
@@ -170,9 +216,9 @@
     "accepted",
     "sig/infratructure"
    ],
-   "comments": 152,
+   "comments": 155,
    "createdAt": "2026-06-16",
-   "updatedAt": "2026-06-22",
+   "updatedAt": "2026-06-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -271,9 +317,9 @@
     "task",
     "sig/infratructure"
    ],
-   "comments": 21,
+   "comments": 24,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-22",
+   "updatedAt": "2026-06-23",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -396,9 +442,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 43,
+   "comments": 46,
    "createdAt": "2026-06-04",
-   "updatedAt": "2026-06-22",
+   "updatedAt": "2026-06-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -421,9 +467,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 114,
+   "comments": 117,
    "createdAt": "2026-06-01",
-   "updatedAt": "2026-06-22",
+   "updatedAt": "2026-06-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -446,9 +492,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 7,
+   "comments": 13,
    "createdAt": "2026-06-01",
-   "updatedAt": "2026-06-15",
+   "updatedAt": "2026-06-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -572,6 +618,30 @@
    "createdAt": "2026-04-27",
    "updatedAt": "2026-06-22",
    "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1048,
+   "title": "修改openUBMC社区的健康度模型的NSS净满意度",
+   "rawTitle": "[任务] 修改openUBMC社区的健康度模型的NSS净满意度",
+   "url": "https://github.com/opensourceways/backlog/issues/1048",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 2,
+   "createdAt": "2026-06-23",
+   "updatedAt": "2026-06-23",
+   "closedAt": "2026-06-23",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
