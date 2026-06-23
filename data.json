@@ -1,34 +1,9 @@
 {
- "generatedAt": "2026-06-23 00:39",
+ "generatedAt": "2026-06-23 09:37",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 46,
  "records": [
-  {
-   "number": 988,
-   "title": "昇腾系列社区 CI 页面指标增加注释(tooltip,依实际接口取数逻辑)",
-   "rawTitle": "[需求] 昇腾系列社区 CI 页面指标增加注释(tooltip,依实际接口取数逻辑)",
-   "url": "https://github.com/opensourceways/backlog/issues/988",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "flysky22222",
-   "labels": [
-    "enhancement",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 14,
-   "createdAt": "2026-06-20",
-   "updatedAt": "2026-06-22",
-   "closedAt": "",
-   "priority": "High",
-   "plannedAt": "2026-06-30"
-  },
   {
    "number": 985,
    "title": "更新openGauss社区健康度看板核心仓库列表",
@@ -170,9 +145,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 13,
+   "comments": 16,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-22",
+   "updatedAt": "2026-06-23",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -625,27 +600,28 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 276,
-   "title": ": 社区统计看板贡献者统计能力增强",
-   "rawTitle": "[需求]: 社区统计看板贡献者统计能力增强",
-   "url": "https://github.com/opensourceways/backlog/issues/276",
-   "status": "open",
-   "state": "open",
-   "stateReason": "reopened",
+   "number": 988,
+   "title": "昇腾系列社区 CI 页面指标增加注释(tooltip,依实际接口取数逻辑)",
+   "rawTitle": "[需求] 昇腾系列社区 CI 页面指标增加注释(tooltip,依实际接口取数逻辑)",
+   "url": "https://github.com/opensourceways/backlog/issues/988",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
    "type": "需求",
    "assignees": [
     "zhongjun2"
    ],
-   "author": "zeshengzong",
+   "author": "flysky22222",
    "labels": [
     "enhancement",
-    "accepted"
+    "accepted",
+    "sig/infratructure"
    ],
-   "comments": 60,
-   "createdAt": "2026-04-27",
-   "updatedAt": "2026-06-20",
-   "closedAt": "",
-   "priority": "",
+   "comments": 15,
+   "createdAt": "2026-06-20",
+   "updatedAt": "2026-06-23",
+   "closedAt": "2026-06-23",
+   "priority": "High",
    "plannedAt": "2026-06-30"
   },
   {
@@ -1088,6 +1064,30 @@
    "createdAt": "2026-05-08",
    "updatedAt": "2026-06-11",
    "closedAt": "2026-06-11",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 276,
+   "title": ": 社区统计看板贡献者统计能力增强",
+   "rawTitle": "[需求]: 社区统计看板贡献者统计能力增强",
+   "url": "https://github.com/opensourceways/backlog/issues/276",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "enhancement",
+    "accepted"
+   ],
+   "comments": 61,
+   "createdAt": "2026-04-27",
+   "updatedAt": "2026-06-23",
+   "closedAt": "2026-06-23",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
