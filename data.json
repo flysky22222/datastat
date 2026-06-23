@@ -1,9 +1,57 @@
 {
- "generatedAt": "2026-06-23 17:24",
+ "generatedAt": "2026-06-23 22:31",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 49,
+ "total": 51,
  "records": [
+  {
+   "number": 1057,
+   "title": "仓库分析页面的点击issue解决率指标的排序无数据回显",
+   "rawTitle": "[缺陷] 仓库分析页面的点击issue解决率指标的排序无数据回显",
+   "url": "https://github.com/opensourceways/backlog/issues/1057",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 8,
+   "createdAt": "2026-06-23",
+   "updatedAt": "2026-06-23",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1056,
+   "title": "隐藏openubmc看板总览页面的论坛响应处理详情板块",
+   "rawTitle": "[任务] 隐藏openubmc看板总览页面的论坛响应处理详情板块",
+   "url": "https://github.com/opensourceways/backlog/issues/1056",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 4,
+   "createdAt": "2026-06-23",
+   "updatedAt": "2026-06-23",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1049,
    "title": "HPCKit数据中台看板，需支持采集仓库下载量详情",
@@ -24,7 +72,7 @@
    "updatedAt": "2026-06-23",
    "closedAt": "",
    "priority": "",
-   "plannedAt": "2026-06-30"
+   "plannedAt": "2026-07-31"
   },
   {
    "number": 1043,
@@ -117,7 +165,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 32,
+   "comments": 35,
    "createdAt": "2026-06-18",
    "updatedAt": "2026-06-23",
    "closedAt": "",
@@ -166,7 +214,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 17,
+   "comments": 18,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-06-23",
    "closedAt": "",
@@ -191,36 +239,11 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 27,
+   "comments": 34,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-06-23",
    "closedAt": "",
    "priority": "High",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 927,
-   "title": "数据中台服务仓库分析页面和组织分析页面解决率指标问题",
-   "rawTitle": "[缺陷] 数据中台服务仓库分析页面和组织分析页面解决率指标问题",
-   "url": "https://github.com/opensourceways/backlog/issues/927",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Mjennie",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 155,
-   "createdAt": "2026-06-16",
-   "updatedAt": "2026-06-23",
-   "closedAt": "",
-   "priority": "",
    "plannedAt": "2026-06-30"
   },
   {
@@ -442,7 +465,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 46,
+   "comments": 58,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-23",
    "closedAt": "",
@@ -467,7 +490,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 117,
+   "comments": 134,
    "createdAt": "2026-06-01",
    "updatedAt": "2026-06-23",
    "closedAt": "",
@@ -492,7 +515,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 13,
+   "comments": 22,
    "createdAt": "2026-06-01",
    "updatedAt": "2026-06-23",
    "closedAt": "",
@@ -668,6 +691,31 @@
    "updatedAt": "2026-06-23",
    "closedAt": "2026-06-23",
    "priority": "High",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 927,
+   "title": "数据中台服务仓库分析页面和组织分析页面解决率指标问题",
+   "rawTitle": "[缺陷] 数据中台服务仓库分析页面和组织分析页面解决率指标问题",
+   "url": "https://github.com/opensourceways/backlog/issues/927",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 159,
+   "createdAt": "2026-06-16",
+   "updatedAt": "2026-06-23",
+   "closedAt": "2026-06-23",
+   "priority": "",
    "plannedAt": "2026-06-30"
   },
   {
