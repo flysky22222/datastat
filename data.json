@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-24 03:51",
+ "generatedAt": "2026-06-24 10:31",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 51,
@@ -22,32 +22,9 @@
     "accepted",
     "sig/infratructure"
    ],
-   "comments": 8,
+   "comments": 11,
    "createdAt": "2026-06-23",
-   "updatedAt": "2026-06-23",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1056,
-   "title": "隐藏openubmc看板总览页面的论坛响应处理详情板块",
-   "rawTitle": "[任务] 隐藏openubmc看板总览页面的论坛响应处理详情板块",
-   "url": "https://github.com/opensourceways/backlog/issues/1056",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [],
-   "author": "ssignik",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure"
-   ],
-   "comments": 4,
-   "createdAt": "2026-06-23",
-   "updatedAt": "2026-06-23",
+   "updatedAt": "2026-06-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -165,9 +142,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 35,
+   "comments": 38,
    "createdAt": "2026-06-18",
-   "updatedAt": "2026-06-23",
+   "updatedAt": "2026-06-24",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -423,31 +400,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 714,
-   "title": "增加issue优先级标题采集，更新Issue严重缺陷识别逻辑",
-   "rawTitle": "[需求] 增加issue优先级标题采集，更新Issue严重缺陷识别逻辑",
-   "url": "https://github.com/opensourceways/backlog/issues/714",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "ssignik",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 31,
-   "createdAt": "2026-06-09",
-   "updatedAt": "2026-06-11",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 650,
    "title": "如果Issue有对应PR进行关联，看板上记作有效响应",
    "rawTitle": "[需求] 如果Issue有对应PR进行关联，看板上记作有效响应",
@@ -465,9 +417,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 58,
+   "comments": 60,
    "createdAt": "2026-06-04",
-   "updatedAt": "2026-06-23",
+   "updatedAt": "2026-06-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -490,9 +442,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 140,
+   "comments": 146,
    "createdAt": "2026-06-01",
-   "updatedAt": "2026-06-23",
+   "updatedAt": "2026-06-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -515,9 +467,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 22,
+   "comments": 30,
    "createdAt": "2026-06-01",
-   "updatedAt": "2026-06-23",
+   "updatedAt": "2026-06-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -641,6 +593,31 @@
    "createdAt": "2026-04-27",
    "updatedAt": "2026-06-22",
    "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1056,
+   "title": "隐藏openubmc看板总览页面的论坛响应处理详情板块",
+   "rawTitle": "[任务] 隐藏openubmc看板总览页面的论坛响应处理详情板块",
+   "url": "https://github.com/opensourceways/backlog/issues/1056",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 4,
+   "createdAt": "2026-06-23",
+   "updatedAt": "2026-06-24",
+   "closedAt": "2026-06-24",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
@@ -961,6 +938,31 @@
    "createdAt": "2026-06-09",
    "updatedAt": "2026-06-22",
    "closedAt": "2026-06-22",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 714,
+   "title": "增加issue优先级标题采集，更新Issue严重缺陷识别逻辑",
+   "rawTitle": "[需求] 增加issue优先级标题采集，更新Issue严重缺陷识别逻辑",
+   "url": "https://github.com/opensourceways/backlog/issues/714",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 31,
+   "createdAt": "2026-06-09",
+   "updatedAt": "2026-06-24",
+   "closedAt": "2026-06-24",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
