@@ -1,9 +1,31 @@
 {
- "generatedAt": "2026-06-25 16:50",
+ "generatedAt": "2026-06-25 22:07",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 52,
+ "total": 53,
  "records": [
+  {
+   "number": 1109,
+   "title": "新增在规定SLA时间内的issue平均闭环率，且SLA时间可选或自定义",
+   "rawTitle": "[需求] 新增在规定SLA时间内的issue平均闭环率，且SLA时间可选或自定义",
+   "url": "https://github.com/opensourceways/backlog/issues/1109",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "Kaede10",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 3,
+   "createdAt": "2026-06-25",
+   "updatedAt": "2026-06-25",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
   {
    "number": 1100,
    "title": "看板下线MindSeriesSDK社区",
@@ -216,7 +238,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 22,
+   "comments": 25,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-06-25",
    "closedAt": "",
@@ -367,9 +389,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 7,
+   "comments": 13,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-22",
+   "updatedAt": "2026-06-25",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -442,7 +464,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 102,
+   "comments": 118,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-25",
    "closedAt": "",
@@ -467,7 +489,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 182,
+   "comments": 189,
    "createdAt": "2026-06-01",
    "updatedAt": "2026-06-25",
    "closedAt": "",
@@ -492,9 +514,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 30,
+   "comments": 35,
    "createdAt": "2026-06-01",
-   "updatedAt": "2026-06-24",
+   "updatedAt": "2026-06-25",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
