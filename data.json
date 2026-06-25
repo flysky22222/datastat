@@ -1,9 +1,34 @@
 {
- "generatedAt": "2026-06-25 03:27",
+ "generatedAt": "2026-06-25 10:32",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 51,
+ "total": 52,
  "records": [
+  {
+   "number": 1100,
+   "title": "看板下线MindSeriesSDK社区",
+   "rawTitle": "[任务] 看板下线MindSeriesSDK社区",
+   "url": "https://github.com/opensourceways/backlog/issues/1100",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 6,
+   "createdAt": "2026-06-25",
+   "updatedAt": "2026-06-25",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1057,
    "title": "仓库分析页面的点击issue解决率指标的排序无数据回显",
@@ -142,9 +167,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 64,
+   "comments": 69,
    "createdAt": "2026-06-18",
-   "updatedAt": "2026-06-24",
+   "updatedAt": "2026-06-25",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -191,9 +216,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 18,
+   "comments": 22,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-23",
+   "updatedAt": "2026-06-25",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -417,9 +442,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 85,
+   "comments": 88,
    "createdAt": "2026-06-04",
-   "updatedAt": "2026-06-24",
+   "updatedAt": "2026-06-25",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
