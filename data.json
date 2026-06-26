@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-06-26 16:52",
+ "generatedAt": "2026-06-26 22:06",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 56,
+ "total": 57,
  "records": [
   {
    "number": 1121,
@@ -67,7 +67,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 9,
+   "comments": 12,
    "createdAt": "2026-06-26",
    "updatedAt": "2026-06-26",
    "closedAt": "",
@@ -409,7 +409,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 25,
+   "comments": 28,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-26",
    "closedAt": "",
@@ -660,6 +660,29 @@
    "createdAt": "2026-04-27",
    "updatedAt": "2026-06-22",
    "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1123,
+   "title": "MindIE 和MindSpeed的趋势分析里面开启下载量页面",
+   "rawTitle": "[任务] MindIE 和MindSpeed的趋势分析里面开启下载量页面",
+   "url": "https://github.com/opensourceways/backlog/issues/1123",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 7,
+   "createdAt": "2026-06-26",
+   "updatedAt": "2026-06-26",
+   "closedAt": "2026-06-26",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
