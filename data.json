@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-26 03:47",
+ "generatedAt": "2026-06-26 10:35",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 53,
@@ -25,31 +25,6 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
-  },
-  {
-   "number": 1100,
-   "title": "看板下线MindSeriesSDK社区",
-   "rawTitle": "[任务] 看板下线MindSeriesSDK社区",
-   "url": "https://github.com/opensourceways/backlog/issues/1100",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "ssignik",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure"
-   ],
-   "comments": 7,
-   "createdAt": "2026-06-25",
-   "updatedAt": "2026-06-25",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
   },
   {
    "number": 1057,
@@ -238,9 +213,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 25,
+   "comments": 28,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-25",
+   "updatedAt": "2026-06-26",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -389,9 +364,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 13,
+   "comments": 15,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-25",
+   "updatedAt": "2026-06-26",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -464,9 +439,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 121,
+   "comments": 124,
    "createdAt": "2026-06-04",
-   "updatedAt": "2026-06-25",
+   "updatedAt": "2026-06-26",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -640,6 +615,31 @@
    "createdAt": "2026-04-27",
    "updatedAt": "2026-06-22",
    "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1100,
+   "title": "看板下线MindSeriesSDK社区",
+   "rawTitle": "[任务] 看板下线MindSeriesSDK社区",
+   "url": "https://github.com/opensourceways/backlog/issues/1100",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 7,
+   "createdAt": "2026-06-25",
+   "updatedAt": "2026-06-26",
+   "closedAt": "2026-06-26",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
