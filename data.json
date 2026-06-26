@@ -1,9 +1,79 @@
 {
- "generatedAt": "2026-06-26 10:35",
+ "generatedAt": "2026-06-26 16:52",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 53,
+ "total": 56,
  "records": [
+  {
+   "number": 1121,
+   "title": "ttfhw 增加 issue 的业务逻辑确认是否为问题的页面",
+   "rawTitle": "[需求] ttfhw 增加 issue 的业务逻辑确认是否为问题的页面",
+   "url": "https://github.com/opensourceways/backlog/issues/1121",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 4,
+   "createdAt": "2026-06-26",
+   "updatedAt": "2026-06-26",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1118,
+   "title": "mcp接口补充说明和必输项设置",
+   "rawTitle": "[任务] mcp接口补充说明和必输项设置",
+   "url": "https://github.com/opensourceways/backlog/issues/1118",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 7,
+   "createdAt": "2026-06-26",
+   "updatedAt": "2026-06-26",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1112,
+   "title": "采集gitcode平台openpangu社区模型仓的贡献数据",
+   "rawTitle": "[需求] 采集gitcode平台openpangu社区模型仓的贡献数据",
+   "url": "https://github.com/opensourceways/backlog/issues/1112",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 9,
+   "createdAt": "2026-06-26",
+   "updatedAt": "2026-06-26",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1109,
    "title": "新增在规定SLA时间内的issue平均闭环率，且SLA时间可选或自定义",
@@ -122,31 +192,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 969,
-   "title": "CI mind系列晴雨表接口 /res/ci/mind-metrics 响应慢(~1.6s)",
-   "rawTitle": "[缺陷] CI mind系列晴雨表接口 /res/ci/mind-metrics 响应慢(~1.6s)",
-   "url": "https://github.com/opensourceways/backlog/issues/969",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "flysky22222",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 13,
-   "createdAt": "2026-06-18",
-   "updatedAt": "2026-06-22",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 966,
    "title": "支持openPangu社区D0~D2开发者贡献数据统计",
    "rawTitle": "[需求] 支持openPangu社区D0~D2开发者贡献数据统计",
@@ -213,7 +258,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 28,
+   "comments": 31,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-06-26",
    "closedAt": "",
@@ -364,7 +409,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 15,
+   "comments": 25,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-26",
    "closedAt": "",
@@ -439,7 +484,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 124,
+   "comments": 148,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-26",
    "closedAt": "",
@@ -715,6 +760,31 @@
    "updatedAt": "2026-06-23",
    "closedAt": "2026-06-23",
    "priority": "High",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 969,
+   "title": "CI mind系列晴雨表接口 /res/ci/mind-metrics 响应慢(~1.6s)",
+   "rawTitle": "[缺陷] CI mind系列晴雨表接口 /res/ci/mind-metrics 响应慢(~1.6s)",
+   "url": "https://github.com/opensourceways/backlog/issues/969",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 13,
+   "createdAt": "2026-06-18",
+   "updatedAt": "2026-06-26",
+   "closedAt": "2026-06-26",
+   "priority": "",
    "plannedAt": "2026-06-30"
   },
   {
