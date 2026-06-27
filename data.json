@@ -1,9 +1,32 @@
 {
- "generatedAt": "2026-06-26 22:06",
+ "generatedAt": "2026-06-27 10:28",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 57,
+ "total": 59,
  "records": [
+  {
+   "number": 1125,
+   "title": "白盒运维页面 /bluezone 不可用：APIMagic 仍缺 5 个 /whitebox 接口 + 待确认 magicapi-beta 部署",
+   "rawTitle": "[缺陷] 白盒运维页面 /bluezone 不可用：APIMagic 仍缺 5 个 /whitebox 接口 + 待确认 magicapi-beta 部署",
+   "url": "https://github.com/opensourceways/backlog/issues/1125",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [],
+   "author": "flysky22222",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 11,
+   "createdAt": "2026-06-26",
+   "updatedAt": "2026-06-27",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1121,
    "title": "ttfhw 增加 issue 的业务逻辑确认是否为问题的页面",
@@ -16,60 +39,13 @@
    "assignees": [],
    "author": "zhongjun2",
    "labels": [
+    "accepted",
     "sig/infratructure",
     "feature-request"
-   ],
-   "comments": 4,
-   "createdAt": "2026-06-26",
-   "updatedAt": "2026-06-26",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1118,
-   "title": "mcp接口补充说明和必输项设置",
-   "rawTitle": "[任务] mcp接口补充说明和必输项设置",
-   "url": "https://github.com/opensourceways/backlog/issues/1118",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "ssignik",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure"
    ],
    "comments": 7,
    "createdAt": "2026-06-26",
-   "updatedAt": "2026-06-26",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1112,
-   "title": "采集gitcode平台openpangu社区模型仓的贡献数据",
-   "rawTitle": "[需求] 采集gitcode平台openpangu社区模型仓的贡献数据",
-   "url": "https://github.com/opensourceways/backlog/issues/1112",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 12,
-   "createdAt": "2026-06-26",
-   "updatedAt": "2026-06-26",
+   "updatedAt": "2026-06-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -258,9 +234,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 31,
+   "comments": 36,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-26",
+   "updatedAt": "2026-06-27",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -417,31 +393,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 837,
-   "title": "数据中台服务优化CI页面效率",
-   "rawTitle": "[任务] 数据中台服务优化CI页面效率",
-   "url": "https://github.com/opensourceways/backlog/issues/837",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure"
-   ],
-   "comments": 4,
-   "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-22",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 820,
    "title": "当issue被打上wait-feedback标签后，统计进看板指标-Issue平均解决率中",
    "rawTitle": "[需求] 当issue被打上wait-feedback标签后，统计进看板指标-Issue平均解决率中",
@@ -484,9 +435,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 148,
+   "comments": 151,
    "createdAt": "2026-06-04",
-   "updatedAt": "2026-06-26",
+   "updatedAt": "2026-06-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -664,6 +615,31 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1128,
+   "title": "组织详情接口 /query/company/detail 大时间窗返回 -1(jsonb_object_agg title 为 NULL)",
+   "rawTitle": "[缺陷] 组织详情接口 /query/company/detail 大时间窗返回 -1(jsonb_object_agg title 为 NULL)",
+   "url": "https://github.com/opensourceways/backlog/issues/1128",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 4,
+   "createdAt": "2026-06-27",
+   "updatedAt": "2026-06-27",
+   "closedAt": "2026-06-27",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1123,
    "title": "MindIE 和MindSpeed的趋势分析里面开启下载量页面",
    "rawTitle": "[任务] MindIE 和MindSpeed的趋势分析里面开启下载量页面",
@@ -683,6 +659,54 @@
    "createdAt": "2026-06-26",
    "updatedAt": "2026-06-26",
    "closedAt": "2026-06-26",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1118,
+   "title": "mcp接口补充说明和必输项设置",
+   "rawTitle": "[任务] mcp接口补充说明和必输项设置",
+   "url": "https://github.com/opensourceways/backlog/issues/1118",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 7,
+   "createdAt": "2026-06-26",
+   "updatedAt": "2026-06-27",
+   "closedAt": "2026-06-27",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1112,
+   "title": "采集gitcode平台openpangu社区模型仓的贡献数据",
+   "rawTitle": "[需求] 采集gitcode平台openpangu社区模型仓的贡献数据",
+   "url": "https://github.com/opensourceways/backlog/issues/1112",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 12,
+   "createdAt": "2026-06-26",
+   "updatedAt": "2026-06-27",
+   "closedAt": "2026-06-27",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
@@ -931,6 +955,31 @@
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-22",
    "closedAt": "2026-06-22",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 837,
+   "title": "数据中台服务优化CI页面效率",
+   "rawTitle": "[任务] 数据中台服务优化CI页面效率",
+   "url": "https://github.com/opensourceways/backlog/issues/837",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 4,
+   "createdAt": "2026-06-11",
+   "updatedAt": "2026-06-27",
+   "closedAt": "2026-06-27",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
