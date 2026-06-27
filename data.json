@@ -1,27 +1,58 @@
 {
- "generatedAt": "2026-06-27 10:28",
+ "generatedAt": "2026-06-27 16:27",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 59,
+ "total": 61,
  "records": [
   {
-   "number": 1125,
-   "title": "白盒运维页面 /bluezone 不可用：APIMagic 仍缺 5 个 /whitebox 接口 + 待确认 magicapi-beta 部署",
-   "rawTitle": "[缺陷] 白盒运维页面 /bluezone 不可用：APIMagic 仍缺 5 个 /whitebox 接口 + 待确认 magicapi-beta 部署",
-   "url": "https://github.com/opensourceways/backlog/issues/1125",
+   "number": 1140,
+   "title": "支持统计AI Core，AI vector等NPU exporter指标，并在看板进行展示",
+   "rawTitle": "[需求] 支持统计AI Core，AI vector等NPU exporter指标，并在看板进行展示",
+   "url": "https://github.com/opensourceways/backlog/issues/1140",
    "status": "open",
    "state": "open",
    "stateReason": null,
-   "type": "缺陷",
-   "assignees": [],
-   "author": "flysky22222",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure"
+   "type": "需求",
+   "assignees": [
+    "Creyson-peng"
    ],
-   "comments": 11,
-   "createdAt": "2026-06-26",
+   "author": "pkking",
+   "labels": [
+    "need_design",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 5,
+   "createdAt": "2026-06-27",
+   "updatedAt": "2026-06-27",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1137,
+   "title": "采集并展示openPangu社区的模型/仓库下载量",
+   "rawTitle": "[需求] 采集并展示openPangu社区的模型/仓库下载量",
+   "url": "https://github.com/opensourceways/backlog/issues/1137",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 13,
+   "createdAt": "2026-06-27",
    "updatedAt": "2026-06-27",
    "closedAt": "",
    "priority": "",
@@ -43,7 +74,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 7,
+   "comments": 12,
    "createdAt": "2026-06-26",
    "updatedAt": "2026-06-27",
    "closedAt": "",
@@ -234,7 +265,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 36,
+   "comments": 37,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-06-27",
    "closedAt": "",
@@ -264,31 +295,6 @@
    "updatedAt": "2026-06-25",
    "closedAt": "",
    "priority": "High",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 916,
-   "title": "增加 Co-author 统计，用于开发者模块 D0/D1/D2 开发者指标计算",
-   "rawTitle": "[需求] 增加 Co-author 统计，用于开发者模块 D0/D1/D2 开发者指标计算",
-   "url": "https://github.com/opensourceways/backlog/issues/916",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "sunshuang1866",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 6,
-   "createdAt": "2026-06-16",
-   "updatedAt": "2026-06-22",
-   "closedAt": "",
-   "priority": "",
    "plannedAt": "2026-06-30"
   },
   {
@@ -385,9 +391,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 28,
+   "comments": 33,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-26",
+   "updatedAt": "2026-06-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -435,7 +441,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 151,
+   "comments": 165,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-27",
    "closedAt": "",
@@ -640,6 +646,29 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1125,
+   "title": "白盒运维页面 /bluezone 不可用：APIMagic 仍缺 5 个 /whitebox 接口 + 待确认 magicapi-beta 部署",
+   "rawTitle": "[缺陷] 白盒运维页面 /bluezone 不可用：APIMagic 仍缺 5 个 /whitebox 接口 + 待确认 magicapi-beta 部署",
+   "url": "https://github.com/opensourceways/backlog/issues/1125",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [],
+   "author": "flysky22222",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 12,
+   "createdAt": "2026-06-26",
+   "updatedAt": "2026-06-27",
+   "closedAt": "2026-06-27",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1123,
    "title": "MindIE 和MindSpeed的趋势分析里面开启下载量页面",
    "rawTitle": "[任务] MindIE 和MindSpeed的趋势分析里面开启下载量页面",
@@ -696,7 +725,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Kaede10"
+   ],
    "author": "Kaede10",
    "labels": [
     "accepted",
@@ -856,6 +887,31 @@
    "createdAt": "2026-06-16",
    "updatedAt": "2026-06-23",
    "closedAt": "2026-06-23",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 916,
+   "title": "增加 Co-author 统计，用于开发者模块 D0/D1/D2 开发者指标计算",
+   "rawTitle": "[需求] 增加 Co-author 统计，用于开发者模块 D0/D1/D2 开发者指标计算",
+   "url": "https://github.com/opensourceways/backlog/issues/916",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "sunshuang1866",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 6,
+   "createdAt": "2026-06-16",
+   "updatedAt": "2026-06-27",
+   "closedAt": "2026-06-27",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
