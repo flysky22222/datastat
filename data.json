@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-27 16:27",
+ "generatedAt": "2026-06-27 18:15",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 61,
@@ -51,7 +51,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 13,
+   "comments": 17,
    "createdAt": "2026-06-27",
    "updatedAt": "2026-06-27",
    "closedAt": "",
@@ -265,34 +265,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 37,
+   "comments": 46,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-06-27",
-   "closedAt": "",
-   "priority": "High",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 936,
-   "title": "计算开源技术雷达 - 开源洞察报告板块",
-   "rawTitle": "[需求] 计算开源技术雷达 - 开源洞察报告板块",
-   "url": "https://github.com/opensourceways/backlog/issues/936",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "Yikun",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 38,
-   "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-25",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -366,9 +341,9 @@
     "task",
     "sig/infratructure"
    ],
-   "comments": 24,
+   "comments": 25,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-23",
+   "updatedAt": "2026-06-27",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -391,7 +366,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 33,
+   "comments": 37,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-27",
    "closedAt": "",
@@ -441,7 +416,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 165,
+   "comments": 175,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-27",
    "closedAt": "",
@@ -863,6 +838,31 @@
    "updatedAt": "2026-06-26",
    "closedAt": "2026-06-26",
    "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 936,
+   "title": "计算开源技术雷达 - 开源洞察报告板块",
+   "rawTitle": "[需求] 计算开源技术雷达 - 开源洞察报告板块",
+   "url": "https://github.com/opensourceways/backlog/issues/936",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "Yikun",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 38,
+   "createdAt": "2026-06-17",
+   "updatedAt": "2026-06-27",
+   "closedAt": "2026-06-27",
+   "priority": "High",
    "plannedAt": "2026-06-30"
   },
   {
