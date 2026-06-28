@@ -1,9 +1,57 @@
 {
- "generatedAt": "2026-06-27 21:14",
+ "generatedAt": "2026-06-28 16:41",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 61,
+ "total": 63,
  "records": [
+  {
+   "number": 1156,
+   "title": "ttfhw-confirm 问题确认页 表格/筛选 UI 调整",
+   "rawTitle": "[datastat-manage-website] ttfhw-confirm 问题确认页 表格/筛选 UI 调整",
+   "url": "https://github.com/opensourceways/backlog/issues/1156",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "其他",
+   "assignees": [],
+   "author": "flysky22222",
+   "labels": [
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 3,
+   "createdAt": "2026-06-28",
+   "updatedAt": "2026-06-28",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1153,
+   "title": "蓝区(白盒)看板重构：拆「用户检查数据」+「采集数据维护」两菜单，并修复贡献数据恒「校验失败」",
+   "rawTitle": "[需求] 蓝区(白盒)看板重构：拆「用户检查数据」+「采集数据维护」两菜单，并修复贡献数据恒「校验失败」",
+   "url": "https://github.com/opensourceways/backlog/issues/1153",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "flysky22222",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_security",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure"
+   ],
+   "comments": 10,
+   "createdAt": "2026-06-28",
+   "updatedAt": "2026-06-28",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1140,
    "title": "支持统计AI Core，AI vector等NPU exporter指标，并在看板进行展示",
