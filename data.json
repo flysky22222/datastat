@@ -1,9 +1,54 @@
 {
- "generatedAt": "2026-06-29 10:41",
+ "generatedAt": "2026-06-29 18:26",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 64,
+ "total": 66,
  "records": [
+  {
+   "number": 1172,
+   "title": "支持蓝区代码检视区分PR、issue以及评论和回复的能力",
+   "rawTitle": "[需求] 支持蓝区代码检视区分PR、issue以及评论和回复的能力",
+   "url": "https://github.com/opensourceways/backlog/issues/1172",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 3,
+   "createdAt": "2026-06-29",
+   "updatedAt": "2026-06-29",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1162,
+   "title": "CANN社区新增discussion采集任务",
+   "rawTitle": "[任务] CANN社区新增discussion采集任务",
+   "url": "https://github.com/opensourceways/backlog/issues/1162",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [],
+   "author": "Mjennie",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 19,
+   "createdAt": "2026-06-29",
+   "updatedAt": "2026-06-29",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1157,
    "title": "unifiedbus 社区的接口增加登录和灵衢的权限",
@@ -74,7 +119,7 @@
     "need_itest",
     "sig/infratructure"
    ],
-   "comments": 11,
+   "comments": 12,
    "createdAt": "2026-06-28",
    "updatedAt": "2026-06-29",
    "closedAt": "",
@@ -128,9 +173,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 17,
+   "comments": 22,
    "createdAt": "2026-06-27",
-   "updatedAt": "2026-06-27",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -196,15 +241,16 @@
    ],
    "author": "123-prog",
    "labels": [
+    "accepted",
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 4,
+   "comments": 6,
    "createdAt": "2026-06-23",
    "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
-   "plannedAt": "2026-07-31"
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1043,
@@ -220,12 +266,13 @@
    ],
    "author": "123-prog",
    "labels": [
+    "accepted",
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 4,
+   "comments": 6,
    "createdAt": "2026-06-23",
-   "updatedAt": "2026-06-23",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -249,7 +296,7 @@
    ],
    "comments": 4,
    "createdAt": "2026-06-19",
-   "updatedAt": "2026-06-22",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "Medium",
    "plannedAt": "2026-06-30"
@@ -293,12 +340,13 @@
    ],
    "author": "Mjennie",
    "labels": [
+    "accepted",
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 4,
+   "comments": 7,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-22",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -321,9 +369,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 46,
+   "comments": 55,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-27",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -422,9 +470,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 37,
+   "comments": 40,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-27",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -447,7 +495,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 181,
+   "comments": 199,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-29",
    "closedAt": "",
@@ -472,7 +520,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 191,
+   "comments": 193,
    "createdAt": "2026-06-01",
    "updatedAt": "2026-06-29",
    "closedAt": "",
@@ -497,9 +545,9 @@
     "accepted",
     "sig/infratructure"
    ],
-   "comments": 34,
+   "comments": 41,
    "createdAt": "2026-05-18",
-   "updatedAt": "2026-06-22",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
