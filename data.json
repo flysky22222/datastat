@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-29 10:16",
+ "generatedAt": "2026-06-29 10:41",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 64,
@@ -181,31 +181,6 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
-  },
-  {
-   "number": 1057,
-   "title": "仓库分析页面的点击issue解决率指标的排序无数据回显",
-   "rawTitle": "[缺陷] 仓库分析页面的点击issue解决率指标的排序无数据回显",
-   "url": "https://github.com/opensourceways/backlog/issues/1057",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Mjennie",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 11,
-   "createdAt": "2026-06-23",
-   "updatedAt": "2026-06-24",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
   },
   {
    "number": 1049,
@@ -455,31 +430,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 820,
-   "title": "当issue被打上wait-feedback标签后，统计进看板指标-Issue平均解决率中",
-   "rawTitle": "[需求] 当issue被打上wait-feedback标签后，统计进看板指标-Issue平均解决率中",
-   "url": "https://github.com/opensourceways/backlog/issues/820",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Tian-Fantasea",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 65,
-   "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-22",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 650,
    "title": "如果Issue有对应PR进行关联，看板上记作有效响应",
    "rawTitle": "[需求] 如果Issue有对应PR进行关联，看板上记作有效响应",
@@ -497,7 +447,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 180,
+   "comments": 181,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-29",
    "closedAt": "",
@@ -522,34 +472,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 189,
+   "comments": 191,
    "createdAt": "2026-06-01",
-   "updatedAt": "2026-06-25",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 441,
-   "title": ": Issue看板页面补充解决率指标",
-   "rawTitle": "[需求]: Issue看板页面补充解决率指标",
-   "url": "https://github.com/opensourceways/backlog/issues/441",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "zeshengzong",
-   "labels": [
-    "enhancement",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 134,
-   "createdAt": "2026-05-29",
-   "updatedAt": "2026-06-16",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -748,6 +673,31 @@
    "createdAt": "2026-06-25",
    "updatedAt": "2026-06-26",
    "closedAt": "2026-06-26",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1057,
+   "title": "仓库分析页面的点击issue解决率指标的排序无数据回显",
+   "rawTitle": "[缺陷] 仓库分析页面的点击issue解决率指标的排序无数据回显",
+   "url": "https://github.com/opensourceways/backlog/issues/1057",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 11,
+   "createdAt": "2026-06-23",
+   "updatedAt": "2026-06-29",
+   "closedAt": "2026-06-29",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
@@ -1046,6 +996,31 @@
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-27",
    "closedAt": "2026-06-27",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 820,
+   "title": "当issue被打上wait-feedback标签后，统计进看板指标-Issue平均解决率中",
+   "rawTitle": "[需求] 当issue被打上wait-feedback标签后，统计进看板指标-Issue平均解决率中",
+   "url": "https://github.com/opensourceways/backlog/issues/820",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 65,
+   "createdAt": "2026-06-11",
+   "updatedAt": "2026-06-29",
+   "closedAt": "2026-06-29",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
@@ -1394,6 +1369,31 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 441,
+   "title": ": Issue看板页面补充解决率指标",
+   "rawTitle": "[需求]: Issue看板页面补充解决率指标",
+   "url": "https://github.com/opensourceways/backlog/issues/441",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 134,
+   "createdAt": "2026-05-29",
+   "updatedAt": "2026-06-29",
+   "closedAt": "2026-06-29",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 383,
    "title": ": 统计看板vllm-ascend数据准确性提升",
    "rawTitle": "[需求]: 统计看板vllm-ascend数据准确性提升",
@@ -1574,7 +1574,9 @@
    "state": "closed",
    "stateReason": "not_planned",
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "flysky22222",
    "labels": [
     "accepted",
@@ -1582,7 +1584,7 @@
    ],
    "comments": 2,
    "createdAt": "2026-06-03",
-   "updatedAt": "2026-06-03",
+   "updatedAt": "2026-06-29",
    "closedAt": "2026-06-03",
    "priority": "",
    "plannedAt": ""
