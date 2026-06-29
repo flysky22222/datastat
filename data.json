@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-29 18:26",
+ "generatedAt": "2026-06-29 23:32",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 66,
@@ -42,7 +42,7 @@
     "task",
     "sig/infratructure"
    ],
-   "comments": 19,
+   "comments": 41,
    "createdAt": "2026-06-29",
    "updatedAt": "2026-06-29",
    "closedAt": "",
@@ -173,7 +173,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 22,
+   "comments": 24,
    "createdAt": "2026-06-27",
    "updatedAt": "2026-06-29",
    "closedAt": "",
@@ -495,7 +495,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 199,
+   "comments": 202,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-29",
    "closedAt": "",
@@ -522,31 +522,6 @@
    ],
    "comments": 193,
    "createdAt": "2026-06-01",
-   "updatedAt": "2026-06-29",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 392,
-   "title": ": 开源实习数据看板新增Torch-NPU、openUBMC、Ascend IR社区的实习数据",
-   "rawTitle": "[需求]: 开源实习数据看板新增Torch-NPU、openUBMC、Ascend IR社区的实习数据",
-   "url": "https://github.com/opensourceways/backlog/issues/392",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "liangmin-2026",
-   "labels": [
-    "enhancement",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 41,
-   "createdAt": "2026-05-18",
    "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
@@ -1436,6 +1411,31 @@
    ],
    "comments": 134,
    "createdAt": "2026-05-29",
+   "updatedAt": "2026-06-29",
+   "closedAt": "2026-06-29",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 392,
+   "title": ": 开源实习数据看板新增Torch-NPU、openUBMC、Ascend IR社区的实习数据",
+   "rawTitle": "[需求]: 开源实习数据看板新增Torch-NPU、openUBMC、Ascend IR社区的实习数据",
+   "url": "https://github.com/opensourceways/backlog/issues/392",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "liangmin-2026",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 41,
+   "createdAt": "2026-05-18",
    "updatedAt": "2026-06-29",
    "closedAt": "2026-06-29",
    "priority": "",
