@@ -1,9 +1,32 @@
 {
- "generatedAt": "2026-06-28 16:41",
+ "generatedAt": "2026-06-29 10:05",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 63,
+ "total": 64,
  "records": [
+  {
+   "number": 1157,
+   "title": "unifiedbus 社区的接口增加登录和灵衢的权限",
+   "rawTitle": "[缺陷] unifiedbus 社区的接口增加登录和灵衢的权限",
+   "url": "https://github.com/opensourceways/backlog/issues/1157",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 6,
+   "createdAt": "2026-06-29",
+   "updatedAt": "2026-06-29",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1156,
    "title": "ttfhw-confirm 问题确认页 表格/筛选 UI 调整",
@@ -45,9 +68,9 @@
     "need_itest",
     "sig/infratructure"
    ],
-   "comments": 10,
+   "comments": 11,
    "createdAt": "2026-06-28",
-   "updatedAt": "2026-06-28",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -389,9 +412,9 @@
     "task",
     "sig/infratructure"
    ],
-   "comments": 25,
+   "comments": 26,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-27",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -464,9 +487,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 178,
+   "comments": 180,
    "createdAt": "2026-06-04",
-   "updatedAt": "2026-06-27",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -490,31 +513,6 @@
     "feature-request"
    ],
    "comments": 189,
-   "createdAt": "2026-06-01",
-   "updatedAt": "2026-06-25",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 486,
-   "title": "CI数据看板统计各个仓库的ascend和GPU的测试用例",
-   "rawTitle": "[需求] CI数据看板统计各个仓库的ascend和GPU的测试用例",
-   "url": "https://github.com/opensourceways/backlog/issues/486",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Creyson-peng"
-   ],
-   "author": "Goalina",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 35,
    "createdAt": "2026-06-01",
    "updatedAt": "2026-06-25",
    "closedAt": "",
@@ -1378,6 +1376,31 @@
    "createdAt": "2026-06-01",
    "updatedAt": "2026-06-22",
    "closedAt": "2026-06-22",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 486,
+   "title": "CI数据看板统计各个仓库的ascend和GPU的测试用例",
+   "rawTitle": "[需求] CI数据看板统计各个仓库的ascend和GPU的测试用例",
+   "url": "https://github.com/opensourceways/backlog/issues/486",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Creyson-peng"
+   ],
+   "author": "Goalina",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 35,
+   "createdAt": "2026-06-01",
+   "updatedAt": "2026-06-29",
+   "closedAt": "2026-06-29",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
