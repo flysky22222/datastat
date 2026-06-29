@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-29 10:05",
+ "generatedAt": "2026-06-29 10:16",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 64,
@@ -13,7 +13,9 @@
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "bug",
@@ -36,7 +38,9 @@
    "state": "open",
    "stateReason": null,
    "type": "其他",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "flysky22222",
    "labels": [
     "task",
@@ -44,7 +48,7 @@
    ],
    "comments": 3,
    "createdAt": "2026-06-28",
-   "updatedAt": "2026-06-28",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -58,7 +62,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "flysky22222",
    "labels": [
     "accepted",
@@ -161,7 +167,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Kaede10"
+   ],
    "author": "Kaede10",
    "labels": [
     "sig/infratructure",
@@ -169,7 +177,7 @@
    ],
    "comments": 3,
    "createdAt": "2026-06-25",
-   "updatedAt": "2026-06-25",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
@@ -208,7 +216,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "123-prog",
    "labels": [
     "sig/infratructure",
@@ -216,7 +226,7 @@
    ],
    "comments": 4,
    "createdAt": "2026-06-23",
-   "updatedAt": "2026-06-23",
+   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
@@ -570,54 +580,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 336,
-   "title": ": 数据中台增加AI Vibecoding 相关的指标",
-   "rawTitle": "[需求]: 数据中台增加AI Vibecoding 相关的指标",
-   "url": "https://github.com/opensourceways/backlog/issues/336",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "sig/infratructure"
-   ],
-   "comments": 1,
-   "createdAt": "2026-05-11",
-   "updatedAt": "2026-06-22",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 335,
-   "title": ": 生态看板依赖基础设施能力补齐",
-   "rawTitle": "[需求]: 生态看板依赖基础设施能力补齐",
-   "url": "https://github.com/opensourceways/backlog/issues/335",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "zeshengzong",
-   "labels": [
-    "enhancement",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 4,
-   "createdAt": "2026-05-11",
-   "updatedAt": "2026-06-22",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 280,
    "title": ": 支持评估社区Issue答复质量",
    "rawTitle": "[需求]: 支持评估社区Issue答复质量",
@@ -639,7 +601,7 @@
    "updatedAt": "2026-06-22",
    "closedAt": "",
    "priority": "",
-   "plannedAt": "2026-06-30"
+   "plannedAt": "2026-07-31"
   },
   {
    "number": 1128,
@@ -698,7 +660,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "accepted",
@@ -707,7 +671,7 @@
    ],
    "comments": 7,
    "createdAt": "2026-06-26",
-   "updatedAt": "2026-06-26",
+   "updatedAt": "2026-06-29",
    "closedAt": "2026-06-26",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -1476,6 +1440,54 @@
    "createdAt": "2026-05-13",
    "updatedAt": "2026-06-20",
    "closedAt": "2026-06-20",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 336,
+   "title": ": 数据中台增加AI Vibecoding 相关的指标",
+   "rawTitle": "[需求]: 数据中台增加AI Vibecoding 相关的指标",
+   "url": "https://github.com/opensourceways/backlog/issues/336",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "sig/infratructure"
+   ],
+   "comments": 1,
+   "createdAt": "2026-05-11",
+   "updatedAt": "2026-06-29",
+   "closedAt": "2026-06-29",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 335,
+   "title": ": 生态看板依赖基础设施能力补齐",
+   "rawTitle": "[需求]: 生态看板依赖基础设施能力补齐",
+   "url": "https://github.com/opensourceways/backlog/issues/335",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 4,
+   "createdAt": "2026-05-11",
+   "updatedAt": "2026-06-29",
+   "closedAt": "2026-06-29",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
