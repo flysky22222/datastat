@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-06-30 10:35",
+ "generatedAt": "2026-06-30 16:58",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 66,
+ "total": 67,
  "records": [
   {
    "number": 1172,
@@ -148,34 +148,6 @@
    "comments": 5,
    "createdAt": "2026-06-27",
    "updatedAt": "2026-06-27",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1137,
-   "title": "采集并展示openPangu社区的模型/仓库下载量",
-   "rawTitle": "[需求] 采集并展示openPangu社区的模型/仓库下载量",
-   "url": "https://github.com/opensourceways/backlog/issues/1137",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "need_design",
-    "need_ux",
-    "need_itest",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 24,
-   "createdAt": "2026-06-27",
-   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -344,9 +316,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 7,
+   "comments": 16,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-29",
+   "updatedAt": "2026-06-30",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -470,9 +442,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 40,
+   "comments": 49,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-29",
+   "updatedAt": "2026-06-30",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -528,6 +500,33 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 312,
+   "title": ": openUBMC社区运营看板及热点话题周报新增PR、Issue、论坛等响应情况",
+   "rawTitle": "[需求]: openUBMC社区运营看板及热点话题周报新增PR、Issue、论坛等响应情况",
+   "url": "https://github.com/opensourceways/backlog/issues/312",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "hellowaywewe",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "need_design",
+    "need_ux",
+    "need_itest"
+   ],
+   "comments": 6,
+   "createdAt": "2026-05-08",
+   "updatedAt": "2026-06-30",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
+  {
    "number": 280,
    "title": ": 支持评估社区Issue答复质量",
    "rawTitle": "[需求]: 支持评估社区Issue答复质量",
@@ -550,6 +549,34 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1137,
+   "title": "采集并展示openPangu社区的模型/仓库下载量",
+   "rawTitle": "[需求] 采集并展示openPangu社区的模型/仓库下载量",
+   "url": "https://github.com/opensourceways/backlog/issues/1137",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 24,
+   "createdAt": "2026-06-27",
+   "updatedAt": "2026-06-30",
+   "closedAt": "2026-06-30",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1128,
