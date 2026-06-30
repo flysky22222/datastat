@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30 16:58",
+ "generatedAt": "2026-06-30 22:00",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 67,
@@ -25,29 +25,6 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
-  },
-  {
-   "number": 1162,
-   "title": "CANN社区新增discussion采集任务",
-   "rawTitle": "[任务] CANN社区新增discussion采集任务",
-   "url": "https://github.com/opensourceways/backlog/issues/1162",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [],
-   "author": "Mjennie",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure"
-   ],
-   "comments": 44,
-   "createdAt": "2026-06-29",
-   "updatedAt": "2026-06-30",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
   },
   {
    "number": 1157,
@@ -119,9 +96,9 @@
     "need_itest",
     "sig/infratructure"
    ],
-   "comments": 12,
+   "comments": 13,
    "createdAt": "2026-06-28",
-   "updatedAt": "2026-06-29",
+   "updatedAt": "2026-06-30",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -251,8 +228,8 @@
   },
   {
    "number": 985,
-   "title": "更新openGauss社区健康度看板核心仓库列表",
-   "rawTitle": "[需求] 更新openGauss社区健康度看板核心仓库列表",
+   "title": "更新openGauss社区[总览]响应处理详情中的核心仓库列表",
+   "rawTitle": "[需求] 更新openGauss社区[总览]响应处理详情中的核心仓库列表",
    "url": "https://github.com/opensourceways/backlog/issues/985",
    "status": "open",
    "state": "open",
@@ -266,9 +243,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 4,
+   "comments": 6,
    "createdAt": "2026-06-19",
-   "updatedAt": "2026-06-29",
+   "updatedAt": "2026-06-30",
    "closedAt": "",
    "priority": "Medium",
    "plannedAt": "2026-06-30"
@@ -341,9 +318,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 55,
+   "comments": 58,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-29",
+   "updatedAt": "2026-06-30",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -417,9 +394,9 @@
     "task",
     "sig/infratructure"
    ],
-   "comments": 26,
+   "comments": 29,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-06-29",
+   "updatedAt": "2026-06-30",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -442,59 +419,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 49,
+   "comments": 58,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-30",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 650,
-   "title": "如果Issue有对应PR进行关联，看板上记作有效响应",
-   "rawTitle": "[需求] 如果Issue有对应PR进行关联，看板上记作有效响应",
-   "url": "https://github.com/opensourceways/backlog/issues/650",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Tian-Fantasea",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 202,
-   "createdAt": "2026-06-04",
-   "updatedAt": "2026-06-29",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 489,
-   "title": "CANN社区D1开发者度量新增Discussions渠道",
-   "rawTitle": "[需求] CANN社区D1开发者度量新增Discussions渠道",
-   "url": "https://github.com/opensourceways/backlog/issues/489",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "ZhengZhenyu",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 193,
-   "createdAt": "2026-06-01",
-   "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -549,6 +476,29 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1162,
+   "title": "CANN社区新增discussion采集任务",
+   "rawTitle": "[任务] CANN社区新增discussion采集任务",
+   "url": "https://github.com/opensourceways/backlog/issues/1162",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [],
+   "author": "Mjennie",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 44,
+   "createdAt": "2026-06-29",
+   "updatedAt": "2026-06-30",
+   "closedAt": "2026-06-30",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1137,
@@ -1271,6 +1221,31 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 650,
+   "title": "如果Issue有对应PR进行关联，看板上记作有效响应",
+   "rawTitle": "[需求] 如果Issue有对应PR进行关联，看板上记作有效响应",
+   "url": "https://github.com/opensourceways/backlog/issues/650",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 202,
+   "createdAt": "2026-06-04",
+   "updatedAt": "2026-06-30",
+   "closedAt": "2026-06-30",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 611,
    "title": "社区统计看板增加Triton项目统计",
    "rawTitle": "[需求] 社区统计看板增加Triton项目统计",
@@ -1340,6 +1315,31 @@
    "createdAt": "2026-06-03",
    "updatedAt": "2026-06-23",
    "closedAt": "2026-06-23",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 489,
+   "title": "CANN社区D1开发者度量新增Discussions渠道",
+   "rawTitle": "[需求] CANN社区D1开发者度量新增Discussions渠道",
+   "url": "https://github.com/opensourceways/backlog/issues/489",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "ZhengZhenyu",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 193,
+   "createdAt": "2026-06-01",
+   "updatedAt": "2026-06-30",
+   "closedAt": "2026-06-30",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
