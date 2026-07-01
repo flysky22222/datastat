@@ -1,9 +1,58 @@
 {
- "generatedAt": "2026-07-01 10:41",
+ "generatedAt": "2026-07-01 17:32",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 67,
+ "total": 69,
  "records": [
+  {
+   "number": 1210,
+   "title": "NPU折线图增加统计时间范围内的 NPU使用率（平均/P50/P90/P95）",
+   "rawTitle": "[任务] NPU折线图增加统计时间范围内的 NPU使用率（平均/P50/P90/P95）",
+   "url": "https://github.com/opensourceways/backlog/issues/1210",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Creyson-peng"
+   ],
+   "author": "Creyson-peng",
+   "labels": [
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 4,
+   "createdAt": "2026-07-01",
+   "updatedAt": "2026-07-01",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1200,
+   "title": "昇腾总看板（周报）中闭环率为Issue关闭率，需切换为解决率",
+   "rawTitle": "[需求] 昇腾总看板（周报）中闭环率为Issue关闭率，需切换为解决率",
+   "url": "https://github.com/opensourceways/backlog/issues/1200",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "zeshengzong",
+   "labels": [
+    "accepted",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 5,
+   "createdAt": "2026-07-01",
+   "updatedAt": "2026-07-01",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1172,
    "title": "支持蓝区代码检视区分PR、issue以及评论和回复的能力",
@@ -318,9 +367,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 58,
+   "comments": 61,
    "createdAt": "2026-06-17",
-   "updatedAt": "2026-06-30",
+   "updatedAt": "2026-07-01",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -419,7 +468,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 63,
+   "comments": 79,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-07-01",
    "closedAt": "",
@@ -446,9 +495,9 @@
     "need_ux",
     "need_itest"
    ],
-   "comments": 6,
+   "comments": 8,
    "createdAt": "2026-05-08",
-   "updatedAt": "2026-06-30",
+   "updatedAt": "2026-07-01",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
