@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-01 17:32",
+ "generatedAt": "2026-07-01 22:12",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 69,
@@ -18,10 +18,11 @@
    ],
    "author": "Creyson-peng",
    "labels": [
+    "accepted",
     "task",
     "sig/infratructure"
    ],
-   "comments": 4,
+   "comments": 8,
    "createdAt": "2026-07-01",
    "updatedAt": "2026-07-01",
    "closedAt": "",
@@ -468,7 +469,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 79,
+   "comments": 82,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-07-01",
    "closedAt": "",
@@ -495,7 +496,7 @@
     "need_ux",
     "need_itest"
    ],
-   "comments": 8,
+   "comments": 9,
    "createdAt": "2026-05-08",
    "updatedAt": "2026-07-01",
    "closedAt": "",
