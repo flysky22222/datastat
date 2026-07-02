@@ -1,9 +1,36 @@
 {
- "generatedAt": "2026-07-02 10:31",
+ "generatedAt": "2026-07-02 16:43",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 69,
+ "total": 71,
  "records": [
+  {
+   "number": 1219,
+   "title": "新增采集github平台issue的label事件",
+   "rawTitle": "[需求] 新增采集github平台issue的label事件",
+   "url": "https://github.com/opensourceways/backlog/issues/1219",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 36,
+   "createdAt": "2026-07-02",
+   "updatedAt": "2026-07-02",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1210,
    "title": "NPU折线图增加统计时间范围内的 NPU使用率（平均/P50/P90/P95）",
@@ -22,7 +49,7 @@
     "task",
     "sig/infratructure"
    ],
-   "comments": 11,
+   "comments": 20,
    "createdAt": "2026-07-01",
    "updatedAt": "2026-07-02",
    "closedAt": "",
@@ -295,7 +322,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 14,
+   "comments": 19,
    "createdAt": "2026-06-19",
    "updatedAt": "2026-07-02",
    "closedAt": "",
@@ -471,7 +498,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 85,
+   "comments": 94,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-07-02",
    "closedAt": "",
@@ -495,11 +522,10 @@
     "enhancement",
     "accepted",
     "need_design",
-    "need_security",
     "need_ux",
     "need_itest"
    ],
-   "comments": 27,
+   "comments": 44,
    "createdAt": "2026-05-08",
    "updatedAt": "2026-07-02",
    "closedAt": "",
@@ -529,6 +555,31 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1226,
+   "title": "调整数据中台AI合规标签名称",
+   "rawTitle": "[缺陷] 调整数据中台AI合规标签名称",
+   "url": "https://github.com/opensourceways/backlog/issues/1226",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 4,
+   "createdAt": "2026-07-02",
+   "updatedAt": "2026-07-02",
+   "closedAt": "2026-07-02",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1162,
