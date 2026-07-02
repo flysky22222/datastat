@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-01 22:12",
+ "generatedAt": "2026-07-02 10:31",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 69,
@@ -22,9 +22,9 @@
     "task",
     "sig/infratructure"
    ],
-   "comments": 8,
+   "comments": 11,
    "createdAt": "2026-07-01",
-   "updatedAt": "2026-07-01",
+   "updatedAt": "2026-07-02",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -290,12 +290,14 @@
    ],
    "author": "sunshuang1866",
    "labels": [
+    "accepted",
+    "need_light",
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 6,
+   "comments": 14,
    "createdAt": "2026-06-19",
-   "updatedAt": "2026-06-30",
+   "updatedAt": "2026-07-02",
    "closedAt": "",
    "priority": "Medium",
    "plannedAt": "2026-06-30"
@@ -469,9 +471,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 82,
+   "comments": 85,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-07-01",
+   "updatedAt": "2026-07-02",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -493,12 +495,13 @@
     "enhancement",
     "accepted",
     "need_design",
+    "need_security",
     "need_ux",
     "need_itest"
    ],
-   "comments": 9,
+   "comments": 27,
    "createdAt": "2026-05-08",
-   "updatedAt": "2026-07-01",
+   "updatedAt": "2026-07-02",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
