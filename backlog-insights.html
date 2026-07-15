@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backlog 全量 Issue 洞察 · 2026 至今</title>
+  <meta name="description" content="opensourceways/backlog 自 2026-01-01 起全量 issue 洞察：类型/状态分布、按月趋势、AI 需求流水线交互轮次正态分布" />
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  <style>
+    :root{
+      --bg:#f4f5f7; --card:#fff; --line:rgba(0,0,0,.08);
+      --t1:rgba(0,0,0,.85); --t2:rgba(0,0,0,.6); --t3:rgba(0,0,0,.45);
+      --blue:#002fa7; --accent:#5470c6;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--t1)}
+    a{color:var(--blue);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .site-header{background:linear-gradient(120deg,#002fa7,#3a5bd0);color:#fff;padding:20px 0}
+    .inner{max-width:1360px;margin:0 auto;padding:0 24px}
+    .site-header .inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .site-header h1{margin:0;font-size:22px}
+    .site-header p{margin:4px 0 0;font-size:13px;opacity:.85}
+    .site-header .meta{font-size:12px;opacity:.9;text-align:right}
+    .site-header .meta a{color:#fff;text-decoration:underline}
+    main{max-width:1360px;margin:0 auto;padding:22px 24px 60px}
+    .row-title{display:flex;align-items:baseline;gap:10px;margin:26px 2px 12px}
+    .row-title h2{margin:0;font-size:17px;color:var(--t1)}
+    .row-title span{font-size:12px;color:var(--t3)}
+    .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px}
+    .kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+    .kpi .k{font-size:12px;color:var(--t3)}
+    .kpi .v{font-size:26px;font-weight:700;margin-top:4px}
+    .kpi .v small{font-size:13px;font-weight:500;color:var(--t2);margin-left:4px}
+    .grid{display:grid;gap:16px}
+    .g2{grid-template-columns:repeat(2,1fr)}
+    .g3{grid-template-columns:repeat(3,1fr)}
+    @media(max-width:1000px){.g2,.g3{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 16px 8px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+    .card h3{margin:0 0 4px;font-size:14px;color:var(--t1)}
+    .card .sub{font-size:12px;color:var(--t3);margin:0 0 8px}
+    .chart{width:100%;height:320px}
+    .chart.tall{height:360px}
+    .controls{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:14px}
+    .ctl{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--t2)}
+    .ctl label{color:var(--t3)}
+    .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+    .seg button{border:0;background:#fff;padding:6px 12px;font-size:13px;color:var(--t2);cursor:pointer}
+    .seg button.active{background:var(--blue);color:#fff}
+    select{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:13px;background:#fff;color:var(--t1)}
+    footer{max-width:1360px;margin:0 auto;padding:0 24px 40px;color:var(--t3);font-size:12px}
+    code{background:#eef0f3;padding:1px 5px;border-radius:4px;font-size:12px}
+    .err{background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px;text-align:center;color:#ee6666}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <div>
+        <h1>Backlog 全量 Issue 洞察</h1>
+        <p>opensourceways/backlog · 创建时间 2026-01-01 至今 · 类型 / 状态 / 按月趋势 / AI 流水线交互轮次</p>
+      </div>
+      <div class="meta">
+        <div id="genAt"></div>
+        <div><a href="./" >← 数据中台需求看板</a> · <a href="https://github.com/opensourceways/backlog/issues" target="_blank" rel="noopener">backlog ↗</a></div>
+      </div>
+    </div>
+  </header>
+
+  <main id="app">
+    <div id="err" class="err" hidden></div>
+
+    <!-- ── 第一排：总览 ── -->
+    <div class="row-title"><h2>① 总览</h2><span id="ov-scope"></span></div>
+    <div class="kpis" id="kpis"></div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card"><h3>各类型 · AI 参与占比</h3><p class="sub">需求 / 缺陷 / 任务 / CVE / 其他，蓝=进过 AI 流水线、灰=未进；点击钻取</p><div id="c-type" class="chart"></div></div>
+      <div class="card"><h3>整体 AI 渗透率</h3><p class="sub">全部 issue 中「AI 参与（有流程标记）」的占比</p><div id="c-state" class="chart"></div></div>
+    </div>
+    <div class="card" style="margin-top:16px"><h3>需求交付漏斗 · AI 贡献</h3><p class="sub">总需求 → 已关闭需求 → 其中 AI 参与（进过流水线）的关闭需求；点击看具体 issue</p><div id="c-funnel" class="chart"></div></div>
+
+    <!-- ── 第二排：按月趋势 ── -->
+    <div class="row-title"><h2>② 按月趋势（AI 参与）</h2><span>默认按 AI 参与堆叠；可切「按类型」（叠加 AI 折线）或「AI/非AI 需求」、按状态筛选</span></div>
+    <div class="controls">
+      <div class="ctl"><label>维度</label>
+        <div class="seg" id="seg-dim">
+          <button data-v="aipart" class="active">按 AI 参与</button>
+          <button data-v="type">按类型</button>
+          <button data-v="ai">AI/非AI 需求</button>
+        </div>
+      </div>
+      <div class="ctl"><label>状态</label>
+        <div class="seg" id="seg-state">
+          <button data-v="all" class="active">全部</button>
+          <button data-v="open">仅 open</button>
+          <button data-v="closed">仅 closed</button>
+        </div>
+      </div>
+    </div>
+    <div class="grid g2">
+      <div class="card"><h3>每月新增 issue</h3><p class="sub" id="sub-new">按创建月</p><div id="c-new" class="chart tall"></div></div>
+      <div class="card"><h3>每月关闭 issue</h3><p class="sub">按关闭月（仅已关闭）</p><div id="c-closed" class="chart tall"></div></div>
+    </div>
+
+    <!-- ── 第三排：AI 流水线交互轮次 ── -->
+    <div class="row-title"><h2>③ AI 流水线交互轮次</h2><span>机器人流程标记 🟢[N] 的阶段启动次数（含 accepted 自动触发，非仅 /命令）· 实现=开发预览+提交</span></div>
+    <div class="controls">
+      <div class="ctl"><label>类型</label>
+        <div class="seg" id="seg-scope">
+          <button data-v="all" class="active">全部</button>
+          <button data-v="需求">需求</button>
+          <button data-v="缺陷">缺陷</button>
+          <button data-v="任务">任务</button>
+        </div>
+      </div>
+      <div class="ctl"><label>服务</label><select id="sel-svc"></select></div>
+      <div class="ctl"><label>月份</label><select id="sel-month"></select></div>
+    </div>
+    <div class="grid g2">
+      <div class="card"><h3>各阶段命令总次数</h3><p class="sub">分析 <code>/ai-requirement-analysis</code> · 实现 <code>/ai-develop-preview</code> · 上线测试 <code>/ai-deploy-test</code> · 发布 <code>/ai-release-plan</code></p><div id="c-stage" class="chart"></div></div>
+      <div class="card"><h3>各阶段命令 · 按月</h3><p class="sub">堆叠 = 四个阶段</p><div id="c-stage-month" class="chart"></div></div>
+    </div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card"><h3>各阶段命令 · 按服务（Top 12）</h3><p class="sub">target: / project: 归属</p><div id="c-stage-svc" class="chart tall"></div></div>
+      <div class="card">
+        <h3>交互轮次正态分布</h3>
+        <p class="sub">横轴 = 该 issue 的轮次数，纵轴 = issue 个数
+          <span class="seg" id="seg-stage" style="margin-left:8px">
+            <button data-v="total" class="active">总轮次</button>
+            <button data-v="analyze">分析</button>
+            <button data-v="implement">实现</button>
+            <button data-v="deploy">上线测试</button>
+            <button data-v="release">发布</button>
+          </span>
+        </p>
+        <div id="c-dist" class="chart tall"></div>
+      </div>
+    </div>
+    <!-- ── 第四排：场景成熟度全景 ── -->
+    <div class="row-title"><h2>④ 场景成熟度全景</h2><span>气泡=场景 · 位置看 AI 表现 · 大小看需求量 · 颜色看成熟度，据此逐步实现</span></div>
+    <div class="controls" style="gap:8px 18px">
+      <div class="ctl"><span style="color:#3ba272;font-weight:700">🟢 已能完成</span> 关闭率≥50%</div>
+      <div class="ctl"><span style="color:#fac858;font-weight:700">🟡 优化可完成</span> 关闭率 25–50% / 摩擦偏大</div>
+      <div class="ctl"><span style="color:#ee6666;font-weight:700">🔴 还差很远</span> 关闭率&lt;25%</div>
+    </div>
+    <div class="grid g2">
+      <div class="card"><h3>场景成熟度矩阵</h3><p class="sub">横轴=平均实现轮次（越左 AI 越省力）· 纵轴=已关闭占比（越高越能交付）· 气泡大小=该场景 issue 总量</p><div id="c-matrix" class="chart tall"></div></div>
+      <div class="card"><h3>需求量 vs AI 已覆盖</h3><p class="sub">灰=该场景全部 issue，蓝=已进 AI 流水线（有交互）的，差值=待 AI 化空间</p><div id="c-coverage" class="chart tall"></div></div>
+    </div>
+
+    <!-- ── 第五排：按服务的 Issue 分布 ── -->
+    <div class="row-title"><h2>⑤ 按服务的 Issue 分布</h2><span>每个服务的总量、open/closed、AI 参与情况；可切换堆叠维度</span></div>
+    <div class="controls">
+      <div class="ctl"><label>堆叠维度</label>
+        <div class="seg" id="seg-svcdim">
+          <button data-v="state" class="active">按状态 open/closed</button>
+          <button data-v="ai">按 AI 参与</button>
+        </div>
+      </div>
+      <div class="ctl"><label>类型</label>
+        <div class="seg" id="seg-svctype">
+          <button data-v="all" class="active">全部</button>
+          <button data-v="需求">需求</button>
+          <button data-v="缺陷">缺陷</button>
+          <button data-v="任务">任务</button>
+        </div>
+      </div>
+    </div>
+    <div class="card"><h3>各服务 Issue 数（Top 20，按总量降序）</h3><p class="sub">条尾数字=总数 · 悬浮看 open/closed/AI参与/非AI参与 全量 · 点击钻取具体 issue。「AI 参与」= 该 issue 进过 AI 流水线（有流程标记）</p><div id="c-svc-dist" class="chart" style="height:560px"></div></div>
+
+    <!-- ── 第六排：文字分析总结 ── -->
+    <div class="row-title"><h2>⑥ 分析总结（文字）</h2><span>场景分层 · 轮次多少的原因 · 待改动 · Action 时长</span></div>
+    <div class="card" style="line-height:1.85;font-size:14px;color:var(--t1)">
+      <h3 style="margin-top:4px">一、一共 8 类场景（+「其他/未分」兜底）</h3>
+      <p>按任务性质把全部 issue 归成 8 个场景：<b>前端看板/UI、数据/指标、机器人/自动化、CI/部署、安全/CVE、接口/API、会议、文档/流程</b>，另有「其他/未分」作兜底。核心指标是<b>「实现轮次」= 让 AI 把功能做对要反复戳 <code>/ai-develop-preview</code> 几轮</b>（来自机器人流程标记 🟢[2]，含 accepted 自动触发），配合「关闭率」判断到底交付没交付。</p>
+
+      <h3>二、轮次少 / 适中 / 多</h3>
+      <p><b>🟩 轮次少（实现轮 ≤ 3.5）：</b>会议(2.3)、接口/API(3.2)、安全/CVE(3.6)、CI/部署(2.0)、文档/流程(0)。<br/>
+      <b>🟨 适中（3.5–7）：</b>其他/未分(3.7)、数据/指标(6.8)。<br/>
+      <b>🟥 轮次多（&gt; 7）：</b>前端看板/UI(10.3)、机器人/自动化(11.0)。</p>
+
+      <h3>三、为什么少 / 为什么多（关键：别把「轮次少」都当好事）</h3>
+      <p><b>「少」其实分两种，靠关闭率区分：</b></p>
+      <ul>
+        <li><b>真·省力（少 + 能交付）：</b>会议(2.3 轮 / 关闭 50%)、接口/API(3.2 / 38%)。任务边界清晰、有明确验收（接口有契约、会议是定式），AI 一两轮就收敛。</li>
+        <li><b>假·省力（少 + 交付不了）：</b>CI/部署(2.0 轮 / 关闭 <b>11%</b>)、安全/CVE(3.6 / <b>0%</b>)、文档/流程(0 / 0%)。<b>轮次少不是因为简单，是 AI 根本接不动</b>——试一两下没进展就停、最后靠人工兜底，所以既轮次低又几乎没关闭。这类是真短板。</li>
+      </ul>
+      <p><b>「多」的原因是「复杂 + 缺自动反馈闭环」：</b></p>
+      <ul>
+        <li><b>前端看板/UI(10.3 轮，但关闭 53%)：</b>AI <b>看不到渲染效果</b>，配色/布局/交互对不对只能人肉看预览截图再喊下一轮 → 摩擦最大；好在最终能交付。</li>
+        <li><b>机器人/自动化(11.0 轮，关闭仅 22%)：</b>RAG/对话「回得好不好」<b>没有确定性断言</b>，得人反复主观评判 → 轮次爆炸且常常收不了尾。</li>
+        <li><b>数据/指标(6.8，适中)：</b>有一定可验性（产出结果集能对拍）但逻辑复杂，居中。</li>
+      </ul>
+
+      <h3>四、还需要做哪些改动</h3>
+      <ul>
+        <li><b>轮次多的（UI / 机器人）→ 给 AI 装「自动反馈」：</b>UI 场景做<b>预览自动截图 + 视觉 diff 回灌</b>，让 AI 自判页面对不对，把 10 轮压到 2–3 轮；机器人场景建<b>离线评测集 + 自动打分</b>，替代人肉评判。</li>
+        <li><b>适中的（数据/指标）→ 加「产出对拍断言」：</b>预期结果集比对，让 AI 有确定性反馈自收敛。</li>
+        <li><b>假省力的（CI/部署、安全CVE、文档）→ 补「专用能力」，别硬塞通用 dev agent：</b>CI 需 deploy agent + 环境自愈；CVE 需依赖图谱 + 补丁映射 + 升级回归；这些是能力缺口，不是调提示词能解决的。</li>
+        <li><b>治理前提：</b>约 390 个 issue 没打 <code>target/project</code> 服务标签，AI 渗透仅 18% —— 先补服务归属，才能按服务运营。</li>
+      </ul>
+
+      <h3>五、Action（流水线）时长分析</h3>
+      <p>各阶段 GitHub Actions 单次运行时长（近 100 次成功 run 统计）：</p>
+      <ul>
+        <li><b>需求分析</b>：中位 <b>10 min</b>（p90 15、max 21）</li>
+        <li><b>开发实现</b>：中位 <b>20 min</b>（p90 <b>57</b>、max 81）—— 绝对大头</li>
+        <li><b>发布上线</b>：中位 4 min（p90 18）</li>
+        <li><b>事件分发</b>：秒级（中位 0.3 min）</li>
+      </ul>
+      <p><b>把轮次 × 单次时长换算成每个 issue 的「实现流水线机时」：</b>前端看板 ≈ 10.3 轮 × 20 min ≈ <b>3.4 小时/issue</b>；机器人 ≈ 11 轮 × 20 min ≈ <b>3.7 小时/issue</b>；数据/指标 ≈ 6.8 × 20 ≈ 2.3 小时。这还没算人盯着看预览、写反馈的等待时间。<b>所以降轮次不只是体验问题——直接省 Actions 机时 + 人力：前端看板若从 10 轮压到 3 轮，每个 issue 省约 2.3 小时流水线时间。</b>优化优先级应对齐「轮次 × 时长 × issue 数」最大的场景，即<b>前端看板 UI</b>（66 个 issue × 3.4h）和<b>机器人</b>（36 × 3.7h）。</p>
+    </div>
+
+    <!-- ── 点击图表钻取明细 ── -->
+    <div id="detail" class="card" style="margin-top:22px" hidden>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <h3 id="detail-title" style="margin:0">明细</h3>
+        <button id="detail-close" style="border:1px solid var(--line);background:#fff;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:13px;color:var(--t2)">收起 ✕</button>
+      </div>
+      <p class="sub" style="margin:6px 0 10px">点击上方任意柱子 / 气泡即可核对该分组下的具体 issue（按总轮次降序）。<b>标题已去敏留空</b>（源自私有仓，公开页面不展示）；有权限者可点 <code>#编号</code> 打开原 issue 核对。</p>
+      <div style="overflow-x:auto">
+        <table id="detail-table" style="width:100%;border-collapse:collapse;font-size:13px"></table>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    数据聚合自 <code>opensourceways/backlog</code> 全量 issue（创建时间 ≥ 2026-01-01，含 open/closed），由 <code>scripts/build_backlog_insights.py</code> 经 GraphQL 生成，每 6 小时刷新。
+    「AI 需求」= 类型为需求且有非机器人评论过 <code>/ai-develop-preview</code>；机器人（flysky22222 / 3333 / github-actions）评论不计入轮次。
+    <br/><b>隐私说明：</b>源仓为私有仓，本页仅公开<b>聚合统计</b>（数量 / 轮次 / 占比 / 场景 / 时长）与 issue 编号；<b>不公开</b> issue 标题、提交人 / 负责人账号等明细内容。
+  </footer>
+
+  <script src="./backlog-insights.js?v=1"></script>
+</body>
+</html>

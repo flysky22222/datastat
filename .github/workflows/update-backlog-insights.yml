@@ -1,0 +1,43 @@
+name: 更新 Backlog 全量 Issue 洞察数据
+
+# 每 6 小时刷新 backlog-insights.json（GraphQL，约 12 次调用，省 API 配额）；也可手动触发
+on:
+  schedule:
+    - cron: '30 */6 * * *'   # 与 update-data 错开半小时，避开同时打 API
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-backlog-insights
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 生成 backlog-insights.json（GraphQL，极省 API）
+        env:
+          BACKLOG_TOKEN: ${{ secrets.BACKLOG_TOKEN }}
+        run: python scripts/build_backlog_insights.py
+
+      - name: 有变化才提交
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- backlog-insights.json; then
+            echo "backlog-insights.json 无变化，跳过提交"
+          else
+            git add backlog-insights.json
+            git commit -m "chore: 定时刷新 backlog 全量 issue 洞察数据 [skip ci]"
+            git push
+          fi

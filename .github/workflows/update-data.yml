@@ -1,0 +1,43 @@
+name: 更新数据中台需求数据
+
+# 每 6 小时自动刷新 data.json；也可手动触发
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # UTC 00/06/12/18 点，每 6 小时一次
+  workflow_dispatch:
+
+permissions:
+  contents: write            # 允许提交回 data.json
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 生成 data.json（单次 GraphQL 调用，省 API 配额）
+        env:
+          BACKLOG_TOKEN: ${{ secrets.BACKLOG_TOKEN }}   # 读 opensourceways/backlog 的 token，存在仓库 Secret
+        run: python scripts/build_data.py
+
+      - name: 有变化才提交
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data.json; then
+            echo "data.json 无变化，跳过提交"
+          else
+            git add data.json
+            git commit -m "chore: 定时刷新数据中台需求数据 [skip ci]"
+            git push
+          fi
