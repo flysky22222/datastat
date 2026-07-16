@@ -1,0 +1,149 @@
+(() => {
+  "use strict";
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const charts = {};
+  const ec = id => charts[id] || (charts[id] = echarts.init(document.getElementById(id)));
+  window.addEventListener("resize", () => Object.values(charts).forEach(c => c.resize()));
+
+  const CATCOLOR = {
+    KNOWLEDGE_MISSING: "#5470c6", OUTPUT_WRONG: "#ee6666", SKILL_MISSING: "#3a5bd0", CLAUDEMD_MISSING: "#9a60b4",
+    PREVIEW_FAILED: "#fac858", CI_GATE: "#fc8452", REQUIREMENT_VAGUE: "#73c0de", UI_NO_FEEDBACK: "#5aa9c9",
+    DATA_MISSING: "#91cc75", ROBOT_QUALITY: "#ea7ccc", OTHER: "#bbb",
+  };
+  const STAGECOLOR = { "需求分析": "#73c0de", "开发预览": "#5470c6", "开发提交": "#9a60b4", "测试发布": "#fac858", "正式上线": "#3ba272", "AI引擎故障": "#ee6666", "服务解析/开发": "#fc8452", "其他": "#bbb" };
+  let D;
+
+  fetch("./backlog-ai-problems.json?t=" + Date.now())
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => { D = d; init(); })
+    .catch(e => { const el = $("#err"); el.style.display = "block"; el.textContent = "数据加载失败:" + e; });
+
+  function init() {
+    $("#genAt").textContent = "生成于 " + D.generatedAt;
+    renderKpis(); renderTop3(); renderCat(); renderPrimary(); renderStage(); renderFailStage(); renderSvc();
+    initTable();
+  }
+
+  function renderKpis() {
+    const failSum = Object.values(D.fail_stage || {}).reduce((a, b) => a + b, 0);
+    const cards = [
+      ["重点 issue", D.n_issues, "AI且≥7轮"],
+      ["估算总耗时", D.total_hours + "h", "≈" + Math.round(D.total_hours / 8) + " 人日"],
+      ["失败 Action", D.total_fail_actions, "含重试"],
+      ["收敛率", Math.round(D.closed / D.n_issues * 100) + "%", D.closed + "/" + D.n_issues + " 完成"],
+      ["未完成", D.n_issues - D.closed, "至今未closed"],
+    ];
+    $("#kpis").innerHTML = cards.map(([k, v, s]) => `<div class="kpi"><div class="k">${k}</div><div class="v">${v}${s ? `<small>${s}</small>` : ""}</div></div>`).join("");
+  }
+
+  // TOP3 按根因合并
+  function renderTop3() {
+    const rw = D.rounds_weighted, tot = Object.values(rw).reduce((a, b) => a + b, 0);
+    const g = codes => codes.reduce((a, c) => a + (rw[c] || 0), 0);
+    const groups = [
+      { color: "#ee6666", name: "AI 缺领域知识 → 实现不对", codes: ["OUTPUT_WRONG", "KNOWLEDGE_MISSING", "SKILL_MISSING", "CLAUDEMD_MISSING"],
+        pts: ["AI 不知道表/接口/字段/仓库约定(哪张表、is_resolved 字段、清洗规则顺序、改仓库列表≠改 health.yaml)", "于是实现错、交占位符、污染无关子仓,人一轮轮喂口径纠正", "解法:把领域知识/同构复用索引/新增社区清单固化进 CLAUDE.md+skill+知识库"] },
+      { color: "#fac858", name: "流水线 / 环境不稳", codes: ["PREVIEW_FAILED", "CI_GATE"],
+        pts: ["预览 pod 起不来/CrashLoop/no-kubeconfig、AI 引擎 token 失效 rc=127、门禁(覆盖率/分支命名/trivy)反复红", "纯基础设施,与 AI 推理无关,却烧掉大量轮次(#926 force 30+次、#1309 极简功能连发十余次)", "解法:预览部署稳定性 + 引擎额度/鉴权可靠性 + 门禁与 AI 分支/环境兼容"] },
+      { color: "#73c0de", name: "需求模糊 / 边做边加", codes: ["REQUIREMENT_VAGUE", "UI_NO_FEEDBACK", "DATA_MISSING"],
+        pts: ["需求在预览阶段才逐版成形、单 issue 塞多模块、UI 要看到才提、预览无数据验不了", "解法:需求侧先拆分/定清验收口径,前端装视觉回灌,预览自动灌测试数据"] },
+    ];
+    $("#top3").innerHTML = groups.map((gr, i) => {
+      const pct = Math.round(g(gr.codes) / tot * 100);
+      return `<div class="t3" style="border-left-color:${gr.color}">
+        <div class="rank">TOP ${i + 1}</div><div class="name">${gr.name}</div>
+        <div class="pct">占消耗 <b style="color:${gr.color};font-size:18px">${pct}%</b></div>
+        <ul>${gr.pts.map(p => `<li>${esc(p)}</li>`).join("")}</ul></div>`;
+    }).join("");
+  }
+
+  function renderCat() {
+    const rw = D.rounds_weighted;
+    const arr = Object.entries(rw).sort((a, b) => b[1] - a[1]);
+    const tot = arr.reduce((a, x) => a + x[1], 0);
+    ec("c-cat").setOption({
+      grid: { left: 130, right: 50, top: 10, bottom: 20 },
+      tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: p => `${p[0].name}: ${p[0].value}轮 (${(p[0].value / tot * 100).toFixed(0)}%)` },
+      xAxis: { type: "value" }, yAxis: { type: "category", data: arr.map(x => D.cn[x[0]]).reverse() },
+      series: [{ type: "bar", data: arr.map(x => ({ value: x[1], itemStyle: { color: CATCOLOR[x[0]] || "#888" } })).reverse(), barMaxWidth: 20, label: { show: true, position: "right", formatter: p => (p.value / tot * 100).toFixed(0) + "%" } }],
+    });
+  }
+
+  function renderPrimary() {
+    const codes = Object.keys(D.primary_by_n).sort((a, b) => D.primary_by_h[b] - D.primary_by_h[a]);
+    ec("c-primary").setOption({
+      tooltip: { trigger: "axis", axisPointer: { type: "shadow" } }, legend: { bottom: 0 },
+      grid: { left: 40, right: 20, top: 20, bottom: 60 },
+      xAxis: { type: "category", data: codes.map(c => D.cn[c]), axisLabel: { interval: 0, rotate: 30, fontSize: 10 } },
+      yAxis: [{ type: "value", name: "issue数" }, { type: "value", name: "小时" }],
+      series: [
+        { name: "issue数", type: "bar", data: codes.map(c => D.primary_by_n[c]), itemStyle: { color: "#5470c6" }, barMaxWidth: 26 },
+        { name: "估耗时h", type: "line", yAxisIndex: 1, data: codes.map(c => D.primary_by_h[c]), itemStyle: { color: "#ee6666" }, smooth: true },
+      ],
+    });
+  }
+
+  function renderStage() {
+    const sc = D.stage_cn || {}, sb = D.stage_bottleneck;
+    const data = Object.entries(sb).map(([k, v]) => ({ name: sc[k] || k, value: v }));
+    ec("c-stage").setOption({
+      tooltip: { trigger: "item", formatter: "{b}: {c} ({d}%)" }, legend: { bottom: 0, type: "scroll" },
+      series: [{ type: "pie", radius: ["40%", "68%"], center: ["50%", "44%"], label: { formatter: "{b}\n{c}" },
+        data: data.map(x => ({ ...x, itemStyle: { color: STAGECOLOR[x.name] || "#888" } })) }],
+    });
+  }
+
+  function renderFailStage() {
+    const fs = D.fail_stage || {};
+    const arr = Object.entries(fs).sort((a, b) => b[1] - a[1]);
+    $("#failN").textContent = arr.reduce((a, x) => a + x[1], 0);
+    ec("c-failstage").setOption({
+      grid: { left: 100, right: 40, top: 10, bottom: 20 },
+      tooltip: { trigger: "axis", axisPointer: { type: "shadow" } },
+      xAxis: { type: "value" }, yAxis: { type: "category", data: arr.map(x => x[0]).reverse() },
+      series: [{ type: "bar", barMaxWidth: 22, data: arr.map(x => ({ value: x[1], itemStyle: { color: STAGECOLOR[x[0]] || "#888" } })).reverse(), label: { show: true, position: "right" } }],
+    });
+  }
+
+  function renderSvc() {
+    const svc = D.service.slice(0, 15).reverse();
+    ec("c-svc").setOption({
+      grid: { left: 150, right: 60, top: 10, bottom: 40 },
+      tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: p => { const s = svc[p[0].dataIndex]; return `${s.svc}<br/>${s.n} 个 issue · ${s.h}h<br/>主问题: ${D.cn[s.primary]}`; } },
+      xAxis: { type: "value", name: "估耗时(h)" }, yAxis: { type: "category", data: svc.map(s => s.svc) },
+      series: [{ type: "bar", barMaxWidth: 20, data: svc.map(s => ({ value: s.h, itemStyle: { color: CATCOLOR[s.primary] || "#888" } })), label: { show: true, position: "right", formatter: p => svc[p.dataIndex].n + "个/" + p.value + "h" } }],
+    });
+    // 颜色图例说明
+  }
+
+  // ── 表格 ──
+  let sortKey = "rounds", sortDir = -1, fSvc = "__all__", fPri = "__all__";
+  function initTable() {
+    const svcs = [...new Set(D.issues.map(i => i.service))].sort();
+    $("#f-svc").innerHTML = '<option value="__all__">全部服务</option>' + svcs.map(s => `<option>${esc(s)}</option>`).join("");
+    const pris = [...new Set(D.issues.map(i => i.primary))];
+    $("#f-primary").innerHTML = '<option value="__all__">全部主问题</option>' + pris.map(p => `<option value="${p}">${esc(D.cn[p])}</option>`).join("");
+    $("#f-svc").addEventListener("change", e => { fSvc = e.target.value; drawTable(); });
+    $("#f-primary").addEventListener("change", e => { fPri = e.target.value; drawTable(); });
+    drawTable();
+  }
+  function drawTable() {
+    let rows = D.issues.slice();
+    if (fSvc !== "__all__") rows = rows.filter(r => r.service === fSvc);
+    if (fPri !== "__all__") rows = rows.filter(r => r.primary === fPri);
+    rows.sort((a, b) => { const va = a[sortKey], vb = b[sortKey]; return (va < vb ? -1 : va > vb ? 1 : 0) * sortDir; });
+    $("#cnt").textContent = `共 ${rows.length} 条`;
+    const cols = [["n", "#"], ["service", "服务"], ["type", "类型"], ["scenario", "场景"], ["rounds", "轮次"], ["time_h", "估h"], ["stage", "断点"], ["primary", "主问题"], ["fail_count", "失败Action"], ["succeeded", "完成"]];
+    const th = cols.map(([k, l]) => `<th data-k="${k}">${l}${sortKey === k ? (sortDir < 0 ? " ▾" : " ▴") : ""}</th>`).join("");
+    const body = rows.map(r => `<tr>
+      <td><a href="https://github.com/opensourceways/backlog/issues/${r.n}" target="_blank" rel="noopener">#${r.n}</a></td>
+      <td style="color:var(--t2)">${esc(r.service)}</td><td>${esc(r.type)}</td><td style="color:var(--t3)">${esc(r.scenario)}</td>
+      <td style="font-weight:600">${r.rounds}</td><td>${r.time_h}</td><td>${esc(D.stage_cn[r.stage] || r.stage)}</td>
+      <td><span class="pill" style="background:${CATCOLOR[r.primary] || "#888"}">${esc(D.cn[r.primary])}</span></td>
+      <td style="text-align:center">${r.fail_count || ""}</td>
+      <td style="text-align:center">${r.succeeded ? "✅" : "⛔"}</td></tr>`).join("");
+    const t = $("#tbl"); t.innerHTML = `<thead><tr>${th}</tr></thead><tbody>${body}</tbody>`;
+    t.querySelectorAll("th").forEach(el => el.addEventListener("click", () => { const k = el.dataset.k; if (sortKey === k) sortDir = -sortDir; else { sortKey = k; sortDir = -1; } drawTable(); }));
+  }
+})();

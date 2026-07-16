@@ -1,0 +1,2164 @@
+{
+ "generatedAt": "20260716225856",
+ "n_issues": 78,
+ "total_hours": 564,
+ "closed": 34,
+ "cn": {
+  "KNOWLEDGE_MISSING": "缺知识/领域上下文",
+  "SKILL_MISSING": "缺skill/操作清单",
+  "CLAUDEMD_MISSING": "缺CLAUDE.md约定",
+  "OUTPUT_WRONG": "实现功能不对",
+  "UI_NO_FEEDBACK": "UI看不到效果反复",
+  "PREVIEW_FAILED": "预览/部署起不来",
+  "DATA_MISSING": "预览无数据/权限",
+  "REQUIREMENT_VAGUE": "需求模糊/边做边加",
+  "ROBOT_QUALITY": "机器人产出无自动判定",
+  "CI_GATE": "门禁/UT/覆盖率反复红",
+  "OTHER": "其他(流程/工具噪声)"
+ },
+ "stage_cn": {
+  "implement": "实现",
+  "preview": "预览",
+  "analyze": "需求分析",
+  "deploy": "测试发布",
+  "submit": "开发提交",
+  "release": "发布上线"
+ },
+ "primary_by_n": {
+  "PREVIEW_FAILED": 11,
+  "KNOWLEDGE_MISSING": 16,
+  "REQUIREMENT_VAGUE": 10,
+  "SKILL_MISSING": 2,
+  "OUTPUT_WRONG": 18,
+  "CI_GATE": 10,
+  "OTHER": 3,
+  "ROBOT_QUALITY": 5,
+  "CLAUDEMD_MISSING": 2,
+  "DATA_MISSING": 1
+ },
+ "primary_by_h": {
+  "PREVIEW_FAILED": 87,
+  "KNOWLEDGE_MISSING": 146,
+  "REQUIREMENT_VAGUE": 57,
+  "SKILL_MISSING": 41,
+  "OUTPUT_WRONG": 132,
+  "CI_GATE": 51,
+  "OTHER": 24,
+  "ROBOT_QUALITY": 11,
+  "CLAUDEMD_MISSING": 10,
+  "DATA_MISSING": 5
+ },
+ "rounds_weighted": {
+  "PREVIEW_FAILED": 262,
+  "KNOWLEDGE_MISSING": 257,
+  "OUTPUT_WRONG": 354,
+  "CI_GATE": 195,
+  "DATA_MISSING": 35,
+  "CLAUDEMD_MISSING": 26,
+  "REQUIREMENT_VAGUE": 167,
+  "OTHER": 77,
+  "SKILL_MISSING": 71,
+  "UI_NO_FEEDBACK": 24,
+  "ROBOT_QUALITY": 63
+ },
+ "stage_bottleneck": {
+  "preview": 22,
+  "implement": 27,
+  "deploy": 9,
+  "analyze": 13,
+  "submit": 6,
+  "release": 1
+ },
+ "service": [
+  {
+   "svc": "om-datacenter",
+   "n": 38,
+   "h": 320,
+   "primary": "KNOWLEDGE_MISSING"
+  },
+  {
+   "svc": "forum-reply-robot",
+   "n": 5,
+   "h": 79,
+   "primary": "PREVIEW_FAILED"
+  },
+  {
+   "svc": "community-robots",
+   "n": 13,
+   "h": 56,
+   "primary": "CI_GATE"
+  },
+  {
+   "svc": "ascend-ci-project",
+   "n": 6,
+   "h": 25,
+   "primary": "KNOWLEDGE_MISSING"
+  },
+  {
+   "svc": "hotopic-all",
+   "n": 3,
+   "h": 18,
+   "primary": "PREVIEW_FAILED"
+  },
+  {
+   "svc": "om-webserver",
+   "n": 2,
+   "h": 15,
+   "primary": "CI_GATE"
+  },
+  {
+   "svc": "xihe-all",
+   "n": 1,
+   "h": 13,
+   "primary": "PREVIEW_FAILED"
+  },
+  {
+   "svc": "security-cve-all",
+   "n": 2,
+   "h": 9,
+   "primary": "REQUIREMENT_VAGUE"
+  },
+  {
+   "svc": "cla-all",
+   "n": 1,
+   "h": 8,
+   "primary": "PREVIEW_FAILED"
+  },
+  {
+   "svc": "meeting-server",
+   "n": 2,
+   "h": 6,
+   "primary": "PREVIEW_FAILED"
+  },
+  {
+   "svc": "oneid-all",
+   "n": 1,
+   "h": 5,
+   "primary": "OTHER"
+  },
+  {
+   "svc": "pod_exporter_monitoring",
+   "n": 1,
+   "h": 3,
+   "primary": "CI_GATE"
+  },
+  {
+   "svc": "patch-manager",
+   "n": 1,
+   "h": 3,
+   "primary": "OUTPUT_WRONG"
+  },
+  {
+   "svc": "oss-map",
+   "n": 1,
+   "h": 2,
+   "primary": "ROBOT_QUALITY"
+  },
+  {
+   "svc": "未分服务",
+   "n": 1,
+   "h": 1,
+   "primary": "REQUIREMENT_VAGUE"
+  }
+ ],
+ "total_fail_actions": 720,
+ "issues": [
+  {
+   "n": 785,
+   "service": "forum-reply-robot",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 90,
+   "time_h": 24.7,
+   "stage": "preview",
+   "primary": "PREVIEW_FAILED",
+   "succeeded": false,
+   "fail_count": 45,
+   "cats": [
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 30
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 12
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 10
+    },
+    {
+     "c": "CI_GATE",
+     "r": 8
+    }
+   ]
+  },
+  {
+   "n": 927,
+   "service": "om-datacenter",
+   "type": "缺陷",
+   "scenario": "前端看板/UI",
+   "rounds": 88,
+   "time_h": 29.2,
+   "stage": "implement",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": true,
+   "fail_count": 26,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 20
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 15
+    },
+    {
+     "c": "DATA_MISSING",
+     "r": 4
+    },
+    {
+     "c": "CI_GATE",
+     "r": 4
+    }
+   ]
+  },
+  {
+   "n": 489,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "其他/未分",
+   "rounds": 86,
+   "time_h": 28.2,
+   "stage": "implement",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": true,
+   "fail_count": 27,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 25
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 12
+    },
+    {
+     "c": "CLAUDEMD_MISSING",
+     "r": 8
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 6
+    }
+   ]
+  },
+  {
+   "n": 921,
+   "service": "forum-reply-robot",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 84,
+   "time_h": 22.2,
+   "stage": "implement",
+   "primary": "REQUIREMENT_VAGUE",
+   "succeeded": false,
+   "fail_count": 27,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 20
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 15
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 12
+    },
+    {
+     "c": "CI_GATE",
+     "r": 8
+    }
+   ]
+  },
+  {
+   "n": 926,
+   "service": "xihe-all",
+   "type": "任务",
+   "scenario": "安全/CVE",
+   "rounds": 83,
+   "time_h": 13.3,
+   "stage": "deploy",
+   "primary": "PREVIEW_FAILED",
+   "succeeded": false,
+   "fail_count": 54,
+   "cats": [
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 43
+    },
+    {
+     "c": "CI_GATE",
+     "r": 20
+    },
+    {
+     "c": "OTHER",
+     "r": 11
+    }
+   ]
+  },
+  {
+   "n": 909,
+   "service": "cla-all",
+   "type": "其他",
+   "scenario": "其他/未分",
+   "rounds": 82,
+   "time_h": 8.2,
+   "stage": "deploy",
+   "primary": "PREVIEW_FAILED",
+   "succeeded": false,
+   "fail_count": 50,
+   "cats": [
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 45
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 12
+    },
+    {
+     "c": "OTHER",
+     "r": 6
+    }
+   ]
+  },
+  {
+   "n": 650,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 78,
+   "time_h": 24.5,
+   "stage": "implement",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": true,
+   "fail_count": 13,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 25
+    },
+    {
+     "c": "SKILL_MISSING",
+     "r": 20
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 12
+    }
+   ]
+  },
+  {
+   "n": 611,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 76,
+   "time_h": 24.7,
+   "stage": "implement",
+   "primary": "SKILL_MISSING",
+   "succeeded": true,
+   "fail_count": 15,
+   "cats": [
+    {
+     "c": "SKILL_MISSING",
+     "r": 25
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 15
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 8
+    }
+   ]
+  },
+  {
+   "n": 1219,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "数据/指标",
+   "rounds": 53,
+   "time_h": 16.2,
+   "stage": "implement",
+   "primary": "SKILL_MISSING",
+   "succeeded": true,
+   "fail_count": 6,
+   "cats": [
+    {
+     "c": "SKILL_MISSING",
+     "r": 18
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 12
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 8
+    }
+   ]
+  },
+  {
+   "n": 778,
+   "service": "forum-reply-robot",
+   "type": "任务",
+   "scenario": "机器人/自动化",
+   "rounds": 53,
+   "time_h": 15.8,
+   "stage": "implement",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": false,
+   "fail_count": 20,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 20
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 12
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 6
+    },
+    {
+     "c": "CI_GATE",
+     "r": 4
+    }
+   ]
+  },
+  {
+   "n": 840,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 52,
+   "time_h": 16.8,
+   "stage": "implement",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": false,
+   "fail_count": 1,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 22
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 12
+    },
+    {
+     "c": "SKILL_MISSING",
+     "r": 8
+    }
+   ]
+  },
+  {
+   "n": 780,
+   "service": "om-webserver",
+   "type": "需求",
+   "scenario": "其他/未分",
+   "rounds": 52,
+   "time_h": 12.7,
+   "stage": "deploy",
+   "primary": "CI_GATE",
+   "succeeded": false,
+   "fail_count": 31,
+   "cats": [
+    {
+     "c": "CI_GATE",
+     "r": 20
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 12
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 4
+    }
+   ]
+  },
+  {
+   "n": 729,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 50,
+   "time_h": 16.3,
+   "stage": "implement",
+   "primary": "OTHER",
+   "succeeded": true,
+   "fail_count": 19,
+   "cats": [
+    {
+     "c": "OTHER",
+     "r": 40
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 441,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 42,
+   "time_h": 12.4,
+   "stage": "implement",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": true,
+   "fail_count": 20,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 20
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 6
+    },
+    {
+     "c": "UI_NO_FEEDBACK",
+     "r": 4
+    }
+   ]
+  },
+  {
+   "n": 900,
+   "service": "hotopic-all",
+   "type": "需求",
+   "scenario": "接口/API",
+   "rounds": 37,
+   "time_h": 5.6,
+   "stage": "deploy",
+   "primary": "PREVIEW_FAILED",
+   "succeeded": true,
+   "fail_count": 11,
+   "cats": [
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 10
+    },
+    {
+     "c": "CI_GATE",
+     "r": 12
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 614,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 37,
+   "time_h": 11.2,
+   "stage": "preview",
+   "primary": "REQUIREMENT_VAGUE",
+   "succeeded": false,
+   "fail_count": 15,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 15
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 10
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 4
+    }
+   ]
+  },
+  {
+   "n": 966,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "数据/指标",
+   "rounds": 35,
+   "time_h": 11.2,
+   "stage": "implement",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": true,
+   "fail_count": 3,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 14
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 12
+    },
+    {
+     "c": "DATA_MISSING",
+     "r": 4
+    }
+   ]
+  },
+  {
+   "n": 941,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 35,
+   "time_h": 11.3,
+   "stage": "implement",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": true,
+   "fail_count": 3,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 12
+    },
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 14
+    }
+   ]
+  },
+  {
+   "n": 616,
+   "service": "ascend-ci-project",
+   "type": "需求",
+   "scenario": "CI/部署",
+   "rounds": 35,
+   "time_h": 7.0,
+   "stage": "deploy",
+   "primary": "CI_GATE",
+   "succeeded": false,
+   "fail_count": 16,
+   "cats": [
+    {
+     "c": "CI_GATE",
+     "r": 14
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 8
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 621,
+   "service": "forum-reply-robot",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 33,
+   "time_h": 10.3,
+   "stage": "preview",
+   "primary": "PREVIEW_FAILED",
+   "succeeded": false,
+   "fail_count": 15,
+   "cats": [
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 16
+    },
+    {
+     "c": "CI_GATE",
+     "r": 8
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 5
+    }
+   ]
+  },
+  {
+   "n": 674,
+   "service": "hotopic-all",
+   "type": "需求",
+   "scenario": "数据/指标",
+   "rounds": 32,
+   "time_h": 10.5,
+   "stage": "implement",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": true,
+   "fail_count": 6,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 18
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 10
+    }
+   ]
+  },
+  {
+   "n": 448,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 31,
+   "time_h": 6.3,
+   "stage": "deploy",
+   "primary": "CI_GATE",
+   "succeeded": true,
+   "fail_count": 1,
+   "cats": [
+    {
+     "c": "CI_GATE",
+     "r": 14
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 6
+    }
+   ]
+  },
+  {
+   "n": 820,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 28,
+   "time_h": 8.4,
+   "stage": "implement",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": true,
+   "fail_count": 9,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 14
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 4
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 6
+    }
+   ]
+  },
+  {
+   "n": 427,
+   "service": "meeting-server",
+   "type": "需求",
+   "scenario": "会议",
+   "rounds": 28,
+   "time_h": 4.5,
+   "stage": "deploy",
+   "primary": "PREVIEW_FAILED",
+   "succeeded": true,
+   "fail_count": 17,
+   "cats": [
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 12
+    },
+    {
+     "c": "CI_GATE",
+     "r": 4
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 665,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 27,
+   "time_h": 8.3,
+   "stage": "implement",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": true,
+   "fail_count": 6,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 12
+    },
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 11
+    }
+   ]
+  },
+  {
+   "n": 433,
+   "service": "security-cve-all",
+   "type": "CVE",
+   "scenario": "安全/CVE",
+   "rounds": 27,
+   "time_h": 7.0,
+   "stage": "implement",
+   "primary": "REQUIREMENT_VAGUE",
+   "succeeded": false,
+   "fail_count": 17,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 10
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 9
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 4
+    }
+   ]
+  },
+  {
+   "n": 314,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "其他/未分",
+   "rounds": 26,
+   "time_h": 8.5,
+   "stage": "implement",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": true,
+   "fail_count": 12,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 8
+    },
+    {
+     "c": "CI_GATE",
+     "r": 6
+    },
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 434,
+   "service": "ascend-ci-project",
+   "type": "需求",
+   "scenario": "CI/部署",
+   "rounds": 25,
+   "time_h": 5.7,
+   "stage": "analyze",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": false,
+   "fail_count": 20,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 9
+    },
+    {
+     "c": "CLAUDEMD_MISSING",
+     "r": 2
+    },
+    {
+     "c": "CI_GATE",
+     "r": 3
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 1049,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 24,
+   "time_h": 7.7,
+   "stage": "implement",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": false,
+   "fail_count": 2,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 7
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 5
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 4
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 726,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 24,
+   "time_h": 7.2,
+   "stage": "submit",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": true,
+   "fail_count": 20,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 9
+    },
+    {
+     "c": "CI_GATE",
+     "r": 6
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 326,
+   "service": "forum-reply-robot",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 24,
+   "time_h": 6.3,
+   "stage": "analyze",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": false,
+   "fail_count": 1,
+   "cats": [
+    {
+     "c": "OTHER",
+     "r": 5
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 4
+    },
+    {
+     "c": "CI_GATE",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 312,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 24,
+   "time_h": 6.7,
+   "stage": "analyze",
+   "primary": "CI_GATE",
+   "succeeded": false,
+   "fail_count": 9,
+   "cats": [
+    {
+     "c": "CI_GATE",
+     "r": 6
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 5
+    },
+    {
+     "c": "UI_NO_FEEDBACK",
+     "r": 4
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 1309,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 23,
+   "time_h": 7.5,
+   "stage": "preview",
+   "primary": "PREVIEW_FAILED",
+   "succeeded": false,
+   "fail_count": 2,
+   "cats": [
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 20
+    }
+   ]
+  },
+  {
+   "n": 435,
+   "service": "oneid-all",
+   "type": "需求",
+   "scenario": "其他/未分",
+   "rounds": 22,
+   "time_h": 5.2,
+   "stage": "analyze",
+   "primary": "OTHER",
+   "succeeded": false,
+   "fail_count": 15,
+   "cats": [
+    {
+     "c": "OTHER",
+     "r": 6
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 4
+    },
+    {
+     "c": "CI_GATE",
+     "r": 3
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 321,
+   "service": "community-robots",
+   "type": "缺陷",
+   "scenario": "机器人/自动化",
+   "rounds": 20,
+   "time_h": 6.7,
+   "stage": "submit",
+   "primary": "CI_GATE",
+   "succeeded": false,
+   "fail_count": 10,
+   "cats": [
+    {
+     "c": "CI_GATE",
+     "r": 10
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 3
+    },
+    {
+     "c": "OTHER",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 276,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 19,
+   "time_h": 6.0,
+   "stage": "preview",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": true,
+   "fail_count": 13,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 8
+    },
+    {
+     "c": "DATA_MISSING",
+     "r": 3
+    },
+    {
+     "c": "CI_GATE",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 1162,
+   "service": "om-datacenter",
+   "type": "任务",
+   "scenario": "数据/指标",
+   "rounds": 18,
+   "time_h": 5.8,
+   "stage": "implement",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": true,
+   "fail_count": 0,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 11
+    },
+    {
+     "c": "DATA_MISSING",
+     "r": 2
+    },
+    {
+     "c": "CI_GATE",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 936,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 18,
+   "time_h": 5.3,
+   "stage": "preview",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": false,
+   "fail_count": 5,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 7
+    },
+    {
+     "c": "DATA_MISSING",
+     "r": 3
+    },
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 905,
+   "service": "om-datacenter",
+   "type": "缺陷",
+   "scenario": "前端看板/UI",
+   "rounds": 18,
+   "time_h": 5.8,
+   "stage": "implement",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": true,
+   "fail_count": 5,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 6
+    },
+    {
+     "c": "DATA_MISSING",
+     "r": 5
+    },
+    {
+     "c": "CI_GATE",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 842,
+   "service": "om-datacenter",
+   "type": "缺陷",
+   "scenario": "前端看板/UI",
+   "rounds": 18,
+   "time_h": 5.8,
+   "stage": "submit",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": true,
+   "fail_count": 5,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 6
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 6
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 5
+    }
+   ]
+  },
+  {
+   "n": 1181,
+   "service": "ascend-ci-project",
+   "type": "需求",
+   "scenario": "CI/部署",
+   "rounds": 17,
+   "time_h": 3.5,
+   "stage": "analyze",
+   "primary": "ROBOT_QUALITY",
+   "succeeded": false,
+   "fail_count": 3,
+   "cats": [
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 11
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 3
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 818,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "数据/指标",
+   "rounds": 17,
+   "time_h": 5.2,
+   "stage": "submit",
+   "primary": "CLAUDEMD_MISSING",
+   "succeeded": true,
+   "fail_count": 4,
+   "cats": [
+    {
+     "c": "CLAUDEMD_MISSING",
+     "r": 6
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 5
+    },
+    {
+     "c": "CI_GATE",
+     "r": 4
+    }
+   ]
+  },
+  {
+   "n": 497,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 17,
+   "time_h": 4.4,
+   "stage": "preview",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": false,
+   "fail_count": 11,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 8
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 6
+    },
+    {
+     "c": "CI_GATE",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 1303,
+   "service": "om-datacenter",
+   "type": "缺陷",
+   "scenario": "数据/指标",
+   "rounds": 16,
+   "time_h": 4.8,
+   "stage": "preview",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": false,
+   "fail_count": 4,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 12
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 5
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 4
+    }
+   ]
+  },
+  {
+   "n": 878,
+   "service": "om-datacenter",
+   "type": "任务",
+   "scenario": "数据/指标",
+   "rounds": 16,
+   "time_h": 5.0,
+   "stage": "preview",
+   "primary": "DATA_MISSING",
+   "succeeded": false,
+   "fail_count": 3,
+   "cats": [
+    {
+     "c": "DATA_MISSING",
+     "r": 8
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 5
+    },
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 853,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 16,
+   "time_h": 4.8,
+   "stage": "preview",
+   "primary": "PREVIEW_FAILED",
+   "succeeded": true,
+   "fail_count": 7,
+   "cats": [
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 8
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 5
+    }
+   ]
+  },
+  {
+   "n": 392,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 16,
+   "time_h": 5.0,
+   "stage": "preview",
+   "primary": "CLAUDEMD_MISSING",
+   "succeeded": true,
+   "fail_count": 2,
+   "cats": [
+    {
+     "c": "CLAUDEMD_MISSING",
+     "r": 6
+    },
+    {
+     "c": "DATA_MISSING",
+     "r": 5
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 1278,
+   "service": "om-webserver",
+   "type": "任务",
+   "scenario": "接口/API",
+   "rounds": 15,
+   "time_h": 2.4,
+   "stage": "release",
+   "primary": "OTHER",
+   "succeeded": false,
+   "fail_count": 5,
+   "cats": [
+    {
+     "c": "OTHER",
+     "r": 6
+    },
+    {
+     "c": "CI_GATE",
+     "r": 5
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 1257,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 15,
+   "time_h": 4.3,
+   "stage": "preview",
+   "primary": "REQUIREMENT_VAGUE",
+   "succeeded": true,
+   "fail_count": 1,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 8
+    },
+    {
+     "c": "UI_NO_FEEDBACK",
+     "r": 5
+    },
+    {
+     "c": "CLAUDEMD_MISSING",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 714,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "数据/指标",
+   "rounds": 15,
+   "time_h": 4.5,
+   "stage": "preview",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": true,
+   "fail_count": 6,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 7
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 4
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 2
+    },
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 1294,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 14,
+   "time_h": 4.5,
+   "stage": "preview",
+   "primary": "PREVIEW_FAILED",
+   "succeeded": false,
+   "fail_count": 3,
+   "cats": [
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 4
+    },
+    {
+     "c": "UI_NO_FEEDBACK",
+     "r": 8
+    },
+    {
+     "c": "CI_GATE",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 694,
+   "service": "pod_exporter_monitoring",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 14,
+   "time_h": 3.0,
+   "stage": "deploy",
+   "primary": "CI_GATE",
+   "succeeded": false,
+   "fail_count": 11,
+   "cats": [
+    {
+     "c": "CI_GATE",
+     "r": 5
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 4
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 3
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 1203,
+   "service": "ascend-ci-project",
+   "type": "需求",
+   "scenario": "CI/部署",
+   "rounds": 11,
+   "time_h": 3.7,
+   "stage": "preview",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": false,
+   "fail_count": 6,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 3
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 4
+    },
+    {
+     "c": "CI_GATE",
+     "r": 2
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 712,
+   "service": "ascend-ci-project",
+   "type": "需求",
+   "scenario": "CI/部署",
+   "rounds": 10,
+   "time_h": 3.2,
+   "stage": "preview",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": false,
+   "fail_count": 6,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 3
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 4
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 2
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 646,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 10,
+   "time_h": 3.2,
+   "stage": "submit",
+   "primary": "CI_GATE",
+   "succeeded": false,
+   "fail_count": 4,
+   "cats": [
+    {
+     "c": "CI_GATE",
+     "r": 3
+    },
+    {
+     "c": "CLAUDEMD_MISSING",
+     "r": 2
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 904,
+   "service": "om-datacenter",
+   "type": "任务",
+   "scenario": "其他/未分",
+   "rounds": 9,
+   "time_h": 2.5,
+   "stage": "preview",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": true,
+   "fail_count": 1,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 4
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 1
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 1
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 1190,
+   "service": "ascend-ci-project",
+   "type": "需求",
+   "scenario": "CI/部署",
+   "rounds": 9,
+   "time_h": 2.2,
+   "stage": "analyze",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": false,
+   "fail_count": 2,
+   "cats": [
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 2
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 4
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 486,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 9,
+   "time_h": 2.5,
+   "stage": "preview",
+   "primary": "REQUIREMENT_VAGUE",
+   "succeeded": false,
+   "fail_count": 4,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 4
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 2
+    },
+    {
+     "c": "DATA_MISSING",
+     "r": 1
+    },
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 910,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 9,
+   "time_h": 2.2,
+   "stage": "preview",
+   "primary": "ROBOT_QUALITY",
+   "succeeded": true,
+   "fail_count": 2,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 2
+    },
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 3
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 1137,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 9,
+   "time_h": 2.5,
+   "stage": "implement",
+   "primary": "REQUIREMENT_VAGUE",
+   "succeeded": true,
+   "fail_count": 3,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 4
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 319,
+   "service": "patch-manager",
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "rounds": 9,
+   "time_h": 2.8,
+   "stage": "implement",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": false,
+   "fail_count": 5,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 4
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 2
+    },
+    {
+     "c": "CI_GATE",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 844,
+   "service": "om-datacenter",
+   "type": "任务",
+   "scenario": "数据/指标",
+   "rounds": 8,
+   "time_h": 2.0,
+   "stage": "preview",
+   "primary": "REQUIREMENT_VAGUE",
+   "succeeded": false,
+   "fail_count": 1,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 2
+    },
+    {
+     "c": "UI_NO_FEEDBACK",
+     "r": 1
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 2
+    },
+    {
+     "c": "OTHER",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 810,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 8,
+   "time_h": 2.0,
+   "stage": "submit",
+   "primary": "CI_GATE",
+   "succeeded": false,
+   "fail_count": 3,
+   "cats": [
+    {
+     "c": "CI_GATE",
+     "r": 4
+    },
+    {
+     "c": "OTHER",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 672,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 8,
+   "time_h": 2.2,
+   "stage": "preview",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": true,
+   "fail_count": 3,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 4
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 1
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 1299,
+   "service": "oss-map",
+   "type": "需求",
+   "scenario": "其他/未分",
+   "rounds": 8,
+   "time_h": 1.7,
+   "stage": "analyze",
+   "primary": "ROBOT_QUALITY",
+   "succeeded": false,
+   "fail_count": 2,
+   "cats": [
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 4
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 1252,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 8,
+   "time_h": 1.8,
+   "stage": "analyze",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": true,
+   "fail_count": 1,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 3
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 1210,
+   "service": "om-datacenter",
+   "type": "任务",
+   "scenario": "数据/指标",
+   "rounds": 8,
+   "time_h": 2.5,
+   "stage": "implement",
+   "primary": "CI_GATE",
+   "succeeded": false,
+   "fail_count": 2,
+   "cats": [
+    {
+     "c": "CI_GATE",
+     "r": 4
+    },
+    {
+     "c": "UI_NO_FEEDBACK",
+     "r": 2
+    }
+   ]
+  },
+  {
+   "n": 1200,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 8,
+   "time_h": 2.2,
+   "stage": "implement",
+   "primary": "KNOWLEDGE_MISSING",
+   "succeeded": false,
+   "fail_count": 2,
+   "cats": [
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 3
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 1
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 985,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "其他/未分",
+   "rounds": 8,
+   "time_h": 1.8,
+   "stage": "analyze",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": true,
+   "fail_count": 1,
+   "cats": [
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 3
+    },
+    {
+     "c": "KNOWLEDGE_MISSING",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 487,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "rounds": 8,
+   "time_h": 1.5,
+   "stage": "analyze",
+   "primary": "ROBOT_QUALITY",
+   "succeeded": true,
+   "fail_count": 2,
+   "cats": [
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 5
+    }
+   ]
+  },
+  {
+   "n": 304,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 8,
+   "time_h": 1.7,
+   "stage": "analyze",
+   "primary": "REQUIREMENT_VAGUE",
+   "succeeded": false,
+   "fail_count": 6,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 4
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 1159,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 7,
+   "time_h": 0.9,
+   "stage": "deploy",
+   "primary": "CI_GATE",
+   "succeeded": true,
+   "fail_count": 3,
+   "cats": [
+    {
+     "c": "CI_GATE",
+     "r": 3
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 1298,
+   "service": "hotopic-all",
+   "type": "需求",
+   "scenario": "数据/指标",
+   "rounds": 7,
+   "time_h": 1.7,
+   "stage": "analyze",
+   "primary": "ROBOT_QUALITY",
+   "succeeded": false,
+   "fail_count": 2,
+   "cats": [
+    {
+     "c": "ROBOT_QUALITY",
+     "r": 2
+    },
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 1090,
+   "service": "community-robots",
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "rounds": 7,
+   "time_h": 1.8,
+   "stage": "implement",
+   "primary": "PREVIEW_FAILED",
+   "succeeded": false,
+   "fail_count": 3,
+   "cats": [
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 862,
+   "service": "security-cve-all",
+   "type": "CVE",
+   "scenario": "安全/CVE",
+   "rounds": 7,
+   "time_h": 2.2,
+   "stage": "implement",
+   "primary": "REQUIREMENT_VAGUE",
+   "succeeded": false,
+   "fail_count": 0,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 4
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 1
+    }
+   ]
+  },
+  {
+   "n": 736,
+   "service": "meeting-server",
+   "type": "需求",
+   "scenario": "会议",
+   "rounds": 7,
+   "time_h": 1.8,
+   "stage": "implement",
+   "primary": "PREVIEW_FAILED",
+   "succeeded": false,
+   "fail_count": 4,
+   "cats": [
+    {
+     "c": "PREVIEW_FAILED",
+     "r": 3
+    }
+   ]
+  },
+  {
+   "n": 498,
+   "service": "未分服务",
+   "type": "需求",
+   "scenario": "其他/未分",
+   "rounds": 7,
+   "time_h": 1.3,
+   "stage": "analyze",
+   "primary": "REQUIREMENT_VAGUE",
+   "succeeded": false,
+   "fail_count": 0,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 5
+    }
+   ]
+  },
+  {
+   "n": 1251,
+   "service": "om-datacenter",
+   "type": "需求",
+   "scenario": "接口/API",
+   "rounds": 6,
+   "time_h": 1.5,
+   "stage": "preview",
+   "primary": "OUTPUT_WRONG",
+   "succeeded": false,
+   "fail_count": 0,
+   "cats": [
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 2
+    },
+    {
+     "c": "OUTPUT_WRONG",
+     "r": 2
+    },
+    {
+     "c": "REQUIREMENT_VAGUE",
+     "r": 1
+    }
+   ]
+  }
+ ],
+ "fail_stage": {
+  "开发预览": 111,
+  "开发提交": 48,
+  "需求分析": 36,
+  "测试发布": 28,
+  "服务解析/开发": 5,
+  "AI引擎故障": 1,
+  "正式上线": 1
+ }
+}

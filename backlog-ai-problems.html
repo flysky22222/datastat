@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backlog AI 流水线 · 问题全景与改进方向</title>
+  <meta name="description" content="78 个重点 AI issue 的问题归因:分类分布、断点阶段、服务视角、TOP3 改进方向(聚合脱敏)" />
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  <style>
+    :root{--bg:#f4f5f7;--card:#fff;--line:rgba(0,0,0,.08);--t1:rgba(0,0,0,.85);--t2:rgba(0,0,0,.6);--t3:rgba(0,0,0,.45);--blue:#002fa7}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--t1)}
+    a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+    .site-header{background:linear-gradient(120deg,#7a1f1f,#b03a3a);color:#fff;padding:20px 0}
+    .inner{max-width:1360px;margin:0 auto;padding:0 24px}
+    .site-header .inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .site-header h1{margin:0;font-size:22px}.site-header p{margin:4px 0 0;font-size:13px;opacity:.9}
+    .site-header .meta{font-size:12px;opacity:.9;text-align:right}.site-header .meta a{color:#fff;text-decoration:underline}
+    main{max-width:1360px;margin:0 auto;padding:22px 24px 60px}
+    .row-title{display:flex;align-items:baseline;gap:10px;margin:26px 2px 12px}
+    .row-title h2{margin:0;font-size:17px}.row-title span{font-size:12px;color:var(--t3)}
+    .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+    .kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+    .kpi .k{font-size:12px;color:var(--t3)}.kpi .v{font-size:26px;font-weight:700;margin-top:4px}
+    .kpi .v small{font-size:13px;font-weight:500;color:var(--t2);margin-left:3px}
+    .grid{display:grid;gap:16px}.g2{grid-template-columns:repeat(2,1fr)}
+    @media(max-width:1000px){.g2{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 16px 8px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+    .card h3{margin:0 0 4px;font-size:14px}.card .sub{font-size:12px;color:var(--t3);margin:0 0 8px}
+    .chart{width:100%;height:340px}.chart.tall{height:420px}
+    .top3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px}
+    @media(max-width:900px){.top3{grid-template-columns:1fr}}
+    .t3{background:var(--card);border:1px solid var(--line);border-left:5px solid;border-radius:10px;padding:14px 16px}
+    .t3 .rank{font-size:12px;color:var(--t3)}.t3 .name{font-size:16px;font-weight:700;margin:2px 0}
+    .t3 .pct{font-size:13px;color:var(--t2)}.t3 ul{margin:8px 0 0;padding-left:18px;font-size:13px;line-height:1.7;color:var(--t2)}
+    table{width:100%;border-collapse:collapse;font-size:13px}
+    th{text-align:left;color:var(--t3);border-bottom:2px solid var(--line);padding:7px 8px;cursor:pointer;white-space:nowrap}
+    td{padding:6px 8px;border-bottom:1px solid var(--line)}
+    .pill{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;color:#fff}
+    .controls{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:12px}
+    select{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:13px;background:#fff}
+    footer{max-width:1360px;margin:0 auto;padding:0 24px 40px;color:var(--t3);font-size:12px}
+    code{background:#eef0f3;padding:1px 5px;border-radius:4px;font-size:12px}
+  </style>
+</head>
+<body>
+  <header class="site-header"><div class="inner">
+    <div><h1>Backlog AI 流水线 · 问题全景与改进方向</h1>
+      <p>78 个重点 issue(AI 参与且 ≥7 轮,占全部 AI 交互轮次 83%)· 问题归因 · TOP3 · 服务视角</p></div>
+    <div class="meta"><div id="genAt"></div><div><a href="./backlog-insights.html">← Issue 洞察</a> · <a href="./">数据看板</a></div></div>
+  </div></header>
+  <main id="app">
+    <div id="err" class="card" style="display:none;color:#b03a3a"></div>
+    <div class="kpis" id="kpis"></div>
+
+    <div class="row-title"><h2>① TOP3 问题(解决即覆盖 ~80% 消耗)</h2><span>按交互轮次加权</span></div>
+    <div class="top3" id="top3"></div>
+
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card"><h3>问题分类分布</h3><p class="sub">按交互轮次加权(反映真实消耗占比)</p><div id="c-cat" class="chart"></div></div>
+      <div class="card"><h3>主问题:issue 数 vs 估耗时</h3><p class="sub">每个 issue 归一个主问题</p><div id="c-primary" class="chart"></div></div>
+    </div>
+
+    <div class="row-title"><h2>② 断点阶段 & 失败 Action</h2><span>问题卡在哪个阶段</span></div>
+    <div class="grid g2">
+      <div class="card"><h3>断点阶段(每 issue 主要卡点)</h3><p class="sub">issue 数</p><div id="c-stage" class="chart"></div></div>
+      <div class="card"><h3>失败 Action 阶段分布</h3><p class="sub">共 <b id="failN"></b> 条真实失败(流水线执行异常/pod 未就绪/门禁红/QA 打回等)</p><div id="c-failstage" class="chart"></div></div>
+    </div>
+
+    <div class="row-title"><h2>③ 服务视角</h2><span>哪个服务问题最重、主要矛盾是什么</span></div>
+    <div class="card"><h3>各服务估耗时(小时)· 颜色=主问题</h3><p class="sub">om-datacenter 一家占大头,主问题多为「缺领域知识」</p><div id="c-svc" class="chart tall"></div></div>
+
+    <div class="row-title"><h2>④ 逐 issue 明细(点表头排序)</h2><span>脱敏:仅编号/服务/类型/轮次/主问题/失败次数;标题等细节不公开</span></div>
+    <div class="controls">
+      <div>服务 <select id="f-svc"></select></div>
+      <div>主问题 <select id="f-primary"></select></div>
+      <div id="cnt" style="color:var(--t3)"></div>
+    </div>
+    <div class="card" style="overflow-x:auto"><table id="tbl"></table></div>
+  </main>
+  <footer>
+    数据来自 opensourceways/backlog(私有仓)78 个重点 issue 的评论/流程标记/失败 action 归因;本页**仅公开聚合脱敏结果**,不含 issue 标题与原始反馈。
+    「AI 交互轮次」= 机器人流程标记 🟢[N] 阶段启动次数。耗时为「轮次×阶段均时」估算(需求分析~10min/实现~20min/测试~4min·轮)。
+    <b>详细逐 issue 根因 + 失败 action 链接</b>存于内部文档(含私有内容,不对外)。
+  </footer>
+  <script src="./backlog-ai-problems.js?v=1"></script>
+</body>
+</html>
