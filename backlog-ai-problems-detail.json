@@ -1,0 +1,3278 @@
+{
+ "785": {
+  "one_line": "论坛回复机器人RAG质量评估采集+LightRAG基线",
+  "primary_desc": "预览pod长期起不来,部署环境(Python版本/psycopg/apt包/探针/progressDeadline)与代码不匹配,agent靠人一条条喂事实才修好",
+  "notable": "同套探针修复被人逐字重复约10次,agent每轮又改回去/推错分支;ON CONFLICT无唯一约束bug与#1219同款",
+  "cats": [
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 30,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 12,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 10,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 8,
+    "ev": ""
+   }
+  ],
+  "fail_count": 45,
+  "failures": [
+   {
+    "date": "2026-06-10",
+    "stage": "analyze-QA",
+    "run_url": "https://github.com/opensourceways/backlog/pull/786",
+    "reason": "需求分析QA未通过NEEDS_REVISION不自动合并(PR786/793/817反复)"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27266000239",
+    "reason": "❌开发预览(另27329812067等多次)"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "work preview pod未就绪;加startupProbe解决initDelay过长未就绪"
+   }
+  ]
+ },
+ "927": {
+  "one_line": "修复仓库/组织分析页解决率指标无数据/口径错",
+  "primary_desc": "agent不知解决率正确数据源/字段(is_resolved而非resolved_at、dws_contribute_company_daily),把mindcluster错映射mindie,人反复喂表名字段口径",
+  "notable": "不要把mindcluster映射mindie纠正3次仍复发",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 20,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 15,
+    "ev": ""
+   },
+   {
+    "code": "DATA_MISSING",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 4,
+    "ev": ""
+   }
+  ],
+  "fail_count": 26,
+  "failures": [
+   {
+    "date": "2026-06-16",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27603530689",
+    "reason": "❌开发预览(另27603587780/27661823912/27739188008/27741776441/27744998328/27748033416/27752100668/27942786919,连崩)"
+   },
+   {
+    "date": "2026-06-16",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览DB实际状态❌"
+   },
+   {
+    "date": "2026-06-21",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "AC1 topn/item❌FAIL code=-1 column is_resolved does not exist"
+   }
+  ]
+ },
+ "489": {
+  "one_line": "CANN把参与GitCode Discussions开发者计入D1",
+  "primary_desc": "agent不遵循本仓已有采集task的配置/客户端约定,不懂gitcode discuss API结构,自创写法被逐条纠;反复污染分支带无关子仓改动",
+  "notable": "本需求不需改datastat关闭其PR讲了5+次;人工编号重跑数到第10轮",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 25,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 12,
+    "ev": ""
+   },
+   {
+    "code": "CLAUDEMD_MISSING",
+    "rounds": 8,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 6,
+    "ev": ""
+   }
+  ],
+  "fail_count": 27,
+  "failures": [
+   {
+    "date": "2026-06-02",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26803190144",
+    "reason": "❌开发提交(另26818166521/27000061372/27114433288/27204312546/27663051657,反复)"
+   },
+   {
+    "date": "2026-06-22",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "discussion_task.py覆盖71%❌"
+   }
+  ]
+ },
+ "921": {
+  "one_line": "openUBMC RAG对外查询接口(OIDC认证+限流+RBAC)",
+  "primary_desc": "认证架构随边界条件(OneID实测不支持无状态验证/无roles claim、Vault覆盖config)反复推倒重来,方案在OIDC客户端vs无状态vs白名单间来回切",
+  "notable": "config.yaml被Vault覆盖不生效讲了4+次;OIDC客户端角色先删后加再确认",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 20,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 15,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 12,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 8,
+    "ev": ""
+   }
+  ],
+  "fail_count": 27,
+  "failures": [
+   {
+    "date": "2026-06-16",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27599457258",
+    "reason": "❌开发预览(另27604353824/27729489923)"
+   },
+   {
+    "date": "2026-06-16",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "❌/api/v1/rag/auth/authorize返回404;RAG API路径Blueprint注册失败;缺Flask secret_key致500"
+   },
+   {
+    "date": "2026-06-23",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27999059951",
+    "reason": "❌测试发布;预览部署失败exit124 timeout"
+   }
+  ]
+ },
+ "926": {
+  "one_line": "xihe-all三子仓升级依赖修CVE",
+  "primary_desc": "代码改动极小(升版本号),绝大多数轮次是多子仓deploy/测试流水线反复失败后无脑force重试,属流水线/环境稳定性问题",
+  "notable": "30+次force;release卡tag边界(PR在最新tag之后)",
+  "cats": [
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 43,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 20,
+    "ev": ""
+   },
+   {
+    "code": "OTHER",
+    "rounds": 11,
+    "ev": ""
+   }
+  ],
+  "fail_count": 54,
+  "failures": [
+   {
+    "date": "2026-06-17",
+    "stage": "analyze",
+    "run_url": null,
+    "reason": "❌xihe-message-server无法解析base分支origin/main跳过"
+   },
+   {
+    "date": "2026-06-17",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27661075972",
+    "reason": "❌开发提交(另27677493047/27680246819/27735078657/27737408906)"
+   },
+   {
+    "date": "2026-06-18",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27737597218",
+    "reason": "❌测试发布(另27737708219)"
+   },
+   {
+    "date": "2026-06-18",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27755494048",
+    "reason": "❌开发预览"
+   }
+  ]
+ },
+ "909": {
+  "one_line": "CLA协议变更平滑过渡(非阻塞版本检查+宽限期)",
+  "primary_desc": "deploy/集成测试流水线反复失败被暴力重试占绝大多数轮次;人自己写代码在前让AI反过来对齐需求文档",
+  "notable": "deploy=63轮几乎全是force/it空重试指向流水线不稳",
+  "cats": [
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 45,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 12,
+    "ev": ""
+   },
+   {
+    "code": "OTHER",
+    "rounds": 6,
+    "ev": ""
+   }
+  ],
+  "fail_count": 50,
+  "failures": [
+   {
+    "date": "2026-06-16",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27605449258",
+    "reason": "❌测试发布"
+   },
+   {
+    "date": "2026-06-17",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27661016889",
+    "reason": "测试环境ai-test部分未就绪"
+   },
+   {
+    "date": "2026-06-18",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27742478337",
+    "reason": "🧪集成测试❌失败(另27744011991/27744106863/27745012315/27925449103/27926809441,反复20+次)"
+   }
+  ]
+ },
+ "650": {
+  "one_line": "Issue关联PR时以关联时间作首次响应时间(清洗规则)",
+  "primary_desc": "agent反复搞错取数来源与字段语义(用fact_pr创建时间而非operate_log关联时间、id转换、uuid拼法、清洗规则执行顺序),人逐条喂表结构",
+  "notable": "构造预览测试命令(.preview/service.yaml)YAML/参数反复出错与#1219同款",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 25,
+    "ev": ""
+   },
+   {
+    "code": "SKILL_MISSING",
+    "rounds": 20,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 12,
+    "ev": ""
+   }
+  ],
+  "fail_count": 13,
+  "failures": [
+   {
+    "date": "2026-06-16",
+    "stage": "analyze-QA",
+    "run_url": "https://github.com/opensourceways/backlog/pull/703",
+    "reason": "需求分析QA未通过NEEDS_REVISION(PR703/1027)"
+   },
+   {
+    "date": "2026-06-16",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27610302762",
+    "reason": "❌开发预览"
+   },
+   {
+    "date": "2026-06-23",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "code_table.py覆盖47%❌;community_first_reply_comment_extract.py覆盖0%无任何测试"
+   }
+  ]
+ },
+ "611": {
+  "one_line": "社区看板新增Triton主仓统计(实为新增社区)",
+  "primary_desc": "新增社区是跨5仓+建表+建流水线+前端9处接线的成套清单,agent无checklist,每个接线点都得人现场补齐",
+  "notable": "本质add-community全流程;命名triton-upstream(显示)vs tritonupstream(传参)反复澄清",
+  "cats": [
+   {
+    "code": "SKILL_MISSING",
+    "rounds": 25,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 15,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 8,
+    "ev": ""
+   }
+  ],
+  "fail_count": 15,
+  "failures": [
+   {
+    "date": "2026-06-04",
+    "stage": "analyze-QA",
+    "run_url": "https://github.com/opensourceways/backlog/pull/622",
+    "reason": "需求分析QA未通过NEEDS_REVISION(PR622)"
+   },
+   {
+    "date": "2026-06-04",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26929097663",
+    "reason": "❌开发预览"
+   },
+   {
+    "date": "2026-06-04",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26950906362",
+    "reason": "❌开发提交(另27114844742)"
+   }
+  ]
+ },
+ "1219": {
+  "one_line": "新增采集GitHub issue label事件(timeline API)",
+  "primary_desc": "大量轮次耗在预览测试命令构造(YAML语法错、离散flag需改json_task、init_table顺序);叠加分区表写错与ON CONFLICT bug",
+  "notable": "ON CONFLICT无唯一约束与#785同款;预览测试命令坑与#650同款",
+  "cats": [
+   {
+    "code": "SKILL_MISSING",
+    "rounds": 18,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 12,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 8,
+    "ev": ""
+   }
+  ],
+  "fail_count": 6,
+  "failures": [
+   {
+    "date": "2026-07-02",
+    "stage": "analyze-QA",
+    "run_url": "https://github.com/opensourceways/backlog/pull/1220",
+    "reason": "需求分析QA未通过NEEDS_REVISION×5(PR1220)"
+   }
+  ]
+ },
+ "778": {
+  "one_line": "论坛机器人lightrag更新时间字段改存数据库",
+  "primary_desc": "小改动被拆成几十轮每轮改一个review意见,叠加agent反复没抓准的启动时序/首次升级初始化边界bug",
+  "notable": "同条review(CHECK id=1约束)贴3次一字不差agent跨轮没落实=记忆失效",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 20,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 12,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 4,
+    "ev": ""
+   }
+  ],
+  "fail_count": 20,
+  "failures": [
+   {
+    "date": "2026-06-11",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27322221333",
+    "reason": "❌开发预览(另27331698195/28431445312)"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27329119555",
+    "reason": "❌开发提交(另27332002230)"
+   },
+   {
+    "date": "2026-06-23",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览部署失败exit_code=124超时,仅验证单元测试;deploy-script-failed"
+   }
+  ]
+ },
+ "840": {
+  "one_line": "issue打triaged标签也算响应(改清洗规则识别多标签)",
+  "primary_desc": "agent一再新建被明确禁止的清洗规则文件、反复搞不定一条日志多标签同时add+remove解析,人把同样纠正讲六七遍",
+  "notable": "不要新增xxx文件复用已有这条否定指令复发6+次=跨轮记忆失效典型",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 22,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 12,
+    "ev": ""
+   },
+   {
+    "code": "SKILL_MISSING",
+    "rounds": 8,
+    "ev": ""
+   }
+  ],
+  "fail_count": 1,
+  "failures": [
+   {
+    "date": "2026-06-11",
+    "stage": "analyze-QA",
+    "run_url": "https://github.com/opensourceways/backlog/pull/841",
+    "reason": "需求分析QA未通过NEEDS_REVISION(PR841)"
+   }
+  ]
+ },
+ "780": {
+  "one_line": "账号后端IP频率限制增加白名单",
+  "primary_desc": "功能代码很小,绝大多数轮次卡在合入门禁——om-webserver仓级门禁(分支命名/gate_check_pass/sast)与AI流水线issue-N-from-*分支不兼容,需维护者改workflow",
+  "notable": "流水线基础设施不兼容(仓级门禁vs AI分支命名)非AI能自解",
+  "cats": [
+   {
+    "code": "CI_GATE",
+    "rounds": 20,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 12,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 4,
+    "ev": ""
+   }
+  ],
+  "fail_count": 31,
+  "failures": [
+   {
+    "date": "2026-06-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27262135926",
+    "reason": "❌开发预览(另27265207163/28074149243)"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "work preview-om-webserver pod未就绪"
+   },
+   {
+    "date": "2026-06-24",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览Pod CrashLoopBackOff 503"
+   }
+  ]
+ },
+ "729": {
+  "one_line": "社区看板贡献者统计增强(claude引擎复测#276)",
+  "primary_desc": "刻意的claude引擎复测(#276复制件),轮次几乎全是机器人自动重跑非人工迭代,真人仅2条评论",
+  "notable": "轮次严重高估真实人工成本;同一需求需被极显式重述才对齐",
+  "cats": [
+   {
+    "code": "OTHER",
+    "rounds": 40,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 2,
+    "ev": ""
+   }
+  ],
+  "fail_count": 19,
+  "failures": [
+   {
+    "date": "2026-06-09",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27241563345",
+    "reason": "❌开发预览(另27249016488/27253941108);preview_partial对抗1/5"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "deploy",
+    "run_url": null,
+    "reason": "🧪真实能力验证--real-test❌有未通过项(×2)"
+   }
+  ]
+ },
+ "441": {
+  "one_line": "Issue看板补充解决率/解决时间(前端+APIMagic+om-dataarts三仓)",
+  "primary_desc": "AI反复把无关文件/日志/.coverage混进PR污染分支,10+轮要求只改相关代码,最后弃用impl分支改clean分支",
+  "notable": "分支污染主耗因;AI无法自我约束改动范围",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 20,
+    "ev": "PR分支被污染融合多个无关commit；不要提交跟需求无关代码/.coverage文件"
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 6,
+    "ev": "closed_at_label是时间戳无法获取全部已解决issue,请重新设计采集逻辑"
+   },
+   {
+    "code": "UI_NO_FEEDBACK",
+    "rounds": 4,
+    "ev": "已解决Issue列相对位置要保持一致"
+   }
+  ],
+  "fail_count": 20,
+  "failures": [
+   {
+    "date": "2026-06-01",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过反复(×2)"
+   },
+   {
+    "date": "2026-06-02",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26803618297",
+    "reason": "开发预览执行异常"
+   },
+   {
+    "date": "2026-06-03",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26858799724",
+    "reason": "开发提交执行异常(另26862526695/26872418267)"
+   },
+   {
+    "date": "2026-06-04",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "代码推送失败fail-fast:分支non-fast-forward远端领先(反复多次)"
+   },
+   {
+    "date": "2026-06-04",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26929727695",
+    "reason": "开发预览执行异常(另26931535605/26934502511)"
+   },
+   {
+    "date": "2026-06-01~",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial 1轮best-effort未跑严格5轮对抗(多次)"
+   }
+  ]
+ },
+ "900": {
+  "one_line": "TOPN服务后端接口响应增加total计数",
+  "primary_desc": "预览/部署基础设施反复失败(no-kubeconfig→pod未就绪→引擎rc=127token失效),实现简单但deploy被infra耗20轮",
+  "notable": "tester rc=127=订阅token失效/额度耗尽引擎级故障;deploy-test被force十余次",
+  "cats": [
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 10,
+    "ev": "预览未起公网入口no-kubeconfig;pod未就绪;连续8条AI引擎执行失败tester rc=127"
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 12,
+    "ev": "deploy阶段反复/ai-deploy-test force多人轮流超10次"
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 3,
+    "ev": "需求分析QA判核心逻辑越界删函数名"
+   }
+  ],
+  "fail_count": 11,
+  "failures": [
+   {
+    "date": "2026-06-15",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过(×2)"
+   },
+   {
+    "date": "2026-06-17",
+    "stage": "engine",
+    "run_url": null,
+    "reason": "AI引擎进程非正常退出token失效/额度耗尽/限流,tester rc=127(连续9次)"
+   },
+   {
+    "date": "2026-06-18",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27735279839",
+    "reason": "测试发布流水线失败:构建或部署步骤出错"
+   }
+  ]
+ },
+ "614": {
+  "one_line": "CLA机器人增加co-author邮箱签署检查",
+  "primary_desc": "design阶段十余轮微调配置/格式/依赖,AI实现出Has恒true逻辑死角+go.mod残留本地绝对路径replace",
+  "notable": "AI不知依赖已提供co_authors字段自造解析;核心逻辑写成永假分支",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 15,
+    "ev": "10+轮design反复改配置项/脱敏可配/评论格式贴样例"
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 10,
+    "ev": "emailSet.Has判断始终返回true,检查逻辑永不执行"
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 4,
+    "ev": "不需自造解析函数,gitcode接口有co_authors字段;需先更新依赖版本"
+   }
+  ],
+  "fail_count": 15,
+  "failures": [
+   {
+    "date": "2026-06-04",
+    "stage": "implement",
+    "run_url": null,
+    "reason": "未解析出目标服务:缺project标签不知往哪提交"
+   },
+   {
+    "date": "2026-06-04",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26925984156",
+    "reason": "开发预览执行异常(另26928122415/26928379346)"
+   },
+   {
+    "date": "2026-06-04",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "preview_partial预览已起但冒烟VERDICT:FAIL;pod未就绪未起公网入口(多次)"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "deploy",
+    "run_url": null,
+    "reason": "发布被拦截:实现PR未合并"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27249631470",
+    "reason": "测试发布流水线失败(另27249787835)"
+   }
+  ]
+ },
+ "966": {
+  "one_line": "新增openPangu社区D0~D2贡献统计(三源)",
+  "primary_desc": "AI不遵循新增社区模板与各仓claude.md,捏造ModelScope API、漏建流水线节点、前端漏接线",
+  "notable": "新增社区多仓端到端,AI幻觉造API+跳过模板",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 14,
+    "ev": "不要捏造API,移除modelscope_api.py;pipeline应参考tritonupstream.job节点复制过来"
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 12,
+    "ev": "应按增加新社区任务模板;huggingface用sdk不用rest api;启动先读各子仓claude.md"
+   },
+   {
+    "code": "DATA_MISSING",
+    "rounds": 4,
+    "ev": "pipeline需真实执行;前端没正确显示openpangu"
+   }
+  ],
+  "fail_count": 3,
+  "failures": [
+   {
+    "date": "2026-06-22",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27925265685",
+    "reason": "开发预览执行异常(另27943768504/27948334420)"
+   }
+  ]
+ },
+ "941": {
+  "one_line": "开发者页面按仓库维度统计D0/D1/D2",
+  "primary_desc": "AI实现的接口/分页/联动多处功能不对,最后用户放弃改、本地手改后--deploy-only刷14次",
+  "notable": "14次--deploy-only=AI改不动人接管;预览冒烟有遗留无自动判定",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 12,
+    "ev": "level校验报错;分页永远1页Total 0;仓库筛选只联动一个图"
+   },
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 14,
+    "ev": "14条--deploy-only,代码经本地手改后重部署"
+   }
+  ],
+  "fail_count": 3,
+  "failures": [
+   {
+    "date": "2026-06-17",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27672786654",
+    "reason": "开发预览执行异常(另28014578674)"
+   },
+   {
+    "date": "2026-06-22",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "preview_partial预览已起冒烟VERDICT:FAIL"
+   }
+  ]
+ },
+ "616": {
+  "one_line": "github app方式自动接入ascend runner",
+  "primary_desc": "门禁三红反复修+新解档仓runner不可用,deploy-test被force十余次仍未合入",
+  "notable": "trivy是Go runtime CVE非本PR引入;用户最后仍不确定功能对不对",
+  "cats": [
+   {
+    "code": "CI_GATE",
+    "rounds": 14,
+    "ev": "build-test/unit-test覆盖率/trivy Go1.26 runtime CVE三红反复"
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 8,
+    "ev": "仓刚解档self-hosted runner环境异常;反复deploy-test force"
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 3,
+    "ev": "要AI画数据流图确认功能对不对"
+   }
+  ],
+  "fail_count": 16,
+  "failures": [
+   {
+    "date": "2026-06-09",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过"
+   },
+   {
+    "date": "2026-06-09",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "代码推送失败non-fast-forward(多次)"
+   },
+   {
+    "date": "2026-06-09",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27181848523",
+    "reason": "开发预览执行异常(另27192870902)"
+   },
+   {
+    "date": "2026-06-09",
+    "stage": "deploy",
+    "run_url": null,
+    "reason": "无变更子服务:子仓无已合入实现PR无可发布"
+   },
+   {
+    "date": "2026-06-29~07-01",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28345021412",
+    "reason": "测试发布流水线失败反复(另28352969583/28432503864/28433716364/28488620186,6次)"
+   }
+  ]
+ },
+ "621": {
+  "one_line": "社区回复机器人RAG持续看护",
+  "primary_desc": "预览Pod反复起不来(顶层import崩溃、health过严、sync.sh转义被AI改坏),用户多轮亲自定位崩溃根因",
+  "notable": "AI改动未运行时验证就推;用户建议无pytest环境时禁止Agent改启动路径",
+  "cats": [
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 16,
+    "ev": "顶层import崩溃CrashLoop;sync.sh heredoc转义被破坏TOK unbound"
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 8,
+    "ev": "增量覆盖率未达85%反复"
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 5,
+    "ev": "改动未经运行时验证;失败不return继续执行"
+   }
+  ],
+  "fail_count": 15,
+  "failures": [
+   {
+    "date": "2026-06-04",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过(×2)"
+   },
+   {
+    "date": "2026-06-05",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "pod未就绪未起公网入口;preview_partial冒烟VERDICT:FAIL(反复多次)"
+   },
+   {
+    "date": "2026-06-05",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27004348419",
+    "reason": "开发提交执行异常;submit_partial(多次)"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27251637974",
+    "reason": "开发预览执行异常(另27253596792)"
+   }
+  ]
+ },
+ "674": {
+  "one_line": "TOPN聚类服务新增分片发送(仅mining)",
+  "primary_desc": "AI反复越界改无关子仓,用户多轮强调仅涉及mining;预览反复重跑少见实质反馈",
+  "notable": "人工反馈极少多为裸重跑=预览质量无自动判定靠人点按",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 18,
+    "ev": "仅涉及mining服务,无需改data-clean/backend/website-backend"
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 10,
+    "ev": "13次裸/ai-develop-preview重跑偶尔附范围纠正"
+   }
+  ],
+  "fail_count": 6,
+  "failures": [
+   {
+    "date": "2026-06-09",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "preview_partial预览已起冒烟VERDICT:FAIL(×2)"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27252067105",
+    "reason": "开发预览执行异常"
+   },
+   {
+    "date": "2026-06-15",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial 1轮best-effort(多次)"
+   }
+  ]
+ },
+ "448": {
+  "one_line": "数据看板海内海外口径修改",
+  "primary_desc": "实现小但deploy-test/release反复force+手动refresh镜像;AI混入lock/npmp/日志无关改动",
+  "notable": "人工反馈少集中在deploy/release机械重跑",
+  "cats": [
+   {
+    "code": "CI_GATE",
+    "rounds": 14,
+    "ev": "deploy反复/ai-deploy-test force+/ai-release-plan refresh手动替换镜像tag"
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 6,
+    "ev": "不要提交lock/npmp/日志无关代码"
+   }
+  ],
+  "fail_count": 1,
+  "failures": [
+   {
+    "date": "2026-05-31",
+    "stage": "deploy",
+    "run_url": null,
+    "reason": "无变更子服务:子仓无已合入实现PR无可发布"
+   }
+  ]
+ },
+ "820": {
+  "one_line": "wait-feedback标签计入Issue平均解决率",
+  "primary_desc": "AI写的正则反复不准(覆盖不了数组存储变体),用户手写正则喂5+轮,两个清洗规则文件AI只改一个",
+  "notable": "用户被迫逐字提供PG正则,AI无法推导labels_name数组格式",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 14,
+    "ev": "labels_name是{aa,bb,resolved}格式,sql无法正确查询,用户逐字喂正则5+轮"
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 4,
+    "ev": "从操作日志清洗规则获取已解决信息"
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 6,
+    "ev": "需求分析QA:含服务名/SQL越界;验收含模糊词准确正确"
+   }
+  ],
+  "fail_count": 9,
+  "failures": [
+   {
+    "date": "2026-06-12",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过反复(×4)"
+   },
+   {
+    "date": "2026-06-12",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial 1轮best-effort(×5)"
+   }
+  ]
+ },
+ "427": {
+  "one_line": "会议系统增加订阅会议功能(cann社区)",
+  "primary_desc": "部署镜像启动反复报错(nginx权限、非root)+vitest ESM/pytest环境缺,deploy-test重跑17次",
+  "notable": "gemini配额耗尽无法review;镜像非root权限与需求无关却挡deploy",
+  "cats": [
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 12,
+    "ev": "nginx日志文件权限denied;反复/ai-deploy-test full cann"
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 4,
+    "ev": "vitest ERR_REQUIRE_ESM;pytest未安装"
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 2,
+    "ev": "设计说无需UT却生成了UT"
+   }
+  ],
+  "fail_count": 17,
+  "failures": [
+   {
+    "date": "2026-06-01",
+    "stage": "implement",
+    "run_url": null,
+    "reason": "未解析出目标服务:缺project标签"
+   },
+   {
+    "date": "2026-06-01",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26741038060",
+    "reason": "开发预览执行异常(另27123216292/27124052535)"
+   },
+   {
+    "date": "2026-06-08",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27122682031",
+    "reason": "开发提交执行异常;代码推送non-fast-forward(反复)"
+   },
+   {
+    "date": "2026-06-03",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "preview_partial冒烟VERDICT:FAIL"
+   },
+   {
+    "date": "2026-06-09",
+    "stage": "deploy",
+    "run_url": null,
+    "reason": "发布被拦截:实现PR未合并(×2)"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27335131933",
+    "reason": "测试发布流水线失败反复(另27338833090/27342444569,三连红)"
+   }
+  ]
+ },
+ "665": {
+  "one_line": "社区统计看板贡献者统计增强(复现#276验证)",
+  "primary_desc": "复现#276:designer误把上轮草稿当现有实现作基线,预览恒冒烟有遗留",
+  "notable": "全程机器人账号驱动纯自测;--skip-design重跑23次始终partial无收敛",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 12,
+    "ev": "designer把上轮AI草稿当现有实现(设计基线≠impl分支)"
+   },
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 11,
+    "ev": "连续23轮--skip-design,每轮回冒烟有遗留preview_partial无自动判定终止"
+   }
+  ],
+  "fail_count": 6,
+  "failures": [
+   {
+    "date": "2026-06-04",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过反复(×3)"
+   },
+   {
+    "date": "2026-06-05",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "preview_partial预览已起冒烟VERDICT:FAIL(×3)"
+   }
+  ]
+ },
+ "433": {
+  "one_line": "cve-manager-ng trivy支持多目录漏洞展示(多社区)",
+  "primary_desc": "社区范围反复澄清(AI当单社区实际7社区)+实现有P0缺陷(Branch丢失、四社区缺测试)",
+  "notable": "用户点名参考add_dir分支但AI未参考;Branch字段丢失靠人工review发现",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 10,
+    "ev": "改动涉及7个指定社区非一个,重复3+轮"
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 9,
+    "ev": "四社区缺handler_test.go;P0缺陷Branch字段丢失"
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 4,
+    "ev": "是否参考已有分支add_dir"
+   }
+  ],
+  "fail_count": 17,
+  "failures": [
+   {
+    "date": "2026-06-01",
+    "stage": "implement",
+    "run_url": null,
+    "reason": "未解析出目标服务:缺project标签"
+   },
+   {
+    "date": "2026-06-01",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26741135549",
+    "reason": "开发预览执行异常(另26928120037/26928386397/26928918308/27119322776)"
+   },
+   {
+    "date": "2026-06-02",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过"
+   },
+   {
+    "date": "2026-06-04",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "preview_partial冒烟VERDICT:FAIL;pod未就绪(反复多次)"
+   },
+   {
+    "date": "2026-06-05",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27003696701",
+    "reason": "开发提交执行异常;submit_partial"
+   }
+  ]
+ },
+ "314": {
+  "one_line": "论坛用户区分华为/非华为(加company字段+接口+前端)",
+  "primary_desc": "AI反复重做main已有工作或产出零改动,用户逐仓逐接口手把手指路",
+  "notable": "跨三仓联动;CI门禁(clover.xml/pnpm/license)额外吃多轮",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 8,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 3,
+    "ev": ""
+   }
+  ],
+  "fail_count": 12,
+  "failures": [
+   {
+    "date": "2026-06-08",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览部署失败deploy-script-failed exit128,无公网入口,APIMagic本地也起不来(application.yml空缺DB配置),仅静态验证"
+   },
+   {
+    "date": "2026-06-09",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "部署失败exit128;TASK1未改动email字段未采集;Label门禁失败"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "vitest UT失败FileNotFoundError coverage/clover.xml;runner无网npm超时Node18<22.13;1 FAILED SQL断言换行不匹配;Label必填FAIL"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27257881951",
+    "reason": "开发预览执行异常(另27263679992/27266673209)"
+   }
+  ]
+ },
+ "434": {
+  "one_line": "CI监控增加华北(cn-12)集群告警监听",
+  "primary_desc": "AI缺该CI仓集群拓扑/节点IP/文件命名约定,用户逐轮喂集群名/代码仓/节点IP/参照文件",
+  "notable": "11轮需求分析全在补集群清单;deploy-test三连红仍open",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 9,
+    "ev": ""
+   },
+   {
+    "code": "CLAUDEMD_MISSING",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 2,
+    "ev": ""
+   }
+  ],
+  "fail_count": 20,
+  "failures": [
+   {
+    "date": "2026-06-01",
+    "stage": "implement",
+    "run_url": null,
+    "reason": "未解析出目标服务,需打project label"
+   },
+   {
+    "date": "2026-06-01",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26741217532",
+    "reason": "开发预览执行异常"
+   },
+   {
+    "date": "2026-06-01~09",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA NEEDS_REVISION反复(PR520/737/745,5+次)"
+   },
+   {
+    "date": "2026-06-09~12",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览pod未就绪(ascend-ci-argocd/deployment,多次)"
+   },
+   {
+    "date": "2026-06-12",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "P0缺失:node-exporter targets IP空占位符;cronjob-mirror-sync.yaml缺失;分支命名/Label门禁FAIL;remote-write用HTTP安全问题"
+   },
+   {
+    "date": "2026-06-12",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27401258244",
+    "reason": "测试发布流水线执行失败(另27401553945/27402722937,三连红)"
+   }
+  ]
+ },
+ "1049": {
+  "one_line": "HPCKit看板采集GitCode下载量详情+前端展示+导出",
+  "primary_desc": "采集/校验/前端明细实现反复纠偏,叠加需求边做边加与预览部署冲突",
+  "notable": "多轮--deploy-only纯重试;与main冲突需手动合",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 7,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 5,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 2,
+    "ev": ""
+   }
+  ],
+  "fail_count": 2,
+  "failures": [
+   {
+    "date": "2026-07-07",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28839198980",
+    "reason": "开发预览执行异常(另28865480818)"
+   }
+  ]
+ },
+ "726": {
+  "one_line": "Triton-Ascend迁移分类/生命周期规则到universal-label",
+  "primary_desc": "AI反复交占位符(stub)实现7个生命周期规则不落地真逻辑,且擅改被禁依赖仓、UT编译不过",
+  "notable": "hard gate识破stub但AI每轮仍不实现真逻辑=机器人产能不足典型",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 9,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 3,
+    "ev": ""
+   }
+  ],
+  "fail_count": 20,
+  "failures": [
+   {
+    "date": "2026-06-09",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA NEEDS_REVISION(PR735,3次)"
+   },
+   {
+    "date": "2026-06-09",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览pod未就绪(robot-universal-label/lifecycle);no-kubeconfig未起公网入口"
+   },
+   {
+    "date": "2026-06-09",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "增量覆盖率69.4%<80%;title_label.go 33.3%;核心P0(7生命周期规则)全placeholder;Go版本门禁失败"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "UT无法运行:go.mod要go>=1.25.11环境仅1.25.10;占位符实现;编译FAIL"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "UT编译失败:strPtr未定义/mockClient缺issues,labels字段;覆盖率无法计算"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "UT编译失败致覆盖率红(hard gate);违规改了不该改的仓库;预览503未就绪;replacement dir ../robot-framework-lib预览不存在"
+   }
+  ]
+ },
+ "326": {
+  "one_line": "社区回复机器人RAG重构(lightrag解耦+pgvector影子评测)",
+  "primary_desc": "AI把lightrag主流程与pgvector影子评测的主次关系搞反,需求文档反复返工;开局又被project标签未注册卡掉多轮",
+  "notable": "纯设计文档类无预览可看;project标签plumbing空耗5轮",
+  "cats": [
+   {
+    "code": "OTHER",
+    "rounds": 5,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 3,
+    "ev": ""
+   }
+  ],
+  "fail_count": 1,
+  "failures": [
+   {
+    "date": "2026-06-02",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION(PR562)"
+   }
+  ]
+ },
+ "312": {
+  "one_line": "openUBMC看板新增响应速度与闭环情况+周报",
+  "primary_desc": "need_design/itest/ux标签强制补设计+测试文档,AI反复在改需求文档还是补设计文档间打转,之后UI多轮微调",
+  "notable": "设计文档门禁与UI打磨双头消耗",
+  "cats": [
+   {
+    "code": "CI_GATE",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 5,
+    "ev": ""
+   },
+   {
+    "code": "UI_NO_FEEDBACK",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 9,
+  "failures": [
+   {
+    "date": "2026-07-01~02",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA NEEDS_REVISION反复(PR1213/1217/1224);验收标准缺量化阈值/闭环率未定义公式;归属建议om-datacenter不在白名单事实错误"
+   },
+   {
+    "date": "2026-07-07",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览未起公网入口deploy-script-failed;本地node_modules未安装无法运行"
+   }
+  ]
+ },
+ "1309": {
+  "one_line": "welcome bot按标题前缀自动打分类标签",
+  "primary_desc": "极简单前缀匹配打标签功能却因预览/部署反复失败,用户连发十余次--deploy-only空转",
+  "notable": "零实质反馈纯部署重试,最能说明预览部署稳定性本身是产能杀手",
+  "cats": [
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 20,
+    "ev": ""
+   }
+  ],
+  "fail_count": 2,
+  "failures": [
+   {
+    "date": "2026-07-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/29075203503",
+    "reason": "开发预览执行异常(另29076566034)"
+   }
+  ]
+ },
+ "435": {
+  "one_line": "社区官网密码登录增加双因子+滑块+限流",
+  "primary_desc": "开局大量轮次耗在/project选服务名的拼写/未注册标签;随后AI漏做oneid前端、提交门禁反复红",
+  "notable": "oneid安全类需求复杂13轮分析未收敛;project标签易用性差是显著噪声",
+  "cats": [
+   {
+    "code": "OTHER",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 3,
+    "ev": ""
+   }
+  ],
+  "fail_count": 15,
+  "failures": [
+   {
+    "date": "2026-06-01",
+    "stage": "implement",
+    "run_url": null,
+    "reason": "未解析出目标服务需打project label"
+   },
+   {
+    "date": "2026-06-01",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26741250087",
+    "reason": "开发预览执行异常"
+   },
+   {
+    "date": "2026-06-01~22",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA NEEDS_REVISION反复(PR521/999)"
+   },
+   {
+    "date": "2026-06-05~22",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览pod未就绪(om-webserver/oneid-server/oneid-website);K8s API超时无KUBECONFIG"
+   },
+   {
+    "date": "2026-06-08",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27119381241",
+    "reason": "开发提交执行异常(另27124921149)"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "Maven依赖下载超时无法验覆盖率;pnpm不可用;敏感信息扫描FAIL;前端缺失;临时token签名验证缺失;Label FAIL"
+   }
+  ]
+ },
+ "321": {
+  "one_line": "修robot-issue-manage缺陷(标签失败仍重复评论)",
+  "primary_desc": "修复逻辑简单但开发提交门禁反复⚠️,多人连续裸提交十余次都过不了",
+  "notable": "submit空转是主要黑洞",
+  "cats": [
+   {
+    "code": "CI_GATE",
+    "rounds": 10,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "OTHER",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 10,
+  "failures": [
+   {
+    "date": "2026-06-11~12",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览pod未就绪503(robot-issue-manage,多次)"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "分支命名规范门禁FAIL(issue-321-from-main不匹配);设计文档检查FAIL(无design.md);Label FAIL;未在设计说明的依赖升级"
+   },
+   {
+    "date": "2026-06-15",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial(对抗1/2)UT已覆盖失败场景但仍判partial未合并"
+   }
+  ]
+ },
+ "276": {
+  "one_line": "社区看板贡献者统计细化到仓库+点数字弹明细抽屉",
+  "primary_desc": "核心交互(点数字弹明细抽屉)反复没实现、接口404、明细数据全0,AI设计臆造不存在的表/接口",
+  "notable": "与memory一致(#276臆造dws_repo_contributor);转新issue#941继续",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 8,
+    "ev": ""
+   },
+   {
+    "code": "DATA_MISSING",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 3,
+    "ev": ""
+   }
+  ],
+  "fail_count": 13,
+  "failures": [
+   {
+    "date": "2026-05-12",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览未就绪ready=false(datastat#338/APIMagic#46)"
+   },
+   {
+    "date": "2026-06-02",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26804852050",
+    "reason": "开发预览执行异常;预览被CloudWAF拦截runner公网访问被识别为攻击"
+   },
+   {
+    "date": "2026-06-03",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26858475239",
+    "reason": "开发提交执行异常(另26861018218/26871626852)"
+   },
+   {
+    "date": "2026-06-03",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "apimagic-46 503未就绪;datastat预览HTTP403 WAF拦截;生产418 WAF;无法实调接口"
+   },
+   {
+    "date": "2026-06-20",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27865890101",
+    "reason": "开发预览执行异常"
+   }
+  ]
+ },
+ "1162": {
+  "one_line": "CANN流水线新增discussion采集节点计入D1",
+  "primary_desc": "AI不掌握CANN流水线结构与约定,用户几乎逐节点手把手指定用哪个子作业/参照哪条流水线/节点顺序和参数",
+  "notable": "任务只是加一个采集节点却因缺流水线域知识拖到17轮",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 11,
+    "ev": ""
+   },
+   {
+    "code": "DATA_MISSING",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 0,
+  "failures": []
+ },
+ "936": {
+  "one_line": "计算开源雷达新增开源洞察报告板块",
+  "primary_desc": "核心真实创建cosdt/oss-insight issue并回填一直不通(issue恒待生成),且把敏感建issue逻辑错放进APIMagic",
+  "notable": "预览无github token/权限致功能验不了;#936是agent不遵守子仓约定案例",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 7,
+    "ev": ""
+   },
+   {
+    "code": "DATA_MISSING",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 2,
+    "ev": ""
+   }
+  ],
+  "fail_count": 5,
+  "failures": [
+   {
+    "date": "2026-06-17~20",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA NEEDS_REVISION反复(PR938,3次)"
+   },
+   {
+    "date": "2026-06-22",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27925318983",
+    "reason": "开发预览执行异常"
+   },
+   {
+    "date": "2026-06-23",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览部署脚本超时exit124,无公网入口,仅静态审查+本地UT"
+   }
+  ]
+ },
+ "905": {
+  "one_line": "资源页趋势图接口15s→500ms(预聚合天表)",
+  "primary_desc": "性能优化的预聚合粒度(天/分钟)与中位数准确性反复权衡返工,且预览无足量真实数据来验证效果",
+  "notable": "DATA_MISSING(预览没数据)是这类性能issue验证通病,与memory #905一致",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "DATA_MISSING",
+    "rounds": 5,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 5,
+  "failures": [
+   {
+    "date": "2026-06-15",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "回填/提速已生效但APIMagic /res/cluster/detail返回code=-1,PSQLException:operator does not exist:date/integer"
+   },
+   {
+    "date": "2026-06-16",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27602820392",
+    "reason": "开发预览执行异常;上轮orchestrate 50分钟超时(另27609462583)"
+   },
+   {
+    "date": "2026-06-17",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "Hard gate未全过:Label必填FAIL(缺need_xxx)gate_passed=false;代码逻辑本身无P0"
+   }
+  ]
+ },
+ "842": {
+  "one_line": "修复总览页Issue内部/外部列空值",
+  "primary_desc": "AI不掌握issue汇总接口SQL与贡献维度流水线表结构,人工每轮手把手指到.sql/字段",
+  "notable": "人工把一个issue当多个SQL缺陷的集散地",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 5,
+    "ev": ""
+   }
+  ],
+  "fail_count": 5,
+  "failures": [
+   {
+    "date": "2026-06-11",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial门禁/冒烟有遗留"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "开发预览结果unknown(对抗轮次超限3/2状态未判定)"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "子仓PR创建失败(No commits between main and issue-842-from-main,sha为空)"
+   },
+   {
+    "date": "2026-06-12",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial门禁/冒烟有遗留"
+   },
+   {
+    "date": "2026-06-16",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial门禁/冒烟有遗留"
+   }
+  ]
+ },
+ "1181": {
+  "one_line": "昇腾CI接入仓加ArgoCD/YAML lint门禁",
+  "primary_desc": "需求分析QA反复NEEDS_REVISION又不给可操作差异,盲刷13轮/ai-requirement-analysis",
+  "notable": "13轮卡需求分析;仍open",
+  "cats": [
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 11,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 2,
+    "ev": ""
+   }
+  ],
+  "fail_count": 3,
+  "failures": [
+   {
+    "date": "2026-07-02",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION"
+   },
+   {
+    "date": "2026-07-02",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28571440185",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-07-02",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28583789395",
+    "reason": "开发预览orchestrate执行异常"
+   }
+  ]
+ },
+ "818": {
+  "one_line": "引用度指标支持一社区多关键词匹配",
+  "primary_desc": "AI不知om-dataarts改动必须在.preview/service.yaml写test_command,preview/submit反复空跑",
+  "notable": "自动归属误判为cla-all,起步路由错",
+  "cats": [
+   {
+    "code": "CLAUDEMD_MISSING",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 5,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 4,
+    "ev": ""
+   }
+  ],
+  "fail_count": 4,
+  "failures": [
+   {
+    "date": "2026-06-11",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27332305670",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial门禁遗留(×3)"
+   }
+  ]
+ },
+ "497": {
+  "one_line": "机器人按昇腾issue状态自动打resolved标签",
+  "primary_desc": "AI反复用错bot SDK的GetIssueLabels参数(issueID vs issueNumber)且不写单测,同bug纠正两遍仍回流",
+  "notable": "preview→submit→deploy→release→又回preview阶段来回跳",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 8,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 3,
+    "ev": ""
+   }
+  ],
+  "fail_count": 11,
+  "failures": [
+   {
+    "date": "2026-06-01",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "未解析出目标服务:缺project标签"
+   },
+   {
+    "date": "2026-06-01",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26740274271",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-06-01",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26746478018",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-06-01",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26749730237",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-06-01",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览pod未就绪/未起公网入口(robot-universal-label,反复多次)"
+   },
+   {
+    "date": "2026-06-04",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "含未就绪信号,预览pod曾未起公网入口"
+   }
+  ]
+ },
+ "1303": {
+  "one_line": "已解决指标清洗规则+dws聚合+接口重构",
+  "primary_desc": "跨om-dataarts清洗规则/dws聚合/APIMagic三层数据口径重构,AI缺表与流水线域知识,人工20+轮逐节点口述",
+  "notable": "21条指令几乎每条点名具体.py/.sql/表",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 12,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 5,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 4,
+    "ev": ""
+   }
+  ],
+  "fail_count": 4,
+  "failures": [
+   {
+    "date": "2026-07-09",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "开发预览冒烟未通过preview_failed"
+   },
+   {
+    "date": "2026-07-09",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "AI引擎进程级非正常退出design/dev rc=1,疑token失效/额度耗尽"
+   },
+   {
+    "date": "2026-07-09",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/29013328338",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-07-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/29075308357",
+    "reason": "开发预览orchestrate执行异常"
+   }
+  ]
+ },
+ "878": {
+  "one_line": "昇腾指标表接入TTFHW列(建表+每日灌数+接口)",
+  "primary_desc": "数据源ttfhw月度汇总开发期反复补跑,每次数据变更要重灌PG+重跑预览,人工规格驱动",
+  "notable": "全程无普通用户评论,维护者手写规格+补数据代跑",
+  "cats": [
+   {
+    "code": "DATA_MISSING",
+    "rounds": 8,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 5,
+    "ev": ""
+   },
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 3,
+    "ev": ""
+   }
+  ],
+  "fail_count": 3,
+  "failures": [
+   {
+    "date": "2026-06-14",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION"
+   },
+   {
+    "date": "2026-06-15",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "自动实现有缺陷,本轮手工修两处"
+   },
+   {
+    "date": "2026-06-20",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "开发预览结果unknown(对抗轮次超限3/2)"
+   }
+  ]
+ },
+ "853": {
+  "one_line": "sync-bot支持fork主仓到机器人账号再提PR",
+  "primary_desc": "机器人服务预览部署反复不稳,人工连打--deploy-only重部署验证占大半轮次",
+  "notable": "人工反馈几乎只有裸命令无文字指引",
+  "cats": [
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 8,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 5,
+    "ev": ""
+   }
+  ],
+  "fail_count": 7,
+  "failures": [
+   {
+    "date": "2026-06-12",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION"
+   },
+   {
+    "date": "2026-06-12",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27389899106",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-06-12",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27392479977",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-06-12",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27397544617",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-06-12",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "仅重部署--deploy-only:sync-bot pod未就绪(×2)"
+   },
+   {
+    "date": "2026-06-15",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial门禁遗留"
+   }
+  ]
+ },
+ "392": {
+  "one_line": "开源实习看板新增Torch-NPU/openUBMC/Ascend IR数据",
+  "primary_desc": "om-dataarts改动要在.preview/service.yaml写test_command约定AI不知,新社区数据要靠--pr反复重跑采集才落库",
+  "notable": "同test_command知识缺口在#818/#392反复出现",
+  "cats": [
+   {
+    "code": "CLAUDEMD_MISSING",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "DATA_MISSING",
+    "rounds": 5,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 3,
+    "ev": ""
+   }
+  ],
+  "fail_count": 2,
+  "failures": [
+   {
+    "date": "2026-06-10",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览含未就绪/partial信号(om-deployment)"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "APIMagic/om-dataarts PR创建失败(No commits between main and issue-392-from-main)"
+   }
+  ]
+ },
+ "1278": {
+  "one_line": "oidc登录也记录登录日志",
+  "primary_desc": "代码很小但卡流程后段:先反复修门禁,再6次release-plan空转不产出,发布上线自动化不可用",
+  "notable": "改动小而流程长,瓶颈全在门禁+release-plan编排质量",
+  "cats": [
+   {
+    "code": "OTHER",
+    "rounds": 6,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 5,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 3,
+    "ev": ""
+   }
+  ],
+  "fail_count": 5,
+  "failures": [
+   {
+    "date": "2026-07-07",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28838814873",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-07-07",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28850427910",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-07-07",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28855737492",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-07-08",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28914241173",
+    "reason": "测试发布流水线执行失败,构建或部署步骤出错"
+   },
+   {
+    "date": "2026-07-08",
+    "stage": "release",
+    "run_url": "https://github.com/opensourceways/release-mgmt/actions/runs/28944287391",
+    "reason": "/ai-release-plan变更计划生成执行异常(release-mgmt仓)"
+   }
+  ]
+ },
+ "1257": {
+  "one_line": "openGauss看板新增下载版本数据",
+  "primary_desc": "需求开发中才逐轮成形(数据源/接口约束/UI样式全靠预览后追加),AI被动跟随版版细化",
+  "notable": "边看预览边定需求;接口规范+UI美化各占一半",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 8,
+    "ev": ""
+   },
+   {
+    "code": "UI_NO_FEEDBACK",
+    "rounds": 5,
+    "ev": ""
+   },
+   {
+    "code": "CLAUDEMD_MISSING",
+    "rounds": 2,
+    "ev": ""
+   }
+  ],
+  "fail_count": 1,
+  "failures": [
+   {
+    "date": "2026-07-07",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览含partial/未就绪信号(APIMagic+datastat)"
+   }
+  ]
+ },
+ "714": {
+  "one_line": "采集issue优先级标题+严重缺陷识别纳入优先级",
+  "primary_desc": "严重缺陷识别评分口径(优先级映射分数)领域性强,AI无法自主定标,人工逐轮校准阈值",
+  "notable": "含一次orchestrate引擎50分钟超时",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 7,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 2,
+    "ev": ""
+   }
+  ],
+  "fail_count": 6,
+  "failures": [
+   {
+    "date": "2026-06-09",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION(×2)"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA:人工抽样验证未明确抽样方法和样本量"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27317543743",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "orchestrate执行超时50分钟timed out"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial门禁遗留"
+   }
+  ]
+ },
+ "1294": {
+  "one_line": "TTFHW测试总汇看板接入datastat公共区",
+  "primary_desc": "AI引擎首轮token/额度进程级崩溃后人工完全接管改用--deploy-only手动快迭代,12次重部署即人工验证闭环",
+  "notable": "12次--deploy-only雷同=脱离AI的人工手改验证循环",
+  "cats": [
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "UI_NO_FEEDBACK",
+    "rounds": 8,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 2,
+    "ev": ""
+   }
+  ],
+  "fail_count": 3,
+  "failures": [
+   {
+    "date": "2026-07-09",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "AI引擎进程级非正常退出design/dev rc=1,疑token失效/额度耗尽(×2)"
+   },
+   {
+    "date": "2026-07-09",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28991779640",
+    "reason": "开发预览orchestrate执行异常"
+   }
+  ]
+ },
+ "694": {
+  "one_line": "统一资源池监控看板(prometheus exporter)",
+  "primary_desc": "非标准服务预览pod未就绪+测试发布流水线反复构建/部署失败,卡在部署侧",
+  "notable": "分析阶段还两次要人工取消勾选安全/架构设计才放行,标签机制误伤轻量需求",
+  "cats": [
+   {
+    "code": "CI_GATE",
+    "rounds": 5,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 2,
+    "ev": ""
+   }
+  ],
+  "fail_count": 11,
+  "failures": [
+   {
+    "date": "2026-06-24",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION"
+   },
+   {
+    "date": "2026-06-25",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览pod(pod_exporter_monitoring)未就绪(多次)"
+   },
+   {
+    "date": "2026-07-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/29075426782",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-07-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/29083088442",
+    "reason": "开发预览orchestrate执行异常"
+   },
+   {
+    "date": "2026-07-13",
+    "stage": "deploy",
+    "run_url": null,
+    "reason": "测试发布被拦截:实现PR(pod_exporter_monitoring#1)未合并"
+   },
+   {
+    "date": "2026-07-13",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/29250548641",
+    "reason": "测试发布流水线执行失败,构建或部署步骤出错"
+   },
+   {
+    "date": "2026-07-13",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/29250921841",
+    "reason": "测试发布流水线执行失败"
+   },
+   {
+    "date": "2026-07-14",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/29320598930",
+    "reason": "集成测试通过但ai-test部分pod未就绪"
+   }
+  ]
+ },
+ "904": {
+  "one_line": "依据塔台蓝区用户把昇腾/CANN贡献者企业标记为华为(SQL更新映射)",
+  "primary_desc": "AI不懂数据中台约定(job上下文该用new_dws_*表、company空匹配须回退默认华为、平台需参数化区分github/gitcode),每条得人工纠正",
+  "notable": "纠正点几乎全是om-dataarts表命名/默认值/平台差异这类可写进CLAUDE.md的死知识",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 1,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 1,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 1,
+  "failures": [
+   {
+    "date": "2026-06-15",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial;评审NEEDS_ADJUSTMENT 6/10,om-dataarts cann社区平台字段错误致gate_passed=false;PR#356"
+   }
+  ]
+ },
+ "1203": {
+  "one_line": "CI容器通用化k8s错误反馈(dump OOM等到CI界面)",
+  "primary_desc": "AI不知该仓主开发分支是release/no_volumes而非main,反复在错分支开发/开错PR被迫关闭重来,叠加OOMKilled退出码等bug",
+  "notable": "目标分支非main项目约定缺失应写进服务配置",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 6,
+  "failures": [
+   {
+    "date": "2026-07-01",
+    "stage": "preview-push",
+    "run_url": null,
+    "reason": "代码推送失败fail-fast:issue-1203-from-main non-fast-forward本地落后远端,开发中止"
+   },
+   {
+    "date": "2026-07-01",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28506858399",
+    "reason": "开发预览执行异常"
+   },
+   {
+    "date": "2026-07-02",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "preview_partial 3/3:runner-container-hooks预览已起但冒烟有遗留(Node hook非Web服务)"
+   },
+   {
+    "date": "2026-07-06",
+    "stage": "deploy",
+    "run_url": null,
+    "reason": "发布被拦截:实现PR runner-container-hooks#22未合并"
+   },
+   {
+    "date": "2026-07-06",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28764548145",
+    "reason": "测试发布流水线执行失败,构建或部署步骤出错"
+   },
+   {
+    "date": "2026-07-06",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28764612820",
+    "reason": "测试发布流水线执行失败(重试仍失败)"
+   }
+  ]
+ },
+ "1190": {
+  "one_line": "监控新增nginx-pypi-cache探针+Prometheus告警",
+  "primary_desc": "生成的探针shell与Prometheus/Alertmanager表达式反复藏技术bug(Alpine/BusyBox不兼容、告警label匹配、Pushgateway时间戳),靠人工review抓",
+  "notable": "需求分析还因设计文档不满足模板任务清单卡2轮",
+  "cats": [
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 2,
+  "failures": [
+   {
+    "date": "2026-07-01",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION,PR#1206不自动合并"
+   },
+   {
+    "date": "2026-07-02",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28585958726",
+    "reason": "开发预览执行异常"
+   }
+  ]
+ },
+ "844": {
+  "one_line": "昇腾CI页新增NPU社区总计表",
+  "primary_desc": "初始只给字段和归并表,指标口径(排除苏州/杭州云上资源、tooltip、样式对齐)边做边补,且去掉苏州/杭州落实不到位被迫重提",
+  "notable": "同一过滤需求重复;还有命令拼写错误/ai-devlop-preview浪费一轮",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "UI_NO_FEEDBACK",
+    "rounds": 1,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "OTHER",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 1,
+  "failures": [
+   {
+    "date": "2026-06-23",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "preview_partial 3/3:datastat预览已起但前端单测在pod内失败(不阻断)"
+   }
+  ]
+ },
+ "712": {
+  "one_line": "github ARC双集群runner负载均衡与HA(纯YAML/Helm)",
+  "primary_desc": "AI缺现网infra仓(ascend-ci-deployment/argocd/gha-runners)代码结构与确切文件位置知识,每轮都要用户手贴参考路径与命名",
+  "notable": "纯配置改动卡在不照现有代码约定/文件位置;停在submit_partial未合",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 6,
+  "failures": [
+   {
+    "date": "2026-06-09",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION,PR#746(同日3次)"
+   },
+   {
+    "date": "2026-06-09",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial:ascend-ci-deployment/argocd"
+   },
+   {
+    "date": "2026-06-09",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "preview_partial:ascend-ci-argocd/deployment pod未就绪"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27248728970",
+    "reason": "开发预览执行异常"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "preview_partial 3/5:pod未就绪"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial:ascend-ci-deployment,PR#869"
+   }
+  ]
+ },
+ "486": {
+  "one_line": "CI看板统计NPU/GPU测试用例数+点击下钻workflow/job/step",
+  "primary_desc": "需求从统计数量在预览阶段持续扩张为多级下钻+分页+字段过滤,边界靠一轮轮预览反馈才逐步明确",
+  "notable": "开头两次被缺project标签挡;DATA_MISSING使看不到效果额外空转",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "DATA_MISSING",
+    "rounds": 1,
+    "ev": ""
+   },
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 4,
+  "failures": [
+   {
+    "date": "2026-06-15",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION,PR#893"
+   },
+   {
+    "date": "2026-06-23",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览已起但datastat前端单测pod内失败(不阻断)"
+   },
+   {
+    "date": "2026-06-24",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "preview_partial 3/3:APIMagic+datastat冒烟有遗留"
+   },
+   {
+    "date": "2026-06-25",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA再次NEEDS_REVISION,PR#893"
+   }
+  ]
+ },
+ "1159": {
+  "one_line": "label机器人加标签前校验仓库标签是否存在",
+  "primary_desc": "需求/预览/提交都一次过,卡在测试发布流水线本身反复构建/部署报错,重试4次才通",
+  "notable": "唯一真正走到正式上线;测试发布失败疑为流水线基础设施;换人重触发才过",
+  "cats": [
+   {
+    "code": "CI_GATE",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 3,
+  "failures": [
+   {
+    "date": "2026-06-29",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28358845056",
+    "reason": "测试发布流水线执行失败,构建或部署步骤出错"
+   },
+   {
+    "date": "2026-06-29",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28360170737",
+    "reason": "测试发布失败(重试)"
+   },
+   {
+    "date": "2026-06-29",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28361777598",
+    "reason": "测试发布失败(再次重试)"
+   }
+  ]
+ },
+ "810": {
+  "one_line": "Triton-Ascend Issue/PR自动分类+无响应自动关闭",
+  "primary_desc": "功能一轮就基本可用,绝大多数迭代耗在AI生成的UT增量覆盖率反复不达标(title_label.go仅11.1%)",
+  "notable": "deploy因PR未合被拦;用户被迫多次下调覆盖率目标85%→60%",
+  "cats": [
+   {
+    "code": "CI_GATE",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "OTHER",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 3,
+  "failures": [
+   {
+    "date": "2026-06-11",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial:robot-universal-label#46/lifecycle#30"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "deploy",
+    "run_url": null,
+    "reason": "发布被拦截:实现PR label#46、lifecycle#30未合并"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "deploy",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27344451087",
+    "reason": "测试发布流水线执行失败"
+   }
+  ]
+ },
+ "672": {
+  "one_line": "sync-bot增加可配置fork主仓再提PR",
+  "primary_desc": "AI每轮只实现部分,同一份3点规格被用户重复贴4遍仍未一次到位,靠反复预览逼齐",
+  "notable": "最终submit+deploy-test✅并转发release-mgmt",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 1,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 3,
+  "failures": [
+   {
+    "date": "2026-06-11",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27318500752",
+    "reason": "开发提交执行异常"
+   },
+   {
+    "date": "2026-06-11",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览已起但sync-bot pod未就绪(/webhook)"
+   },
+   {
+    "date": "2026-06-15",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial:sync-bot fork模式,PR#15"
+   }
+  ]
+ },
+ "646": {
+  "one_line": "新社区triton-ascend接入机器人能力",
+  "primary_desc": "提交阶段测试环境Go版本不匹配(1.25.10≠1.25.11)致覆盖率恒0%+need_light标签未识别,门禁反复红",
+  "notable": "两次异常都非代码问题而是runner环境与标签门禁;需求未提示已有robot-universal-*可复用",
+  "cats": [
+   {
+    "code": "CI_GATE",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "CLAUDEMD_MISSING",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 3,
+    "ev": ""
+   }
+  ],
+  "fail_count": 4,
+  "failures": [
+   {
+    "date": "2026-06-08",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27114620626",
+    "reason": "开发提交执行异常"
+   },
+   {
+    "date": "2026-06-08",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial:robot-universal-access/assign/lifecycle/issue-manage"
+   },
+   {
+    "date": "2026-06-08",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "submit_partial:robot多子仓"
+   },
+   {
+    "date": "2026-06-08",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27137859028",
+    "reason": "开发提交执行异常"
+   }
+  ]
+ },
+ "1251": {
+  "one_line": "/user/companies接口支持跨社区批量查询",
+  "primary_desc": "首版预览没真正实现跨社区(鉴权层堵死入口),且改法方向被维护者两次调整来回重做",
+  "notable": "归属服务多候选导致开局2次被拒",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 0,
+  "failures": []
+ },
+ "910": {
+  "one_line": "Github镜像仓自动评论指引开发者回gitcode提交",
+  "primary_desc": "需求先被澄清一次,之后多为无反馈的裸重跑(缺自动质量判定)+一次预览异常,拉长到跨月",
+  "notable": "历时6-15至7-16跨一个月",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 2,
+    "ev": ""
+   },
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 3,
+    "ev": ""
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 1,
+    "ev": ""
+   }
+  ],
+  "fail_count": 2,
+  "failures": [
+   {
+    "date": "2026-06-15",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION,PR#911"
+   },
+   {
+    "date": "2026-07-15",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/29406519744",
+    "reason": "开发预览执行异常"
+   }
+  ]
+ },
+ "1299": {
+  "one_line": "oss-map首页增加全局技术点检索",
+  "primary_desc": "需求分析阶段AI反复不采纳同一段细小措辞修订,用户被迫重复粘贴相同意见4次刷QA纯内耗",
+  "notable": "瓶颈全在需求文档措辞纠错(QA对need_ux措辞/全角半角吹毛求疵)非功能本身",
+  "cats": [
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 4,
+    "ev": ""
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 3,
+    "ev": ""
+   }
+  ],
+  "fail_count": 2,
+  "failures": [
+   {
+    "date": "2026-07-09",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION,PR#1300(同日2次)"
+   },
+   {
+    "date": "2026-07-09",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览已起但oss-map(work)pod未就绪;PR#103"
+   }
+  ]
+ },
+ "1137": {
+  "one_line": "采集展示openPangu社区GitCode/HF/ModelScope下载量看板",
+  "primary_desc": "AI没自动识别可复用CANN已有表/接口/图表,用户逐轮口述复用细节才收敛",
+  "notable": "复用型需求AI不主动发现同构社区实现;叠加中文.ms push bug烧一轮",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 4,
+    "ev": "每轮补复用规格:趋势图复用CANN、modelscope base_url、需dws_openpangu_download_daily表参考已有社区完全复用"
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 1,
+    "ev": "中文.ms文件名push失败流水线bug,[2]开发预览曾❌"
+   }
+  ],
+  "fail_count": 3,
+  "failures": [
+   {
+    "date": "2026-06-27",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "代码推送失败已中止fail-fast"
+   },
+   {
+    "date": "2026-06-27",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28281147240",
+    "reason": "开发预览执行异常"
+   },
+   {
+    "date": "2026-06-27",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览已起冒烟有遗留preview_partial"
+   }
+  ]
+ },
+ "319": {
+  "one_line": "从零建patch-manager补丁管理系统(新服务)",
+  "primary_desc": "宏大greenfield新系统一次说不清,AI每轮只实现局部,反复要求全部实现",
+  "notable": "超大系统级需求不适合单issue多轮AI闭环",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 4,
+    "ev": "请按照需求文档全部实现功能——AI未把宏大需求实现全"
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 2,
+    "ev": "多次[2]开发预览❌"
+   },
+   {
+    "code": "CI_GATE",
+    "rounds": 2,
+    "ev": "解决CI门禁,增加UT覆盖率"
+   }
+  ],
+  "fail_count": 5,
+  "failures": [
+   {
+    "date": "2026-06-04",
+    "stage": "submit",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26935806393",
+    "reason": "开发提交执行异常"
+   },
+   {
+    "date": "2026-06-04",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/26953079630",
+    "reason": "开发预览执行异常"
+   },
+   {
+    "date": "2026-06-05",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "冒烟有遗留CrashLoopBackOff反复崩溃重启"
+   },
+   {
+    "date": "2026-06-05",
+    "stage": "submit",
+    "run_url": null,
+    "reason": "开发提交1轮best-effort含遗留(×2)"
+   }
+  ]
+ },
+ "1252": {
+  "one_line": "openGauss健康度看板新增AI度量看板(复用openEuler)",
+  "primary_desc": "AI不知openEuler已有同款看板可纯配置复用,需求分析空转",
+  "notable": "与#1137同根:跨社区复用识别缺失",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 3,
+    "ev": "系统已实现openeuler的AI度量看板,opengauss只需配置复用——AI不知已有实现"
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 1,
+    "ev": "挂--pr后[2]开发预览仍❌一次"
+   }
+  ],
+  "fail_count": 1,
+  "failures": [
+   {
+    "date": "2026-07-07",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28852780651",
+    "reason": "开发预览执行异常"
+   }
+  ]
+ },
+ "1210": {
+  "one_line": "NPU折线图增加时间范围使用率(平均/P50/P90/P95)",
+  "primary_desc": "本体小改,大半轮次耗在echarts CVE升级lockfile/manifest不匹配",
+  "notable": "echarts CVE是全仓恒红项应独立fix分支,被塞进功能任务空耗",
+  "cats": [
+   {
+    "code": "CI_GATE",
+    "rounds": 4,
+    "ev": "echarts 5.6.0改6.1.0修cve→lockfile don't match反复"
+   },
+   {
+    "code": "UI_NO_FEEDBACK",
+    "rounds": 2,
+    "ev": "优化P50/P90/P95间距使美观"
+   }
+  ],
+  "fail_count": 2,
+  "failures": [
+   {
+    "date": "2026-07-02",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "预览已起冒烟有遗留preview_partial(×2)"
+   }
+  ]
+ },
+ "1200": {
+  "one_line": "昇腾总看板闭环率改解决率(5天/7天)",
+  "primary_desc": "解决率字段is_resolved与指标来源AI不知,需人工喂库表口径",
+  "notable": "数据口径缺文档;还漏改配套sql字段",
+  "cats": [
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 3,
+    "ev": "解决率用仓库分析Issue平均解决率指标、is_resolved字段"
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 1,
+    "ev": "加字段对应sql文件也需加保持一致"
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 1,
+    "ev": "[2]开发预览❌"
+   }
+  ],
+  "fail_count": 2,
+  "failures": [
+   {
+    "date": "2026-07-01",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION"
+   },
+   {
+    "date": "2026-07-06",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/28765642319",
+    "reason": "开发预览执行异常"
+   }
+  ]
+ },
+ "985": {
+  "one_line": "更新openGauss总览核心仓库列表(SIG维度→仓库维度)",
+  "primary_desc": "AI反复把改仓库列表误扩到健康度模型/health.yaml,用户3次划边界",
+  "notable": "改动边界识别错是需求分析空转主因",
+  "cats": [
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 3,
+    "ev": "仅改总览页面,不涉及健康度模型,不是改health.yaml——AI反复误判要改health.yaml"
+   },
+   {
+    "code": "KNOWLEDGE_MISSING",
+    "rounds": 1,
+    "ev": "新增参数应在元数据层请求定义中增加"
+   }
+  ],
+  "fail_count": 1,
+  "failures": [
+   {
+    "date": "2026-07-02",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION"
+   }
+  ]
+ },
+ "487": {
+  "one_line": "新增AI协作与合规度量指标并上线社区度量看板",
+  "primary_desc": "需求分析文档质量差被内置QA反复打回,7轮全卡在analyze",
+  "notable": "analyze 7:1 implement,机器人一次产不出合格文档",
+  "cats": [
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 5,
+    "ev": "按PR内Requirement Analysis QA必须修复项修订需求分析章节"
+   }
+  ],
+  "fail_count": 2,
+  "failures": [
+   {
+    "date": "2026-06-01",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION(×2)"
+   }
+  ]
+ },
+ "304": {
+  "one_line": "Issue check能力复制到GitHub项目(vllm-ascend/triton-ascend)",
+  "primary_desc": "需求范围/落地仓库/规格文档靠人工逐轮补,初始issue过简",
+  "notable": "服务归属首轮多候选卡人工选;真实需求=整份domain文档",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 4,
+    "ev": "逐轮补:实际需求含robot-issue-manage所有需求、参考domain文档、在review-robot实现"
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 1,
+    "ev": "[2]开发预览❌"
+   }
+  ],
+  "fail_count": 6,
+  "failures": [
+   {
+    "date": "2026-06-05~10",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION反复(×4)"
+   },
+   {
+    "date": "2026-06-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/27258539490",
+    "reason": "开发预览执行异常(×2)"
+   }
+  ]
+ },
+ "1298": {
+  "one_line": "TOPN dataclean过滤所有外部issue(按internal字段)",
+  "primary_desc": "需求分析机器人夹带实现细节违反AGENTS.md规范被纠正重做",
+  "notable": "需求极简,多轮全耗在需求分析抽象层级不合规",
+  "cats": [
+   {
+    "code": "ROBOT_QUALITY",
+    "rounds": 2,
+    "ev": "需求分析不应引入函数名/类名/表名/路径,应用业务语言,含2-4原子Task"
+   },
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 1,
+    "ev": "[2]开发预览❌"
+   }
+  ],
+  "fail_count": 2,
+  "failures": [
+   {
+    "date": "2026-07-09",
+    "stage": "analyze-QA",
+    "run_url": null,
+    "reason": "需求分析QA未通过NEEDS_REVISION"
+   },
+   {
+    "date": "2026-07-15",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/29384953944",
+    "reason": "开发预览执行异常"
+   }
+  ]
+ },
+ "1090": {
+  "one_line": "CLA机器人评论体验优化",
+  "primary_desc": "AI引擎进程级失败(token失效/额度耗尽/限流),多轮非需求问题空跑",
+  "notable": "纯基础设施故障,与需求质量无关",
+  "cats": [
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 3,
+    "ev": "AI引擎执行失败进程级非正常退出,订阅token失效/额度耗尽/限流,design rc=1 dev rc=1"
+   }
+  ],
+  "fail_count": 3,
+  "failures": [
+   {
+    "date": "2026-07-13",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "AI引擎执行失败已中止本轮未产生可信改动(token失效/额度耗尽,×2)"
+   },
+   {
+    "date": "2026-07-14",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "AI引擎执行失败已中止"
+   }
+  ]
+ },
+ "862": {
+  "one_line": "cve-manager-ng mindspore维护版本自定义",
+  "primary_desc": "需求分批增量提出非一次说清,每轮加新范围",
+  "notable": "边做边加需求;AI误把coverage.out提交进PR",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 4,
+    "ev": "分批追加任务2/任务3/优化项1234"
+   },
+   {
+    "code": "OUTPUT_WRONG",
+    "rounds": 1,
+    "ev": "清理coverage.out不应提交进pr"
+   }
+  ],
+  "fail_count": 0,
+  "failures": []
+ },
+ "736": {
+  "one_line": "会议系统自动发送纪要到邮件列表",
+  "primary_desc": "预览反复起不来,用户无脑重发直到成功",
+  "notable": "反馈全是空命令重试=卡在部署/预览环境",
+  "cats": [
+   {
+    "code": "PREVIEW_FAILED",
+    "rounds": 3,
+    "ev": "连续3+次纯/ai-develop-preview无补充,每次[2]开发预览❌"
+   }
+  ],
+  "fail_count": 4,
+  "failures": [
+   {
+    "date": "2026-07-10",
+    "stage": "preview",
+    "run_url": "https://github.com/opensourceways/backlog/actions/runs/29077437948",
+    "reason": "开发预览执行异常(另29228932811/29239807925)"
+   },
+   {
+    "date": "2026-07-13",
+    "stage": "preview",
+    "run_url": null,
+    "reason": "冒烟通过但meeting-center预览/health未就绪"
+   }
+  ]
+ },
+ "498": {
+  "one_line": "openUBMC网页多模块扩展(兼容性/测评/认证/缺陷中心)",
+  "primary_desc": "需求是含4大模块+多阶段路线图的大杂烩,边界不清无法收敛",
+  "notable": "单issue塞多独立功能模块应拆分",
+  "cats": [
+   {
+    "code": "REQUIREMENT_VAGUE",
+    "rounds": 5,
+    "ev": "超大多模块需求含多时间节点,评论区无细化,机器人需求分析反复自动重启空转"
+   }
+  ],
+  "fail_count": 0,
+  "failures": []
+ }
+}

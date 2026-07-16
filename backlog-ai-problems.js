@@ -12,11 +12,12 @@
     DATA_MISSING: "#91cc75", ROBOT_QUALITY: "#ea7ccc", OTHER: "#bbb",
   };
   const STAGECOLOR = { "需求分析": "#73c0de", "开发预览": "#5470c6", "开发提交": "#9a60b4", "测试发布": "#fac858", "正式上线": "#3ba272", "AI引擎故障": "#ee6666", "服务解析/开发": "#fc8452", "其他": "#bbb" };
-  let D;
+  let D, DET = {};
 
-  fetch("./backlog-ai-problems.json?t=" + Date.now())
-    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(d => { D = d; init(); })
+  Promise.all([
+    fetch("./backlog-ai-problems.json?t=" + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    fetch("./backlog-ai-problems-detail.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+  ]).then(([d, det]) => { D = d; DET = det || {}; init(); })
     .catch(e => { const el = $("#err"); el.style.display = "block"; el.textContent = "数据加载失败:" + e; });
 
   function init() {
@@ -128,22 +129,54 @@
     $("#f-primary").addEventListener("change", e => { fPri = e.target.value; drawTable(); });
     drawTable();
   }
+  const STAGE_CN2 = { "analyze-QA": "需求分析QA", "analyze": "需求分析", "preview": "开发预览", "submit": "开发提交", "deploy": "测试发布", "release": "发布上线", "engine": "AI引擎", "implement": "服务解析", "preview-push": "预览-推送" };
+  function detailHTML(n) {
+    const d = DET[String(n)]; if (!d) return '<div style="color:var(--t3)">无详情数据</div>';
+    let h = `<div style="padding:10px 4px;line-height:1.75;font-size:13px">`;
+    if (d.one_line) h += `<div><b>做什么:</b> ${esc(d.one_line)}</div>`;
+    if (d.primary_desc) h += `<div><b>主问题:</b> ${esc(d.primary_desc)}</div>`;
+    if (d.notable) h += `<div><b>特别注意:</b> ${esc(d.notable)}</div>`;
+    if (d.cats && d.cats.length) {
+      h += `<div style="margin-top:6px"><b>根因构成:</b><ul style="margin:4px 0 0;padding-left:20px">` +
+        d.cats.map(c => `<li><span class="pill" style="background:${CATCOLOR[c.code] || "#888"};font-size:11px">${esc(D.cn[c.code] || c.code)}</span> ~${c.rounds ?? "?"}轮${c.ev ? ` — <span style="color:var(--t2)">${esc(c.ev)}</span>` : ""}</li>`).join("") + `</ul></div>`;
+    }
+    h += `<div style="margin-top:8px"><b>失败 Action(${d.fail_count} 条)</b>`;
+    if (d.failures && d.failures.length) {
+      h += `<table style="margin-top:4px;width:100%;font-size:12px"><thead><tr style="color:var(--t3)"><th style="padding:3px 6px">日期</th><th style="padding:3px 6px">阶段</th><th style="padding:3px 6px">失败原因</th><th style="padding:3px 6px">链接</th></tr></thead><tbody>` +
+        d.failures.map(f => `<tr>
+          <td style="padding:3px 6px;white-space:nowrap;color:var(--t3)">${esc(f.date || "")}</td>
+          <td style="padding:3px 6px;white-space:nowrap">${esc(STAGE_CN2[f.stage] || f.stage || "")}</td>
+          <td style="padding:3px 6px">${esc(f.reason || "")}</td>
+          <td style="padding:3px 6px;white-space:nowrap">${f.run_url ? `<a href="${esc(f.run_url)}" target="_blank" rel="noopener">run ↗</a>` : "—"}</td>
+        </tr>`).join("") + `</tbody></table>`;
+    } else h += ` <span style="color:var(--t3)">(无失败 action 记录)</span>`;
+    h += `</div><div style="margin-top:6px"><a href="https://github.com/opensourceways/backlog/issues/${n}" target="_blank" rel="noopener">→ 打开 issue #${n}(需权限)</a></div></div>`;
+    return h;
+  }
+
   function drawTable() {
     let rows = D.issues.slice();
     if (fSvc !== "__all__") rows = rows.filter(r => r.service === fSvc);
     if (fPri !== "__all__") rows = rows.filter(r => r.primary === fPri);
     rows.sort((a, b) => { const va = a[sortKey], vb = b[sortKey]; return (va < vb ? -1 : va > vb ? 1 : 0) * sortDir; });
-    $("#cnt").textContent = `共 ${rows.length} 条`;
+    $("#cnt").textContent = `共 ${rows.length} 条 · 点「详情」展开`;
     const cols = [["n", "#"], ["service", "服务"], ["type", "类型"], ["scenario", "场景"], ["rounds", "轮次"], ["time_h", "估h"], ["stage", "断点"], ["primary", "主问题"], ["fail_count", "失败Action"], ["succeeded", "完成"]];
-    const th = cols.map(([k, l]) => `<th data-k="${k}">${l}${sortKey === k ? (sortDir < 0 ? " ▾" : " ▴") : ""}</th>`).join("");
+    const th = cols.map(([k, l]) => `<th data-k="${k}">${l}${sortKey === k ? (sortDir < 0 ? " ▾" : " ▴") : ""}</th>`).join("") + `<th>详情</th>`;
     const body = rows.map(r => `<tr>
       <td><a href="https://github.com/opensourceways/backlog/issues/${r.n}" target="_blank" rel="noopener">#${r.n}</a></td>
       <td style="color:var(--t2)">${esc(r.service)}</td><td>${esc(r.type)}</td><td style="color:var(--t3)">${esc(r.scenario)}</td>
       <td style="font-weight:600">${r.rounds}</td><td>${r.time_h}</td><td>${esc(D.stage_cn[r.stage] || r.stage)}</td>
       <td><span class="pill" style="background:${CATCOLOR[r.primary] || "#888"}">${esc(D.cn[r.primary])}</span></td>
       <td style="text-align:center">${r.fail_count || ""}</td>
-      <td style="text-align:center">${r.succeeded ? "✅" : "⛔"}</td></tr>`).join("");
+      <td style="text-align:center">${r.succeeded ? "✅" : "⛔"}</td>
+      <td><button class="det-btn" data-n="${r.n}" style="border:1px solid var(--line);background:#fff;border-radius:6px;padding:3px 10px;cursor:pointer;font-size:12px;color:var(--blue)">详情</button></td></tr>
+      <tr class="det-row" id="det-${r.n}" style="display:none"><td colspan="11" style="background:#fafbfc">${""}</td></tr>`).join("");
     const t = $("#tbl"); t.innerHTML = `<thead><tr>${th}</tr></thead><tbody>${body}</tbody>`;
-    t.querySelectorAll("th").forEach(el => el.addEventListener("click", () => { const k = el.dataset.k; if (sortKey === k) sortDir = -sortDir; else { sortKey = k; sortDir = -1; } drawTable(); }));
+    t.querySelectorAll("th[data-k]").forEach(el => el.addEventListener("click", () => { const k = el.dataset.k; if (sortKey === k) sortDir = -sortDir; else { sortKey = k; sortDir = -1; } drawTable(); }));
+    t.querySelectorAll(".det-btn").forEach(b => b.addEventListener("click", () => {
+      const n = b.dataset.n, row = $("#det-" + n);
+      if (row.style.display === "none") { row.querySelector("td").innerHTML = detailHTML(n); row.style.display = ""; b.textContent = "收起"; }
+      else { row.style.display = "none"; b.textContent = "详情"; }
+    }));
   }
 })();
