@@ -191,7 +191,9 @@
      "c": "CI_GATE",
      "r": 8
     }
-   ]
+   ],
+   "lines": 2322,
+   "repos_changed": 1
   },
   {
    "n": 927,
@@ -221,7 +223,9 @@
      "c": "CI_GATE",
      "r": 4
     }
-   ]
+   ],
+   "lines": 810,
+   "repos_changed": 2
   },
   {
    "n": 489,
@@ -251,7 +255,9 @@
      "c": "PREVIEW_FAILED",
      "r": 6
     }
-   ]
+   ],
+   "lines": 26898,
+   "repos_changed": 2
   },
   {
    "n": 921,
@@ -281,7 +287,9 @@
      "c": "CI_GATE",
      "r": 8
     }
-   ]
+   ],
+   "lines": 4462,
+   "repos_changed": 1
   },
   {
    "n": 926,
@@ -307,7 +315,9 @@
      "c": "OTHER",
      "r": 11
     }
-   ]
+   ],
+   "lines": 582,
+   "repos_changed": 3
   },
   {
    "n": 909,
@@ -333,7 +343,9 @@
      "c": "OTHER",
      "r": 6
     }
-   ]
+   ],
+   "lines": 2121,
+   "repos_changed": 1
   },
   {
    "n": 650,
@@ -359,7 +371,9 @@
      "c": "OUTPUT_WRONG",
      "r": 12
     }
-   ]
+   ],
+   "lines": 1562,
+   "repos_changed": 2
   },
   {
    "n": 611,
@@ -385,7 +399,9 @@
      "c": "KNOWLEDGE_MISSING",
      "r": 8
     }
-   ]
+   ],
+   "lines": 1464,
+   "repos_changed": 4
   },
   {
    "n": 1219,
@@ -411,7 +427,9 @@
      "c": "KNOWLEDGE_MISSING",
      "r": 8
     }
-   ]
+   ],
+   "lines": 412,
+   "repos_changed": 1
   },
   {
    "n": 778,
@@ -441,7 +459,9 @@
      "c": "CI_GATE",
      "r": 4
     }
-   ]
+   ],
+   "lines": 2113,
+   "repos_changed": 1
   },
   {
    "n": 840,
@@ -467,7 +487,9 @@
      "c": "SKILL_MISSING",
      "r": 8
     }
-   ]
+   ],
+   "lines": 1535,
+   "repos_changed": 1
   },
   {
    "n": 780,
@@ -493,7 +515,9 @@
      "c": "OUTPUT_WRONG",
      "r": 4
     }
-   ]
+   ],
+   "lines": 1368,
+   "repos_changed": 1
   },
   {
    "n": 729,
@@ -515,7 +539,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 2
     }
-   ]
+   ],
+   "lines": 796,
+   "repos_changed": 1
   },
   {
    "n": 441,
@@ -541,7 +567,9 @@
      "c": "UI_NO_FEEDBACK",
      "r": 4
     }
-   ]
+   ],
+   "lines": 56811,
+   "repos_changed": 3
   },
   {
    "n": 900,
@@ -567,7 +595,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 3
     }
-   ]
+   ],
+   "lines": 2052,
+   "repos_changed": 1
   },
   {
    "n": 614,
@@ -593,7 +623,9 @@
      "c": "KNOWLEDGE_MISSING",
      "r": 4
     }
-   ]
+   ],
+   "lines": 797,
+   "repos_changed": 3
   },
   {
    "n": 966,
@@ -619,7 +651,9 @@
      "c": "DATA_MISSING",
      "r": 4
     }
-   ]
+   ],
+   "lines": 2795,
+   "repos_changed": 3
   },
   {
    "n": 941,
@@ -641,7 +675,9 @@
      "c": "ROBOT_QUALITY",
      "r": 14
     }
-   ]
+   ],
+   "lines": 3463,
+   "repos_changed": 3
   },
   {
    "n": 616,
@@ -667,7 +703,9 @@
      "c": "OUTPUT_WRONG",
      "r": 3
     }
-   ]
+   ],
+   "lines": 603,
+   "repos_changed": 1
   },
   {
    "n": 621,
@@ -693,7 +731,9 @@
      "c": "OUTPUT_WRONG",
      "r": 5
     }
-   ]
+   ],
+   "lines": 5367,
+   "repos_changed": 1
   },
   {
    "n": 674,
@@ -715,7 +755,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 10
     }
-   ]
+   ],
+   "lines": 12002,
+   "repos_changed": 1
   },
   {
    "n": 448,
@@ -737,7 +779,9 @@
      "c": "OUTPUT_WRONG",
      "r": 6
     }
-   ]
+   ],
+   "lines": 8527,
+   "repos_changed": 1
   },
   {
    "n": 820,
@@ -763,7 +807,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 6
     }
-   ]
+   ],
+   "lines": 296,
+   "repos_changed": 1
   },
   {
    "n": 427,
@@ -789,7 +835,9 @@
      "c": "OUTPUT_WRONG",
      "r": 2
     }
-   ]
+   ],
+   "lines": 20394,
+   "repos_changed": 1
   },
   {
    "n": 665,
@@ -811,7 +859,9 @@
      "c": "ROBOT_QUALITY",
      "r": 11
     }
-   ]
+   ],
+   "lines": 0,
+   "repos_changed": 0
   },
   {
    "n": 433,
@@ -837,7 +887,9 @@
      "c": "KNOWLEDGE_MISSING",
      "r": 4
     }
-   ]
+   ],
+   "lines": 2070,
+   "repos_changed": 1
   },
   {
    "n": 314,
@@ -863,7 +915,9 @@
      "c": "ROBOT_QUALITY",
      "r": 3
     }
-   ]
+   ],
+   "lines": 1028,
+   "repos_changed": 3
   },
   {
    "n": 434,
@@ -893,7 +947,9 @@
      "c": "OUTPUT_WRONG",
      "r": 2
     }
-   ]
+   ],
+   "lines": 434,
+   "repos_changed": 2
   },
   {
    "n": 1049,
@@ -923,7 +979,9 @@
      "c": "KNOWLEDGE_MISSING",
      "r": 2
     }
-   ]
+   ],
+   "lines": 1927,
+   "repos_changed": 3
   },
   {
    "n": 726,
@@ -949,7 +1007,9 @@
      "c": "KNOWLEDGE_MISSING",
      "r": 3
     }
-   ]
+   ],
+   "lines": 1629,
+   "repos_changed": 4
   },
   {
    "n": 326,
@@ -975,7 +1035,9 @@
      "c": "CI_GATE",
      "r": 3
     }
-   ]
+   ],
+   "lines": 2192,
+   "repos_changed": 1
   },
   {
    "n": 312,
@@ -1005,7 +1067,9 @@
      "c": "KNOWLEDGE_MISSING",
      "r": 1
     }
-   ]
+   ],
+   "lines": 568,
+   "repos_changed": 3
   },
   {
    "n": 1309,
@@ -1023,7 +1087,9 @@
      "c": "PREVIEW_FAILED",
      "r": 20
     }
-   ]
+   ],
+   "lines": 126,
+   "repos_changed": 1
   },
   {
    "n": 435,
@@ -1053,7 +1119,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 3
     }
-   ]
+   ],
+   "lines": 1937,
+   "repos_changed": 2
   },
   {
    "n": 321,
@@ -1079,7 +1147,9 @@
      "c": "OTHER",
      "r": 1
     }
-   ]
+   ],
+   "lines": 163,
+   "repos_changed": 1
   },
   {
    "n": 276,
@@ -1105,7 +1175,9 @@
      "c": "CI_GATE",
      "r": 3
     }
-   ]
+   ],
+   "lines": 0,
+   "repos_changed": 0
   },
   {
    "n": 1162,
@@ -1131,7 +1203,9 @@
      "c": "CI_GATE",
      "r": 1
     }
-   ]
+   ],
+   "lines": 133,
+   "repos_changed": 1
   },
   {
    "n": 936,
@@ -1157,7 +1231,9 @@
      "c": "ROBOT_QUALITY",
      "r": 2
     }
-   ]
+   ],
+   "lines": 2267,
+   "repos_changed": 3
   },
   {
    "n": 905,
@@ -1183,7 +1259,9 @@
      "c": "CI_GATE",
      "r": 1
     }
-   ]
+   ],
+   "lines": 757,
+   "repos_changed": 2
   },
   {
    "n": 842,
@@ -1209,7 +1287,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 5
     }
-   ]
+   ],
+   "lines": 342,
+   "repos_changed": 3
   },
   {
    "n": 1181,
@@ -1235,7 +1315,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 2
     }
-   ]
+   ],
+   "lines": 1306,
+   "repos_changed": 1
   },
   {
    "n": 818,
@@ -1261,7 +1343,9 @@
      "c": "CI_GATE",
      "r": 4
     }
-   ]
+   ],
+   "lines": 379,
+   "repos_changed": 4
   },
   {
    "n": 497,
@@ -1287,7 +1371,9 @@
      "c": "CI_GATE",
      "r": 3
     }
-   ]
+   ],
+   "lines": 857,
+   "repos_changed": 2
   },
   {
    "n": 1303,
@@ -1313,7 +1399,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 4
     }
-   ]
+   ],
+   "lines": 726,
+   "repos_changed": 2
   },
   {
    "n": 878,
@@ -1339,7 +1427,9 @@
      "c": "ROBOT_QUALITY",
      "r": 3
     }
-   ]
+   ],
+   "lines": 524,
+   "repos_changed": 3
   },
   {
    "n": 853,
@@ -1361,7 +1451,9 @@
      "c": "OUTPUT_WRONG",
      "r": 5
     }
-   ]
+   ],
+   "lines": 1052,
+   "repos_changed": 3
   },
   {
    "n": 392,
@@ -1387,7 +1479,9 @@
      "c": "OUTPUT_WRONG",
      "r": 3
     }
-   ]
+   ],
+   "lines": 154,
+   "repos_changed": 2
   },
   {
    "n": 1278,
@@ -1413,7 +1507,9 @@
      "c": "PREVIEW_FAILED",
      "r": 3
     }
-   ]
+   ],
+   "lines": 368,
+   "repos_changed": 1
   },
   {
    "n": 1257,
@@ -1439,7 +1535,9 @@
      "c": "CLAUDEMD_MISSING",
      "r": 2
     }
-   ]
+   ],
+   "lines": 1458,
+   "repos_changed": 3
   },
   {
    "n": 714,
@@ -1469,7 +1567,9 @@
      "c": "ROBOT_QUALITY",
      "r": 2
     }
-   ]
+   ],
+   "lines": 683,
+   "repos_changed": 2
   },
   {
    "n": 1294,
@@ -1495,7 +1595,9 @@
      "c": "CI_GATE",
      "r": 2
     }
-   ]
+   ],
+   "lines": 0,
+   "repos_changed": 0
   },
   {
    "n": 694,
@@ -1525,7 +1627,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 2
     }
-   ]
+   ],
+   "lines": 1151,
+   "repos_changed": 1
   },
   {
    "n": 1203,
@@ -1555,7 +1659,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 1
     }
-   ]
+   ],
+   "lines": 988,
+   "repos_changed": 1
   },
   {
    "n": 712,
@@ -1585,7 +1691,9 @@
      "c": "PREVIEW_FAILED",
      "r": 1
     }
-   ]
+   ],
+   "lines": 1744,
+   "repos_changed": 2
   },
   {
    "n": 646,
@@ -1611,7 +1719,9 @@
      "c": "KNOWLEDGE_MISSING",
      "r": 3
     }
-   ]
+   ],
+   "lines": 156,
+   "repos_changed": 5
   },
   {
    "n": 904,
@@ -1641,7 +1751,9 @@
      "c": "PREVIEW_FAILED",
      "r": 1
     }
-   ]
+   ],
+   "lines": 80,
+   "repos_changed": 1
   },
   {
    "n": 1190,
@@ -1667,7 +1779,9 @@
      "c": "KNOWLEDGE_MISSING",
      "r": 1
     }
-   ]
+   ],
+   "lines": 896,
+   "repos_changed": 1
   },
   {
    "n": 486,
@@ -1697,7 +1811,9 @@
      "c": "ROBOT_QUALITY",
      "r": 1
     }
-   ]
+   ],
+   "lines": 1257,
+   "repos_changed": 2
   },
   {
    "n": 910,
@@ -1723,7 +1839,9 @@
      "c": "PREVIEW_FAILED",
      "r": 1
     }
-   ]
+   ],
+   "lines": 262,
+   "repos_changed": 1
   },
   {
    "n": 1137,
@@ -1745,7 +1863,9 @@
      "c": "PREVIEW_FAILED",
      "r": 1
     }
-   ]
+   ],
+   "lines": 1836,
+   "repos_changed": 3
   },
   {
    "n": 319,
@@ -1771,7 +1891,9 @@
      "c": "CI_GATE",
      "r": 2
     }
-   ]
+   ],
+   "lines": 372,
+   "repos_changed": 1
   },
   {
    "n": 844,
@@ -1801,7 +1923,9 @@
      "c": "OTHER",
      "r": 1
     }
-   ]
+   ],
+   "lines": 211,
+   "repos_changed": 2
   },
   {
    "n": 810,
@@ -1823,7 +1947,9 @@
      "c": "OTHER",
      "r": 1
     }
-   ]
+   ],
+   "lines": 2895,
+   "repos_changed": 2
   },
   {
    "n": 672,
@@ -1849,7 +1975,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 1
     }
-   ]
+   ],
+   "lines": 4631,
+   "repos_changed": 1
   },
   {
    "n": 1299,
@@ -1871,7 +1999,9 @@
      "c": "OUTPUT_WRONG",
      "r": 3
     }
-   ]
+   ],
+   "lines": 762,
+   "repos_changed": 1
   },
   {
    "n": 1252,
@@ -1893,7 +2023,9 @@
      "c": "PREVIEW_FAILED",
      "r": 1
     }
-   ]
+   ],
+   "lines": 102,
+   "repos_changed": 3
   },
   {
    "n": 1210,
@@ -1915,7 +2047,9 @@
      "c": "UI_NO_FEEDBACK",
      "r": 2
     }
-   ]
+   ],
+   "lines": 376,
+   "repos_changed": 2
   },
   {
    "n": 1200,
@@ -1941,7 +2075,9 @@
      "c": "PREVIEW_FAILED",
      "r": 1
     }
-   ]
+   ],
+   "lines": 360,
+   "repos_changed": 3
   },
   {
    "n": 985,
@@ -1963,7 +2099,9 @@
      "c": "KNOWLEDGE_MISSING",
      "r": 1
     }
-   ]
+   ],
+   "lines": 541,
+   "repos_changed": 2
   },
   {
    "n": 487,
@@ -1981,7 +2119,9 @@
      "c": "ROBOT_QUALITY",
      "r": 5
     }
-   ]
+   ],
+   "lines": 136,
+   "repos_changed": 1
   },
   {
    "n": 304,
@@ -2003,7 +2143,9 @@
      "c": "PREVIEW_FAILED",
      "r": 1
     }
-   ]
+   ],
+   "lines": 0,
+   "repos_changed": 0
   },
   {
    "n": 1159,
@@ -2025,7 +2167,9 @@
      "c": "OUTPUT_WRONG",
      "r": 1
     }
-   ]
+   ],
+   "lines": 287,
+   "repos_changed": 1
   },
   {
    "n": 1298,
@@ -2047,7 +2191,9 @@
      "c": "PREVIEW_FAILED",
      "r": 1
     }
-   ]
+   ],
+   "lines": 79,
+   "repos_changed": 1
   },
   {
    "n": 1090,
@@ -2065,7 +2211,9 @@
      "c": "PREVIEW_FAILED",
      "r": 3
     }
-   ]
+   ],
+   "lines": 416,
+   "repos_changed": 1
   },
   {
    "n": 862,
@@ -2087,7 +2235,9 @@
      "c": "OUTPUT_WRONG",
      "r": 1
     }
-   ]
+   ],
+   "lines": 798,
+   "repos_changed": 1
   },
   {
    "n": 736,
@@ -2105,7 +2255,9 @@
      "c": "PREVIEW_FAILED",
      "r": 3
     }
-   ]
+   ],
+   "lines": 1656,
+   "repos_changed": 2
   },
   {
    "n": 498,
@@ -2123,7 +2275,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 5
     }
-   ]
+   ],
+   "lines": 0,
+   "repos_changed": 0
   },
   {
    "n": 1251,
@@ -2149,7 +2303,9 @@
      "c": "REQUIREMENT_VAGUE",
      "r": 1
     }
-   ]
+   ],
+   "lines": 199,
+   "repos_changed": 1
   }
  ],
  "fail_stage": {

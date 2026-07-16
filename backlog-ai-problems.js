@@ -23,9 +23,23 @@
 
   function init() {
     $("#genAt").textContent = "生成于 " + D.generatedAt;
-    renderKpis(); renderTop3(); renderCat(); renderPrimary(); renderStage(); renderFailStage(); renderSvc();
+    renderKpis(); renderTop3(); renderCat(); renderPrimary(); renderStage(); renderFailStage(); renderSvc(); renderCorr();
     initTable();
     if (IMP) { renderIntv(); renderIntvCards(); initImpTable(); }
+  }
+
+  function renderCorr() {
+    if (!$("#c-corr")) return;
+    const pts = D.issues.filter(i => i.lines != null).map(i => ({
+      value: [i.rounds, i.lines, i.repos_changed || 1, i.n], itemStyle: { color: CATCOLOR[i.primary] || "#888", opacity: 0.8 },
+    }));
+    ec("c-corr").setOption({
+      grid: { left: 60, right: 24, top: 16, bottom: 44 },
+      tooltip: { formatter: p => `#${p.data.value[3]}<br/>轮次 ${p.data.value[0]} · 代码 ${p.data.value[1]} 行 · ${p.data.value[2]} 仓` },
+      xAxis: { type: "value", name: "交互轮次 →", nameLocation: "middle", nameGap: 26 },
+      yAxis: { type: "value", name: "代码行数", max: 8000 },
+      series: [{ type: "scatter", symbolSize: d => 8 + Math.sqrt(d[2]) * 6, data: pts }],
+    });
   }
 
   function renderIntv() {
@@ -68,11 +82,12 @@
     const body = rows.map(r => `<tr>
       <td><a href="https://github.com/opensourceways/backlog/issues/${r.n}" target="_blank" rel="noopener">#${r.n}</a></td>
       <td style="color:var(--t2)">${esc(r.svc)}</td>
+      <td style="text-align:center">${r.lines ?? "—"}</td><td style="text-align:center">${r.repos_changed ?? "—"}</td>
       <td style="text-align:center">${r.rounds} → <b style="color:#3ba272">${r.new_rounds}</b></td>
       <td style="text-align:center">${r.time_h}h → <b style="color:#3ba272">${r.new_time_h}h</b></td>
       <td style="text-align:center;font-weight:700;color:#c0392b">省 ${r.saved_h}h</td>
       <td>${(r.intv || []).join(" ")}</td></tr>`).join("");
-    $("#itbl").innerHTML = `<thead><tr><th>#</th><th>服务</th><th>轮次→预计</th><th>耗时→预计</th><th>可省</th><th>需做干预</th></tr></thead><tbody>${body}</tbody>`;
+    $("#itbl").innerHTML = `<thead><tr><th>#</th><th>服务</th><th>代码行</th><th>仓</th><th>轮次→预计</th><th>耗时→预计</th><th>可省</th><th>需做干预</th></tr></thead><tbody>${body}</tbody>`;
   }
 
   function renderKpis() {
@@ -209,17 +224,17 @@
     if (fPri !== "__all__") rows = rows.filter(r => r.primary === fPri);
     rows.sort((a, b) => { const va = a[sortKey], vb = b[sortKey]; return (va < vb ? -1 : va > vb ? 1 : 0) * sortDir; });
     $("#cnt").textContent = `共 ${rows.length} 条 · 点「详情」展开`;
-    const cols = [["n", "#"], ["service", "服务"], ["type", "类型"], ["scenario", "场景"], ["rounds", "轮次"], ["time_h", "估h"], ["stage", "断点"], ["primary", "主问题"], ["fail_count", "失败Action"], ["succeeded", "完成"]];
+    const cols = [["n", "#"], ["service", "服务"], ["type", "类型"], ["scenario", "场景"], ["rounds", "轮次"], ["lines", "代码行"], ["repos_changed", "仓"], ["time_h", "估h"], ["stage", "断点"], ["primary", "主问题"], ["fail_count", "失败Action"], ["succeeded", "完成"]];
     const th = cols.map(([k, l]) => `<th data-k="${k}">${l}${sortKey === k ? (sortDir < 0 ? " ▾" : " ▴") : ""}</th>`).join("") + `<th>详情</th>`;
     const body = rows.map(r => `<tr>
       <td><a href="https://github.com/opensourceways/backlog/issues/${r.n}" target="_blank" rel="noopener">#${r.n}</a></td>
       <td style="color:var(--t2)">${esc(r.service)}</td><td>${esc(r.type)}</td><td style="color:var(--t3)">${esc(r.scenario)}</td>
-      <td style="font-weight:600">${r.rounds}</td><td>${r.time_h}</td><td>${esc(D.stage_cn[r.stage] || r.stage)}</td>
+      <td style="font-weight:600">${r.rounds}</td><td style="text-align:center">${r.lines ?? "—"}</td><td style="text-align:center">${r.repos_changed ?? "—"}</td><td>${r.time_h}</td><td>${esc(D.stage_cn[r.stage] || r.stage)}</td>
       <td><span class="pill" style="background:${CATCOLOR[r.primary] || "#888"}">${esc(D.cn[r.primary])}</span></td>
       <td style="text-align:center">${r.fail_count || ""}</td>
       <td style="text-align:center">${r.succeeded ? "✅" : "⛔"}</td>
       <td><button class="det-btn" data-n="${r.n}" style="border:1px solid var(--line);background:#fff;border-radius:6px;padding:3px 10px;cursor:pointer;font-size:12px;color:var(--blue)">详情</button></td></tr>
-      <tr class="det-row" id="det-${r.n}" style="display:none"><td colspan="11" style="background:#fafbfc">${""}</td></tr>`).join("");
+      <tr class="det-row" id="det-${r.n}" style="display:none"><td colspan="13" style="background:#fafbfc">${""}</td></tr>`).join("");
     const t = $("#tbl"); t.innerHTML = `<thead><tr>${th}</tr></thead><tbody>${body}</tbody>`;
     t.querySelectorAll("th[data-k]").forEach(el => el.addEventListener("click", () => { const k = el.dataset.k; if (sortKey === k) sortDir = -sortDir; else { sortKey = k; sortDir = -1; } drawTable(); }));
     t.querySelectorAll(".det-btn").forEach(b => b.addEventListener("click", () => {

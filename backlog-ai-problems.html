@@ -70,7 +70,12 @@
     <div class="row-title"><h2>③ 服务视角</h2><span>哪个服务问题最重、主要矛盾是什么</span></div>
     <div class="card"><h3>各服务估耗时(小时)· 颜色=主问题</h3><p class="sub">om-datacenter 一家占大头,主问题多为「缺领域知识」</p><div id="c-svc" class="chart tall"></div></div>
 
-    <div class="row-title"><h2>④ 逐 issue 明细(点表头排序)</h2><span>脱敏:仅编号/服务/类型/轮次/主问题/失败次数;标题等细节不公开</span></div>
+    <div class="row-title"><h2>④ 轮次 vs 改动大小 · 逐 issue 明细</h2><span>脱敏:仅编号/服务/类型/轮次/行数/主问题;标题不公开</span></div>
+    <div class="card"><h3>轮次到底跟「代码行数 / 改几个仓」有没有关系?</h3>
+      <p class="sub">散点:每点一个 issue,横轴=交互轮次,纵轴=代码行数,气泡大小=改动仓库数,颜色=主问题。
+        <b>相关性:轮次vs行数 r=0.24(去lock污染 r=0.34,弱);轮次vs仓库数 r=0.04(几乎无)。</b>
+        → <b style="color:#c0392b">改动大小不是轮次主因</b>:#927 改 810 行却 88 轮、#926 582 行 83 轮;真正的驱动是领域知识缺口+预览/门禁基建。做得好的(1-2轮)平均才 40 行,重的平均 1098 行——小改动更易快,但大改动不必然慢。</p>
+      <div id="c-corr" class="chart tall"></div></div>
     <div class="controls">
       <div>服务 <select id="f-svc"></select></div>
       <div>主问题 <select id="f-primary"></select></div>
