@@ -6,16 +6,26 @@
  "records": [
   {
    "number": 1376,
-   "title": "",
-   "rawTitle": "",
+   "title": "openlibing获取CI信息机机接口切换",
+   "rawTitle": "[需求] openlibing获取CI信息机机接口切换",
    "url": "https://github.com/opensourceways/backlog/issues/1376",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_security",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
    "comments": 11,
    "createdAt": "2026-07-15",
    "updatedAt": "2026-07-15",
@@ -25,16 +35,22 @@
   },
   {
    "number": 1371,
-   "title": "",
-   "rawTitle": "",
+   "title": "开源技术雷达 需求与项目录入前，对开源项目查重",
+   "rawTitle": "[任务] 开源技术雷达 需求与项目录入前，对开源项目查重",
    "url": "https://github.com/opensourceways/backlog/issues/1371",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "任务",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "Yikun",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
    "comments": 12,
    "createdAt": "2026-07-15",
    "updatedAt": "2026-07-15",
@@ -44,16 +60,23 @@
   },
   {
    "number": 1368,
-   "title": "",
-   "rawTitle": "",
+   "title": "昇腾总览页面Issue汇总数据查询失败",
+   "rawTitle": "[缺陷] 昇腾总览页面Issue汇总数据查询失败",
    "url": "https://github.com/opensourceways/backlog/issues/1368",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
    "comments": 14,
    "createdAt": "2026-07-14",
    "updatedAt": "2026-07-15",
@@ -63,16 +86,22 @@
   },
   {
    "number": 1366,
-   "title": "",
-   "rawTitle": "",
+   "title": "CI Workflow 采集支持多触发类型配置（以 schedule 为例）",
+   "rawTitle": "[任务] CI Workflow 采集支持多触发类型配置（以 schedule 为例）",
    "url": "https://github.com/opensourceways/backlog/issues/1366",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 7,
    "createdAt": "2026-07-14",
    "updatedAt": "2026-07-14",
@@ -82,16 +111,20 @@
   },
   {
    "number": 1365,
-   "title": "",
-   "rawTitle": "",
+   "title": "/query/issues/agg mindall 返回 -1：resolved 查询 FROM fact_mindall_issue 但聚合社区无该原始表(生产只读实证)",
+   "rawTitle": "[缺陷] /query/issues/agg mindall 返回 -1：resolved 查询 FROM fact_mindall_issue 但聚合社区无该原始表(生产只读实证)",
    "url": "https://github.com/opensourceways/backlog/issues/1365",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "flysky22222",
+   "labels": [
+    "bug",
+    "need_light",
+    "sig/infratructure"
+   ],
    "comments": 1,
    "createdAt": "2026-07-14",
    "updatedAt": "2026-07-14",
@@ -101,16 +134,22 @@
   },
   {
    "number": 1352,
-   "title": "",
-   "rawTitle": "",
+   "title": "数据中台AI度量看板加载很慢",
+   "rawTitle": "[缺陷] 数据中台AI度量看板加载很慢",
    "url": "https://github.com/opensourceways/backlog/issues/1352",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 11,
    "createdAt": "2026-07-14",
    "updatedAt": "2026-07-14",
@@ -120,16 +159,21 @@
   },
   {
    "number": 1348,
-   "title": "",
-   "rawTitle": "",
+   "title": "数据中台前端(datastat)看板 14 项优化",
+   "rawTitle": "[任务] 数据中台前端(datastat)看板 14 项优化",
    "url": "https://github.com/opensourceways/backlog/issues/1348",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "任务",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "flysky22222",
+   "labels": [
+    "accepted",
+    "task",
+    "need_light",
+    "sig/infratructure"
+   ],
    "comments": 3,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-15",
@@ -139,16 +183,22 @@
   },
   {
    "number": 1345,
-   "title": "",
-   "rawTitle": "",
+   "title": "dws_community_user 企业信息按社区聚合为 JSON",
+   "rawTitle": "[需求] dws_community_user 企业信息按社区聚合为 JSON",
    "url": "https://github.com/opensourceways/backlog/issues/1345",
    "status": "open",
    "state": "open",
    "stateReason": "reopened",
    "type": "需求",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "licy666",
+   "labels": [
+    "need_design",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request",
+    "complete-develop"
+   ],
    "comments": 18,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-15",
@@ -158,16 +208,26 @@
   },
   {
    "number": 1333,
-   "title": "",
-   "rawTitle": "",
+   "title": "新增openUBMC的RAG日志服务获取",
+   "rawTitle": "[需求] 新增openUBMC的RAG日志服务获取",
    "url": "https://github.com/opensourceways/backlog/issues/1333",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_security",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 7,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-13",
@@ -177,16 +237,23 @@
   },
   {
    "number": 1332,
-   "title": "",
-   "rawTitle": "",
+   "title": "新增脱敏后的openUBMC的用户登录注册数据表",
+   "rawTitle": "[任务] 新增脱敏后的openUBMC的用户登录注册数据表",
    "url": "https://github.com/opensourceways/backlog/issues/1332",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
    "comments": 10,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-15",
@@ -196,16 +263,22 @@
   },
   {
    "number": 1312,
-   "title": "",
-   "rawTitle": "",
+   "title": "昇腾系列看板按主导、参与开源进行归类",
+   "rawTitle": "[需求] 昇腾系列看板按主导、参与开源进行归类",
    "url": "https://github.com/opensourceways/backlog/issues/1312",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "zeshengzong",
+   "labels": [
+    "need_design",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 5,
    "createdAt": "2026-07-10",
    "updatedAt": "2026-07-10",
@@ -215,16 +288,23 @@
   },
   {
    "number": 1303,
-   "title": "",
-   "rawTitle": "",
+   "title": "已解决指标相关问题",
+   "rawTitle": "[缺陷] 已解决指标相关问题",
    "url": "https://github.com/opensourceways/backlog/issues/1303",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
    "comments": 45,
    "createdAt": "2026-07-09",
    "updatedAt": "2026-07-15",
@@ -234,16 +314,22 @@
   },
   {
    "number": 1297,
-   "title": "",
-   "rawTitle": "",
+   "title": "调整开源社区文档评分接口",
+   "rawTitle": "[任务] 调整开源社区文档评分接口",
    "url": "https://github.com/opensourceways/backlog/issues/1297",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 5,
    "createdAt": "2026-07-09",
    "updatedAt": "2026-07-10",
@@ -253,16 +339,22 @@
   },
   {
    "number": 1295,
-   "title": "",
-   "rawTitle": "",
+   "title": "中台看板缺陷修复",
+   "rawTitle": "[缺陷] 中台看板缺陷修复",
    "url": "https://github.com/opensourceways/backlog/issues/1295",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 18,
    "createdAt": "2026-07-09",
    "updatedAt": "2026-07-10",
@@ -272,16 +364,23 @@
   },
   {
    "number": 1294,
-   "title": "",
-   "rawTitle": "",
+   "title": "TTFHW 测试总汇看板接入 datastat「公共」区 TTFHW 菜单",
+   "rawTitle": "[需求] TTFHW 测试总汇看板接入 datastat「公共」区 TTFHW 菜单",
    "url": "https://github.com/opensourceways/backlog/issues/1294",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "flysky22222",
+   "labels": [
+    "accepted",
+    "need_ux",
+    "need_itest",
+    "need_light",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 21,
    "createdAt": "2026-07-09",
    "updatedAt": "2026-07-10",
@@ -291,16 +390,23 @@
   },
   {
    "number": 1273,
-   "title": "",
-   "rawTitle": "",
+   "title": "新增运营质量历史基线看板",
+   "rawTitle": "[需求] 新增运营质量历史基线看板",
    "url": "https://github.com/opensourceways/backlog/issues/1273",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 12,
    "createdAt": "2026-07-06",
    "updatedAt": "2026-07-07",
@@ -310,16 +416,22 @@
   },
   {
    "number": 1263,
-   "title": "",
-   "rawTitle": "",
+   "title": "洞察页面权限放开",
+   "rawTitle": "[任务] 洞察页面权限放开",
    "url": "https://github.com/opensourceways/backlog/issues/1263",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 6,
    "createdAt": "2026-07-06",
    "updatedAt": "2026-07-07",
@@ -329,16 +441,26 @@
   },
   {
    "number": 1262,
-   "title": "",
-   "rawTitle": "",
+   "title": "看板新增定时/一键推送某社区当前Issue等处理情况邮件给指定干系人",
+   "rawTitle": "[需求] 看板新增定时/一键推送某社区当前Issue等处理情况邮件给指定干系人",
    "url": "https://github.com/opensourceways/backlog/issues/1262",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_security",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 7,
    "createdAt": "2026-07-06",
    "updatedAt": "2026-07-13",
@@ -348,16 +470,23 @@
   },
   {
    "number": 1251,
-   "title": "",
-   "rawTitle": "",
+   "title": "用户组织信息查询接口需要支持跨社区批量查询固定平台的user信息",
+   "rawTitle": "[需求] 用户组织信息查询接口需要支持跨社区批量查询固定平台的user信息",
    "url": "https://github.com/opensourceways/backlog/issues/1251",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "licy666",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 25,
    "createdAt": "2026-07-06",
    "updatedAt": "2026-07-10",
@@ -367,16 +496,20 @@
   },
   {
    "number": 1210,
-   "title": "",
-   "rawTitle": "",
+   "title": "NPU折线图增加统计时间范围内的 NPU使用率（平均/P50/P90/P95）",
+   "rawTitle": "[任务] NPU折线图增加统计时间范围内的 NPU使用率（平均/P50/P90/P95）",
    "url": "https://github.com/opensourceways/backlog/issues/1210",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "任务",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "Creyson-peng",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 20,
    "createdAt": "2026-07-01",
    "updatedAt": "2026-07-15",
@@ -386,16 +519,24 @@
   },
   {
    "number": 1200,
-   "title": "",
-   "rawTitle": "",
+   "title": "昇腾总看板（周报）中闭环率为Issue关闭率，需切换为解决率",
+   "rawTitle": "[需求] 昇腾总看板（周报）中闭环率为Issue关闭率，需切换为解决率",
    "url": "https://github.com/opensourceways/backlog/issues/1200",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "accepted",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 23,
    "createdAt": "2026-07-01",
    "updatedAt": "2026-07-06",
@@ -405,16 +546,21 @@
   },
   {
    "number": 1172,
-   "title": "",
-   "rawTitle": "",
+   "title": "支持蓝区代码检视区分PR、issue以及评论和回复的能力",
+   "rawTitle": "[需求] 支持蓝区代码检视区分PR、issue以及评论和回复的能力",
    "url": "https://github.com/opensourceways/backlog/issues/1172",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 3,
    "createdAt": "2026-06-29",
    "updatedAt": "2026-07-06",
@@ -424,16 +570,22 @@
   },
   {
    "number": 1157,
-   "title": "",
-   "rawTitle": "",
+   "title": "unifiedbus 社区的接口增加登录和灵衢的权限",
+   "rawTitle": "[缺陷] unifiedbus 社区的接口增加登录和灵衢的权限",
    "url": "https://github.com/opensourceways/backlog/issues/1157",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 6,
    "createdAt": "2026-06-29",
    "updatedAt": "2026-06-29",
@@ -443,16 +595,21 @@
   },
   {
    "number": 1156,
-   "title": "",
-   "rawTitle": "",
+   "title": "ttfhw-confirm 问题确认页 表格/筛选 UI 调整",
+   "rawTitle": "[datastat-manage-website] ttfhw-confirm 问题确认页 表格/筛选 UI 调整",
    "url": "https://github.com/opensourceways/backlog/issues/1156",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "其他",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 4,
    "createdAt": "2026-06-28",
    "updatedAt": "2026-07-14",
@@ -462,16 +619,25 @@
   },
   {
    "number": 1153,
-   "title": "",
-   "rawTitle": "",
+   "title": "蓝区(白盒)看板重构：拆「用户检查数据」+「采集数据维护」两菜单，并修复贡献数据恒「校验失败」",
+   "rawTitle": "[需求] 蓝区(白盒)看板重构：拆「用户检查数据」+「采集数据维护」两菜单，并修复贡献数据恒「校验失败」",
    "url": "https://github.com/opensourceways/backlog/issues/1153",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_security",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure"
+   ],
    "comments": 13,
    "createdAt": "2026-06-28",
    "updatedAt": "2026-06-30",
@@ -481,16 +647,21 @@
   },
   {
    "number": 1140,
-   "title": "",
-   "rawTitle": "",
+   "title": "支持统计AI Core，AI vector等NPU exporter指标，并在看板进行展示",
+   "rawTitle": "[需求] 支持统计AI Core，AI vector等NPU exporter指标，并在看板进行展示",
    "url": "https://github.com/opensourceways/backlog/issues/1140",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "pkking",
+   "labels": [
+    "need_design",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 5,
    "createdAt": "2026-06-27",
    "updatedAt": "2026-07-15",
@@ -500,16 +671,22 @@
   },
   {
    "number": 1121,
-   "title": "",
-   "rawTitle": "",
+   "title": "ttfhw 增加 issue 的业务逻辑确认是否为问题的页面",
+   "rawTitle": "[需求] ttfhw 增加 issue 的业务逻辑确认是否为问题的页面",
    "url": "https://github.com/opensourceways/backlog/issues/1121",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 12,
    "createdAt": "2026-06-26",
    "updatedAt": "2026-07-06",
@@ -519,16 +696,24 @@
   },
   {
    "number": 1109,
-   "title": "",
-   "rawTitle": "",
+   "title": "新增在规定SLA时间内的issue平均闭环率，且SLA时间可选或自定义",
+   "rawTitle": "[需求] 新增在规定SLA时间内的issue平均闭环率，且SLA时间可选或自定义",
    "url": "https://github.com/opensourceways/backlog/issues/1109",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "need_design",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 6,
    "createdAt": "2026-06-25",
    "updatedAt": "2026-07-06",
@@ -538,16 +723,22 @@
   },
   {
    "number": 1049,
-   "title": "",
-   "rawTitle": "",
+   "title": "HPCKit数据中台看板，需支持采集仓库下载量详情",
+   "rawTitle": "[需求] HPCKit数据中台看板，需支持采集仓库下载量详情",
    "url": "https://github.com/opensourceways/backlog/issues/1049",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "123-prog",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 51,
    "createdAt": "2026-06-23",
    "updatedAt": "2026-07-10",
@@ -557,16 +748,22 @@
   },
   {
    "number": 1043,
-   "title": "",
-   "rawTitle": "",
+   "title": "HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
+   "rawTitle": "[需求] HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
    "url": "https://github.com/opensourceways/backlog/issues/1043",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "123-prog",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 6,
    "createdAt": "2026-06-23",
    "updatedAt": "2026-06-29",
@@ -576,16 +773,22 @@
   },
   {
    "number": 936,
-   "title": "",
-   "rawTitle": "",
+   "title": "计算开源技术雷达 - 开源洞察报告板块",
+   "rawTitle": "[需求] 计算开源技术雷达 - 开源洞察报告板块",
    "url": "https://github.com/opensourceways/backlog/issues/936",
    "status": "open",
    "state": "open",
    "stateReason": "reopened",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "Yikun",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 41,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-07-08",
@@ -595,16 +798,23 @@
   },
   {
    "number": 878,
-   "title": "",
-   "rawTitle": "",
+   "title": "昇腾系列社区指标表 TTFHW 列接入（开发者全流程体验·用户场景四阶段）",
+   "rawTitle": "[datastat-manage-website] 昇腾系列社区指标表 TTFHW 列接入（开发者全流程体验·用户场景四阶段）",
    "url": "https://github.com/opensourceways/backlog/issues/878",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "其他",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 26,
    "createdAt": "2026-06-13",
    "updatedAt": "2026-06-22",
@@ -614,16 +824,20 @@
   },
   {
    "number": 844,
-   "title": "",
-   "rawTitle": "",
+   "title": "数据中台 【昇腾系列】社区增加表格叫做 ”NPU社区总计表“",
+   "rawTitle": "[任务] 数据中台 【昇腾系列】社区增加表格叫做 ”NPU社区总计表“",
    "url": "https://github.com/opensourceways/backlog/issues/844",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "任务",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 29,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-07-15",
@@ -633,16 +847,22 @@
   },
   {
    "number": 840,
-   "title": "",
-   "rawTitle": "",
+   "title": "当issue被打上triaged或triage-review两个分类但没有评论回复时，也当作看板的响应率",
+   "rawTitle": "[需求] 当issue被打上triaged或triage-review两个分类但没有评论回复时，也当作看板的响应率",
    "url": "https://github.com/opensourceways/backlog/issues/840",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 145,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-07-08",
@@ -652,16 +872,24 @@
   },
   {
    "number": 312,
-   "title": "",
-   "rawTitle": "",
+   "title": ": openUBMC社区运营看板及热点话题周报新增PR、Issue、论坛等响应情况",
+   "rawTitle": "[需求]: openUBMC社区运营看板及热点话题周报新增PR、Issue、论坛等响应情况",
    "url": "https://github.com/opensourceways/backlog/issues/312",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "hellowaywewe",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "need_design",
+    "need_ux",
+    "need_itest"
+   ],
    "comments": 71,
    "createdAt": "2026-05-08",
    "updatedAt": "2026-07-09",
@@ -671,16 +899,21 @@
   },
   {
    "number": 280,
-   "title": "",
-   "rawTitle": "",
+   "title": ": 支持评估社区Issue答复质量",
+   "rawTitle": "[需求]: 支持评估社区Issue答复质量",
    "url": "https://github.com/opensourceways/backlog/issues/280",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "enhancement",
+    "accepted"
+   ],
    "comments": 2,
    "createdAt": "2026-04-27",
    "updatedAt": "2026-06-22",
@@ -690,16 +923,20 @@
   },
   {
    "number": 1358,
-   "title": "",
-   "rawTitle": "",
+   "title": "开源事件洞察的标题，从20字变为50字吧有英文太容易超了",
+   "rawTitle": "[缺陷]  开源事件洞察的标题，从20字变为50字吧有英文太容易超了",
    "url": "https://github.com/opensourceways/backlog/issues/1358",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 4,
    "createdAt": "2026-07-14",
    "updatedAt": "2026-07-14",
@@ -709,16 +946,22 @@
   },
   {
    "number": 1336,
-   "title": "",
-   "rawTitle": "",
+   "title": "修复人工错误识别的用户企业信息",
+   "rawTitle": "[缺陷] 修复人工错误识别的用户企业信息",
    "url": "https://github.com/opensourceways/backlog/issues/1336",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 7,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-14",
@@ -728,16 +971,22 @@
   },
   {
    "number": 1322,
-   "title": "",
-   "rawTitle": "",
+   "title": "优化AI统计分组与SIG统计的数据展示逻辑",
+   "rawTitle": "[任务] 优化AI统计分组与SIG统计的数据展示逻辑",
    "url": "https://github.com/opensourceways/backlog/issues/1322",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 7,
    "createdAt": "2026-07-10",
    "updatedAt": "2026-07-10",
@@ -747,16 +996,23 @@
   },
   {
    "number": 1284,
-   "title": "",
-   "rawTitle": "",
+   "title": "HiFloat社区下载路径调整和新增统计文件",
+   "rawTitle": "[需求] HiFloat社区下载路径调整和新增统计文件",
    "url": "https://github.com/opensourceways/backlog/issues/1284",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 11,
    "createdAt": "2026-07-07",
    "updatedAt": "2026-07-08",
@@ -766,16 +1022,22 @@
   },
   {
    "number": 1257,
-   "title": "",
-   "rawTitle": "",
+   "title": "：新增openGauss社区运营看板“下载版本数据”，统一数据来源",
+   "rawTitle": "[需求]：新增openGauss社区运营看板“下载版本数据”，统一数据来源",
    "url": "https://github.com/opensourceways/backlog/issues/1257",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "sunshuang1866",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 34,
    "createdAt": "2026-07-06",
    "updatedAt": "2026-07-13",
@@ -785,16 +1047,23 @@
   },
   {
    "number": 1252,
-   "title": "",
-   "rawTitle": "",
+   "title": "：openGauss 社区健康度看板新增 “AI 度量看板”",
+   "rawTitle": "[需求] ：openGauss 社区健康度看板新增 “AI 度量看板”",
    "url": "https://github.com/opensourceways/backlog/issues/1252",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "sunshuang1866",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 19,
    "createdAt": "2026-07-06",
    "updatedAt": "2026-07-09",
@@ -804,16 +1073,21 @@
   },
   {
    "number": 1241,
-   "title": "",
-   "rawTitle": "",
+   "title": "数据中台软件包有效维护率展示有问题",
+   "rawTitle": "[缺陷] 数据中台软件包有效维护率展示有问题",
    "url": "https://github.com/opensourceways/backlog/issues/1241",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
    "comments": 2,
    "createdAt": "2026-07-03",
    "updatedAt": "2026-07-03",
@@ -823,16 +1097,22 @@
   },
   {
    "number": 1237,
-   "title": "",
-   "rawTitle": "",
+   "title": "数据中台看板openPangu社区下载量可以使用仓库类型进行筛选",
+   "rawTitle": "[缺陷] 数据中台看板openPangu社区下载量可以使用仓库类型进行筛选",
    "url": "https://github.com/opensourceways/backlog/issues/1237",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 4,
    "createdAt": "2026-07-03",
    "updatedAt": "2026-07-06",
@@ -842,16 +1122,22 @@
   },
   {
    "number": 1226,
-   "title": "",
-   "rawTitle": "",
+   "title": "调整数据中台AI合规标签名称",
+   "rawTitle": "[缺陷] 调整数据中台AI合规标签名称",
    "url": "https://github.com/opensourceways/backlog/issues/1226",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 4,
    "createdAt": "2026-07-02",
    "updatedAt": "2026-07-02",
@@ -861,16 +1147,24 @@
   },
   {
    "number": 1219,
-   "title": "",
-   "rawTitle": "",
+   "title": "新增采集github平台issue的label事件",
+   "rawTitle": "[需求] 新增采集github平台issue的label事件",
    "url": "https://github.com/opensourceways/backlog/issues/1219",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 130,
    "createdAt": "2026-07-02",
    "updatedAt": "2026-07-13",
@@ -880,16 +1174,20 @@
   },
   {
    "number": 1162,
-   "title": "",
-   "rawTitle": "",
+   "title": "CANN社区新增discussion采集任务",
+   "rawTitle": "[任务] CANN社区新增discussion采集任务",
    "url": "https://github.com/opensourceways/backlog/issues/1162",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "Mjennie",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 44,
    "createdAt": "2026-06-29",
    "updatedAt": "2026-06-30",
@@ -899,16 +1197,25 @@
   },
   {
    "number": 1137,
-   "title": "",
-   "rawTitle": "",
+   "title": "采集并展示openPangu社区的模型/仓库下载量",
+   "rawTitle": "[需求] 采集并展示openPangu社区的模型/仓库下载量",
    "url": "https://github.com/opensourceways/backlog/issues/1137",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 24,
    "createdAt": "2026-06-27",
    "updatedAt": "2026-06-30",
@@ -918,16 +1225,22 @@
   },
   {
    "number": 1128,
-   "title": "",
-   "rawTitle": "",
+   "title": "组织详情接口 /query/company/detail 大时间窗返回 -1(jsonb_object_agg title 为 NULL)",
+   "rawTitle": "[缺陷] 组织详情接口 /query/company/detail 大时间窗返回 -1(jsonb_object_agg title 为 NULL)",
    "url": "https://github.com/opensourceways/backlog/issues/1128",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 4,
    "createdAt": "2026-06-27",
    "updatedAt": "2026-06-27",
@@ -937,16 +1250,20 @@
   },
   {
    "number": 1125,
-   "title": "",
-   "rawTitle": "",
+   "title": "白盒运维页面 /bluezone 不可用：APIMagic 仍缺 5 个 /whitebox 接口 + 待确认 magicapi-beta 部署",
+   "rawTitle": "[缺陷] 白盒运维页面 /bluezone 不可用：APIMagic 仍缺 5 个 /whitebox 接口 + 待确认 magicapi-beta 部署",
    "url": "https://github.com/opensourceways/backlog/issues/1125",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "flysky22222",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 12,
    "createdAt": "2026-06-26",
    "updatedAt": "2026-06-27",
@@ -956,16 +1273,22 @@
   },
   {
    "number": 1123,
-   "title": "",
-   "rawTitle": "",
+   "title": "MindIE 和MindSpeed的趋势分析里面开启下载量页面",
+   "rawTitle": "[任务] MindIE 和MindSpeed的趋势分析里面开启下载量页面",
    "url": "https://github.com/opensourceways/backlog/issues/1123",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 7,
    "createdAt": "2026-06-26",
    "updatedAt": "2026-06-29",
@@ -975,16 +1298,22 @@
   },
   {
    "number": 1118,
-   "title": "",
-   "rawTitle": "",
+   "title": "mcp接口补充说明和必输项设置",
+   "rawTitle": "[任务] mcp接口补充说明和必输项设置",
    "url": "https://github.com/opensourceways/backlog/issues/1118",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 7,
    "createdAt": "2026-06-26",
    "updatedAt": "2026-06-27",
@@ -994,16 +1323,22 @@
   },
   {
    "number": 1112,
-   "title": "",
-   "rawTitle": "",
+   "title": "采集gitcode平台openpangu社区模型仓的贡献数据",
+   "rawTitle": "[需求] 采集gitcode平台openpangu社区模型仓的贡献数据",
    "url": "https://github.com/opensourceways/backlog/issues/1112",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 12,
    "createdAt": "2026-06-26",
    "updatedAt": "2026-06-27",
@@ -1013,16 +1348,22 @@
   },
   {
    "number": 1100,
-   "title": "",
-   "rawTitle": "",
+   "title": "看板下线MindSeriesSDK社区",
+   "rawTitle": "[任务] 看板下线MindSeriesSDK社区",
    "url": "https://github.com/opensourceways/backlog/issues/1100",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 7,
    "createdAt": "2026-06-25",
    "updatedAt": "2026-06-26",
@@ -1032,16 +1373,22 @@
   },
   {
    "number": 1057,
-   "title": "",
-   "rawTitle": "",
+   "title": "仓库分析页面的点击issue解决率指标的排序无数据回显",
+   "rawTitle": "[缺陷] 仓库分析页面的点击issue解决率指标的排序无数据回显",
    "url": "https://github.com/opensourceways/backlog/issues/1057",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 11,
    "createdAt": "2026-06-23",
    "updatedAt": "2026-06-29",
@@ -1051,16 +1398,22 @@
   },
   {
    "number": 1056,
-   "title": "",
-   "rawTitle": "",
+   "title": "隐藏openubmc看板总览页面的论坛响应处理详情板块",
+   "rawTitle": "[任务] 隐藏openubmc看板总览页面的论坛响应处理详情板块",
    "url": "https://github.com/opensourceways/backlog/issues/1056",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 4,
    "createdAt": "2026-06-23",
    "updatedAt": "2026-06-24",
@@ -1070,16 +1423,21 @@
   },
   {
    "number": 1048,
-   "title": "",
-   "rawTitle": "",
+   "title": "修改openUBMC社区的健康度模型的NSS净满意度",
+   "rawTitle": "[任务] 修改openUBMC社区的健康度模型的NSS净满意度",
    "url": "https://github.com/opensourceways/backlog/issues/1048",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 2,
    "createdAt": "2026-06-23",
    "updatedAt": "2026-06-23",
@@ -1089,16 +1447,22 @@
   },
   {
    "number": 988,
-   "title": "",
-   "rawTitle": "",
+   "title": "昇腾系列社区 CI 页面指标增加注释(tooltip,依实际接口取数逻辑)",
+   "rawTitle": "[需求] 昇腾系列社区 CI 页面指标增加注释(tooltip,依实际接口取数逻辑)",
    "url": "https://github.com/opensourceways/backlog/issues/988",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 15,
    "createdAt": "2026-06-20",
    "updatedAt": "2026-06-23",
@@ -1108,16 +1472,23 @@
   },
   {
    "number": 985,
-   "title": "",
-   "rawTitle": "",
+   "title": "更新openGauss社区[总览]响应处理详情中的核心仓库列表",
+   "rawTitle": "[需求] 更新openGauss社区[总览]响应处理详情中的核心仓库列表",
    "url": "https://github.com/opensourceways/backlog/issues/985",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "sunshuang1866",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 20,
    "createdAt": "2026-06-19",
    "updatedAt": "2026-07-06",
@@ -1127,16 +1498,22 @@
   },
   {
    "number": 969,
-   "title": "",
-   "rawTitle": "",
+   "title": "CI mind系列晴雨表接口 /res/ci/mind-metrics 响应慢(~1.6s)",
+   "rawTitle": "[缺陷] CI mind系列晴雨表接口 /res/ci/mind-metrics 响应慢(~1.6s)",
    "url": "https://github.com/opensourceways/backlog/issues/969",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 13,
    "createdAt": "2026-06-18",
    "updatedAt": "2026-06-26",
@@ -1146,16 +1523,22 @@
   },
   {
    "number": 966,
-   "title": "",
-   "rawTitle": "",
+   "title": "支持openPangu社区D0~D2开发者贡献数据统计",
+   "rawTitle": "[需求] 支持openPangu社区D0~D2开发者贡献数据统计",
    "url": "https://github.com/opensourceways/backlog/issues/966",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 72,
    "createdAt": "2026-06-18",
    "updatedAt": "2026-07-06",
@@ -1165,16 +1548,22 @@
   },
   {
    "number": 943,
-   "title": "",
-   "rawTitle": "",
+   "title": "本地调试issue--当issue被打上triaged或triage-review两个分类但没有评论回复时，也当作看板的响应率",
+   "rawTitle": "[需求] 本地调试issue--当issue被打上triaged或triage-review两个分类但没有评论回复时，也当作看板的响应率",
    "url": "https://github.com/opensourceways/backlog/issues/943",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 16,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-07-13",
@@ -1184,16 +1573,22 @@
   },
   {
    "number": 941,
-   "title": "",
-   "rawTitle": "",
+   "title": "开发者页面支持按仓库维度统计开发者D0/D1/D2及详情",
+   "rawTitle": "[需求] 开发者页面支持按仓库维度统计开发者D0/D1/D2及详情",
    "url": "https://github.com/opensourceways/backlog/issues/941",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 61,
    "createdAt": "2026-06-17",
    "updatedAt": "2026-07-06",
@@ -1203,16 +1598,22 @@
   },
   {
    "number": 927,
-   "title": "",
-   "rawTitle": "",
+   "title": "数据中台服务仓库分析页面和组织分析页面解决率指标问题",
+   "rawTitle": "[缺陷] 数据中台服务仓库分析页面和组织分析页面解决率指标问题",
    "url": "https://github.com/opensourceways/backlog/issues/927",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 159,
    "createdAt": "2026-06-16",
    "updatedAt": "2026-06-23",
@@ -1222,16 +1623,22 @@
   },
   {
    "number": 916,
-   "title": "",
-   "rawTitle": "",
+   "title": "增加 Co-author 统计，用于开发者模块 D0/D1/D2 开发者指标计算",
+   "rawTitle": "[需求] 增加 Co-author 统计，用于开发者模块 D0/D1/D2 开发者指标计算",
    "url": "https://github.com/opensourceways/backlog/issues/916",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "sunshuang1866",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 6,
    "createdAt": "2026-06-16",
    "updatedAt": "2026-06-27",
@@ -1241,16 +1648,20 @@
   },
   {
    "number": 905,
-   "title": "",
-   "rawTitle": "",
+   "title": "资源页面趋势图接口加载缓慢",
+   "rawTitle": "[缺陷] 资源页面趋势图接口加载缓慢",
    "url": "https://github.com/opensourceways/backlog/issues/905",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 46,
    "createdAt": "2026-06-15",
    "updatedAt": "2026-07-15",
@@ -1260,16 +1671,22 @@
   },
   {
    "number": 904,
-   "title": "",
-   "rawTitle": "",
+   "title": "依据塔台蓝区用户信息，更新昇腾社区及CANN社区用户的所属企业",
+   "rawTitle": "[任务] 依据塔台蓝区用户信息，更新昇腾社区及CANN社区用户的所属企业",
    "url": "https://github.com/opensourceways/backlog/issues/904",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 34,
    "createdAt": "2026-06-15",
    "updatedAt": "2026-06-22",
@@ -1279,16 +1696,22 @@
   },
   {
    "number": 879,
-   "title": "",
-   "rawTitle": "",
+   "title": "MCP支持开发者贡献数据采集",
+   "rawTitle": "[需求] MCP支持开发者贡献数据采集",
    "url": "https://github.com/opensourceways/backlog/issues/879",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 6,
    "createdAt": "2026-06-13",
    "updatedAt": "2026-07-06",
@@ -1298,16 +1721,21 @@
   },
   {
    "number": 850,
-   "title": "",
-   "rawTitle": "",
+   "title": "测试测试 ---  数据中台服务把首页的总览  改成  运营总览",
+   "rawTitle": "[需求] 测试测试 ---  数据中台服务把首页的总览  改成  运营总览",
    "url": "https://github.com/opensourceways/backlog/issues/850",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 6,
    "createdAt": "2026-06-12",
    "updatedAt": "2026-06-22",
@@ -1317,16 +1745,22 @@
   },
   {
    "number": 842,
-   "title": "",
-   "rawTitle": "",
+   "title": "数据中台服务的 总览页面 内外用户没有展示",
+   "rawTitle": "[缺陷]  数据中台服务的 总览页面 内外用户没有展示",
    "url": "https://github.com/opensourceways/backlog/issues/842",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 33,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-22",
@@ -1336,16 +1770,22 @@
   },
   {
    "number": 837,
-   "title": "",
-   "rawTitle": "",
+   "title": "数据中台服务优化CI页面效率",
+   "rawTitle": "[任务] 数据中台服务优化CI页面效率",
    "url": "https://github.com/opensourceways/backlog/issues/837",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 4,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-27",
@@ -1355,16 +1795,22 @@
   },
   {
    "number": 820,
-   "title": "",
-   "rawTitle": "",
+   "title": "当issue被打上wait-feedback标签后，统计进看板指标-Issue平均解决率中",
+   "rawTitle": "[需求] 当issue被打上wait-feedback标签后，统计进看板指标-Issue平均解决率中",
    "url": "https://github.com/opensourceways/backlog/issues/820",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 65,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-29",
@@ -1374,16 +1820,22 @@
   },
   {
    "number": 818,
-   "title": "",
-   "rawTitle": "",
+   "title": "领域主流项目适配集成引用度指标，支持一个社区按照多个关键词，前缀，后缀统计匹配",
+   "rawTitle": "[需求] 领域主流项目适配集成引用度指标，支持一个社区按照多个关键词，前缀，后缀统计匹配",
    "url": "https://github.com/opensourceways/backlog/issues/818",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 35,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-22",
@@ -1393,16 +1845,22 @@
   },
   {
    "number": 806,
-   "title": "",
-   "rawTitle": "",
+   "title": "昇腾系列-ci时间分析描述更新",
+   "rawTitle": "[任务] 昇腾系列-ci时间分析描述更新",
    "url": "https://github.com/opensourceways/backlog/issues/806",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 11,
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-22",
@@ -1412,16 +1870,22 @@
   },
   {
    "number": 767,
-   "title": "",
-   "rawTitle": "",
+   "title": "社区统计看板增加opensourceways-test项目统计",
+   "rawTitle": "[需求] 社区统计看板增加opensourceways-test项目统计",
    "url": "https://github.com/opensourceways/backlog/issues/767",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 13,
    "createdAt": "2026-06-10",
    "updatedAt": "2026-06-11",
@@ -1431,16 +1895,20 @@
   },
   {
    "number": 764,
-   "title": "",
-   "rawTitle": "",
+   "title": "昇腾系列-ci时间分析增加功能",
+   "rawTitle": "[任务] 昇腾系列-ci时间分析增加功能",
    "url": "https://github.com/opensourceways/backlog/issues/764",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "Creyson-peng",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
    "comments": 20,
    "createdAt": "2026-06-10",
    "updatedAt": "2026-07-15",
@@ -1450,16 +1918,21 @@
   },
   {
    "number": 729,
-   "title": "",
-   "rawTitle": "",
+   "title": ": 社区统计看板贡献者统计能力增强（claude引擎复测 #276）",
+   "rawTitle": "[需求]: 社区统计看板贡献者统计能力增强（claude引擎复测 #276）",
    "url": "https://github.com/opensourceways/backlog/issues/729",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 106,
    "createdAt": "2026-06-09",
    "updatedAt": "2026-06-22",
@@ -1469,16 +1942,20 @@
   },
   {
    "number": 725,
-   "title": "",
-   "rawTitle": "",
+   "title": "验证 claude 引擎接入（空跑，勿改代码）",
+   "rawTitle": "[任务] 验证 claude 引擎接入（空跑，勿改代码）",
    "url": "https://github.com/opensourceways/backlog/issues/725",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "sig/infratructure"
+   ],
    "comments": 11,
    "createdAt": "2026-06-09",
    "updatedAt": "2026-06-22",
@@ -1488,16 +1965,22 @@
   },
   {
    "number": 714,
-   "title": "",
-   "rawTitle": "",
+   "title": "增加issue优先级标题采集，更新Issue严重缺陷识别逻辑",
+   "rawTitle": "[需求] 增加issue优先级标题采集，更新Issue严重缺陷识别逻辑",
    "url": "https://github.com/opensourceways/backlog/issues/714",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 31,
    "createdAt": "2026-06-09",
    "updatedAt": "2026-06-24",
@@ -1507,16 +1990,21 @@
   },
   {
    "number": 665,
-   "title": "",
-   "rawTitle": "",
+   "title": ": 社区统计看板贡献者统计能力增强（workflow 复现 #276 验证）",
+   "rawTitle": "[需求]: 社区统计看板贡献者统计能力增强（workflow 复现 #276 验证）",
    "url": "https://github.com/opensourceways/backlog/issues/665",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 51,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-22",
@@ -1526,16 +2014,22 @@
   },
   {
    "number": 650,
-   "title": "",
-   "rawTitle": "",
+   "title": "如果Issue有对应PR进行关联，看板上记作有效响应",
+   "rawTitle": "[需求] 如果Issue有对应PR进行关联，看板上记作有效响应",
    "url": "https://github.com/opensourceways/backlog/issues/650",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 202,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-30",
@@ -1545,16 +2039,22 @@
   },
   {
    "number": 611,
-   "title": "",
-   "rawTitle": "",
+   "title": "社区统计看板增加Triton项目统计",
+   "rawTitle": "[需求] 社区统计看板增加Triton项目统计",
    "url": "https://github.com/opensourceways/backlog/issues/611",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 153,
    "createdAt": "2026-06-04",
    "updatedAt": "2026-06-11",
@@ -1564,16 +2064,21 @@
   },
   {
    "number": 594,
-   "title": "",
-   "rawTitle": "",
+   "title": "AI 度量看板中标签和工具解析异常",
+   "rawTitle": "[缺陷] AI 度量看板中标签和工具解析异常",
    "url": "https://github.com/opensourceways/backlog/issues/594",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
    "comments": 2,
    "createdAt": "2026-06-03",
    "updatedAt": "2026-06-22",
@@ -1583,16 +2088,21 @@
   },
   {
    "number": 590,
-   "title": "",
-   "rawTitle": "",
+   "title": "CANN社区D1开发者度量新增Discussions渠道",
+   "rawTitle": "[需求] CANN社区D1开发者度量新增Discussions渠道",
    "url": "https://github.com/opensourceways/backlog/issues/590",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 6,
    "createdAt": "2026-06-03",
    "updatedAt": "2026-06-23",
@@ -1602,16 +2112,22 @@
   },
   {
    "number": 489,
-   "title": "",
-   "rawTitle": "",
+   "title": "CANN社区D1开发者度量新增Discussions渠道",
+   "rawTitle": "[需求] CANN社区D1开发者度量新增Discussions渠道",
    "url": "https://github.com/opensourceways/backlog/issues/489",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "ZhengZhenyu",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 193,
    "createdAt": "2026-06-01",
    "updatedAt": "2026-06-30",
@@ -1621,16 +2137,22 @@
   },
   {
    "number": 487,
-   "title": "",
-   "rawTitle": "",
+   "title": "新增 AI 协作与合规度量指标，并上线社区度量看板",
+   "rawTitle": "[需求] 新增 AI 协作与合规度量指标，并上线社区度量看板",
    "url": "https://github.com/opensourceways/backlog/issues/487",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 16,
    "createdAt": "2026-06-01",
    "updatedAt": "2026-06-22",
@@ -1640,16 +2162,20 @@
   },
   {
    "number": 486,
-   "title": "",
-   "rawTitle": "",
+   "title": "CI数据看板统计各个仓库的ascend和GPU的测试用例",
+   "rawTitle": "[需求] CI数据看板统计各个仓库的ascend和GPU的测试用例",
    "url": "https://github.com/opensourceways/backlog/issues/486",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
    "assignees": [],
-   "author": null,
-   "labels": [],
+   "author": "Goalina",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 35,
    "createdAt": "2026-06-01",
    "updatedAt": "2026-07-15",
@@ -1659,16 +2185,22 @@
   },
   {
    "number": 448,
-   "title": "",
-   "rawTitle": "",
+   "title": "数据看板中的海内海外修改",
+   "rawTitle": "[需求] 数据看板中的海内海外修改",
    "url": "https://github.com/opensourceways/backlog/issues/448",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
    "comments": 94,
    "createdAt": "2026-05-30",
    "updatedAt": "2026-06-22",
@@ -1678,16 +2210,22 @@
   },
   {
    "number": 441,
-   "title": "",
-   "rawTitle": "",
+   "title": ": Issue看板页面补充解决率指标",
+   "rawTitle": "[需求]: Issue看板页面补充解决率指标",
    "url": "https://github.com/opensourceways/backlog/issues/441",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 134,
    "createdAt": "2026-05-29",
    "updatedAt": "2026-06-29",
@@ -1697,16 +2235,22 @@
   },
   {
    "number": 392,
-   "title": "",
-   "rawTitle": "",
+   "title": ": 开源实习数据看板新增Torch-NPU、openUBMC、Ascend IR社区的实习数据",
+   "rawTitle": "[需求]: 开源实习数据看板新增Torch-NPU、openUBMC、Ascend IR社区的实习数据",
    "url": "https://github.com/opensourceways/backlog/issues/392",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "liangmin-2026",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 41,
    "createdAt": "2026-05-18",
    "updatedAt": "2026-06-29",
@@ -1716,16 +2260,22 @@
   },
   {
    "number": 383,
-   "title": "",
-   "rawTitle": "",
+   "title": ": 统计看板vllm-ascend数据准确性提升",
+   "rawTitle": "[需求]: 统计看板vllm-ascend数据准确性提升",
    "url": "https://github.com/opensourceways/backlog/issues/383",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 9,
    "createdAt": "2026-05-15",
    "updatedAt": "2026-06-20",
@@ -1735,16 +2285,22 @@
   },
   {
    "number": 362,
-   "title": "",
-   "rawTitle": "",
+   "title": ": 昇腾社区运营看板数据支持手动label标记时间采集",
+   "rawTitle": "[需求]: 昇腾社区运营看板数据支持手动label标记时间采集",
    "url": "https://github.com/opensourceways/backlog/issues/362",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 10,
    "createdAt": "2026-05-13",
    "updatedAt": "2026-06-20",
@@ -1754,16 +2310,20 @@
   },
   {
    "number": 336,
-   "title": "",
-   "rawTitle": "",
+   "title": ": 数据中台增加AI Vibecoding 相关的指标",
+   "rawTitle": "[需求]: 数据中台增加AI Vibecoding 相关的指标",
    "url": "https://github.com/opensourceways/backlog/issues/336",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "sig/infratructure"
+   ],
    "comments": 1,
    "createdAt": "2026-05-11",
    "updatedAt": "2026-06-29",
@@ -1773,16 +2333,22 @@
   },
   {
    "number": 335,
-   "title": "",
-   "rawTitle": "",
+   "title": ": 生态看板依赖基础设施能力补齐",
+   "rawTitle": "[需求]: 生态看板依赖基础设施能力补齐",
    "url": "https://github.com/opensourceways/backlog/issues/335",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 4,
    "createdAt": "2026-05-11",
    "updatedAt": "2026-06-29",
@@ -1792,16 +2358,21 @@
   },
   {
    "number": 314,
-   "title": "",
-   "rawTitle": "",
+   "title": ": 论坛用户区分华为与非华为",
+   "rawTitle": "[需求]: 论坛用户区分华为与非华为",
    "url": "https://github.com/opensourceways/backlog/issues/314",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "hellowaywewe",
+   "labels": [
+    "enhancement",
+    "accepted"
+   ],
    "comments": 56,
    "createdAt": "2026-05-08",
    "updatedAt": "2026-06-11",
@@ -1811,16 +2382,21 @@
   },
   {
    "number": 276,
-   "title": "",
-   "rawTitle": "",
+   "title": ": 社区统计看板贡献者统计能力增强",
+   "rawTitle": "[需求]: 社区统计看板贡献者统计能力增强",
    "url": "https://github.com/opensourceways/backlog/issues/276",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "enhancement",
+    "accepted"
+   ],
    "comments": 61,
    "createdAt": "2026-04-27",
    "updatedAt": "2026-06-23",
@@ -1830,16 +2406,23 @@
   },
   {
    "number": 108,
-   "title": "",
-   "rawTitle": "",
+   "title": ": 数据中台社区会议主动管理MCP开发",
+   "rawTitle": "[需求]: 数据中台社区会议主动管理MCP开发",
    "url": "https://github.com/opensourceways/backlog/issues/108",
    "status": "merged",
    "state": "closed",
    "stateReason": "completed",
    "type": "需求",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "need_design",
+    "need_itest"
+   ],
    "comments": 4,
    "createdAt": "2026-03-28",
    "updatedAt": "2026-06-20",
@@ -1849,16 +2432,21 @@
   },
   {
    "number": 597,
-   "title": "",
-   "rawTitle": "",
+   "title": "CANN开发者度量Discussions统计错误（测试，勿处理）",
+   "rawTitle": "[缺陷] CANN开发者度量Discussions统计错误（测试，勿处理）",
    "url": "https://github.com/opensourceways/backlog/issues/597",
    "status": "closed",
    "state": "closed",
    "stateReason": "not_planned",
    "type": "缺陷",
-   "assignees": [],
-   "author": null,
-   "labels": [],
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "accepted",
+    "sig/infratructure"
+   ],
    "comments": 2,
    "createdAt": "2026-06-03",
    "updatedAt": "2026-06-29",

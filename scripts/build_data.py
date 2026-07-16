@@ -138,16 +138,6 @@ recs.sort(key=lambda r: (order.get(r["status"], 3), r["createdAt"]))
 recs.sort(key=lambda r: r["createdAt"], reverse=True)
 recs.sort(key=lambda r: order.get(r["status"], 3))
 
-# 去敏（公开页面）：清空 issue 标题 / 提交人 / 负责人账号 / 标签（私有仓内容），
-# 保留状态/类型/日期/优先级等聚合字段 + 编号（对外网 404，仅有权限者能点开）。
-# 用空值而非删键，避免前端 app.js 因字段缺失报错。
-for r in recs:
-    r["title"] = ""
-    r["rawTitle"] = ""
-    r["author"] = None
-    r["assignees"] = []
-    r["labels"] = []
-
 # 记录内容无变化则不改文件（保留旧 generatedAt），避免定时跑出现无意义提交
 old = {}
 if os.path.exists(OUT):

@@ -117,8 +117,9 @@
       return `<div class="kpi"><div class="k">${k} <span style="color:#5470c6;font-weight:600">(AI/总)</span></div>
         <div class="v" style="color:#5470c6">${ai}<small style="color:var(--t2)">/${tot} · ${p}%</small></div></div>`;
     }).join("");
-    const aiReq = RECORDS.filter(r => r.ai).length;
-    html += `<div class="kpi"><div class="k">AI 需求(实现过)</div><div class="v">${aiReq}<small>/${T("需求").length} 需求</small></div></div>`;
+    const reqTot = T("需求").length;
+    const aiReq = RECORDS.filter(r => r.type === "需求" && r.roundsTotal > 0).length;
+    html += `<div class="kpi"><div class="k">AI 参与需求 <span style="color:#5470c6;font-weight:600">(AI/总)</span></div><div class="v" style="color:#5470c6">${aiReq}<small style="color:var(--t2)">/${reqTot} · ${reqTot ? Math.round(aiReq / reqTot * 100) : 0}%</small></div></div>`;
     $("#kpis").innerHTML = html;
   }
 
@@ -168,8 +169,8 @@
     }
     const req = subset.filter(r => r.type === "需求");
     return [
-      { name: "AI 需求", type: "bar", stack: "s", itemStyle: { color: AI_COLOR["AI 需求"] }, barMaxWidth: 40, data: months.map(m => req.filter(r => r[monthField] === m && r.ai).length) },
-      { name: "非 AI 需求", type: "bar", stack: "s", itemStyle: { color: AI_COLOR["非 AI 需求"] }, barMaxWidth: 40, data: months.map(m => req.filter(r => r[monthField] === m && !r.ai).length) },
+      { name: "AI 需求", type: "bar", stack: "s", itemStyle: { color: AI_COLOR["AI 需求"] }, barMaxWidth: 40, data: months.map(m => req.filter(r => r[monthField] === m && r.roundsTotal > 0).length) },
+      { name: "非 AI 需求", type: "bar", stack: "s", itemStyle: { color: AI_COLOR["非 AI 需求"] }, barMaxWidth: 40, data: months.map(m => req.filter(r => r[monthField] === m && r.roundsTotal === 0).length) },
     ];
   }
   // 叠加「AI 参与」折线：当月进过流水线（roundsTotal>0）的 issue 数
@@ -188,7 +189,7 @@
     if (seriesName === "非 AI 参与") return base.filter(r => r.roundsTotal === 0);
     if (ui.dim === "type") return base.filter(r => r.type === seriesName);
     base = base.filter(r => r.type === "需求");
-    return seriesName === "AI 需求" ? base.filter(r => r.ai) : base.filter(r => !r.ai);
+    return seriesName === "AI 需求" ? base.filter(r => r.roundsTotal > 0) : base.filter(r => r.roundsTotal === 0);
   }
 
   function renderRow2() {
