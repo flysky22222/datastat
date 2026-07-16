@@ -1,9 +1,35 @@
 {
- "generatedAt": "2026-07-16 09:50",
+ "generatedAt": "2026-07-16 15:58",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 98,
+ "total": 99,
  "records": [
+  {
+   "number": 1392,
+   "title": "开源技术雷达 新增精选、点赞功能",
+   "rawTitle": "[需求] 开源技术雷达 新增精选、点赞功能",
+   "url": "https://github.com/opensourceways/backlog/issues/1392",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "Yikun",
+   "labels": [
+    "need_design",
+    "need_security",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 5,
+   "createdAt": "2026-07-16",
+   "updatedAt": "2026-07-16",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1376,
    "title": "openlibing获取CI信息机机接口切换",
@@ -77,9 +103,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 14,
+   "comments": 17,
    "createdAt": "2026-07-14",
-   "updatedAt": "2026-07-15",
+   "updatedAt": "2026-07-16",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -172,9 +198,10 @@
     "accepted",
     "task",
     "need_light",
-    "sig/infratructure"
+    "sig/infratructure",
+    "complete-develop"
    ],
-   "comments": 6,
+   "comments": 14,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-16",
    "closedAt": "",
@@ -254,9 +281,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 10,
+   "comments": 13,
    "createdAt": "2026-07-13",
-   "updatedAt": "2026-07-15",
+   "updatedAt": "2026-07-16",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -305,9 +332,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 45,
+   "comments": 53,
    "createdAt": "2026-07-09",
-   "updatedAt": "2026-07-15",
+   "updatedAt": "2026-07-16",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
