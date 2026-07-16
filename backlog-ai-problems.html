@@ -77,6 +77,45 @@
       <div id="cnt" style="color:var(--t3)"></div>
     </div>
     <div class="card" style="overflow-x:auto"><table id="tbl"></table></div>
+
+    <!-- ⑤ 改进执行方案 -->
+    <div class="row-title"><h2>⑤ 改进执行方案(可落地)</h2><span>做什么 → 怎么做 → 省多少</span></div>
+
+    <div class="card" style="border:2px solid #ee6666;background:#fff6f6;line-height:1.85;font-size:14px">
+      <h3 style="color:#c0392b;margin-top:2px">🚨 优先级 0(风险级,先于一切提效):生产上线安全硬门禁 —— 杜绝「没验证就 commit 直发生产」</h3>
+      <p>数据里最危险的不是耗时,而是 <b>AI 改动没真正验证就进了发布流程</b>:大量 <code>submit_partial</code>、<code>preview_partial 冒烟有遗留</code>、<code>pod 未就绪却继续</code>、<code>/ai-deploy-test force</code> 硬推。机器人类尤其致命(CrashLoop / import 崩溃 / <code>Has 恒 true 检查永不执行</code> / 交 stub 占位符,而<b>输出对错无自动判定</b>)—— 一旦发布,线上机器人就乱回/漏检。</p>
+      <b>要加的硬门禁(缺一不可):</b>
+      <ol style="margin:6px 0">
+        <li><b>禁止 partial/best-effort 进发布</b>:<code>preview_partial</code>/<code>submit_partial</code>/<code>pod 未就绪</code>/<code>冒烟有遗留</code> 一律判 <b>FAIL,不得进入 deploy</b>;<code>/ai-deploy-test force</code> 对生产禁用。</li>
+        <li><b>机器人服务:发布前必须过「行为评测门禁」</b>:每个 robot 仓建<b>离线评测集(输入→期望行为)+自动打分</b>,评测不通过禁止合入/发布 —— 替代「预览起来了就算过」。</li>
+        <li><b>「测不了就不许改」</b>:CI 检测到无 pytest/vitest 可运行环境(如 PEP668/无网/Go 版本不符)时,<b>禁止 Agent 改启动路径/核心逻辑代码</b>(用户在 #621 已提)—— 不让"没跑过测试"的改动蒙混过关。</li>
+        <li><b>运行时验证纳入硬门禁</b>:预览必须<b>真实拉起 + 冒烟真通过(看 body/接口真返回,不看 pod 状态)</b>才算过;发布前 required review + 真集成测试绿。</li>
+        <li><b>发布=合入边界</b>:未合并的实现 PR 不得发布(现已有此拦截,保持);禁止绕过 PR 直接 commit 到生产分支。</li>
+      </ol>
+      <p style="color:var(--t2)">这条不省小时,但避免<b>生产事故</b> —— 优先级高于下面所有提效项。</p>
+    </div>
+
+    <div class="row-title"><h2 style="font-size:15px">提效干预 ROI(总可省 254h ≈ 45%)</h2></div>
+    <div class="grid g2">
+      <div class="card"><h3>各干预可省小时</h3><p class="sub">按每类问题的轮次×削减率估算</p><div id="c-intv" class="chart"></div></div>
+      <div class="card" style="line-height:1.8;font-size:13px">
+        <h3>做得好的凭什么(可复制经验)</h3>
+        <ol style="margin:6px 0;padding-left:20px">
+          <li><b>issue 正文自带规格/诊断 →「照抄落地」</b>(最强因子):给根因、修复 SQL、文件:行号、参考 PR、参数表,AI 1 轮就对(#1128/#1226/#1013/#837)。</li>
+          <li><b>单点小改 + 量化验收</b>:单文件/单接口、验收一句话或明确数字(500ms/两位小数/65%),改动面小难翻车(#1358/#1241/#1056)。</li>
+          <li><b>有现成同构模板可抄</b>:参考已有 PR / playground 已存在 / 照清单逐项(#608 参考PR#117、#680、#1013)。</li>
+          <li><b>仓库 CLAUDE.md/skill 覆盖到位</b>:AI 一次照约定做对(#1068 读了 datastat CLAUDE.md+skill、#1048 配置驱动原则)。</li>
+        </ol>
+        <p style="color:#c0392b"><b>核心洞察:</b>做得好=「人把 spec 写清 或 AI 已有领域知识」。所以两条腿:<b>①要求 issue 写清可落地 spec ②给 AI 领域知识(I1)让它不必每次靠人喂</b>。</p>
+      </div>
+    </div>
+
+    <div class="row-title"><h2 style="font-size:15px">6 大干预 · 做什么 / 怎么做 / 给 AI 什么 prompt</h2></div>
+    <div id="intv-cards" class="grid g2"></div>
+
+    <div class="row-title"><h2 style="font-size:15px">每条 issue 改进收益(做了对应干预后)</h2><span>轮次→预计轮次 · 耗时→预计耗时</span></div>
+    <div class="controls"><div>服务 <select id="i-svc"></select></div><div>干预 <select id="i-intv"></select></div><div id="i-cnt" style="color:var(--t3)"></div></div>
+    <div class="card" style="overflow-x:auto"><table id="itbl"></table></div>
   </main>
   <footer>
     数据来自 opensourceways/backlog(私有仓)78 个重点 issue 的评论/流程标记/失败 action 归因;本页**仅公开聚合脱敏结果**,不含 issue 标题与原始反馈。

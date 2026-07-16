@@ -12,18 +12,67 @@
     DATA_MISSING: "#91cc75", ROBOT_QUALITY: "#ea7ccc", OTHER: "#bbb",
   };
   const STAGECOLOR = { "需求分析": "#73c0de", "开发预览": "#5470c6", "开发提交": "#9a60b4", "测试发布": "#fac858", "正式上线": "#3ba272", "AI引擎故障": "#ee6666", "服务解析/开发": "#fc8452", "其他": "#bbb" };
-  let D, DET = {};
+  let D, DET = {}, IMP = null;
 
   Promise.all([
     fetch("./backlog-ai-problems.json?t=" + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
     fetch("./backlog-ai-problems-detail.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
-  ]).then(([d, det]) => { D = d; DET = det || {}; init(); })
+    fetch("./backlog-ai-improvement.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null),
+  ]).then(([d, det, imp]) => { D = d; DET = det || {}; IMP = imp; init(); })
     .catch(e => { const el = $("#err"); el.style.display = "block"; el.textContent = "数据加载失败:" + e; });
 
   function init() {
     $("#genAt").textContent = "生成于 " + D.generatedAt;
     renderKpis(); renderTop3(); renderCat(); renderPrimary(); renderStage(); renderFailStage(); renderSvc();
     initTable();
+    if (IMP) { renderIntv(); renderIntvCards(); initImpTable(); }
+  }
+
+  function renderIntv() {
+    const arr = IMP.intv_impact.slice().reverse();
+    const cm = {}; (IMP.plan || []).forEach(p => cm[p.id] = p.color);
+    ec("c-intv").setOption({
+      grid: { left: 200, right: 50, top: 10, bottom: 20 },
+      tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: p => `${p[0].name}<br/>省 ${p[0].value} 小时` },
+      xAxis: { type: "value", name: "省(h)" },
+      yAxis: { type: "category", data: arr.map(x => x.id + " " + x.name.slice(0, 16)) },
+      series: [{ type: "bar", barMaxWidth: 22, data: arr.map(x => ({ value: x.saved_h, itemStyle: { color: cm[x.id] || "#888" } })), label: { show: true, position: "right", formatter: "{c}h" } }],
+    });
+  }
+
+  function renderIntvCards() {
+    $("#intv-cards").innerHTML = (IMP.plan || []).map(p => `
+      <div class="card" style="border-left:5px solid ${p.color}">
+        <h3>${esc(p.id)} · ${esc(p.name)} <span style="float:right;color:${p.color};font-weight:700">省 ${p.saved_h}h</span></h3>
+        <p class="sub" style="color:var(--t2)">${esc(p.do)}</p>
+        <div style="font-size:13px"><b>步骤:</b><ol style="margin:4px 0;padding-left:20px;line-height:1.7">${p.steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol></div>
+        ${p.prompt && p.prompt.indexOf("prompt") < 0 && p.prompt.indexOf("改造") < 0 ? `<div style="font-size:12px;margin-top:6px"><b>给 AI 的 prompt:</b><br/><code style="display:block;padding:6px 8px;background:#f5f6f8;border-radius:6px;margin-top:3px;white-space:pre-wrap">${esc(p.prompt)}</code></div>` : `<div style="font-size:12px;color:var(--t3);margin-top:6px">${esc(p.prompt)}</div>`}
+      </div>`).join("");
+  }
+
+  let iSvc = "__all__", iIntv = "__all__";
+  function initImpTable() {
+    const svcs = [...new Set(IMP.issues.map(i => i.svc))].sort();
+    $("#i-svc").innerHTML = '<option value="__all__">全部服务</option>' + svcs.map(s => `<option>${esc(s)}</option>`).join("");
+    $("#i-intv").innerHTML = '<option value="__all__">全部干预</option>' + (IMP.plan || []).map(p => `<option value="${p.id}">${esc(p.id + " " + p.name.slice(0, 14))}</option>`).join("");
+    $("#i-svc").addEventListener("change", e => { iSvc = e.target.value; drawImp(); });
+    $("#i-intv").addEventListener("change", e => { iIntv = e.target.value; drawImp(); });
+    drawImp();
+  }
+  function drawImp() {
+    let rows = IMP.issues.slice();
+    if (iSvc !== "__all__") rows = rows.filter(r => r.svc === iSvc);
+    if (iIntv !== "__all__") rows = rows.filter(r => (r.intv || []).includes(iIntv));
+    const sh = rows.reduce((a, r) => a + r.saved_h, 0);
+    $("#i-cnt").textContent = `共 ${rows.length} 条 · 合计可省 ${Math.round(sh)}h`;
+    const body = rows.map(r => `<tr>
+      <td><a href="https://github.com/opensourceways/backlog/issues/${r.n}" target="_blank" rel="noopener">#${r.n}</a></td>
+      <td style="color:var(--t2)">${esc(r.svc)}</td>
+      <td style="text-align:center">${r.rounds} → <b style="color:#3ba272">${r.new_rounds}</b></td>
+      <td style="text-align:center">${r.time_h}h → <b style="color:#3ba272">${r.new_time_h}h</b></td>
+      <td style="text-align:center;font-weight:700;color:#c0392b">省 ${r.saved_h}h</td>
+      <td>${(r.intv || []).join(" ")}</td></tr>`).join("");
+    $("#itbl").innerHTML = `<thead><tr><th>#</th><th>服务</th><th>轮次→预计</th><th>耗时→预计</th><th>可省</th><th>需做干预</th></tr></thead><tbody>${body}</tbody>`;
   }
 
   function renderKpis() {

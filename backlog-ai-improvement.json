@@ -1,0 +1,1248 @@
+{
+ "interventions": {
+  "I1": "om-dataarts 数据领域知识 skill+CLAUDE.md",
+  "I2": "新增社区/跨社区复用 checklist skill",
+  "I3": "预览/部署稳定性+引擎可靠性",
+  "I4": "门禁与AI流水线兼容",
+  "I5": "需求侧拆分+验收口径+UI回灌+预览灌数",
+  "I6": "机器人对话质量自动评测"
+ },
+ "intv_impact": [
+  {
+   "id": "I1",
+   "name": "om-dataarts 数据领域知识 skill+CLAUDE.md",
+   "saved_h": 113
+  },
+  {
+   "id": "I3",
+   "name": "预览/部署稳定性+引擎可靠性",
+   "saved_h": 46
+  },
+  {
+   "id": "I4",
+   "name": "门禁与AI流水线兼容",
+   "saved_h": 34
+  },
+  {
+   "id": "I5",
+   "name": "需求侧拆分+验收口径+UI回灌+预览灌数",
+   "saved_h": 34
+  },
+  {
+   "id": "I2",
+   "name": "新增社区/跨社区复用 checklist skill",
+   "saved_h": 16
+  },
+  {
+   "id": "I6",
+   "name": "机器人对话质量自动评测",
+   "saved_h": 10
+  }
+ ],
+ "total_time_h": 564,
+ "total_saved_h": 254,
+ "saved_pct": 45,
+ "issues": [
+  {
+   "n": 650,
+   "svc": "om-datacenter",
+   "rounds": 78,
+   "new_rounds": 40,
+   "time_h": 24.5,
+   "new_time_h": 12.6,
+   "saved_h": 11.8,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I2"
+   ]
+  },
+  {
+   "n": 785,
+   "svc": "forum-reply-robot",
+   "rounds": 90,
+   "new_rounds": 48,
+   "time_h": 24.7,
+   "new_time_h": 13.2,
+   "saved_h": 11.6,
+   "primary": "PREVIEW_FAILED",
+   "intv": [
+    "I1",
+    "I3",
+    "I4"
+   ]
+  },
+  {
+   "n": 489,
+   "svc": "om-datacenter",
+   "rounds": 86,
+   "new_rounds": 51,
+   "time_h": 28.2,
+   "new_time_h": 16.7,
+   "saved_h": 11.4,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I3"
+   ]
+  },
+  {
+   "n": 611,
+   "svc": "om-datacenter",
+   "rounds": 76,
+   "new_rounds": 41,
+   "time_h": 24.7,
+   "new_time_h": 13.3,
+   "saved_h": 11.4,
+   "primary": "SKILL_MISSING",
+   "intv": [
+    "I1",
+    "I2",
+    "I3"
+   ]
+  },
+  {
+   "n": 927,
+   "svc": "om-datacenter",
+   "rounds": 88,
+   "new_rounds": 61,
+   "time_h": 29.2,
+   "new_time_h": 20.2,
+   "saved_h": 8.8,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 921,
+   "svc": "forum-reply-robot",
+   "rounds": 84,
+   "new_rounds": 53,
+   "time_h": 22.2,
+   "new_time_h": 14.0,
+   "saved_h": 8.3,
+   "primary": "REQUIREMENT_VAGUE",
+   "intv": [
+    "I1",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 840,
+   "svc": "om-datacenter",
+   "rounds": 52,
+   "new_rounds": 27,
+   "time_h": 16.8,
+   "new_time_h": 8.7,
+   "saved_h": 8.1,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I2"
+   ]
+  },
+  {
+   "n": 926,
+   "svc": "xihe-all",
+   "rounds": 83,
+   "new_rounds": 33,
+   "time_h": 13.3,
+   "new_time_h": 5.3,
+   "saved_h": 8.0,
+   "primary": "PREVIEW_FAILED",
+   "intv": [
+    "I3",
+    "I4"
+   ]
+  },
+  {
+   "n": 1219,
+   "svc": "om-datacenter",
+   "rounds": 53,
+   "new_rounds": 29,
+   "time_h": 16.2,
+   "new_time_h": 8.8,
+   "saved_h": 7.4,
+   "primary": "SKILL_MISSING",
+   "intv": [
+    "I1",
+    "I2"
+   ]
+  },
+  {
+   "n": 778,
+   "svc": "forum-reply-robot",
+   "rounds": 53,
+   "new_rounds": 29,
+   "time_h": 15.8,
+   "new_time_h": 8.7,
+   "saved_h": 7.1,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 621,
+   "svc": "forum-reply-robot",
+   "rounds": 33,
+   "new_rounds": 13,
+   "time_h": 10.3,
+   "new_time_h": 4.1,
+   "saved_h": 6.3,
+   "primary": "PREVIEW_FAILED",
+   "intv": [
+    "I1",
+    "I3",
+    "I4"
+   ]
+  },
+  {
+   "n": 966,
+   "svc": "om-datacenter",
+   "rounds": 35,
+   "new_rounds": 17,
+   "time_h": 11.2,
+   "new_time_h": 5.4,
+   "saved_h": 5.8,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 780,
+   "svc": "om-webserver",
+   "rounds": 52,
+   "new_rounds": 28,
+   "time_h": 12.7,
+   "new_time_h": 6.8,
+   "saved_h": 5.7,
+   "primary": "CI_GATE",
+   "intv": [
+    "I1",
+    "I3",
+    "I4"
+   ]
+  },
+  {
+   "n": 1309,
+   "svc": "community-robots",
+   "rounds": 23,
+   "new_rounds": 7,
+   "time_h": 7.5,
+   "new_time_h": 2.3,
+   "saved_h": 5.2,
+   "primary": "PREVIEW_FAILED",
+   "intv": [
+    "I3"
+   ]
+  },
+  {
+   "n": 941,
+   "svc": "om-datacenter",
+   "rounds": 35,
+   "new_rounds": 21,
+   "time_h": 11.3,
+   "new_time_h": 6.8,
+   "saved_h": 4.7,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I6"
+   ]
+  },
+  {
+   "n": 614,
+   "svc": "community-robots",
+   "rounds": 37,
+   "new_rounds": 22,
+   "time_h": 11.2,
+   "new_time_h": 6.7,
+   "saved_h": 4.6,
+   "primary": "REQUIREMENT_VAGUE",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 674,
+   "svc": "hotopic-all",
+   "rounds": 32,
+   "new_rounds": 18,
+   "time_h": 10.5,
+   "new_time_h": 5.9,
+   "saved_h": 4.6,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 665,
+   "svc": "om-datacenter",
+   "rounds": 27,
+   "new_rounds": 12,
+   "time_h": 8.3,
+   "new_time_h": 3.7,
+   "saved_h": 4.6,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I6"
+   ]
+  },
+  {
+   "n": 441,
+   "svc": "om-datacenter",
+   "rounds": 42,
+   "new_rounds": 27,
+   "time_h": 12.4,
+   "new_time_h": 8.0,
+   "saved_h": 4.5,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 909,
+   "svc": "cla-all",
+   "rounds": 82,
+   "new_rounds": 38,
+   "time_h": 8.2,
+   "new_time_h": 3.8,
+   "saved_h": 4.4,
+   "primary": "PREVIEW_FAILED",
+   "intv": [
+    "I3",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 729,
+   "svc": "om-datacenter",
+   "rounds": 50,
+   "new_rounds": 37,
+   "time_h": 16.3,
+   "new_time_h": 12.1,
+   "saved_h": 4.2,
+   "primary": "OTHER",
+   "intv": [
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 1303,
+   "svc": "om-datacenter",
+   "rounds": 16,
+   "new_rounds": 3,
+   "time_h": 4.8,
+   "new_time_h": 0.9,
+   "saved_h": 3.9,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 820,
+   "svc": "om-datacenter",
+   "rounds": 28,
+   "new_rounds": 15,
+   "time_h": 8.4,
+   "new_time_h": 4.5,
+   "saved_h": 3.8,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 1049,
+   "svc": "om-datacenter",
+   "rounds": 24,
+   "new_rounds": 13,
+   "time_h": 7.7,
+   "new_time_h": 4.2,
+   "saved_h": 3.4,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I3",
+    "I5"
+   ]
+  },
+  {
+   "n": 616,
+   "svc": "ascend-ci-project",
+   "rounds": 35,
+   "new_rounds": 19,
+   "time_h": 7.0,
+   "new_time_h": 3.8,
+   "saved_h": 3.3,
+   "primary": "CI_GATE",
+   "intv": [
+    "I1",
+    "I3",
+    "I4"
+   ]
+  },
+  {
+   "n": 433,
+   "svc": "security-cve-all",
+   "rounds": 27,
+   "new_rounds": 15,
+   "time_h": 7.0,
+   "new_time_h": 3.9,
+   "saved_h": 3.2,
+   "primary": "REQUIREMENT_VAGUE",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 314,
+   "svc": "om-datacenter",
+   "rounds": 26,
+   "new_rounds": 17,
+   "time_h": 8.5,
+   "new_time_h": 5.6,
+   "saved_h": 3.1,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I4",
+    "I6"
+   ]
+  },
+  {
+   "n": 1162,
+   "svc": "om-datacenter",
+   "rounds": 18,
+   "new_rounds": 8,
+   "time_h": 5.8,
+   "new_time_h": 2.6,
+   "saved_h": 3.1,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 842,
+   "svc": "om-datacenter",
+   "rounds": 18,
+   "new_rounds": 8,
+   "time_h": 5.8,
+   "new_time_h": 2.6,
+   "saved_h": 3.1,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 878,
+   "svc": "om-datacenter",
+   "rounds": 16,
+   "new_rounds": 6,
+   "time_h": 5.0,
+   "new_time_h": 1.9,
+   "saved_h": 3.1,
+   "primary": "DATA_MISSING",
+   "intv": [
+    "I5",
+    "I6"
+   ]
+  },
+  {
+   "n": 392,
+   "svc": "om-datacenter",
+   "rounds": 16,
+   "new_rounds": 6,
+   "time_h": 5.0,
+   "new_time_h": 1.9,
+   "saved_h": 3.1,
+   "primary": "CLAUDEMD_MISSING",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 726,
+   "svc": "community-robots",
+   "rounds": 24,
+   "new_rounds": 14,
+   "time_h": 7.2,
+   "new_time_h": 4.2,
+   "saved_h": 3.0,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I4"
+   ]
+  },
+  {
+   "n": 1294,
+   "svc": "om-datacenter",
+   "rounds": 14,
+   "new_rounds": 5,
+   "time_h": 4.5,
+   "new_time_h": 1.6,
+   "saved_h": 3.0,
+   "primary": "PREVIEW_FAILED",
+   "intv": [
+    "I3",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 818,
+   "svc": "om-datacenter",
+   "rounds": 17,
+   "new_rounds": 7,
+   "time_h": 5.2,
+   "new_time_h": 2.1,
+   "saved_h": 2.9,
+   "primary": "CLAUDEMD_MISSING",
+   "intv": [
+    "I1",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 714,
+   "svc": "om-datacenter",
+   "rounds": 15,
+   "new_rounds": 5,
+   "time_h": 4.5,
+   "new_time_h": 1.5,
+   "saved_h": 2.9,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I3",
+    "I5",
+    "I6"
+   ]
+  },
+  {
+   "n": 497,
+   "svc": "community-robots",
+   "rounds": 17,
+   "new_rounds": 7,
+   "time_h": 4.4,
+   "new_time_h": 1.8,
+   "saved_h": 2.7,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I4"
+   ]
+  },
+  {
+   "n": 853,
+   "svc": "community-robots",
+   "rounds": 16,
+   "new_rounds": 7,
+   "time_h": 4.8,
+   "new_time_h": 2.1,
+   "saved_h": 2.7,
+   "primary": "PREVIEW_FAILED",
+   "intv": [
+    "I1",
+    "I3"
+   ]
+  },
+  {
+   "n": 312,
+   "svc": "om-datacenter",
+   "rounds": 24,
+   "new_rounds": 15,
+   "time_h": 6.7,
+   "new_time_h": 4.2,
+   "saved_h": 2.6,
+   "primary": "CI_GATE",
+   "intv": [
+    "I1",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 321,
+   "svc": "community-robots",
+   "rounds": 20,
+   "new_rounds": 12,
+   "time_h": 6.7,
+   "new_time_h": 4.0,
+   "saved_h": 2.6,
+   "primary": "CI_GATE",
+   "intv": [
+    "I1",
+    "I4"
+   ]
+  },
+  {
+   "n": 900,
+   "svc": "hotopic-all",
+   "rounds": 37,
+   "new_rounds": 20,
+   "time_h": 5.6,
+   "new_time_h": 3.0,
+   "saved_h": 2.5,
+   "primary": "PREVIEW_FAILED",
+   "intv": [
+    "I3",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 276,
+   "svc": "om-datacenter",
+   "rounds": 19,
+   "new_rounds": 11,
+   "time_h": 6.0,
+   "new_time_h": 3.5,
+   "saved_h": 2.5,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 1257,
+   "svc": "om-datacenter",
+   "rounds": 15,
+   "new_rounds": 6,
+   "time_h": 4.3,
+   "new_time_h": 1.7,
+   "saved_h": 2.5,
+   "primary": "REQUIREMENT_VAGUE",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 434,
+   "svc": "ascend-ci-project",
+   "rounds": 25,
+   "new_rounds": 14,
+   "time_h": 5.7,
+   "new_time_h": 3.2,
+   "saved_h": 2.4,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I4"
+   ]
+  },
+  {
+   "n": 448,
+   "svc": "om-datacenter",
+   "rounds": 31,
+   "new_rounds": 20,
+   "time_h": 6.3,
+   "new_time_h": 4.0,
+   "saved_h": 2.3,
+   "primary": "CI_GATE",
+   "intv": [
+    "I1",
+    "I4"
+   ]
+  },
+  {
+   "n": 905,
+   "svc": "om-datacenter",
+   "rounds": 18,
+   "new_rounds": 11,
+   "time_h": 5.8,
+   "new_time_h": 3.6,
+   "saved_h": 2.3,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 427,
+   "svc": "meeting-server",
+   "rounds": 28,
+   "new_rounds": 15,
+   "time_h": 4.5,
+   "new_time_h": 2.4,
+   "saved_h": 2.1,
+   "primary": "PREVIEW_FAILED",
+   "intv": [
+    "I1",
+    "I3",
+    "I4"
+   ]
+  },
+  {
+   "n": 1181,
+   "svc": "ascend-ci-project",
+   "rounds": 17,
+   "new_rounds": 7,
+   "time_h": 3.5,
+   "new_time_h": 1.4,
+   "saved_h": 2.1,
+   "primary": "ROBOT_QUALITY",
+   "intv": [
+    "I3",
+    "I5",
+    "I6"
+   ]
+  },
+  {
+   "n": 936,
+   "svc": "om-datacenter",
+   "rounds": 18,
+   "new_rounds": 11,
+   "time_h": 5.3,
+   "new_time_h": 3.3,
+   "saved_h": 2.0,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I5",
+    "I6"
+   ]
+  },
+  {
+   "n": 694,
+   "svc": "pod_exporter_monitoring",
+   "rounds": 14,
+   "new_rounds": 5,
+   "time_h": 3.0,
+   "new_time_h": 1.1,
+   "saved_h": 2.0,
+   "primary": "CI_GATE",
+   "intv": [
+    "I1",
+    "I3",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 1203,
+   "svc": "ascend-ci-project",
+   "rounds": 11,
+   "new_rounds": 5,
+   "time_h": 3.7,
+   "new_time_h": 1.7,
+   "saved_h": 1.9,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 712,
+   "svc": "ascend-ci-project",
+   "rounds": 10,
+   "new_rounds": 4,
+   "time_h": 3.2,
+   "new_time_h": 1.3,
+   "saved_h": 1.9,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I3",
+    "I5"
+   ]
+  },
+  {
+   "n": 435,
+   "svc": "oneid-all",
+   "rounds": 22,
+   "new_rounds": 15,
+   "time_h": 5.2,
+   "new_time_h": 3.5,
+   "saved_h": 1.7,
+   "primary": "OTHER",
+   "intv": [
+    "I1",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 646,
+   "svc": "community-robots",
+   "rounds": 10,
+   "new_rounds": 4,
+   "time_h": 3.2,
+   "new_time_h": 1.3,
+   "saved_h": 1.7,
+   "primary": "CI_GATE",
+   "intv": [
+    "I1",
+    "I4"
+   ]
+  },
+  {
+   "n": 319,
+   "svc": "patch-manager",
+   "rounds": 9,
+   "new_rounds": 4,
+   "time_h": 2.8,
+   "new_time_h": 1.3,
+   "saved_h": 1.5,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I3",
+    "I4"
+   ]
+  },
+  {
+   "n": 326,
+   "svc": "forum-reply-robot",
+   "rounds": 24,
+   "new_rounds": 19,
+   "time_h": 6.3,
+   "new_time_h": 5.0,
+   "saved_h": 1.4,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I4"
+   ]
+  },
+  {
+   "n": 904,
+   "svc": "om-datacenter",
+   "rounds": 9,
+   "new_rounds": 4,
+   "time_h": 2.5,
+   "new_time_h": 1.1,
+   "saved_h": 1.3,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I3",
+    "I5"
+   ]
+  },
+  {
+   "n": 1278,
+   "svc": "om-webserver",
+   "rounds": 15,
+   "new_rounds": 8,
+   "time_h": 2.4,
+   "new_time_h": 1.3,
+   "saved_h": 1.2,
+   "primary": "OTHER",
+   "intv": [
+    "I3",
+    "I4"
+   ]
+  },
+  {
+   "n": 486,
+   "svc": "om-datacenter",
+   "rounds": 9,
+   "new_rounds": 5,
+   "time_h": 2.5,
+   "new_time_h": 1.4,
+   "saved_h": 1.2,
+   "primary": "REQUIREMENT_VAGUE",
+   "intv": [
+    "I1",
+    "I5",
+    "I6"
+   ]
+  },
+  {
+   "n": 1210,
+   "svc": "om-datacenter",
+   "rounds": 8,
+   "new_rounds": 4,
+   "time_h": 2.5,
+   "new_time_h": 1.2,
+   "saved_h": 1.1,
+   "primary": "CI_GATE",
+   "intv": [
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 1190,
+   "svc": "ascend-ci-project",
+   "rounds": 9,
+   "new_rounds": 5,
+   "time_h": 2.2,
+   "new_time_h": 1.2,
+   "saved_h": 0.9,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I6"
+   ]
+  },
+  {
+   "n": 672,
+   "svc": "community-robots",
+   "rounds": 8,
+   "new_rounds": 5,
+   "time_h": 2.2,
+   "new_time_h": 1.4,
+   "saved_h": 0.9,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I3",
+    "I5"
+   ]
+  },
+  {
+   "n": 910,
+   "svc": "community-robots",
+   "rounds": 9,
+   "new_rounds": 5,
+   "time_h": 2.2,
+   "new_time_h": 1.2,
+   "saved_h": 0.9,
+   "primary": "ROBOT_QUALITY",
+   "intv": [
+    "I3",
+    "I5",
+    "I6"
+   ]
+  },
+  {
+   "n": 1200,
+   "svc": "om-datacenter",
+   "rounds": 8,
+   "new_rounds": 5,
+   "time_h": 2.2,
+   "new_time_h": 1.4,
+   "saved_h": 0.9,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I3"
+   ]
+  },
+  {
+   "n": 1299,
+   "svc": "oss-map",
+   "rounds": 8,
+   "new_rounds": 4,
+   "time_h": 1.7,
+   "new_time_h": 0.8,
+   "saved_h": 0.8,
+   "primary": "ROBOT_QUALITY",
+   "intv": [
+    "I1",
+    "I6"
+   ]
+  },
+  {
+   "n": 1137,
+   "svc": "om-datacenter",
+   "rounds": 9,
+   "new_rounds": 6,
+   "time_h": 2.5,
+   "new_time_h": 1.7,
+   "saved_h": 0.8,
+   "primary": "REQUIREMENT_VAGUE",
+   "intv": [
+    "I3",
+    "I5"
+   ]
+  },
+  {
+   "n": 862,
+   "svc": "security-cve-all",
+   "rounds": 7,
+   "new_rounds": 4,
+   "time_h": 2.2,
+   "new_time_h": 1.2,
+   "saved_h": 0.8,
+   "primary": "REQUIREMENT_VAGUE",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 844,
+   "svc": "om-datacenter",
+   "rounds": 8,
+   "new_rounds": 5,
+   "time_h": 2.0,
+   "new_time_h": 1.2,
+   "saved_h": 0.7,
+   "primary": "REQUIREMENT_VAGUE",
+   "intv": [
+    "I1",
+    "I4",
+    "I5"
+   ]
+  },
+  {
+   "n": 810,
+   "svc": "community-robots",
+   "rounds": 8,
+   "new_rounds": 5,
+   "time_h": 2.0,
+   "new_time_h": 1.2,
+   "saved_h": 0.7,
+   "primary": "CI_GATE",
+   "intv": [
+    "I4"
+   ]
+  },
+  {
+   "n": 1252,
+   "svc": "om-datacenter",
+   "rounds": 8,
+   "new_rounds": 5,
+   "time_h": 1.8,
+   "new_time_h": 1.1,
+   "saved_h": 0.7,
+   "primary": "KNOWLEDGE_MISSING",
+   "intv": [
+    "I1",
+    "I3"
+   ]
+  },
+  {
+   "n": 1251,
+   "svc": "om-datacenter",
+   "rounds": 6,
+   "new_rounds": 4,
+   "time_h": 1.5,
+   "new_time_h": 1.0,
+   "saved_h": 0.6,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1",
+    "I5"
+   ]
+  },
+  {
+   "n": 487,
+   "svc": "om-datacenter",
+   "rounds": 8,
+   "new_rounds": 5,
+   "time_h": 1.5,
+   "new_time_h": 0.9,
+   "saved_h": 0.6,
+   "primary": "ROBOT_QUALITY",
+   "intv": [
+    "I6"
+   ]
+  },
+  {
+   "n": 304,
+   "svc": "community-robots",
+   "rounds": 8,
+   "new_rounds": 5,
+   "time_h": 1.7,
+   "new_time_h": 1.0,
+   "saved_h": 0.6,
+   "primary": "REQUIREMENT_VAGUE",
+   "intv": [
+    "I3",
+    "I5"
+   ]
+  },
+  {
+   "n": 1090,
+   "svc": "community-robots",
+   "rounds": 7,
+   "new_rounds": 5,
+   "time_h": 1.8,
+   "new_time_h": 1.3,
+   "saved_h": 0.6,
+   "primary": "PREVIEW_FAILED",
+   "intv": [
+    "I3"
+   ]
+  },
+  {
+   "n": 736,
+   "svc": "meeting-server",
+   "rounds": 7,
+   "new_rounds": 5,
+   "time_h": 1.8,
+   "new_time_h": 1.3,
+   "saved_h": 0.6,
+   "primary": "PREVIEW_FAILED",
+   "intv": [
+    "I3"
+   ]
+  },
+  {
+   "n": 985,
+   "svc": "om-datacenter",
+   "rounds": 8,
+   "new_rounds": 6,
+   "time_h": 1.8,
+   "new_time_h": 1.4,
+   "saved_h": 0.5,
+   "primary": "OUTPUT_WRONG",
+   "intv": [
+    "I1"
+   ]
+  },
+  {
+   "n": 1298,
+   "svc": "hotopic-all",
+   "rounds": 7,
+   "new_rounds": 5,
+   "time_h": 1.7,
+   "new_time_h": 1.2,
+   "saved_h": 0.5,
+   "primary": "ROBOT_QUALITY",
+   "intv": [
+    "I3",
+    "I6"
+   ]
+  },
+  {
+   "n": 498,
+   "svc": "未分服务",
+   "rounds": 7,
+   "new_rounds": 4,
+   "time_h": 1.3,
+   "new_time_h": 0.8,
+   "saved_h": 0.5,
+   "primary": "REQUIREMENT_VAGUE",
+   "intv": [
+    "I5"
+   ]
+  },
+  {
+   "n": 1159,
+   "svc": "community-robots",
+   "rounds": 7,
+   "new_rounds": 5,
+   "time_h": 0.9,
+   "new_time_h": 0.7,
+   "saved_h": 0.3,
+   "primary": "CI_GATE",
+   "intv": [
+    "I1",
+    "I4"
+   ]
+  }
+ ],
+ "plan": [
+  {
+   "id": "I1",
+   "name": "om-dataarts 数据领域知识 skill + 各子仓 CLAUDE.md",
+   "saved_h": 113,
+   "color": "#5470c6",
+   "do": "把 AI 反复问的『死知识』固化,让它不必每次靠人喂口径",
+   "steps": [
+    "表清单与命名:fact_{c}_pr/issue、dws_{c}_contribute(有is_pr/is_issue/is_comment,无is_commit)、new_dws_*(job上下文用);关键字段 is_resolved、labels_name数组格式、operate_log关联时间",
+    "口径规则:解决率=已解决/总(已解决=关闭+特殊标签);『改总览仓库列表≠改health.yaml』;company空匹配回退默认华为;平台参数化区分github/gitcode",
+    "采集约定:用CodePlatformConfigService/ConfigLoader/PostgresClient;新表必建对应.sql;ON CONFLICT须有唯一约束;分区表规范",
+    "预览测试约定:om-dataarts改动必须在.preview/service.yaml写test_command(先init_table再collection_code,离散flag用json_task包)"
+   ],
+   "prompt": "实现 om-dataarts 数据 task 前必须先读 skills/om-dataarts-data-domain.md;涉及表/字段先查该 skill 的表清单与口径,禁止臆造表名/字段;改动后必须在 .preview/service.yaml 补 test_command。"
+  },
+  {
+   "id": "I2",
+   "name": "新增社区 / 跨社区复用 checklist skill",
+   "saved_h": 16,
+   "color": "#3a5bd0",
+   "do": "新增社区/复用已有能力时,强制走成套清单,避免漏接线、重复造轮子",
+   "steps": [
+    "识别『新增社区/参照XX社区』→强制读 skills/add-community.md(5仓9处接线清单)",
+    "建『同构实现索引』:社区→已实现能力(openEuler AI度量看板、CANN discussion采集…),供AI查能否配置复用",
+    "命名一致性检查:显示名带连字符 vs 传参/表名/目录无连字符"
+   ],
+   "prompt": "若需求含『新社区』或『参照XX社区』,先读 add-community skill 并查同构实现索引;能配置复用的不要重写。"
+  },
+  {
+   "id": "I3",
+   "name": "预览/部署稳定性 + 引擎可靠性(基建)",
+   "saved_h": 46,
+   "color": "#fac858",
+   "do": "修基础设施(非prompt)——失败action里『开发预览执行异常』111条最多,纯基建空转",
+   "steps": [
+    "修 orchestrate 崩溃;加 startupProbe/就绪探针解决 pod 未就绪;修 no-kubeconfig/未起公网入口",
+    "引擎 token/额度监控告警(rc=127/rc=1),额度耗尽自动暂停而非空跑十几轮",
+    "per-issue 预览隔离(已部分);sync.sh 等部署脚本 heredoc 转义健壮性",
+    "预览超时(orchestrate 50min timeout)优化对抗轮次"
+   ],
+   "prompt": "(工程改造,无prompt)"
+  },
+  {
+   "id": "I4",
+   "name": "门禁与 AI 流水线兼容",
+   "saved_h": 34,
+   "color": "#fc8452",
+   "do": "让门禁不误伤 AI 流水线,把恒红项与本PR问题分开",
+   "steps": [
+    "仓级门禁(分支命名 issue-N-from-*、gate_check_pass、design-doc)与AI分支/流程对齐,不误红",
+    "覆盖率目标合理化(新仓60%而非强制80%)+ 环境 Go 版本对齐(1.25.11≠1.25.10)",
+    "trivy/echarts CVE 等全仓恒红项走独立 fix 分支,不塞进功能PR门禁"
+   ],
+   "prompt": "(流水线配置改造)"
+  },
+  {
+   "id": "I5",
+   "name": "需求侧拆分 + 验收口径 + UI回灌 + 预览灌数",
+   "saved_h": 34,
+   "color": "#73c0de",
+   "do": "从源头减少『边做边加/看不到效果/没数据验』",
+   "steps": [
+    "需求模板强制『可量化验收 + 单issue单功能』,拒绝多模块大杂烩(#498/#319应拆)",
+    "UI类装预览自动截图+视觉diff回灌,让AI自判页面对不对(治前端看板高摩擦)",
+    "预览自动灌测试数据,避免『看不到效果/数据全0』(#905/#276/#486)"
+   ],
+   "prompt": "需求分析:验收标准必须可量化(含具体数字/接口/字段);含多个独立模块时拆成多issue。"
+  },
+  {
+   "id": "I6",
+   "name": "机器人对话质量自动评测",
+   "saved_h": 10,
+   "color": "#ea7ccc",
+   "do": "给机器人/RAG装『好不好』的自动判定,替代人肉主观评判(也是生产安全门禁的一部分)",
+   "steps": [
+    "每 robot 仓建离线评测集(输入→期望行为)",
+    "自动打分纳入合入/发布门禁,不通过禁止发布",
+    "替代裸 /ai-develop-preview 反复重跑靠人主观判"
+   ],
+   "prompt": "机器人服务改动必须附/更新离线评测集,评测分数达标才可合入。"
+  }
+ ]
+}
