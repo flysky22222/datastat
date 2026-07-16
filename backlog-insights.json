@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-07-16 16:40",
+ "generatedAt": "2026-07-16 22:32",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 581,
+ "total": 582,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,25 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1395,
+   "type": "缺陷",
+   "scenario": "数据/指标",
+   "state": "open",
+   "created": "2026-07-16",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 1,
+    "implement": 7,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 8,
+   "ai": false
+  },
   {
    "n": 1392,
    "type": "需求",
@@ -73,12 +92,12 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 6,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 6,
-   "ai": false
+   "roundsTotal": 7,
+   "ai": true
   },
   {
    "n": 1374,
@@ -92,11 +111,11 @@
    "service": "community-robots",
    "rounds": {
     "analyze": 3,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 5,
    "ai": true
   },
   {
@@ -149,11 +168,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 5,
+    "implement": 6,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 7,
    "ai": false
   },
   {
@@ -320,11 +339,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 0,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 3,
    "ai": false
   },
   {
@@ -415,11 +434,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 5,
+    "implement": 6,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 7,
    "ai": false
   },
   {
@@ -510,11 +529,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 3,
-    "implement": 16,
+    "implement": 19,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 19,
+   "roundsTotal": 22,
    "ai": false
   },
   {
