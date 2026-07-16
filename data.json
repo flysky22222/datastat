@@ -1,9 +1,35 @@
 {
- "generatedAt": "2026-07-16 15:58",
+ "generatedAt": "2026-07-16 21:23",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 99,
+ "total": 100,
  "records": [
+  {
+   "number": 1395,
+   "title": "社区discussion渠道讨论数据采集缺失社区中的discussion",
+   "rawTitle": "[缺陷] 社区discussion渠道讨论数据采集缺失社区中的discussion",
+   "url": "https://github.com/opensourceways/backlog/issues/1395",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 23,
+   "createdAt": "2026-07-16",
+   "updatedAt": "2026-07-16",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1392,
    "title": "开源技术雷达 新增精选、点赞功能",
@@ -50,9 +76,10 @@
     "need_itest",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 17,
+   "comments": 20,
    "createdAt": "2026-07-15",
    "updatedAt": "2026-07-16",
    "closedAt": "",
@@ -103,7 +130,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 17,
+   "comments": 20,
    "createdAt": "2026-07-14",
    "updatedAt": "2026-07-16",
    "closedAt": "",
@@ -201,7 +228,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 14,
+   "comments": 18,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-16",
    "closedAt": "",
@@ -281,7 +308,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 13,
+   "comments": 19,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-16",
    "closedAt": "",
@@ -332,7 +359,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 53,
+   "comments": 63,
    "createdAt": "2026-07-09",
    "updatedAt": "2026-07-16",
    "closedAt": "",
