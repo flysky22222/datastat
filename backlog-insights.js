@@ -84,7 +84,7 @@
         <td style="padding:6px 8px;white-space:nowrap">${esc(r.scenario || "")}</td>
         <td style="padding:6px 8px;white-space:nowrap;color:var(--t2)">${esc(r.service)}</td>
         <td style="padding:6px 8px;white-space:nowrap"><span style="color:${r.state === "open" ? "#b8860b" : "#3ba272"}">${r.state}</span></td>
-        <td style="padding:6px 8px;text-align:center">${r.ai ? "✅" : ""}</td>
+        <td style="padding:6px 8px;text-align:center">${r.roundsTotal > 0 ? "✅" : ""}</td>
         <td style="padding:6px 8px;text-align:center">${r.rounds.analyze || ""}</td>
         <td style="padding:6px 8px;text-align:center">${r.rounds.implement || ""}</td>
         <td style="padding:6px 8px;text-align:center">${r.rounds.deploy || ""}</td>
