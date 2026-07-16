@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16 11:46",
+ "generatedAt": "2026-07-16 16:40",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 581,
@@ -415,11 +415,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 4,
+    "implement": 5,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 5,
+   "roundsTotal": 6,
    "ai": false
   },
   {
@@ -510,11 +510,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 3,
-    "implement": 14,
+    "implement": 16,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 17,
+   "roundsTotal": 19,
    "ai": false
   },
   {
@@ -567,11 +567,11 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 4,
-    "implement": 5,
+    "implement": 7,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 9,
+   "roundsTotal": 11,
    "ai": true
   },
   {
@@ -2886,10 +2886,10 @@
    "rounds": {
     "analyze": 3,
     "implement": 8,
-    "deploy": 0,
-    "release": 0
+    "deploy": 1,
+    "release": 1
    },
-   "roundsTotal": 11,
+   "roundsTotal": 13,
    "ai": true
   },
   {
