@@ -1,9 +1,8 @@
 {
- "total_svc": 23,
- "ever": 13,
+ "total_svc": 24,
+ "ever": 14,
  "never": 10,
  "unmapped_integrated": {
-  "__其他__": 1,
   "__无project__": 1
  },
  "rows": [
@@ -236,10 +235,20 @@
    "issue_count": 1,
    "reason_cat": "有issue未触发",
    "reason": "有 1 个 issue,但未打 accepted+project 触发流水线 / 非需求类(流程前置,非技术)"
+  },
+  {
+   "id": "oss-map",
+   "cn": "OSS 地图(单仓服务)",
+   "got": 1,
+   "notint": 0,
+   "ever": true,
+   "issue_count": 1,
+   "reason_cat": "已接入",
+   "reason": "已接入(单仓服务,1 个 issue 跑过 AI)"
   }
  ],
  "reason_summary": {
-  "已接入": 13,
+  "已接入": 14,
   "无issue": 6,
   "非业务": 1,
   "有issue未触发": 3

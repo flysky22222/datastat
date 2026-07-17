@@ -98,16 +98,17 @@
 
     <div class="card" style="margin-top:14px;border:2px solid #b03a3a;background:#fff6f6;line-height:1.8;font-size:13.5px">
       <h3 style="color:#b03a3a">🔬 仓库 AI 就绪度总汇 + 多问几个为什么</h3>
-      <div style="overflow-x:auto"><table style="width:auto;min-width:520px;font-size:13px;margin:6px 0">
-        <thead><tr><th>分类</th><th>仓数</th><th>有 CLAUDE.md</th><th>有 skills</th><th>有 AI PR</th></tr></thead>
+      <div style="overflow-x:auto"><table style="width:auto;min-width:560px;font-size:13px;margin:6px 0">
+        <thead><tr><th>分类</th><th>仓数</th><th>有 CLAUDE.md</th><th>有 skills</th><th>有 AI PR</th><th>其中有合入需接入</th></tr></thead>
         <tbody>
-          <tr><td><b style="color:#3ba272">接入 AI 的仓</b></td><td>68</td><td><b style="color:#b03a3a">30(44%)</b></td><td>9(13%)</td><td>47(69%)</td></tr>
-          <tr><td>已注册未接入</td><td>40</td><td>8</td><td>0</td><td>0</td></tr>
-          <tr><td>未归属</td><td>81</td><td>14</td><td>11</td><td>3</td></tr>
-          <tr style="border-top:2px solid var(--line)"><td><b>活跃仓合计</b></td><td><b>189</b></td><td><b>52(28%)</b></td><td><b>20(11%)</b></td><td><b>50(26%)</b></td></tr>
+          <tr><td><b style="color:#3ba272">接入 AI 的仓</b></td><td>69</td><td><b style="color:#b03a3a">31(45%)</b></td><td>10</td><td>48</td><td>—</td></tr>
+          <tr><td>已注册未接入</td><td>39</td><td>8</td><td>0</td><td>0</td><td><b style="color:#d48806">28</b></td></tr>
+          <tr><td>未归属</td><td>59</td><td>6</td><td>5</td><td>0</td><td><b style="color:#d48806">50</b></td></tr>
+          <tr><td style="color:var(--t3)">🚫 不涉及(基建/workflow 本身)</td><td>22</td><td>7</td><td>5</td><td>2</td><td>—</td></tr>
+          <tr style="border-top:2px solid var(--line)"><td><b>活跃仓合计</b></td><td><b>189</b></td><td><b>52(28%)</b></td><td><b>20(11%)</b></td><td><b>50</b></td><td><b style="color:#d48806">78</b></td></tr>
         </tbody>
       </table></div>
-      <p><b style="color:#b03a3a">🔴 最扎眼:接入 AI 的 68 个仓,38 个(56%)没有 CLAUDE.md</b>——其中 29 个还实实在在开过 AI PR。AI 是<b>「盲飞」着改这些仓的</b>。往下问:</p>
+      <p><b style="color:#d48806">🎯 最该干的:78 个仓有真实 PR 合入(在活跃开发)却没接入 AI Workflow</b>(28 属已注册服务、50 个未归属)——榜首 datastat-server(合入 250)、whitebox(230),详见上方重点表。<b style="color:#b03a3a">🔴 而已接入的 69 个仓里,38 个(55%)连 CLAUDE.md 都没有</b>——AI 是<b>「盲飞」着改的</b>。往下问:</p>
       <ul style="margin:4px 0;padding-left:20px;line-height:1.9">
         <li><b>Why1</b> 为什么接入了却没 CLAUDE.md? → CLAUDE.md 是<b>人工逐仓写</b>的,onboarding 时只在 umbrella 和少数核心仓(om-dataarts / datastat)写了,<b>大量 dev 子仓没补</b>。</li>
         <li><b>Why2</b> 为什么没补就有影响? → 这正是「AI 问题页」TOP1「<b>缺领域知识</b>」的<b>物理证据</b>:AI 真正 checkout 去改的是子仓,而 56% 的子仓里<b>零仓级指引</b>(表名/字段/约定/禁止项),只能每轮靠人喂 → 就是 #927/#650/#840 那种「同一纠正讲六七遍」。</li>
@@ -118,15 +119,23 @@
       <p style="color:var(--t2)"><b>另:</b>31 个「有 CLAUDE.md 却从没 AI PR」多是 <b>umbrella / 文档 / 基建仓</b>——AI 改的是它们的子仓,不直接对 umbrella 开 PR,属正常;个别工具库仓(被依赖的 SDK)可不强求 CLAUDE.md。</p>
     </div>
 
+    <div class="card" style="margin-top:14px;border:2px solid #d48806;background:#fffbe6">
+      <h3 style="color:#ad6800">🎯 重点:有 PR 合入(真实在开发)却没接入 AI Workflow 的仓 —— 最该接入的目标</h3>
+      <p class="sub">判定 = 有合入 PR(有人在提交开发)且 <b>integrated=false</b>(不属于任何跑过 AI 的服务)。按合入 PR 数降序,越活跃越该优先接。</p>
+      <div id="need-sum" style="margin:6px 0"></div>
+      <div style="overflow-x:auto"><table id="need-tbl" style="font-size:13px"></table></div>
+    </div>
+
     <div class="card" style="margin-top:14px">
-      <h3>每个活跃仓明细(逐仓:归属服务 / 有无 AI PR / 是否接入 workflow / 有无 CLAUDE.md / 有无 skills)</h3>
-      <p class="sub">全 org 活跃仓(已排归档/fork);✅=有 · —=无。这是「AI 就绪度」的逐仓体检</p>
+      <h3>每个活跃仓明细(逐仓:归属服务 / 合入PR / 有无 AI PR / 是否接入 workflow / 有无 CLAUDE.md / 有无 skills)</h3>
+      <p class="sub">全 org 活跃仓(已排归档/fork);✅=有 · —=无。<b style="background:#fff1b8;padding:0 4px">黄底行</b>=有合入却没接 AI(需接入)。这是「AI 就绪度」的逐仓体检</p>
       <div id="rd-sum" style="margin:8px 0"></div>
       <div class="controls" style="margin-top:6px">
-        <div>类别 <select id="rd-cat"><option value="__all__">全部</option><option value="integ">接入AI的仓</option><option value="attr_no">已注册未接入</option><option value="unattr">未归属</option></select></div>
-        <div>服务 <select id="rd-svc"></select></div>
+        <label style="font-size:13px"><input type="checkbox" id="rd-need" /> 🎯 只看需接入(有合入 PR 但没接 AI)</label>
         <label style="font-size:13px"><input type="checkbox" id="rd-gap" /> 只看缺口(有 AI PR 但缺 CLAUDE.md/skills)</label>
-        <div id="rd-cnt" style="color:var(--t3)"></div>
+        <button id="rd-reset" style="border:1px solid var(--line);border-radius:8px;padding:5px 12px;background:#fff;cursor:pointer;font-size:13px">清空所有筛选</button>
+        <div style="color:var(--t3);font-size:12px">↓ 每列表头可单独筛选</div>
+        <div id="rd-cnt" style="color:var(--t3);margin-left:auto;font-weight:700"></div>
       </div>
       <div style="overflow:auto;max-height:640px"><table id="rdtbl"></table></div>
     </div>
