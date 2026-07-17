@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-17 15:54",
+ "generatedAt": "2026-07-17 21:08",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 102,
@@ -73,7 +73,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 43,
+   "comments": 44,
    "createdAt": "2026-07-16",
    "updatedAt": "2026-07-17",
    "closedAt": "",
@@ -132,31 +132,6 @@
    "comments": 23,
    "createdAt": "2026-07-15",
    "updatedAt": "2026-07-17",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1371,
-   "title": "开源技术雷达 需求与项目录入前，对开源项目查重",
-   "rawTitle": "[任务] 开源技术雷达 需求与项目录入前，对开源项目查重",
-   "url": "https://github.com/opensourceways/backlog/issues/1371",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [],
-   "author": "Yikun",
-   "labels": [
-    "accepted",
-    "need_light",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze"
-   ],
-   "comments": 12,
-   "createdAt": "2026-07-15",
-   "updatedAt": "2026-07-15",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -278,7 +253,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 28,
+   "comments": 41,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-17",
    "closedAt": "",
@@ -1000,6 +975,31 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1371,
+   "title": "开源技术雷达 需求与项目录入前，对开源项目查重",
+   "rawTitle": "[任务] 开源技术雷达 需求与项目录入前，对开源项目查重",
+   "url": "https://github.com/opensourceways/backlog/issues/1371",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [],
+   "author": "Yikun",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 12,
+   "createdAt": "2026-07-15",
+   "updatedAt": "2026-07-17",
+   "closedAt": "2026-07-17",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1358,
