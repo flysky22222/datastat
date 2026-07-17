@@ -1,0 +1,172 @@
+{
+ "total_svc": 23,
+ "ever": 13,
+ "never": 10,
+ "unmapped_integrated": {
+  "__其他__": 1,
+  "__无project__": 1
+ },
+ "rows": [
+  {
+   "id": "om-datacenter",
+   "cn": "数据中台(datastat/APIMagic/白盒/塔台)",
+   "got": 38,
+   "notint": 2,
+   "ever": true
+  },
+  {
+   "id": "robot",
+   "cn": "社区机器人 community-robots",
+   "got": 13,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "ascend-ci-project",
+   "cn": "昇腾 CI 项目配置",
+   "got": 6,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "forum-reply-robot",
+   "cn": "论坛回复机器人",
+   "got": 5,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "hotopic-all",
+   "cn": "热点话题",
+   "got": 3,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "om-webserver",
+   "cn": "OM 账号后端",
+   "got": 2,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "meeting-server",
+   "cn": "会议服务",
+   "got": 2,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "security-cve-all",
+   "cn": "安全 CVE",
+   "got": 2,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "xihe-all",
+   "cn": "xihe 微服务平台",
+   "got": 1,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "cla-all",
+   "cn": "CLA 协议签署",
+   "got": 1,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "oneid-all",
+   "cn": "OneID 统一身份认证",
+   "got": 1,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "pod-exporter-monitoring",
+   "cn": "集群 pod 监控",
+   "got": 1,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "patch-manager",
+   "cn": "补丁管理系统",
+   "got": 1,
+   "notint": 0,
+   "ever": true
+  },
+  {
+   "id": "bigfiles-lfs-all",
+   "cn": "大文件/LFS 存储",
+   "got": 0,
+   "notint": 0,
+   "ever": false
+  },
+  {
+   "id": "calculator",
+   "cn": "计算器(demo脚手架)",
+   "got": 0,
+   "notint": 0,
+   "ever": false
+  },
+  {
+   "id": "certification-all",
+   "cn": "认证/证书",
+   "got": 0,
+   "notint": 0,
+   "ever": false
+  },
+  {
+   "id": "ci-all",
+   "cn": "CI 通用工具",
+   "got": 0,
+   "notint": 0,
+   "ever": false
+  },
+  {
+   "id": "etherpad-lite",
+   "cn": "实时协作文档",
+   "got": 0,
+   "notint": 0,
+   "ever": false
+  },
+  {
+   "id": "eur-build-all",
+   "cn": "EUR 构建",
+   "got": 0,
+   "notint": 0,
+   "ever": false
+  },
+  {
+   "id": "mailman",
+   "cn": "邮件列表服务",
+   "got": 0,
+   "notint": 0,
+   "ever": false
+  },
+  {
+   "id": "message-bus-all",
+   "cn": "消息总线",
+   "got": 0,
+   "notint": 0,
+   "ever": false
+  },
+  {
+   "id": "search-all",
+   "cn": "搜索服务",
+   "got": 0,
+   "notint": 0,
+   "ever": false
+  },
+  {
+   "id": "software-package-all",
+   "cn": "软件包平台",
+   "got": 0,
+   "notint": 0,
+   "ever": false
+  }
+ ]
+}

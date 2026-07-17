@@ -36,6 +36,15 @@
   </style>
 </head>
 <body>
+<nav class="gnav"><div class="gnav-in"><b>📊 Backlog 分析</b><a href="./index.html">需求看板</a><a href="./backlog-insights.html">Issue 洞察</a><a href="./backlog-ai-problems.html">AI 问题·改进</a><a class="on" href="./backlog-ai-notintegrated.html">未接入分析</a></div></nav>
+<style>
+.gnav{position:sticky;top:0;z-index:200;background:#001a5c;box-shadow:0 1px 5px rgba(0,0,0,.25)}
+.gnav-in{max-width:1360px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:4px;min-height:46px;flex-wrap:wrap}
+.gnav b{color:#fff;margin-right:12px;font-size:14px;font-weight:700}
+.gnav a{color:rgba(255,255,255,.82);text-decoration:none;padding:6px 13px;border-radius:6px;font-size:13px}
+.gnav a:hover{background:rgba(255,255,255,.14);color:#fff}
+.gnav a.on{background:#fff;color:#002fa7;font-weight:700}
+</style>
   <header class="site-header"><div class="inner">
     <div><h1>Backlog · 未接入 AI 流水线的 Issue</h1>
       <p>2026-01-01 至今、从未进过 AI 流水线(交互轮次=0)的 issue:为什么没接入 · 有多少本可接入</p></div>
@@ -57,13 +66,25 @@
       </div>
     </div>
 
-    <div class="row-title"><h2>② 未接入的类型 / 场景 / 服务分布</h2></div>
+    <div class="row-title"><h2>② 服务接入覆盖(哪些服务/仓库还没接入过 AI)</h2><span>服务=一个 umbrella 仓 · 全 23 个服务</span></div>
+    <div class="kpis" id="cov-kpis" style="margin-bottom:14px"></div>
+    <div class="grid g2">
+      <div class="card"><h3>各服务接入情况(绿=已接入 issue 数 / 灰=有归属但未接入)</h3><p class="sub">底部灰条 = 从未接入过任何 AI 的服务(0 接入)</p><div id="c-cov" class="chart" style="height:520px"></div></div>
+      <div class="card" style="line-height:1.8;font-size:13px">
+        <h3>🔴 从未接入过 AI 的服务(0 覆盖)</h3>
+        <p class="sub">这些 umbrella 仓,2026 至今一个 issue 都没走过 AI 流水线</p>
+        <div id="cov-never"></div>
+        <p style="color:var(--t2);margin-top:10px"><b>怎么看:</b>「从未接入」不等于「有问题」——很多服务(如软件包平台、邮件列表、搜索)本就没提需求 issue 到 backlog、或走各自流程。真正要关注的是<b>提了 issue 却因没打 project 标签而分发不进流水线</b>的那部分(见 ① 的 🟢99 个)。</p>
+      </div>
+    </div>
+
+    <div class="row-title"><h2>③ 未接入的类型 / 场景 / 服务分布</h2></div>
     <div class="grid g2">
       <div class="card"><h3>按类型 & 场景</h3><p class="sub">CVE/安全占最大头</p><div id="c-typescen" class="chart"></div></div>
       <div class="card"><h3>按服务(Top15,含"未分服务")</h3><p class="sub">未分服务=没打 project → 无法接入的主因</p><div id="c-svc" class="chart tall"></div></div>
     </div>
 
-    <div class="row-title"><h2>③ 逐 issue 明细(脱敏)</h2><span>仅编号/类型/场景/服务/状态/未接入原因</span></div>
+    <div class="row-title"><h2>④ 逐 issue 明细(脱敏)</h2><span>仅编号/类型/场景/服务/状态/未接入原因</span></div>
     <div class="controls">
       <div>原因 <select id="f-reason"></select></div>
       <div>服务 <select id="f-svc"></select></div>

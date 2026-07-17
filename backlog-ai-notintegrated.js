@@ -15,6 +15,31 @@
 
   function init() {
     renderKpis(); renderReason(); renderTypeScen(); renderSvc(); initTable();
+    fetch("./backlog-ai-notintegrated-coverage.json?t=" + Date.now())
+      .then(r => r.ok ? r.json() : null).then(c => { if (c) renderCoverage(c); }).catch(() => {});
+  }
+  function renderCoverage(C) {
+    const kp = [
+      ["服务总数(umbrella 仓)", C.total_svc, ""],
+      ["🟢 已接入过 AI", C.ever, "≥1 个 issue"],
+      ["🔴 从未接入", C.never, "0 个 issue"],
+    ];
+    $("#cov-kpis").innerHTML = kp.map(([k, v, x]) => `<div class="kpi"><div class="k">${k}</div><div class="v">${v}${x ? `<small>${x}</small>` : ""}</div></div>`).join("");
+    const rows = C.rows.slice().reverse(); // 图从下往上,把从未接入的放最下
+    ec("c-cov").setOption({
+      grid: { left: 210, right: 50, top: 24, bottom: 20 },
+      legend: { data: ["已接入 issue", "有归属未接入"], top: 0 },
+      tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: p => { const r = rows[p[0].dataIndex]; return `${r.cn}<br/>已接入 ${r.got} · 有归属未接入 ${r.notint}<br/>${r.ever ? "🟢 已接入" : "🔴 从未接入过 AI"}`; } },
+      xAxis: { type: "value" },
+      yAxis: { type: "category", data: rows.map(r => (r.ever ? "" : "🔴 ") + (r.cn.length > 14 ? r.cn.slice(0, 14) + "…" : r.cn)) },
+      series: [
+        { name: "已接入 issue", type: "bar", stack: "x", barMaxWidth: 18, data: rows.map(r => ({ value: r.got, itemStyle: { color: "#3ba272" } })), label: { show: true, position: "insideRight", color: "#fff", formatter: p => p.value || "" } },
+        { name: "有归属未接入", type: "bar", stack: "x", barMaxWidth: 18, data: rows.map(r => ({ value: r.notint, itemStyle: { color: "#c9ccd1" } })) },
+      ],
+    });
+    const never = C.rows.filter(r => !r.ever);
+    $("#cov-never").innerHTML = never.map(r => `<span class="pill" style="background:#b03a3a;margin:3px 4px 3px 0">${esc(r.cn)}</span>`).join("")
+      + `<div style="color:var(--t3);margin-top:8px">共 ${never.length} 个服务从未接入。另有 <b>${(Object.keys(C.unmapped_integrated || {}).length)}</b> 类标签(oss-map / 未分服务)不在标准服务清单内。</div>`;
   }
   function renderKpis() {
     const s = D.summary;
