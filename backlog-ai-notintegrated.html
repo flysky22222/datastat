@@ -66,7 +66,7 @@
       </div>
     </div>
 
-    <div class="row-title"><h2>② 服务接入覆盖(哪些服务/仓库还没接入过 AI)</h2><span>服务=一个 umbrella 仓 · 全 23 个服务</span></div>
+    <div class="row-title"><h2>② 服务接入覆盖(哪些服务/仓库还没接入过 AI)</h2><span>服务=一个 umbrella 仓或单仓服务 · 全 26 个服务</span></div>
     <div class="kpis" id="cov-kpis" style="margin-bottom:14px"></div>
     <div class="grid g2">
       <div class="card"><h3>各服务接入情况(绿=已接入 issue 数 / 灰=有归属但未接入)</h3><p class="sub">底部灰条 = 从未接入过任何 AI 的服务(0 接入)</p><div id="c-cov" class="chart" style="height:520px"></div></div>
@@ -74,7 +74,7 @@
         <h3>🔴 从未接入过 AI 的服务(0 覆盖)</h3>
         <p class="sub">这些 umbrella 仓,2026 至今一个 issue 都没走过 AI 流水线</p>
         <div id="cov-never"></div>
-        <p style="color:var(--t2);margin-top:10px"><b>怎么看:</b>「从未接入」不等于「有问题」——很多服务(如软件包平台、邮件列表、搜索)本就没提需求 issue 到 backlog、或走各自流程。真正要关注的是<b>提了 issue 却因没打 project 标签而分发不进流水线</b>的那部分(见 ① 的 🟢99 个)。</p>
+        <p style="color:var(--t2);margin-top:10px"><b>怎么看:</b>「从未接入」不等于「有问题」——很多服务(如软件包平台、邮件列表、EUR 构建)本就没提需求 issue 到 backlog、或走各自流程。真正要关注的是<b>提了 issue 却因没打 project 标签而分发不进流水线</b>的那部分(见 ① 的 🟢99 个)。</p>
       </div>
     </div>
 
@@ -91,7 +91,7 @@
       <div class="card"><h3>活跃仓分类(已排除归档 / fork)</h3><p class="sub">接入AI=属于已跑过 AI 的服务 · 已注册未接入=属于 backlog 已建服务但该服务 0 接入 · 未归属=不属于任何已注册服务</p><div id="c-repo" class="chart"></div></div>
       <div class="card" style="line-height:1.75;font-size:13px">
         <h3>未归属仓(不属于任何已注册服务)</h3>
-        <p class="sub">这些仓没被纳入 23 个 backlog 服务的 umbrella/.gitmodules</p>
+        <p class="sub">这些仓没被纳入 26 个 backlog 服务的 umbrella/.gitmodules</p>
         <div id="repo-unattr"></div>
       </div>
     </div>
@@ -101,20 +101,20 @@
       <div style="overflow-x:auto"><table style="width:auto;min-width:560px;font-size:13px;margin:6px 0">
         <thead><tr><th>分类</th><th>仓数</th><th>有 CLAUDE.md</th><th>有 skills</th><th>有 AI PR</th><th>其中有合入需接入</th></tr></thead>
         <tbody>
-          <tr><td><b style="color:#3ba272">接入 AI 的仓</b></td><td>69</td><td><b style="color:#b03a3a">31(45%)</b></td><td>10</td><td>48</td><td>—</td></tr>
-          <tr><td>已注册未接入</td><td>39</td><td>8</td><td>0</td><td>0</td><td><b style="color:#d48806">28</b></td></tr>
-          <tr><td>未归属</td><td>59</td><td>6</td><td>5</td><td>0</td><td><b style="color:#d48806">50</b></td></tr>
-          <tr><td style="color:var(--t3)">🚫 不涉及(基建/workflow 本身)</td><td>22</td><td>7</td><td>5</td><td>2</td><td>—</td></tr>
-          <tr style="border-top:2px solid var(--line)"><td><b>活跃仓合计</b></td><td><b>189</b></td><td><b>52(28%)</b></td><td><b>20(11%)</b></td><td><b>50</b></td><td><b style="color:#d48806">78</b></td></tr>
+          <tr><td><b style="color:#3ba272">接入 AI 的仓</b></td><td>75</td><td><b style="color:#b03a3a">33(44%)</b></td><td>11</td><td>54</td><td>—</td></tr>
+          <tr><td>已注册未接入</td><td>38</td><td>8</td><td>0</td><td>0</td><td><b style="color:#d48806">28</b></td></tr>
+          <tr><td>未归属</td><td>55</td><td>5</td><td>5</td><td>0</td><td><b style="color:#d48806">46</b></td></tr>
+          <tr><td style="color:var(--t3)">🚫 不涉及(基建/workflow 本身)</td><td>21</td><td>6</td><td>4</td><td>2</td><td>—</td></tr>
+          <tr style="border-top:2px solid var(--line)"><td><b>活跃仓合计</b></td><td><b>189</b></td><td><b>52(28%)</b></td><td><b>20(11%)</b></td><td><b>56</b></td><td><b style="color:#d48806">74</b></td></tr>
         </tbody>
       </table></div>
-      <p><b style="color:#d48806">🎯 最该干的:78 个仓有真实 PR 合入(在活跃开发)却没接入 AI Workflow</b>(28 属已注册服务、50 个未归属)——榜首 datastat-server(合入 250)、whitebox(230),详见上方重点表。<b style="color:#b03a3a">🔴 而已接入的 69 个仓里,38 个(55%)连 CLAUDE.md 都没有</b>——AI 是<b>「盲飞」着改的</b>。往下问:</p>
+      <p><b style="color:#d48806">🎯 最该干的:74 个仓有真实 PR 合入(在活跃开发)却没接入 AI Workflow</b>(28 属已注册服务、46 个未归属)——榜首 datastat-server(合入 250)、whitebox(230),详见上方重点表。<b style="color:#b03a3a">🔴 而已接入的 75 个仓里,42 个(56%)连 CLAUDE.md 都没有</b>——AI 是<b>「盲飞」着改的</b>。往下问:</p>
       <ul style="margin:4px 0;padding-left:20px;line-height:1.9">
         <li><b>Why1</b> 为什么接入了却没 CLAUDE.md? → CLAUDE.md 是<b>人工逐仓写</b>的,onboarding 时只在 umbrella 和少数核心仓(om-dataarts / datastat)写了,<b>大量 dev 子仓没补</b>。</li>
         <li><b>Why2</b> 为什么没补就有影响? → 这正是「AI 问题页」TOP1「<b>缺领域知识</b>」的<b>物理证据</b>:AI 真正 checkout 去改的是子仓,而 56% 的子仓里<b>零仓级指引</b>(表名/字段/约定/禁止项),只能每轮靠人喂 → 就是 #927/#650/#840 那种「同一纠正讲六七遍」。</li>
         <li><b>Why3</b> 为什么 skills 更稀缺(仅 11%)? → skills 是比 CLAUDE.md 更进阶的沉淀,只有<b>被反复重度开发</b>的少数核心仓才攒出来了;绝大多数仓连 CLAUDE.md 都没有,更谈不上 skills。</li>
         <li><b>根因</b> → <b>领域知识没落到「AI 真正会改的那个仓」里</b>。服务级(umbrella)有文档 ≠ 子仓有文档;AI 的上下文喂的是子仓,断层就在这。</li>
-        <li><b>怎么改 · 改了能不能解决(对抗)</b> → 给这 38 个仓补<b>最小 CLAUDE.md</b>(表名+约定+禁止项)或<b>让 umbrella 的 CLAUDE.md/skill 自动注入子仓 agent 上下文</b>。能解决大头——因为它直接消灭「盲飞」;残留是「补了但写得不准」,需靠真跑校正。这条和问题页干预 <b>I1(数据领域知识 skill + 各子仓 CLAUDE.md)</b>是同一件事,这里给出了<b>该补哪 38 个仓的确切清单</b>(下表筛「接入AI的仓 + CLAUDE.md=—」即得)。</li>
+        <li><b>怎么改 · 改了能不能解决(对抗)</b> → 给这 42 个仓补<b>最小 CLAUDE.md</b>(表名+约定+禁止项)或<b>让 umbrella 的 CLAUDE.md/skill 自动注入子仓 agent 上下文</b>。能解决大头——因为它直接消灭「盲飞」;残留是「补了但写得不准」,需靠真跑校正。这条和问题页干预 <b>I1(数据领域知识 skill + 各子仓 CLAUDE.md)</b>是同一件事,这里给出了<b>该补哪 42 个仓的确切清单</b>(下表筛「接入AI的仓 + CLAUDE.md=—」即得)。</li>
       </ul>
       <p style="color:var(--t2)"><b>另:</b>31 个「有 CLAUDE.md 却从没 AI PR」多是 <b>umbrella / 文档 / 基建仓</b>——AI 改的是它们的子仓,不直接对 umbrella 开 PR,属正常;个别工具库仓(被依赖的 SDK)可不强求 CLAUDE.md。</p>
     </div>

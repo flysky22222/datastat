@@ -1,120 +1,100 @@
 {
- "total_svc": 24,
- "ever": 14,
- "never": 10,
+ "total_svc": 26,
+ "ever": 17,
+ "never": 9,
  "unmapped_integrated": {
   "__无project__": 1
  },
  "rows": [
   {
-   "id": "om-datacenter",
-   "cn": "数据中台(datastat/APIMagic/白盒/塔台)",
-   "got": 38,
-   "notint": 2,
-   "ever": true,
-   "issue_count": 100,
-   "reason_cat": "已接入",
-   "reason": "已接入(38 个 issue 跑过 AI)"
-  },
-  {
    "id": "robot",
    "cn": "社区机器人 community-robots",
-   "got": 13,
+   "got": 27,
    "notint": 0,
    "ever": true,
    "issue_count": 0,
    "reason_cat": "已接入",
-   "reason": "已接入(13 个 issue 跑过 AI)"
-  },
-  {
-   "id": "ascend-ci-project",
-   "cn": "昇腾 CI 项目配置",
-   "got": 6,
-   "notint": 0,
-   "ever": true,
-   "issue_count": 23,
-   "reason_cat": "已接入",
-   "reason": "已接入(6 个 issue 跑过 AI)"
-  },
-  {
-   "id": "forum-reply-robot",
-   "cn": "论坛回复机器人",
-   "got": 5,
-   "notint": 0,
-   "ever": true,
-   "issue_count": 9,
-   "reason_cat": "已接入",
-   "reason": "已接入(5 个 issue 跑过 AI)"
-  },
-  {
-   "id": "hotopic-all",
-   "cn": "热点话题",
-   "got": 3,
-   "notint": 0,
-   "ever": true,
-   "issue_count": 3,
-   "reason_cat": "已接入",
-   "reason": "已接入(3 个 issue 跑过 AI)"
-  },
-  {
-   "id": "om-webserver",
-   "cn": "OM 账号后端",
-   "got": 2,
-   "notint": 0,
-   "ever": true,
-   "issue_count": 2,
-   "reason_cat": "已接入",
-   "reason": "已接入(2 个 issue 跑过 AI)"
-  },
-  {
-   "id": "meeting-server",
-   "cn": "会议服务",
-   "got": 2,
-   "notint": 0,
-   "ever": true,
-   "issue_count": 5,
-   "reason_cat": "已接入",
-   "reason": "已接入(2 个 issue 跑过 AI)"
-  },
-  {
-   "id": "security-cve-all",
-   "cn": "安全 CVE",
-   "got": 2,
-   "notint": 0,
-   "ever": true,
-   "issue_count": 6,
-   "reason_cat": "已接入",
-   "reason": "已接入(2 个 issue 跑过 AI)"
+   "reason": "已接入(27 个仓被 AI 开过 PR / 属已跑 AI 服务)"
   },
   {
    "id": "xihe-all",
    "cn": "xihe 微服务平台",
-   "got": 1,
+   "got": 8,
    "notint": 0,
    "ever": true,
    "issue_count": 4,
    "reason_cat": "已接入",
-   "reason": "已接入(1 个 issue 跑过 AI)"
+   "reason": "已接入(8 个仓被 AI 开过 PR / 属已跑 AI 服务)"
   },
   {
-   "id": "cla-all",
-   "cn": "CLA 协议签署",
-   "got": 1,
+   "id": "om-datacenter",
+   "cn": "数据中台(datastat/APIMagic/白盒/塔台)",
+   "got": 6,
    "notint": 0,
    "ever": true,
-   "issue_count": 3,
+   "issue_count": 100,
    "reason_cat": "已接入",
-   "reason": "已接入(1 个 issue 跑过 AI)"
+   "reason": "已接入(6 个仓被 AI 开过 PR / 属已跑 AI 服务)"
+  },
+  {
+   "id": "meeting-server",
+   "cn": "会议服务",
+   "got": 5,
+   "notint": 0,
+   "ever": true,
+   "issue_count": 5,
+   "reason_cat": "已接入",
+   "reason": "已接入(5 个仓被 AI 开过 PR / 属已跑 AI 服务)"
+  },
+  {
+   "id": "security-cve-all",
+   "cn": "安全 CVE",
+   "got": 5,
+   "notint": 0,
+   "ever": true,
+   "issue_count": 6,
+   "reason_cat": "已接入",
+   "reason": "已接入(5 个仓被 AI 开过 PR / 属已跑 AI 服务)"
   },
   {
    "id": "oneid-all",
    "cn": "OneID 统一身份认证",
-   "got": 1,
+   "got": 4,
    "notint": 0,
    "ever": true,
    "issue_count": 3,
    "reason_cat": "已接入",
-   "reason": "已接入(1 个 issue 跑过 AI)"
+   "reason": "已接入(4 个仓被 AI 开过 PR / 属已跑 AI 服务)"
+  },
+  {
+   "id": "cla-all",
+   "cn": "CLA 协议签署",
+   "got": 4,
+   "notint": 0,
+   "ever": true,
+   "issue_count": 3,
+   "reason_cat": "已接入",
+   "reason": "已接入(4 个仓被 AI 开过 PR / 属已跑 AI 服务)"
+  },
+  {
+   "id": "hotopic-all",
+   "cn": "热点话题",
+   "got": 4,
+   "notint": 0,
+   "ever": true,
+   "issue_count": 3,
+   "reason_cat": "已接入",
+   "reason": "已接入(4 个仓被 AI 开过 PR / 属已跑 AI 服务)"
+  },
+  {
+   "id": "ascend-ci-project",
+   "cn": "昇腾 CI 项目配置",
+   "got": 4,
+   "notint": 0,
+   "ever": true,
+   "issue_count": 23,
+   "reason_cat": "已接入",
+   "reason": "已接入(4 个仓被 AI 开过 PR / 属已跑 AI 服务)"
   },
   {
    "id": "pod-exporter-monitoring",
@@ -124,7 +104,17 @@
    "ever": true,
    "issue_count": 0,
    "reason_cat": "已接入",
-   "reason": "已接入(1 个 issue 跑过 AI)"
+   "reason": "已接入(1 个仓被 AI 开过 PR / 属已跑 AI 服务)"
+  },
+  {
+   "id": "oss-map",
+   "cn": "OSS 地图(单仓服务)",
+   "got": 1,
+   "notint": 0,
+   "ever": true,
+   "issue_count": 0,
+   "reason_cat": "已接入",
+   "reason": "已接入(1 个仓被 AI 开过 PR / 属已跑 AI 服务)"
   },
   {
    "id": "patch-manager",
@@ -134,57 +124,57 @@
    "ever": true,
    "issue_count": 1,
    "reason_cat": "已接入",
-   "reason": "已接入(1 个 issue 跑过 AI)"
+   "reason": "已接入(1 个仓被 AI 开过 PR / 属已跑 AI 服务)"
   },
   {
-   "id": "bigfiles-lfs-all",
-   "cn": "大文件/LFS 存储",
-   "got": 0,
+   "id": "search-all",
+   "cn": "搜索服务",
+   "got": 1,
    "notint": 0,
-   "ever": false,
+   "ever": true,
    "issue_count": 0,
-   "reason_cat": "无issue",
-   "reason": "backlog 里没有该服务标签的任何 issue —— 没人用 AI 提过需求(非技术问题)"
+   "reason_cat": "已接入",
+   "reason": "已接入(1 个仓被 AI 开过 PR / 属已跑 AI 服务)"
   },
   {
-   "id": "calculator",
-   "cn": "计算器(demo脚手架)",
-   "got": 0,
+   "id": "om-webserver",
+   "cn": "OM 账号后端",
+   "got": 1,
    "notint": 0,
-   "ever": false,
-   "issue_count": 0,
-   "reason_cat": "非业务",
-   "reason": "示例/demo 脚手架(三段式流水线样例),非真实业务服务 → 本就无需接入"
-  },
-  {
-   "id": "certification-all",
-   "cn": "认证/证书",
-   "got": 0,
-   "notint": 0,
-   "ever": false,
-   "issue_count": 0,
-   "reason_cat": "无issue",
-   "reason": "backlog 里没有该服务标签的任何 issue —— 没人用 AI 提过需求(非技术问题)"
-  },
-  {
-   "id": "ci-all",
-   "cn": "CI 通用工具",
-   "got": 0,
-   "notint": 0,
-   "ever": false,
+   "ever": true,
    "issue_count": 2,
-   "reason_cat": "有issue未触发",
-   "reason": "有 2 个 issue,但未打 accepted+project 触发流水线 / 非需求类(流程前置,非技术)"
+   "reason_cat": "已接入",
+   "reason": "已接入(1 个仓被 AI 开过 PR / 属已跑 AI 服务)"
   },
   {
-   "id": "etherpad-lite",
-   "cn": "实时协作文档",
-   "got": 0,
+   "id": "release-mgmt",
+   "cn": "发布管理(单仓服务)",
+   "got": 1,
    "notint": 0,
-   "ever": false,
+   "ever": true,
    "issue_count": 0,
-   "reason_cat": "无issue",
-   "reason": "backlog 里没有该服务标签的任何 issue —— 没人用 AI 提过需求(非技术问题)"
+   "reason_cat": "已接入",
+   "reason": "已接入(1 个仓被 AI 开过 PR / 属已跑 AI 服务)"
+  },
+  {
+   "id": "forum-reply-robot",
+   "cn": "论坛回复机器人",
+   "got": 1,
+   "notint": 0,
+   "ever": true,
+   "issue_count": 9,
+   "reason_cat": "已接入",
+   "reason": "已接入(1 个仓被 AI 开过 PR / 属已跑 AI 服务)"
+  },
+  {
+   "id": "portal-workflow",
+   "cn": "Portal 工作流(单仓服务)",
+   "got": 1,
+   "notint": 0,
+   "ever": true,
+   "issue_count": 0,
+   "reason_cat": "已接入",
+   "reason": "已接入(1 个仓被 AI 开过 PR / 属已跑 AI 服务)"
   },
   {
    "id": "eur-build-all",
@@ -194,7 +184,37 @@
    "ever": false,
    "issue_count": 0,
    "reason_cat": "无issue",
-   "reason": "backlog 里没有该服务标签的任何 issue —— 没人用 AI 提过需求(非技术问题)"
+   "reason": "backlog 里没有该服务标签的任何 issue —— 没人用 AI 提过需求(非技术)"
+  },
+  {
+   "id": "calculator",
+   "cn": "计算器(demo脚手架)",
+   "got": 0,
+   "notint": 0,
+   "ever": false,
+   "issue_count": 0,
+   "reason_cat": "非业务",
+   "reason": "示例/demo 脚手架,非真实业务服务 → 本就无需接入"
+  },
+  {
+   "id": "certification-all",
+   "cn": "认证/证书",
+   "got": 0,
+   "notint": 0,
+   "ever": false,
+   "issue_count": 0,
+   "reason_cat": "无issue",
+   "reason": "backlog 里没有该服务标签的任何 issue —— 没人用 AI 提过需求(非技术)"
+  },
+  {
+   "id": "etherpad-lite",
+   "cn": "实时协作文档",
+   "got": 0,
+   "notint": 0,
+   "ever": false,
+   "issue_count": 0,
+   "reason_cat": "无issue",
+   "reason": "backlog 里没有该服务标签的任何 issue —— 没人用 AI 提过需求(非技术)"
   },
   {
    "id": "mailman",
@@ -204,27 +224,7 @@
    "ever": false,
    "issue_count": 0,
    "reason_cat": "无issue",
-   "reason": "backlog 里没有该服务标签的任何 issue —— 没人用 AI 提过需求(非技术问题)"
-  },
-  {
-   "id": "message-bus-all",
-   "cn": "消息总线",
-   "got": 0,
-   "notint": 0,
-   "ever": false,
-   "issue_count": 1,
-   "reason_cat": "有issue未触发",
-   "reason": "有 1 个 issue,但未打 accepted+project 触发流水线 / 非需求类(流程前置,非技术)"
-  },
-  {
-   "id": "search-all",
-   "cn": "搜索服务",
-   "got": 0,
-   "notint": 0,
-   "ever": false,
-   "issue_count": 0,
-   "reason_cat": "无issue",
-   "reason": "backlog 里没有该服务标签的任何 issue —— 没人用 AI 提过需求(非技术问题)"
+   "reason": "backlog 里没有该服务标签的任何 issue —— 没人用 AI 提过需求(非技术)"
   },
   {
    "id": "software-package-all",
@@ -234,22 +234,42 @@
    "ever": false,
    "issue_count": 1,
    "reason_cat": "有issue未触发",
-   "reason": "有 1 个 issue,但未打 accepted+project 触发流水线 / 非需求类(流程前置,非技术)"
+   "reason": "有 1 个 issue,但未打 accepted+project 触发流水线 / 非需求类"
   },
   {
-   "id": "oss-map",
-   "cn": "OSS 地图(单仓服务)",
-   "got": 1,
+   "id": "ci-all",
+   "cn": "CI 通用工具",
+   "got": 0,
    "notint": 0,
-   "ever": true,
+   "ever": false,
+   "issue_count": 2,
+   "reason_cat": "有issue未触发",
+   "reason": "有 2 个 issue,但未打 accepted+project 触发流水线 / 非需求类"
+  },
+  {
+   "id": "bigfiles-lfs-all",
+   "cn": "大文件/LFS 存储",
+   "got": 0,
+   "notint": 0,
+   "ever": false,
+   "issue_count": 0,
+   "reason_cat": "无issue",
+   "reason": "backlog 里没有该服务标签的任何 issue —— 没人用 AI 提过需求(非技术)"
+  },
+  {
+   "id": "message-bus-all",
+   "cn": "消息总线",
+   "got": 0,
+   "notint": 0,
+   "ever": false,
    "issue_count": 1,
-   "reason_cat": "已接入",
-   "reason": "已接入(单仓服务,1 个 issue 跑过 AI)"
+   "reason_cat": "有issue未触发",
+   "reason": "有 1 个 issue,但未打 accepted+project 触发流水线 / 非需求类"
   }
  ],
  "reason_summary": {
-  "已接入": 14,
-  "无issue": 6,
+  "已接入": 17,
+  "无issue": 5,
   "非业务": 1,
   "有issue未触发": 3
  },
