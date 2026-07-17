@@ -19,12 +19,54 @@
       .then(r => r.ok ? r.json() : null).then(c => { if (c) renderCoverage(c); }).catch(() => {});
     fetch("./backlog-ai-notintegrated-repos.json?t=" + Date.now())
       .then(r => r.ok ? r.json() : null).then(c => { if (c) renderRepos(c); }).catch(() => {});
+    fetch("./backlog-ai-notintegrated-repodetail.json?t=" + Date.now())
+      .then(r => r.ok ? r.json() : null).then(c => { if (c) initRepoDetail(c); }).catch(() => {});
+  }
+  let RD = [], rdCat = "__all__", rdSvc = "__all__", rdGap = false;
+  const yn = b => b ? '<span style="color:#3ba272;font-weight:700">✅</span>' : '<span style="color:var(--t3)">—</span>';
+  function rdCatOf(r) { return r.integrated ? "integ" : (r.svc ? "attr_no" : "unattr"); }
+  function initRepoDetail(list) {
+    RD = list;
+    const svcs = [...new Set(list.map(r => r.svc).filter(Boolean))].sort();
+    $("#rd-svc").innerHTML = '<option value="__all__">全部服务</option><option value="__none__">未归属</option>' + svcs.map(s => `<option>${esc(s)}</option>`).join("");
+    // 汇总
+    const n = list.length, cmd = list.filter(r => r.claude_md).length, sk = list.filter(r => r.skills).length,
+      ai = list.filter(r => r.ai_pr).length, integ = list.filter(r => r.integrated).length;
+    const gapReady = list.filter(r => r.ai_pr && (!r.claude_md || !r.skills)).length;
+    const cards = [
+      ["活跃仓总数", n, ""], ["有 CLAUDE.md", cmd, `${Math.round(cmd / n * 100)}%`],
+      ["有 skills", sk, `${Math.round(sk / n * 100)}%`], ["有 AI PR", ai, `${Math.round(ai / n * 100)}%`],
+      ["接入服务的仓", integ, ""], ["⚠️ 跑了AI但缺文档", gapReady, "有PR无CLAUDE/skill"],
+    ];
+    $("#rd-sum").innerHTML = '<div class="kpis">' + cards.map(([k, v, x]) =>
+      `<div class="kpi"><div class="k">${k}</div><div class="v">${v}${x ? `<small>${x}</small>` : ""}</div></div>`).join("") + '</div>';
+    $("#rd-cat").addEventListener("change", e => { rdCat = e.target.value; drawRD(); });
+    $("#rd-svc").addEventListener("change", e => { rdSvc = e.target.value; drawRD(); });
+    $("#rd-gap").addEventListener("change", e => { rdGap = e.target.checked; drawRD(); });
+    drawRD();
+  }
+  function drawRD() {
+    let rows = RD.slice();
+    if (rdCat !== "__all__") rows = rows.filter(r => rdCatOf(r) === rdCat);
+    if (rdSvc === "__none__") rows = rows.filter(r => !r.svc);
+    else if (rdSvc !== "__all__") rows = rows.filter(r => r.svc === rdSvc);
+    if (rdGap) rows = rows.filter(r => r.ai_pr && (!r.claude_md || !r.skills));
+    rows.sort((a, b) => (b.integrated - a.integrated) || (b.ai_pr - a.ai_pr) || (b.claude_md - a.claude_md) || a.repo.localeCompare(b.repo));
+    $("#rd-cnt").textContent = `共 ${rows.length} 个仓`;
+    const body = rows.map(r => `<tr>
+      <td><a href="https://github.com/opensourceways/${esc(r.repo)}" target="_blank" rel="noopener">${esc(r.repo)}</a> ${r.private ? '<span class="pill" style="background:#909399;font-size:10px">私</span>' : '<span class="pill" style="background:#3ba272;font-size:10px">公</span>'}</td>
+      <td style="color:var(--t2)">${r.svc ? esc(r.svc) : '<span style="color:#b03a3a">未归属</span>'}</td>
+      <td style="text-align:center">${yn(r.ai_pr)}</td>
+      <td style="text-align:center">${yn(r.integrated)}</td>
+      <td style="text-align:center">${yn(r.claude_md)}</td>
+      <td style="text-align:center">${yn(r.skills)}</td></tr>`).join("");
+    $("#rdtbl").innerHTML = `<thead><tr><th>仓库名称</th><th>归属服务</th><th>有 AI PR</th><th>接入 workflow</th><th>CLAUDE.md</th><th>skills</th></tr></thead><tbody>${body}</tbody>`;
   }
   function renderRepos(R) {
-    const active = R.total - R.archived - R.fork;
+    const active = R.active != null ? R.active : (R.total - R.archived - R.fork_active);
     const kp = [
       ["opensourceways 全 org 仓", R.total, `公 ${R.public}/私 ${R.private}`],
-      ["活跃仓(排归档/fork)", active, `归档 ${R.archived}`],
+      ["活跃仓(排归档/fork)", active, `归档 ${R.archived}+活跃fork ${R.fork_active}`],
       ["🟢 接入 AI 的仓", R.covered_by_integrated, "属已跑过AI的服务"],
       ["🔴 未归属仓", R.unattr_active_n + R.unattr_infra_n, `业务 ${R.unattr_active_n}/基建 ${R.unattr_infra_n}`],
     ];
@@ -44,7 +86,7 @@
       + R.unattr_infra_sample.map(n => `<span class="pill" style="background:#909399;margin:2px 3px">${esc(n)}</span>`).join("")
       + `<p style="margin:12px 0 4px"><b style="color:#b03a3a">🔴 活跃业务仓(${R.unattr_active_n},样例 ${R.unattr_active_sample.length})</b> —— 这些是真正的「可能该接但还没接」:</p>`
       + R.unattr_active_sample.map(n => `<span class="pill" style="background:#b03a3a;margin:2px 3px">${esc(n)}</span>`).join("")
-      + `<p style="color:var(--t2);margin-top:12px"><b>怎么看:</b>全 org 445 仓里 <b>246 个已归档</b>(历史仓,不计)。活跃仓约 ${active} 个:${R.covered_by_integrated} 个被已跑 AI 的服务覆盖、${R.cat["已注册未接入"] || 0} 个属已建服务但没触发过、剩下 <b>${R.unattr_active_n + R.unattr_infra_n} 个未归属</b>(其中 ${R.unattr_infra_n} 个是公共基建、${R.unattr_active_n} 个是活跃业务仓)。<b>归属靠 umbrella + .gitmodules 匹配,属近似</b>——个别子仓命名不一致可能漏匹配。</p>`;
+      + `<p style="color:var(--t2);margin-top:12px"><b>怎么看:</b>全 org <b>${R.total} 仓 = 归档 ${R.archived} + 活跃非fork ${active} + 活跃fork ${R.fork_active}</b>(归档=历史仓、fork=派生仓,都不计入分析)。活跃仓 ${active} 个:${R.covered_by_integrated} 个被已跑 AI 的服务覆盖、${R.cat["已注册未接入"] || 0} 个属已建服务但没触发过、剩下 <b>${R.unattr_active_n + R.unattr_infra_n} 个未归属</b>(其中 ${R.unattr_infra_n} 个是公共基建、${R.unattr_active_n} 个是活跃业务仓)。<b>归属靠 umbrella + .gitmodules 匹配,属近似</b>——个别子仓命名不一致可能漏匹配。</p>`;
   }
   function renderCoverage(C) {
     const kp = [

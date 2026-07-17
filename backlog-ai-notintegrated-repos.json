@@ -97,5 +97,9 @@
   "workflow-control-tower",
   "xihe-image-build",
   "xihe-resource-script"
- ]
+ ],
+ "active": 189,
+ "fork_active": 10,
+ "fork_archived": 32,
+ "breakdown_note": "总445 = 归档246 + 活跃非fork189 + 活跃fork10(fork不计入分析)"
 }
