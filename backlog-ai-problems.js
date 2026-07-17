@@ -25,7 +25,7 @@
     $("#genAt").textContent = "生成于 " + D.generatedAt;
     renderKpis(); renderTop3(); renderCat(); renderPrimary(); renderStage(); renderFailStage(); renderSvc(); renderCorr();
     initTable();
-    if (IMP) { renderIntv(); renderIntvCards(); initImpTable(); }
+    if (IMP) { renderIntv(); renderIntvCards(); initSvcPlan(); initImpTable(); }
   }
 
   function renderCorr() {
@@ -62,6 +62,43 @@
         <div style="font-size:13px"><b>步骤:</b><ol style="margin:4px 0;padding-left:20px;line-height:1.7">${p.steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol></div>
         ${p.prompt && p.prompt.indexOf("prompt") < 0 && p.prompt.indexOf("改造") < 0 ? `<div style="font-size:12px;margin-top:6px"><b>给 AI 的 prompt:</b><br/><code style="display:block;padding:6px 8px;background:#f5f6f8;border-radius:6px;margin-top:3px;white-space:pre-wrap">${esc(p.prompt)}</code></div>` : `<div style="font-size:12px;color:var(--t3);margin-top:6px">${esc(p.prompt)}</div>`}
       </div>`).join("");
+  }
+
+  function initSvcPlan() {
+    const SP = IMP.by_service_plan || {};
+    const order = IMP._svc_order || Object.keys(SP);
+    const pm = {}; (IMP.plan || []).forEach(p => pm[p.id] = p);
+    $("#sp-svc").innerHTML = order.map(s => `<option value="${esc(s)}">${esc(SP[s].label)}（${SP[s].n} 个 issue）</option>`).join("");
+    const draw = s => {
+      const d = SP[s]; if (!d) return;
+      $("#sp-hint").textContent = `该服务需优先做的干预:${(d.intv || []).join(" / ")}`;
+      const probRows = d.problems.map(p => `<tr><td style="white-space:nowrap"><a href="https://github.com/opensourceways/backlog/issues/${String(p[0]).replace('#','')}" target="_blank" rel="noopener">${esc(p[0])}</a></td><td style="text-align:center;color:#c0392b">${p[1]}轮</td><td style="color:var(--t2)">${esc(p[2])}</td></tr>`).join("");
+      const intvChips = (d.intv || []).map(id => pm[id] ? `<span class="pill" style="background:${pm[id].color}">${esc(id)} ${esc(pm[id].name.slice(0, 16))}</span>` : `<span class="pill" style="background:#888">${esc(id)}</span>`).join(" ");
+      $("#sp-panel").innerHTML = `
+        <div class="card" style="margin-bottom:14px">
+          <h3>① 这个服务的真实 top 问题（就是它为什么慢）</h3>
+          <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr><th style="text-align:left;color:var(--t3);border-bottom:2px solid var(--line);padding:6px">#</th><th style="border-bottom:2px solid var(--line);padding:6px">轮次</th><th style="text-align:left;color:var(--t3);border-bottom:2px solid var(--line);padding:6px">主要问题</th></tr></thead><tbody>${probRows}</tbody></table></div>
+          <div style="margin-top:8px">需优先做的干预:${intvChips}</div>
+        </div>
+        <div class="grid g2">
+          <div class="card" style="border-left:5px solid #002fa7">
+            <h3>② 给这个服务的 AI 的 prompt（照抄进 issue / agent 上下文）</h3>
+            <code style="display:block;padding:10px 12px;background:#f5f6f8;border-radius:8px;margin-top:6px;white-space:pre-wrap;font-size:12.5px;line-height:1.65">${esc(d.prompt)}</code>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div class="card" style="border-left:5px solid #3ba272">
+              <h3>③ 环境怎么搭</h3>
+              <p style="font-size:13px;line-height:1.7;color:var(--t2);margin:6px 0 0">${esc(d.env)}</p>
+            </div>
+            <div class="card" style="border-left:5px solid #e6a23c">
+              <h3>④ 预览环境怎么弄</h3>
+              <p style="font-size:13px;line-height:1.7;color:var(--t2);margin:6px 0 0">${esc(d.preview)}</p>
+            </div>
+          </div>
+        </div>`;
+    };
+    $("#sp-svc").addEventListener("change", e => draw(e.target.value));
+    draw(order[0]);
   }
 
   let iSvc = "__all__", iIntv = "__all__";

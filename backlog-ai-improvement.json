@@ -1400,5 +1400,242 @@
    ],
    "prompt": "机器人服务改动必须附/更新离线评测集,评测分数达标才可合入。"
   }
+ ],
+ "by_service_plan": {
+  "om-datacenter": {
+   "label": "数据中台 om-datacenter(datastat/APIMagic/om-dataarts/白盒/塔台)",
+   "n": 38,
+   "intv": [
+    "I1",
+    "I2",
+    "I5"
+   ],
+   "problems": [
+    [
+     "#927",
+     88,
+     "不知解决率数据源/字段(是 fact_issue.is_resolved 不是 resolved_at、公司维度 dws_contribute_company_daily),把 mindcluster 错映射成 mindie"
+    ],
+    [
+     "#650",
+     78,
+     "取数来源与字段语义反复搞错(用 fact_pr 创建时间而非 operate_log 关联时间、uuid 拼法、清洗规则执行顺序),人逐条喂表结构"
+    ],
+    [
+     "#489",
+     86,
+     "不遵循本仓已有采集 task 的客户端约定、不懂 gitcode discuss API 结构,自创写法被逐条纠;反复污染分支带无关子仓改动"
+    ],
+    [
+     "#611",
+     76,
+     "新增社区=跨5仓+建表+建流水线+前端9处接线,agent 无 checklist,每个接线点都要人现场补齐"
+    ],
+    [
+     "#840",
+     52,
+     "一再新建被明确禁止的清洗规则文件、搞不定一条日志多标签同时 add+remove,人把同样纠正讲六七遍"
+    ]
+   ],
+   "prompt": "【数据领域知识·必读】\n1. 表命名:xx_{community}_xxx(多数非绝对,先查真库别臆造);解决率字段=fact_issue.is_resolved(不是 resolved_at);公司维度=dws_contribute_company_daily;dws 只有 pr/issue/comment,commit 不进 dws。\n2. 社区映射:mindcluster≠mindie(别混);健康度看 om-deployment 的 health.yaml/sig_score.yaml。\n3. datastat 前端加页/加社区必改四处:router / common.const / AppAside / overview;配色一律克莱因蓝 #002fa7 + 白卡,whitebox 页禁裸用 --o-color-* token(要带 fallback 或写死)。\n4. APIMagic:magic-api 全包 HTTP200,判成功看 body 的 code(403=无权限);写接口权限统一 datastatadmin_View;接口路径前缀来自各 group.json 的 path。\n【禁止项】① 不要新建清洗规则文件——复用已有 rule;② 只提交本 issue 相关改动,不要把无关子仓/lock/dist 带进 PR;③ 用到的表/API 先在真库核实存在再写。\n【自检】改数据后进 om-dataarts-debug pod 真跑 task,核对行数/日期/样本再回评,别只给链接。",
+   "env": "跳板 124.243.176.160(ccdev 用户,非 root)。预览=003 集群:export KUBECONFIG=/root/cc-omdc-debug/kubeconfig(server 159.138.134.188,ns om-datacenter)。per-issue pod:apimagic-issue-N / datastat-manage-website-N;常驻 om-dataarts-debug(跑数据)+ postgresql-*(db onedata)。",
+   "preview": "手改→git push origin issue-N-from-<main|beta>(先配 CLA 已签身份 opensourceways-bot <robot@public.osinfra.cn>)→ kubectl rollout restart deploy/datastat-manage-website-N(前端 vite 4s 热更)或 apimagic-issue-N(重 seed .ms 进表 magic_api_file_v2_issue_N)→ curl https://datastat-manage-website-N.preview.test.osinfra.cn/server/<接口> 看 body code;跑数据:om-dataarts-debug pod 里 python -m om.tasks.<task> --config /tmp/config.yaml。"
+  },
+  "community-robots": {
+   "label": "社区机器人 community-robots(标签/生命周期/审批机器人)",
+   "n": 13,
+   "intv": [
+    "I4",
+    "I3",
+    "I6"
+   ],
+   "problems": [
+    [
+     "#614",
+     37,
+     "design 十余轮微调配置/格式/依赖,实现出 Has 恒 true 逻辑死角 + go.mod 残留本地绝对路径 replace"
+    ],
+    [
+     "#726",
+     24,
+     "反复交占位符(stub)不落地真逻辑(7个生命周期规则),擅改被禁依赖仓、UT 编译不过"
+    ],
+    [
+     "#1309",
+     23,
+     "极简前缀匹配打标签功能却因预览/部署反复失败,用户连发十余次 --deploy-only 空转"
+    ],
+    [
+     "#321",
+     20,
+     "修复逻辑简单但提交门禁反复⚠️,多人连续裸提交十余次都过不了"
+    ],
+    [
+     "#497",
+     17,
+     "反复用错 bot SDK 的 GetIssueLabels 参数(issueID vs issueNumber)且不写单测,同 bug 纠两遍仍回流"
+    ]
+   ],
+   "prompt": "【bot-sdk 约定】调 GetIssueLabels 等接口先核实签名——用 issueNumber 不是 issueID(#497 踩过);每个新函数/规则必须补 UT 且本地 go build && go test 过。\n【go.mod】禁止本地绝对路径 replace(#614);禁止擅自改被禁依赖仓。\n【落地】生命周期规则必须写真实逻辑,禁止交 stub/placeholder(hard gate 会拒,#726);布尔判定别写成恒 true/false 死角。\n【门禁】提交前本地过一遍确定性门禁(security-gate/unit-test),别裸提交靠 CI 试错(#321)。",
+   "env": "预览走 meeting-server 式 test-sync:runner 用 Vault userpass 读配置烘 k8s Secret 挂 /vault/secrets/,无 Vault Injector。预览 ns=community-robots;底座基础设施 ns 内一份、跨 issue 共享。",
+   "preview": "--deploy-only 只重部署已有分支预览(别拿它当空转按钮,#1309);改动后先确认 pod Ready 再验接口。机器人对话/审批类质量走干预 I6(对话质量自动评测:固定 case 集跑通过率,别靠人肉看)。"
+  },
+  "ascend-ci-project": {
+   "label": "昇腾 CI 项目配置 ascend-ci-project(纯配置 ArgoCD/kustomize)",
+   "n": 6,
+   "intv": [
+    "I1",
+    "I4"
+   ],
+   "problems": [
+    [
+     "#616",
+     35,
+     "门禁三红反复修 + 新解档仓 runner 不可用,deploy-test 被 force 十余次仍未合入"
+    ],
+    [
+     "#434",
+     25,
+     "缺该 CI 仓集群拓扑/节点IP/文件命名约定,用户逐轮喂集群名/代码仓/节点IP/参照文件"
+    ],
+    [
+     "#1203",
+     11,
+     "不知该仓主开发分支是 release/no_volumes 而非 main,反复在错分支开发/开错 PR 被迫关闭重来 + OOMKilled"
+    ],
+    [
+     "#712",
+     10,
+     "缺现网 infra 仓(ascend-ci-deployment/argocd/gha-runners)代码结构与确切文件位置,每轮要用户手贴路径"
+    ],
+    [
+     "#1190",
+     9,
+     "生成的探针 shell 与 Prometheus/Alertmanager 表达式藏 bug(Alpine/BusyBox 不兼容、告警 label 匹配、Pushgateway 时间戳)"
+    ]
+   ],
+   "prompt": "【本仓拓扑·必读】主开发分支是 release/no_volumes(不是 main),在这个分支开发/开 PR(#1203 踩过);相关 infra 仓结构:ascend-ci-deployment / argocd / gha-runners,文件命名与节点IP见仓内 README(#434/#712)。\n【纯配置类】本服务是 ArgoCD/kustomize 配置,不跑代码构建;改动用 kustomize build / ArgoCD dry-run 校验,别指望起 pod。\n【探针 shell】用 BusyBox/Alpine 兼容语法(别用 bash-ism);Prometheus/Alertmanager 表达式先本地 promtool check(#1190)。",
+   "env": "纯配置仓无镜像构建;runner 在 ai-test ns(注意新解档仓 runner 可用性,#616)。集群拓扑/节点IP 写进该仓 CLAUDE.md,别每轮靠人喂。",
+   "preview": "配置类改动:kustomize build 出 manifest + ArgoCD dry-run/diff 校验;不走 runtime-clone pod 预览。"
+  },
+  "forum-reply-robot": {
+   "label": "论坛回复机器人 forum-reply-robot(LightRAG 知识库)",
+   "n": 5,
+   "intv": [
+    "I3",
+    "I1"
+   ],
+   "problems": [
+    [
+     "#785",
+     90,
+     "预览 pod 长期起不来:部署环境(Python 版本/psycopg/apt 包/探针/progressDeadline)与代码不匹配,agent 靠人一条条喂事实才修好"
+    ],
+    [
+     "#921",
+     84,
+     "认证架构随边界反复推倒:OneID 实测不支持无状态验证/无 roles claim、Vault 覆盖 config,方案在 OIDC 客户端 vs 无状态 vs 白名单间来回切"
+    ],
+    [
+     "#621",
+     33,
+     "预览 Pod 反复起不来(顶层 import 崩溃、health 过严、sync.sh 转义被 AI 改坏),用户多轮亲自定位崩溃根因"
+    ],
+    [
+     "#778",
+     53,
+     "小改动被拆成几十轮每轮改一个 review 意见 + 启动时序/首次升级初始化边界 bug"
+    ],
+    [
+     "#326",
+     24,
+     "把 LightRAG 主流程与 pgvector 影子评测的主次搞反,需求文档反复返工;开局又被 project 标签未注册卡掉"
+    ]
+   ],
+   "prompt": "【运行时事实·必读】① Python 版本与 psycopg 有兼容矩阵——改依赖先对齐镜像 Python 版本(#785);② OneID 实测不支持无状态验证、无 roles claim → 认证走 OIDC 客户端,别选无状态方案(#921);③ Vault 会覆盖仓库 config,改配置在 Vault 侧不在仓库 yml;④ LightRAG 是主流程、pgvector 是影子评测(主次别反,#326);⑤ sync.sh 的转义敏感,别乱改。\n【禁止】顶层 import 放重活会 CrashLoop(#621)——重初始化放懒加载/启动钩子。\n【落地】改动必须在预览真跑起来(pod Ready)再 push,别未验证就推。",
+   "env": "依赖 LightRAG 知识库 + pgvector;预览 pod 的 psycopg/apt 依赖要与镜像 Python 版本对齐;探针放宽 progressDeadline(冷启动慢)。",
+   "preview": "改动后必须看 pod 进入 Ready(顶层 import 崩会 CrashLoop 直接 503);health 探针别设太严;先 kubectl logs 看崩溃根因再改,别无脑重发 --deploy-only。"
+  },
+  "hotopic-all": {
+   "label": "热点话题 hotopic-all(采集/清洗/挖掘)",
+   "n": 3,
+   "intv": [
+    "I3",
+    "I5"
+   ],
+   "problems": [
+    [
+     "#900",
+     37,
+     "预览/部署基础设施反复失败(no-kubeconfig→pod 未就绪→引擎 rc=127 token 失效),实现简单但 deploy 被 infra 耗 20 轮"
+    ],
+    [
+     "#674",
+     32,
+     "反复越界改无关子仓,用户多轮强调仅涉及 mining 子仓;预览反复重跑少见实质反馈"
+    ],
+    [
+     "#1298",
+     7,
+     "需求分析机器人夹带实现细节违反 AGENTS.md 被纠正重做"
+    ]
+   ],
+   "prompt": "【范围】本 issue 只改 mining 子仓,别越界改相邻子仓(#674);声明允许改的路径,超出即停。\n【需求分析】只写「要什么」,不夹带实现细节/技术方案(AGENTS.md,#1298)。\n【引擎/基建】遇 rc=127/no-kubeconfig 是 token 失效/环境问题,不是代码问题——停下报错别空转重跑(#900)。",
+   "env": "预览基建对 token 敏感(rc=127=引擎 token 失效);先确认 kubeconfig 有效再跑。",
+   "preview": "deploy 失败先分辨是 infra(token/kubeconfig)还是代码;infra 类停下修环境,别靠重跑碰运气。"
+  },
+  "om-webserver": {
+   "label": "OM 账号后端 om-webserver",
+   "n": 2,
+   "intv": [
+    "I4"
+   ],
+   "problems": [
+    [
+     "#780",
+     52,
+     "功能代码很小,绝大多数轮次卡在合入门禁——仓级门禁(分支命名/gate_check_pass/sast)与 AI 流水线 issue-N-from-* 分支不兼容,需维护者改"
+    ],
+    [
+     "#1278",
+     15,
+     "代码很小但卡流程后段:先反复修门禁,再 6 次 release-plan 空转不产出,发布上线自动化不可用"
+    ]
+   ],
+   "prompt": "【门禁兼容】本仓仓级门禁按分支命名校验,与 AI 的 issue-N-from-* 分支不兼容(#780)——门禁规则需认 AI 分支命名 或 用兼容命名开 PR;gate_check_pass/lgtm 靠维护者加。\n【别硬刷】release-plan 空转不产出是自动化不可用(#1278),报清楚别反复空跑。",
+   "env": "合入靠维护者加 gate_check_pass;发布自动化(release-plan)当前不稳,产出不了要如实报。",
+   "preview": "重点不在预览,在合入门禁与 AI 分支命名对齐。"
+  },
+  "meeting-server": {
+   "label": "会议服务 meeting-server(预览参考实现)",
+   "n": 2,
+   "intv": [
+    "I3"
+   ],
+   "problems": [
+    [
+     "#427",
+     28,
+     "部署镜像启动反复报错(nginx 权限、非 root)+ vitest ESM/pytest 环境缺,deploy-test 重跑 17 次"
+    ],
+    [
+     "#736",
+     7,
+     "预览反复起不来,用户无脑重发直到成功"
+    ]
+   ],
+   "prompt": "【镜像/运行时】容器非 root 运行,nginx 相关路径权限要对(#427);前端测试 vitest 走 ESM、后端 pytest 环境依赖要装全,别假设环境齐。\n【落地】改动本地/预览真跑过(vitest run / pytest)再推,别靠 deploy-test 重跑试错(#427 跑了 17 次)。",
+   "env": "meeting-server 是预览 test-sync 的参考实现(底座 MySQL pod + Vault 同步 + routes.sh 路由);ns=meeting-server。",
+   "preview": "底座 MySQL 幂等 ensure;改动先本地跑测试,pod 起不来先看 logs(多为权限/非 root/依赖缺),别无脑重发(#736)。"
+  }
+ },
+ "_svc_order": [
+  "om-datacenter",
+  "community-robots",
+  "ascend-ci-project",
+  "forum-reply-robot",
+  "hotopic-all",
+  "om-webserver",
+  "meeting-server"
  ]
 }
