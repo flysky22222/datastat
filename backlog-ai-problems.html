@@ -121,6 +121,86 @@
     <div class="row-title"><h2 style="font-size:15px">每条 issue 改进收益(做了对应干预后)</h2><span>轮次→预计轮次 · 耗时→预计耗时</span></div>
     <div class="controls"><div>服务 <select id="i-svc"></select></div><div>干预 <select id="i-intv"></select></div><div id="i-cnt" style="color:var(--t3)"></div></div>
     <div class="card" style="overflow-x:auto"><table id="itbl"></table></div>
+
+    <!-- ⑥ 5-Why 根因下钻 -->
+    <div class="row-title"><h2>⑥ 5-Why 根因下钻 · 多轮对抗(可折叠)</h2><span>不停问为什么 → 挖到根因 → 怎么改 → 改了能解决吗(对抗自问)</span></div>
+    <style>
+      details.why{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:14px;padding:0 18px}
+      details.why>summary{cursor:pointer;font-weight:700;font-size:15px;padding:14px 0;list-style:none;color:var(--t1)}
+      details.why>summary::-webkit-details-marker{display:none}
+      details.why>summary::before{content:"▸ ";color:var(--blue)}
+      details.why[open]>summary::before{content:"▾ "}
+      details.why .chain{border-left:3px solid #d5d9e0;margin:2px 0 10px 4px;padding:2px 0 2px 14px;font-size:13.5px;line-height:1.9}
+      details.why .chain .w{color:var(--t2)}
+      details.why .root{background:#fff6f6;border:1px solid #f0c0c0;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:14px}
+      details.why .fix{background:#f2f9f4;border:1px solid #b9e0c6;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:13.5px}
+      details.why .adv{background:#fffdf0;border:1px solid #ead9a0;border-radius:8px;padding:8px 12px;margin:8px 0 14px;font-size:13.5px}
+      details.why b.tag{display:inline-block;font-size:12px;padding:1px 7px;border-radius:6px;margin-right:6px;color:#fff}
+    </style>
+
+    <details class="why" open>
+      <summary>问题①:AI 缺领域知识 → 实现不对(占 46%)</summary>
+      <div class="chain">
+        <div><b>现象</b>:AI 改数据/指标类需求反复做错(用错表/字段/口径、交占位符),人一轮轮喂口径纠正(#927 88轮卡在不知道 is_resolved 字段)。</div>
+        <div class="w">↓ 为什么 AI 会做错?</div>
+        <div><b>Why 1</b>:它不知道 om-dataarts 的表结构、字段语义、清洗规则执行顺序、业务口径。</div>
+        <div class="w">↓ 为什么它不知道?</div>
+        <div><b>Why 2</b>:这些知识散在代码和几个人脑子里,没有集中的、AI 读得到的单一知识源(CLAUDE.md/skill 覆盖不全)。</div>
+        <div class="w">↓ 为什么没有集中知识源?</div>
+        <div><b>Why 3</b>:数据中台迭代快、表/口径常变,没人维护"给 AI 看的领域知识";且默认假设"AI 会自己读代码推断出来"。</div>
+        <div class="w">↓ 为什么会这样假设?</div>
+        <div><b>Why 4</b>:对"AI 做对数据类改动到底需要多少上下文"没有认知——把数据领域当成了通用编码任务。</div>
+      </div>
+      <div class="root"><b>🎯 根因</b>:<b>没把「数据领域知识」当成一等交付物来维护</b>——既没有单一真相知识源,也没在流水线里强制 AI 先读它。</div>
+      <div class="fix"><b>🔧 怎么改</b>:建 <code>skills/om-dataarts-data-domain.md</code>(表/字段/口径/采集约定)+ dev agent 强制先读 + 涉及新表先查该 skill(见改进方案 I1)。</div>
+      <div class="adv"><b>⚔️ 改了能解决吗?(对抗自问)</b>:<b>部分能,单靠它不够。</b> 反问:① 知识源会过时——表/口径变了没同步更新怎么办?→ 必须绑定「改表时同步改 skill」的机制(否则半年后又失真)。② AI 读了也可能理解错复杂口径 → 需要「产出对拍断言」兜底(预期结果集比对)。<br/><b>结论</b>:要「知识源 + 改表同步 + 产出对拍」三件一起,才真解决;只建个文档≈治标。</div>
+    </details>
+
+    <details class="why">
+      <summary>问题②:流水线 / 环境不稳(占 30%)</summary>
+      <div class="chain">
+        <div><b>现象</b>:预览起不来 / CrashLoop / no-kubeconfig、引擎 token 失效 rc=127、门禁反复红——失败 action 里「开发预览执行异常」111 条最多。</div>
+        <div class="w">↓ 为什么基建问题这么多?</div>
+        <div><b>Why 1</b>:workflow 本身在两个月里被改了 <b>234 次</b>(003 镜像构建 Docker→Kaniko→DinD 换 3 次、issue-2 改 38 次、ArgoCD 校验改 16 次)。</div>
+        <div class="w">↓ 为什么改这么多次还在用?</div>
+        <div><b>Why 2</b>:流水线是<b>「边建边用」</b>——在还没稳定/冻结时就大规模让业务 issue 上去跑。</div>
+        <div class="w">↓ 为什么边建边用?</div>
+        <div><b>Why 3</b>:把「平台开发」和「业务使用」混在同一条 live 流水线上,平台的每次 fix 都可能打断正在跑的 issue。</div>
+        <div class="w">↓ 为什么会混?</div>
+        <div><b>Why 4</b>:没有「流水线稳定性门槛 / 版本冻结 / 灰度」的概念,平台改动直接生效到所有业务。</div>
+      </div>
+      <div class="root"><b>🎯 根因</b>:<b>平台(workflow)与业务(issue)没有隔离 / 版本化</b>——平台在高频迭代期就承接大量业务,基建抖动直接变成业务失败。</div>
+      <div class="fix"><b>🔧 怎么改</b>:① 核心 workflow 收敛冻结、降改动频率;② 引擎 token/额度监控告警 + 耗尽自动暂停(不空跑十几轮);③ 预览 pod 就绪探针 + 自愈;④ 平台改动灰度,不影响存量 issue。</div>
+      <div class="adv"><b>⚔️ 改了能解决吗?(对抗自问)</b>:<b>能显著降,但有矛盾。</b> 反问:① 「冻结」与「平台还在快速演进」冲突 → 真解法不是不改,而是<b>平台改动和业务跑分环境/分版本</b>;② 引擎额度是外部依赖(智谱/opencode),不完全可控 → 只能监控+降级,消不掉。<br/><b>结论</b>:隔离+灰度能治大半;外部引擎与演进期抖动是残留。</div>
+    </details>
+
+    <details class="why">
+      <summary>问题③:需求模糊 / 边做边加(占 15%)</summary>
+      <div class="chain">
+        <div><b>现象</b>:需求在预览阶段才逐版成形、单 issue 塞多模块、UI 看到才提。</div>
+        <div class="w">↓ 为什么边做边加?</div>
+        <div><b>Why 1</b>:提 issue 时没写清可落地的验收 / 边界。</div>
+        <div class="w">↓ 为什么没写清?</div>
+        <div><b>Why 2</b>:提需求的人不清楚 AI 需要多「死」的 spec 才能一次做对(做得好的案例恰恰是正文自带修复 SQL / 文件行号 / 参考 PR)。</div>
+        <div class="w">↓ 为什么不清楚?</div>
+        <div><b>Why 3</b>:没有「给 AI 的 issue 怎么写」的规范,验收标准字段可随便填模糊词(「准确」「正确」)。</div>
+      </div>
+      <div class="root"><b>🎯 根因</b>:<b>AI 做得好 = 「人把 spec 写死」或「AI 已有领域知识」,现在两者都缺</b> → 于是每个 issue 都靠「人在评论区实时补 spec」这种最贵的方式收敛。</div>
+      <div class="fix"><b>🔧 怎么改</b>:① 需求模板强制可量化验收 + 单 issue 单功能(拒绝多模块大杂烩);② 同时补 AI 领域知识(=问题①的解法)。两者互补:spec 写死的省 AI 知识,AI 知识足的省人写 spec。</div>
+      <div class="adv"><b>⚔️ 改了能解决吗?(对抗自问)</b>:<b>能,但「让人写死 spec」有上限</b>——人也不一定懂实现细节。反问:靠人写死能持续吗?→ 不能,长期主线还是<b>补 AI 领域知识让它自己推断,spec 只兜底</b>。所以问题③的根治其实回到问题①。</div>
+    </details>
+
+    <details class="why">
+      <summary>🔬 元根因:把三条串起来,再问最后一个为什么</summary>
+      <div class="chain">
+        <div class="w">↓ 为什么这三类问题会同时存在?</div>
+        <div><b>共同点</b>:都把 AI 流水线当成「给个 issue 就自动出活」的<b>零成本黑盒</b>,没意识到它的产能高度依赖三个前置——<b>①领域知识(AI 懂不懂)②spec 质量(人写清没)③平台稳定性(基建稳不稳)</b>。</div>
+        <div class="w">↓ 为什么会当成零成本黑盒?</div>
+        <div><b>最根本一条</b>:组织把「AI 能做多少」的期望,建立在<b>「零前置投入」的假设</b>上——既不投入维护领域知识、也不规范 spec、还在平台不稳时就压业务。三个 TOP 问题都是这个假设的具体表现。</div>
+      </div>
+      <div class="root"><b>🎯 元根因</b>:<b>「AI 流水线 = 零成本黑盒」的错误预期</b>——真实的 AI 产能 = f(领域知识, spec 质量, 平台稳定性),三者都要持续投入。</div>
+      <div class="adv"><b>⚔️ 终极对抗:改了到底能不能解决?</b>:<b>能解决 80%+,但有前提</b>——必须承认「AI 流水线不是零成本黑盒」,持续投入三件前置(知识/spec/平台)。反问:不投入行不行?→ 不行,再多 prompt 调优也是治标(#650/#927 靠调 prompt 救不回来,因为缺的是知识和稳定性,不是话术)。<br/><b>一句话落地</b>:先做投入产出比最高的 <b>I1(领域知识,省 113h)</b> 起步,再补平台稳定性(I3)与需求 spec(I5),三管齐下才是根治。</div>
+    </details>
   </main>
   <footer>
     数据来自 opensourceways/backlog(私有仓)78 个重点 issue 的评论/流程标记/失败 action 归因;本页**仅公开聚合脱敏结果**,不含 issue 标题与原始反馈。

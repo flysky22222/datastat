@@ -1,0 +1,2637 @@
+{
+ "total": 323,
+ "by_reason": {
+  "CVE/安全自动报": 107,
+  "无project标签(路由无法分发)": 99,
+  "已关闭·未走开发(讨论/重复/直接关)": 73,
+  "未accepted(未评审通过,不触发流水线)": 43,
+  "已关闭·不做/取消": 1
+ },
+ "by_type": {
+  "需求": 150,
+  "缺陷": 117,
+  "任务": 38,
+  "其他": 18
+ },
+ "by_scenario": {
+  "安全/CVE": 107,
+  "其他/未分": 80,
+  "机器人/自动化": 34,
+  "CI/部署": 29,
+  "前端看板/UI": 28,
+  "数据/指标": 27,
+  "会议": 8,
+  "文档/流程": 7,
+  "接口/API": 3
+ },
+ "by_service": {
+  "未分服务": 320,
+  "om-datacenter": 2,
+  "oss-map": 1
+ },
+ "fixcat": {
+  "已关闭·不做/取消": "out",
+  "未accepted(未评审通过,不触发流水线)": "proc",
+  "CVE/安全自动报": "out",
+  "无project标签(路由无法分发)": "fix",
+  "已关闭·未走开发(讨论/重复/直接关)": "out"
+ },
+ "fixdesc": {
+  "已关闭·不做/取消": "明确不做",
+  "未accepted(未评审通过,不触发流水线)": "走评审accepted即可接入(流程前置)",
+  "CVE/安全自动报": "本就不该走AI开发(独立修补流程)",
+  "无project标签(路由无法分发)": "补服务归属(auto_tag)/让路由支持未分类即可接入",
+  "已关闭·未走开发(讨论/重复/直接关)": "讨论/重复/直接关,合理不开发"
+ },
+ "issues": [
+  {
+   "n": 804,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 803,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 802,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 801,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 800,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 799,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 798,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 467,
+   "type": "其他",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 436,
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 416,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 415,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 414,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 413,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 412,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 411,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 410,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 409,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 408,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 407,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 378,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 323,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 307,
+   "type": "任务",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 286,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 285,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 284,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 274,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 273,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 272,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 271,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 270,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 269,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 266,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 265,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 264,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 258,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 257,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 256,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 253,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 252,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 251,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 246,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 245,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 244,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 239,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 238,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 237,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 220,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 219,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 218,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 217,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 216,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 215,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 205,
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 177,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 167,
+   "type": "任务",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 162,
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 143,
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 140,
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 131,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 130,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 129,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 128,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 127,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 126,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 125,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 95,
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 92,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 91,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 90,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 89,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 88,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 87,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 86,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 85,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 84,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 66,
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 57,
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 41,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 40,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 39,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 38,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 37,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 36,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 35,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 34,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 33,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 32,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 31,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 30,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 29,
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 23,
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "open",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 22,
+   "type": "需求",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 19,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 18,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 17,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 16,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 15,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 14,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 13,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 12,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 11,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 10,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 9,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 8,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 7,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 6,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 5,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "CVE/安全自动报"
+  },
+  {
+   "n": 133,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·不做/取消"
+  },
+  {
+   "n": 1083,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 836,
+   "type": "其他",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 715,
+   "type": "其他",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 709,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 598,
+   "type": "其他",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 568,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 556,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 468,
+   "type": "其他",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 466,
+   "type": "其他",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 465,
+   "type": "其他",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 464,
+   "type": "其他",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 463,
+   "type": "其他",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 462,
+   "type": "其他",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 461,
+   "type": "其他",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 460,
+   "type": "其他",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 459,
+   "type": "其他",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 454,
+   "type": "其他",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 438,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 417,
+   "type": "缺陷",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 397,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 396,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 391,
+   "type": "缺陷",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 381,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 365,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 352,
+   "type": "任务",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 351,
+   "type": "任务",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 350,
+   "type": "任务",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 347,
+   "type": "缺陷",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 342,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 336,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "om-datacenter",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 332,
+   "type": "需求",
+   "scenario": "文档/流程",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 310,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 303,
+   "type": "缺陷",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 288,
+   "type": "需求",
+   "scenario": "文档/流程",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 281,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 279,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 278,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 260,
+   "type": "缺陷",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 234,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 211,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 210,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 207,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 192,
+   "type": "缺陷",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 190,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 183,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 174,
+   "type": "需求",
+   "scenario": "会议",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 170,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 160,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 159,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 156,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 153,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 152,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 151,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 145,
+   "type": "需求",
+   "scenario": "文档/流程",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 135,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 122,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 119,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 118,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 100,
+   "type": "需求",
+   "scenario": "会议",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 83,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 80,
+   "type": "需求",
+   "scenario": "会议",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 69,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 67,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 60,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 54,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 52,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 49,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 45,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 26,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 20,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 4,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 3,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 2,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "closed",
+   "why": "已关闭·未走开发(讨论/重复/直接关)"
+  },
+  {
+   "n": 805,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 693,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 668,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 424,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 399,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 393,
+   "type": "任务",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 389,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 371,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 338,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 334,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 333,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 331,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 330,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 328,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 317,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 316,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 315,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 313,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 309,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 308,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 306,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 301,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 300,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 299,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 298,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 297,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 296,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 289,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 287,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 283,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 282,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 261,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 259,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 250,
+   "type": "需求",
+   "scenario": "接口/API",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 249,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 247,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 229,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 224,
+   "type": "需求",
+   "scenario": "会议",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 213,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 209,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 208,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 202,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 201,
+   "type": "需求",
+   "scenario": "会议",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 200,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 199,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 197,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 196,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 195,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 187,
+   "type": "需求",
+   "scenario": "文档/流程",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 185,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 182,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 178,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 176,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 169,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 168,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 165,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 163,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 161,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 158,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 157,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 148,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 147,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 144,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 124,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 123,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 121,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 114,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 113,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 112,
+   "type": "需求",
+   "scenario": "会议",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 111,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 110,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 105,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 103,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 101,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 99,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 98,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 94,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 93,
+   "type": "需求",
+   "scenario": "会议",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 82,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 78,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 75,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 74,
+   "type": "需求",
+   "scenario": "接口/API",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 73,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 72,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 65,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 64,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 63,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 62,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 61,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 58,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 50,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 48,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 47,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 46,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 44,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 43,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 42,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 28,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 25,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "无project标签(路由无法分发)"
+  },
+  {
+   "n": 1365,
+   "type": "缺陷",
+   "scenario": "数据/指标",
+   "service": "om-datacenter",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 1216,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "service": "oss-map",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 908,
+   "type": "其他",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 883,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 751,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 733,
+   "type": "缺陷",
+   "scenario": "数据/指标",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 718,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 625,
+   "type": "其他",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 600,
+   "type": "其他",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 503,
+   "type": "缺陷",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 453,
+   "type": "其他",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 447,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 442,
+   "type": "缺陷",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 426,
+   "type": "缺陷",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 423,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 418,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 406,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 404,
+   "type": "任务",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 403,
+   "type": "缺陷",
+   "scenario": "前端看板/UI",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 395,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 394,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 386,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 370,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 367,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 340,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 327,
+   "type": "缺陷",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 325,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 320,
+   "type": "任务",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 318,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 294,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 291,
+   "type": "缺陷",
+   "scenario": "文档/流程",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 290,
+   "type": "缺陷",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 254,
+   "type": "任务",
+   "scenario": "文档/流程",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 243,
+   "type": "任务",
+   "scenario": "文档/流程",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 242,
+   "type": "任务",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 231,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 230,
+   "type": "缺陷",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 223,
+   "type": "缺陷",
+   "scenario": "会议",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 221,
+   "type": "任务",
+   "scenario": "接口/API",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 198,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 193,
+   "type": "任务",
+   "scenario": "机器人/自动化",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 186,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  },
+  {
+   "n": 179,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "service": "未分服务",
+   "state": "open",
+   "why": "未accepted(未评审通过,不触发流水线)"
+  }
+ ],
+ "summary": {
+  "fix": 99,
+  "proc": 43,
+  "out": 181
+ }
+}

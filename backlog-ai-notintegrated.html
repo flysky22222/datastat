@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backlog · 未接入 AI 流水线的 Issue 分析</title>
+  <meta name="description" content="323 个未接入 AI 流水线的 issue:原因分类(CVE自动报/无project标签/未评审/已关闭)、可改进空间、逐issue明细(脱敏)" />
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  <style>
+    :root{--bg:#f4f5f7;--card:#fff;--line:rgba(0,0,0,.08);--t1:rgba(0,0,0,.85);--t2:rgba(0,0,0,.6);--t3:rgba(0,0,0,.45);--blue:#002fa7}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--t1)}
+    a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+    .site-header{background:linear-gradient(120deg,#5a4a1f,#8a7226);color:#fff;padding:20px 0}
+    .inner{max-width:1360px;margin:0 auto;padding:0 24px}
+    .site-header .inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .site-header h1{margin:0;font-size:22px}.site-header p{margin:4px 0 0;font-size:13px;opacity:.9}
+    .site-header .meta{font-size:12px;opacity:.9;text-align:right}.site-header .meta a{color:#fff;text-decoration:underline}
+    main{max-width:1360px;margin:0 auto;padding:22px 24px 60px}
+    .row-title{display:flex;align-items:baseline;gap:10px;margin:26px 2px 12px}.row-title h2{margin:0;font-size:17px}.row-title span{font-size:12px;color:var(--t3)}
+    .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+    .kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+    .kpi .k{font-size:12px;color:var(--t3)}.kpi .v{font-size:26px;font-weight:700;margin-top:4px}.kpi .v small{font-size:13px;font-weight:500;color:var(--t2);margin-left:3px}
+    .grid{display:grid;gap:16px}.g2{grid-template-columns:repeat(2,1fr)}@media(max-width:1000px){.g2{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 16px 8px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+    .card h3{margin:0 0 4px;font-size:14px}.card .sub{font-size:12px;color:var(--t3);margin:0 0 8px}
+    .chart{width:100%;height:340px}.chart.tall{height:420px}
+    table{width:100%;border-collapse:collapse;font-size:13px}
+    th{text-align:left;color:var(--t3);border-bottom:2px solid var(--line);padding:7px 8px;white-space:nowrap}
+    td{padding:6px 8px;border-bottom:1px solid var(--line)}
+    .pill{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;color:#fff}
+    .controls{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:12px}
+    select{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:13px;background:#fff}
+    footer{max-width:1360px;margin:0 auto;padding:0 24px 40px;color:var(--t3);font-size:12px}
+    code{background:#eef0f3;padding:1px 5px;border-radius:4px;font-size:12px}
+  </style>
+</head>
+<body>
+  <header class="site-header"><div class="inner">
+    <div><h1>Backlog · 未接入 AI 流水线的 Issue</h1>
+      <p>2026-01-01 至今、从未进过 AI 流水线(交互轮次=0)的 issue:为什么没接入 · 有多少本可接入</p></div>
+    <div class="meta"><div id="genAt"></div><div><a href="./backlog-ai-problems.html">← AI 问题分析</a> · <a href="./backlog-insights.html">Issue 洞察</a></div></div>
+  </div></header>
+  <main id="app">
+    <div id="err" class="card" style="display:none;color:#b03a3a"></div>
+    <div class="kpis" id="kpis"></div>
+
+    <div class="row-title"><h2>① 为什么没接入(原因分类)</h2><span>绿=可补归属接入 · 黄=走评审即可 · 灰=合理不接入</span></div>
+    <div class="grid g2">
+      <div class="card"><h3>未接入原因分布</h3><p class="sub">点条看是"可改进"还是"合理不接入"</p><div id="c-reason" class="chart"></div></div>
+      <div class="card" style="line-height:1.85;font-size:13px">
+        <h3>结论</h3>
+        <p><b style="color:#3ba272">🟢 可补归属就能接入:99 个(31%)</b> —— 纯因<b>没打 project 服务标签</b>,路由分发不了、流水线根本没触发。补 <code>auto_tag_project</code> 的识别覆盖 / 让路由支持"未分类兜底"即可救回。</p>
+        <p><b style="color:#e6a23c">🟡 走评审即可:43 个(13%)</b> —— 未打 <code>accepted</code>(RAT 未评审通过),流程前置,不是技术问题。</p>
+        <p><b style="color:#909399">⚪ 合理不接入:181 个(56%)</b> —— <b>CVE/安全自动报 107</b>(自动生成的漏洞公告,独立修补流程,本不该走 AI 开发)+ <b>已关闭 74</b>(讨论/重复/直接关/不做)。</p>
+        <p style="color:var(--t2);margin-top:8px"><b>一句话:</b>流水线本身没问题(accepted+project 的全部都成功触发了);未接入几乎全卡在<b>「服务归属没打上」+「未评审」两个前置</b>,以及本就不该 AI 化的 CVE/讨论类。</p>
+      </div>
+    </div>
+
+    <div class="row-title"><h2>② 未接入的类型 / 场景 / 服务分布</h2></div>
+    <div class="grid g2">
+      <div class="card"><h3>按类型 & 场景</h3><p class="sub">CVE/安全占最大头</p><div id="c-typescen" class="chart"></div></div>
+      <div class="card"><h3>按服务(Top15,含"未分服务")</h3><p class="sub">未分服务=没打 project → 无法接入的主因</p><div id="c-svc" class="chart tall"></div></div>
+    </div>
+
+    <div class="row-title"><h2>③ 逐 issue 明细(脱敏)</h2><span>仅编号/类型/场景/服务/状态/未接入原因</span></div>
+    <div class="controls">
+      <div>原因 <select id="f-reason"></select></div>
+      <div>服务 <select id="f-svc"></select></div>
+      <div id="cnt" style="color:var(--t3)"></div>
+    </div>
+    <div class="card" style="overflow-x:auto"><table id="tbl"></table></div>
+  </main>
+  <footer>
+    数据来自 opensourceways/backlog(私有仓)2026-01-01 至今全部 issue;"未接入"=交互轮次为 0(从未进 AI 流水线)。本页仅公开<b>聚合脱敏</b>结果,不含标题。
+    「AI 接入」判定 = 有机器人流程标记 🟢[N]。触发条件 = <code>accepted</code> + <code>project:</code> 标签(或 <code>/ai-develop-preview</code> 评论)。
+  </footer>
+  <script src="./backlog-ai-notintegrated.js?v=1"></script>
+</body>
+</html>
