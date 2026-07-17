@@ -17,6 +17,34 @@
     renderKpis(); renderReason(); renderTypeScen(); renderSvc(); initTable();
     fetch("./backlog-ai-notintegrated-coverage.json?t=" + Date.now())
       .then(r => r.ok ? r.json() : null).then(c => { if (c) renderCoverage(c); }).catch(() => {});
+    fetch("./backlog-ai-notintegrated-repos.json?t=" + Date.now())
+      .then(r => r.ok ? r.json() : null).then(c => { if (c) renderRepos(c); }).catch(() => {});
+  }
+  function renderRepos(R) {
+    const active = R.total - R.archived - R.fork;
+    const kp = [
+      ["opensourceways 全 org 仓", R.total, `公 ${R.public}/私 ${R.private}`],
+      ["活跃仓(排归档/fork)", active, `归档 ${R.archived}`],
+      ["🟢 接入 AI 的仓", R.covered_by_integrated, "属已跑过AI的服务"],
+      ["🔴 未归属仓", R.unattr_active_n + R.unattr_infra_n, `业务 ${R.unattr_active_n}/基建 ${R.unattr_infra_n}`],
+    ];
+    $("#repo-kpis").innerHTML = kp.map(([k, v, x]) => `<div class="kpi"><div class="k">${k}</div><div class="v">${v}${x ? `<small>${x}</small>` : ""}</div></div>`).join("");
+    const parts = [
+      { name: "🟢 接入 AI", value: R.cat["接入AI"] || 0, c: "#3ba272" },
+      { name: "🟡 已注册未接入", value: R.cat["已注册未接入"] || 0, c: "#e6a23c" },
+      { name: "🔴 未归属·活跃业务", value: R.unattr_active_n, c: "#b03a3a" },
+      { name: "⚪ 未归属·公共基建", value: R.unattr_infra_n, c: "#909399" },
+    ];
+    ec("c-repo").setOption({
+      tooltip: { trigger: "item", formatter: "{b}: {c} 仓 ({d}%)" }, legend: { type: "scroll", bottom: 0 },
+      series: [{ type: "pie", radius: ["40%", "68%"], center: ["50%", "44%"], label: { formatter: "{b}\n{c}" }, data: parts.map(p => ({ name: p.name, value: p.value, itemStyle: { color: p.c } })) }],
+    });
+    $("#repo-unattr").innerHTML =
+      `<p style="margin:2px 0 4px"><b style="color:#909399">⚪ 公共服务/基础设施(${R.unattr_infra_n})</b> —— 本就不是业务服务,不需要独立 AI 流水线:</p>`
+      + R.unattr_infra_sample.map(n => `<span class="pill" style="background:#909399;margin:2px 3px">${esc(n)}</span>`).join("")
+      + `<p style="margin:12px 0 4px"><b style="color:#b03a3a">🔴 活跃业务仓(${R.unattr_active_n},样例 ${R.unattr_active_sample.length})</b> —— 这些是真正的「可能该接但还没接」:</p>`
+      + R.unattr_active_sample.map(n => `<span class="pill" style="background:#b03a3a;margin:2px 3px">${esc(n)}</span>`).join("")
+      + `<p style="color:var(--t2);margin-top:12px"><b>怎么看:</b>全 org 445 仓里 <b>246 个已归档</b>(历史仓,不计)。活跃仓约 ${active} 个:${R.covered_by_integrated} 个被已跑 AI 的服务覆盖、${R.cat["已注册未接入"] || 0} 个属已建服务但没触发过、剩下 <b>${R.unattr_active_n + R.unattr_infra_n} 个未归属</b>(其中 ${R.unattr_infra_n} 个是公共基建、${R.unattr_active_n} 个是活跃业务仓)。<b>归属靠 umbrella + .gitmodules 匹配,属近似</b>——个别子仓命名不一致可能漏匹配。</p>`;
   }
   function renderCoverage(C) {
     const kp = [
@@ -40,6 +68,23 @@
     const never = C.rows.filter(r => !r.ever);
     $("#cov-never").innerHTML = never.map(r => `<span class="pill" style="background:#b03a3a;margin:3px 4px 3px 0">${esc(r.cn)}</span>`).join("")
       + `<div style="color:var(--t3);margin-top:8px">共 ${never.length} 个服务从未接入。另有 <b>${(Object.keys(C.unmapped_integrated || {}).length)}</b> 类标签(oss-map / 未分服务)不在标准服务清单内。</div>`;
+    renderCovTable(C);
+  }
+  const RC = { "已接入": "#3ba272", "无issue": "#909399", "非业务": "#909399", "有issue未触发": "#e6a23c" };
+  function renderCovTable(C) {
+    const sum = C.reason_summary || {};
+    $("#cov-reason-sum").innerHTML = Object.entries(sum).map(([k, v]) =>
+      `<span class="pill" style="background:${RC[k] || "#888"};margin-right:6px">${esc(k)} ${v}</span>`).join("")
+      + `<span style="color:#b03a3a;font-weight:700;margin-left:6px">技术不能接入:${C.tech_blocked ?? 0} 个</span>`;
+    const order = { "已接入": 0, "有issue未触发": 1, "无issue": 2, "非业务": 3 };
+    const rows = C.rows.slice().sort((a, b) => (order[a.reason_cat] - order[b.reason_cat]) || (b.got - a.got));
+    const body = rows.map(r => `<tr>
+      <td><b>${esc(r.id)}</b><div style="color:var(--t3);font-size:12px">${esc(r.cn)}</div></td>
+      <td style="text-align:center">${r.got || "—"}</td>
+      <td style="text-align:center">${r.issue_count ?? "—"}</td>
+      <td><span class="pill" style="background:${RC[r.reason_cat] || "#888"}">${esc(r.reason_cat)}</span></td>
+      <td style="color:var(--t2)">${esc(r.reason)}</td></tr>`).join("");
+    $("#cov-table").innerHTML = `<thead><tr><th>服务(umbrella 仓)</th><th>已接入 issue</th><th>backlog issue 总数</th><th>状态</th><th>为什么没接入 / 说明</th></tr></thead><tbody>${body}</tbody>`;
   }
   function renderKpis() {
     const s = D.summary;

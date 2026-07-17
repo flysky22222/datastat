@@ -78,13 +78,31 @@
       </div>
     </div>
 
-    <div class="row-title"><h2>③ 未接入的类型 / 场景 / 服务分布</h2></div>
+    <div class="card" style="margin-top:14px;overflow-x:auto">
+      <h3>每个服务「为什么没接入」逐条说明</h3>
+      <p class="sub">核心结论:<b>没有一个服务是「技术上不能接入」</b>——未接入全是「没提 issue」或「提了没触发」的前置问题</p>
+      <div id="cov-reason-sum" style="margin-bottom:10px"></div>
+      <table id="cov-table"></table>
+    </div>
+
+    <div class="row-title"><h2>③ 仓库接入覆盖(opensourceways 全 org · 公仓+私仓)</h2><span>仓→服务归属靠 umbrella + .gitmodules 匹配</span></div>
+    <div class="kpis" id="repo-kpis" style="margin-bottom:14px"></div>
+    <div class="grid g2">
+      <div class="card"><h3>活跃仓分类(已排除归档 / fork)</h3><p class="sub">接入AI=属于已跑过 AI 的服务 · 已注册未接入=属于 backlog 已建服务但该服务 0 接入 · 未归属=不属于任何已注册服务</p><div id="c-repo" class="chart"></div></div>
+      <div class="card" style="line-height:1.75;font-size:13px">
+        <h3>未归属仓(不属于任何已注册服务)</h3>
+        <p class="sub">这些仓没被纳入 23 个 backlog 服务的 umbrella/.gitmodules</p>
+        <div id="repo-unattr"></div>
+      </div>
+    </div>
+
+    <div class="row-title"><h2>④ 未接入的类型 / 场景 / 服务分布</h2></div>
     <div class="grid g2">
       <div class="card"><h3>按类型 & 场景</h3><p class="sub">CVE/安全占最大头</p><div id="c-typescen" class="chart"></div></div>
       <div class="card"><h3>按服务(Top15,含"未分服务")</h3><p class="sub">未分服务=没打 project → 无法接入的主因</p><div id="c-svc" class="chart tall"></div></div>
     </div>
 
-    <div class="row-title"><h2>④ 逐 issue 明细(脱敏)</h2><span>仅编号/类型/场景/服务/状态/未接入原因</span></div>
+    <div class="row-title"><h2>⑤ 逐 issue 明细(脱敏)</h2><span>仅编号/类型/场景/服务/状态/未接入原因</span></div>
     <div class="controls">
       <div>原因 <select id="f-reason"></select></div>
       <div>服务 <select id="f-svc"></select></div>
