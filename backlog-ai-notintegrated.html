@@ -96,6 +96,41 @@
       </div>
     </div>
 
+    <div class="card" style="margin-top:14px;border:2px solid #b03a3a;background:#fff6f6;line-height:1.8;font-size:13.5px">
+      <h3 style="color:#b03a3a">🔬 仓库 AI 就绪度总汇 + 多问几个为什么</h3>
+      <div style="overflow-x:auto"><table style="width:auto;min-width:520px;font-size:13px;margin:6px 0">
+        <thead><tr><th>分类</th><th>仓数</th><th>有 CLAUDE.md</th><th>有 skills</th><th>有 AI PR</th></tr></thead>
+        <tbody>
+          <tr><td><b style="color:#3ba272">接入 AI 的仓</b></td><td>68</td><td><b style="color:#b03a3a">30(44%)</b></td><td>9(13%)</td><td>47(69%)</td></tr>
+          <tr><td>已注册未接入</td><td>40</td><td>8</td><td>0</td><td>0</td></tr>
+          <tr><td>未归属</td><td>81</td><td>14</td><td>11</td><td>3</td></tr>
+          <tr style="border-top:2px solid var(--line)"><td><b>活跃仓合计</b></td><td><b>189</b></td><td><b>52(28%)</b></td><td><b>20(11%)</b></td><td><b>50(26%)</b></td></tr>
+        </tbody>
+      </table></div>
+      <p><b style="color:#b03a3a">🔴 最扎眼:接入 AI 的 68 个仓,38 个(56%)没有 CLAUDE.md</b>——其中 29 个还实实在在开过 AI PR。AI 是<b>「盲飞」着改这些仓的</b>。往下问:</p>
+      <ul style="margin:4px 0;padding-left:20px;line-height:1.9">
+        <li><b>Why1</b> 为什么接入了却没 CLAUDE.md? → CLAUDE.md 是<b>人工逐仓写</b>的,onboarding 时只在 umbrella 和少数核心仓(om-dataarts / datastat)写了,<b>大量 dev 子仓没补</b>。</li>
+        <li><b>Why2</b> 为什么没补就有影响? → 这正是「AI 问题页」TOP1「<b>缺领域知识</b>」的<b>物理证据</b>:AI 真正 checkout 去改的是子仓,而 56% 的子仓里<b>零仓级指引</b>(表名/字段/约定/禁止项),只能每轮靠人喂 → 就是 #927/#650/#840 那种「同一纠正讲六七遍」。</li>
+        <li><b>Why3</b> 为什么 skills 更稀缺(仅 11%)? → skills 是比 CLAUDE.md 更进阶的沉淀,只有<b>被反复重度开发</b>的少数核心仓才攒出来了;绝大多数仓连 CLAUDE.md 都没有,更谈不上 skills。</li>
+        <li><b>根因</b> → <b>领域知识没落到「AI 真正会改的那个仓」里</b>。服务级(umbrella)有文档 ≠ 子仓有文档;AI 的上下文喂的是子仓,断层就在这。</li>
+        <li><b>怎么改 · 改了能不能解决(对抗)</b> → 给这 38 个仓补<b>最小 CLAUDE.md</b>(表名+约定+禁止项)或<b>让 umbrella 的 CLAUDE.md/skill 自动注入子仓 agent 上下文</b>。能解决大头——因为它直接消灭「盲飞」;残留是「补了但写得不准」,需靠真跑校正。这条和问题页干预 <b>I1(数据领域知识 skill + 各子仓 CLAUDE.md)</b>是同一件事,这里给出了<b>该补哪 38 个仓的确切清单</b>(下表筛「接入AI的仓 + CLAUDE.md=—」即得)。</li>
+      </ul>
+      <p style="color:var(--t2)"><b>另:</b>31 个「有 CLAUDE.md 却从没 AI PR」多是 <b>umbrella / 文档 / 基建仓</b>——AI 改的是它们的子仓,不直接对 umbrella 开 PR,属正常;个别工具库仓(被依赖的 SDK)可不强求 CLAUDE.md。</p>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h3>每个活跃仓明细(逐仓:归属服务 / 有无 AI PR / 是否接入 workflow / 有无 CLAUDE.md / 有无 skills)</h3>
+      <p class="sub">全 org 活跃仓(已排归档/fork);✅=有 · —=无。这是「AI 就绪度」的逐仓体检</p>
+      <div id="rd-sum" style="margin:8px 0"></div>
+      <div class="controls" style="margin-top:6px">
+        <div>类别 <select id="rd-cat"><option value="__all__">全部</option><option value="integ">接入AI的仓</option><option value="attr_no">已注册未接入</option><option value="unattr">未归属</option></select></div>
+        <div>服务 <select id="rd-svc"></select></div>
+        <label style="font-size:13px"><input type="checkbox" id="rd-gap" /> 只看缺口(有 AI PR 但缺 CLAUDE.md/skills)</label>
+        <div id="rd-cnt" style="color:var(--t3)"></div>
+      </div>
+      <div style="overflow:auto;max-height:640px"><table id="rdtbl"></table></div>
+    </div>
+
     <div class="row-title"><h2>④ 未接入的类型 / 场景 / 服务分布</h2></div>
     <div class="grid g2">
       <div class="card"><h3>按类型 & 场景</h3><p class="sub">CVE/安全占最大头</p><div id="c-typescen" class="chart"></div></div>

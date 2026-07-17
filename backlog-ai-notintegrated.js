@@ -84,8 +84,10 @@
     $("#repo-unattr").innerHTML =
       `<p style="margin:2px 0 4px"><b style="color:#909399">⚪ 公共服务/基础设施(${R.unattr_infra_n})</b> —— 本就不是业务服务,不需要独立 AI 流水线:</p>`
       + R.unattr_infra_sample.map(n => `<span class="pill" style="background:#909399;margin:2px 3px">${esc(n)}</span>`).join("")
-      + `<p style="margin:12px 0 4px"><b style="color:#b03a3a">🔴 活跃业务仓(${R.unattr_active_n},样例 ${R.unattr_active_sample.length})</b> —— 这些是真正的「可能该接但还没接」:</p>`
+      + (R.unattr_infra_priv_hidden ? `<span class="pill" style="background:#c9ccd1;color:#333;margin:2px 3px">🔒 +${R.unattr_infra_priv_hidden} 私仓(名称不公开)</span>` : "")
+      + `<p style="margin:12px 0 4px"><b style="color:#b03a3a">🔴 活跃业务仓(${R.unattr_active_n})</b> —— 这些是真正的「可能该接但还没接」:</p>`
       + R.unattr_active_sample.map(n => `<span class="pill" style="background:#b03a3a;margin:2px 3px">${esc(n)}</span>`).join("")
+      + (R.unattr_active_priv_hidden ? `<span class="pill" style="background:#c9ccd1;color:#333;margin:2px 3px">🔒 +${R.unattr_active_priv_hidden} 私仓(名称不公开)</span>` : "")
       + `<p style="color:var(--t2);margin-top:12px"><b>怎么看:</b>全 org <b>${R.total} 仓 = 归档 ${R.archived} + 活跃非fork ${active} + 活跃fork ${R.fork_active}</b>(归档=历史仓、fork=派生仓,都不计入分析)。活跃仓 ${active} 个:${R.covered_by_integrated} 个被已跑 AI 的服务覆盖、${R.cat["已注册未接入"] || 0} 个属已建服务但没触发过、剩下 <b>${R.unattr_active_n + R.unattr_infra_n} 个未归属</b>(其中 ${R.unattr_infra_n} 个是公共基建、${R.unattr_active_n} 个是活跃业务仓)。<b>归属靠 umbrella + .gitmodules 匹配,属近似</b>——个别子仓命名不一致可能漏匹配。</p>`;
   }
   function renderCoverage(C) {
