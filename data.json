@@ -1,9 +1,59 @@
 {
- "generatedAt": "2026-07-17 09:54",
+ "generatedAt": "2026-07-17 15:54",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 100,
+ "total": 102,
  "records": [
+  {
+   "number": 1405,
+   "title": "ascend统一资源池贵阳001集群资源名称有误，名称修正后同步修改历史数据",
+   "rawTitle": "[任务] ascend统一资源池贵阳001集群资源名称有误，名称修正后同步修改历史数据",
+   "url": "https://github.com/opensourceways/backlog/issues/1405",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "roosterd",
+   "labels": [
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 2,
+   "createdAt": "2026-07-17",
+   "updatedAt": "2026-07-17",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1402,
+   "title": "服务停留时间分析优化：按日期截断跨天/跨月 session",
+   "rawTitle": "[任务] 服务停留时间分析优化：按日期截断跨天/跨月 session",
+   "url": "https://github.com/opensourceways/backlog/issues/1402",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-07-17",
+   "updatedAt": "2026-07-17",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1395,
    "title": "社区discussion渠道讨论数据采集缺失社区中的discussion",
@@ -23,7 +73,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 26,
+   "comments": 43,
    "createdAt": "2026-07-16",
    "updatedAt": "2026-07-17",
    "closedAt": "",
@@ -79,9 +129,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 20,
+   "comments": 23,
    "createdAt": "2026-07-15",
-   "updatedAt": "2026-07-16",
+   "updatedAt": "2026-07-17",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -228,9 +278,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 18,
+   "comments": 28,
    "createdAt": "2026-07-13",
-   "updatedAt": "2026-07-16",
+   "updatedAt": "2026-07-17",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -308,9 +358,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 19,
+   "comments": 22,
    "createdAt": "2026-07-13",
-   "updatedAt": "2026-07-16",
+   "updatedAt": "2026-07-17",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -359,9 +409,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 63,
+   "comments": 69,
    "createdAt": "2026-07-09",
-   "updatedAt": "2026-07-16",
+   "updatedAt": "2026-07-17",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -385,31 +435,6 @@
     "sig/infratructure"
    ],
    "comments": 5,
-   "createdAt": "2026-07-09",
-   "updatedAt": "2026-07-10",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1295,
-   "title": "中台看板缺陷修复",
-   "rawTitle": "[缺陷] 中台看板缺陷修复",
-   "url": "https://github.com/opensourceways/backlog/issues/1295",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "ssignik",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 18,
    "createdAt": "2026-07-09",
    "updatedAt": "2026-07-10",
    "closedAt": "",
@@ -791,11 +816,12 @@
    "labels": [
     "accepted",
     "sig/infratructure",
-    "feature-request"
+    "feature-request",
+    "complete-develop"
    ],
-   "comments": 51,
+   "comments": 57,
    "createdAt": "2026-06-23",
-   "updatedAt": "2026-07-10",
+   "updatedAt": "2026-07-17",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -1047,6 +1073,31 @@
    "closedAt": "2026-07-10",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1295,
+   "title": "中台看板缺陷修复",
+   "rawTitle": "[缺陷] 中台看板缺陷修复",
+   "url": "https://github.com/opensourceways/backlog/issues/1295",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 18,
+   "createdAt": "2026-07-09",
+   "updatedAt": "2026-07-17",
+   "closedAt": "2026-07-17",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1284,
