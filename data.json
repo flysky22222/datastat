@@ -1,9 +1,31 @@
 {
- "generatedAt": "2026-07-18 15:29",
+ "generatedAt": "2026-07-20 16:43",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 102,
+ "total": 103,
  "records": [
+  {
+   "number": 1408,
+   "title": "界面没有权限的报错提示错误",
+   "rawTitle": "[缺陷] 界面没有权限的报错提示错误",
+   "url": "https://github.com/opensourceways/backlog/issues/1408",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
+   "comments": 2,
+   "createdAt": "2026-07-20",
+   "updatedAt": "2026-07-20",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1405,
    "title": "ascend统一资源池贵阳001集群资源名称有误，名称修正后同步修改历史数据",
@@ -89,9 +111,12 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "Yikun",
    "labels": [
+    "accepted",
     "need_design",
     "need_security",
     "need_ux",
@@ -99,9 +124,9 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 5,
+   "comments": 8,
    "createdAt": "2026-07-16",
-   "updatedAt": "2026-07-16",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -196,7 +221,9 @@
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "flysky22222",
    "labels": [
     "bug",
@@ -205,7 +232,7 @@
    ],
    "comments": 1,
    "createdAt": "2026-07-14",
-   "updatedAt": "2026-07-14",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -244,7 +271,12 @@
    "state": "open",
    "stateReason": null,
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2",
+    "ssignik",
+    "Kaede10",
+    "Mjennie"
+   ],
    "author": "flysky22222",
    "labels": [
     "accepted",
@@ -255,7 +287,7 @@
    ],
    "comments": 42,
    "createdAt": "2026-07-13",
-   "updatedAt": "2026-07-18",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -269,7 +301,9 @@
    "state": "open",
    "stateReason": "reopened",
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "licy666"
+   ],
    "author": "licy666",
    "labels": [
     "need_design",
@@ -280,7 +314,7 @@
    ],
    "comments": 18,
    "createdAt": "2026-07-13",
-   "updatedAt": "2026-07-15",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -305,11 +339,12 @@
     "need_ux",
     "need_itest",
     "sig/infratructure",
-    "feature-request"
+    "feature-request",
+    "complete-develop"
    ],
    "comments": 7,
    "createdAt": "2026-07-13",
-   "updatedAt": "2026-07-13",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -333,9 +368,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 22,
+   "comments": 34,
    "createdAt": "2026-07-13",
-   "updatedAt": "2026-07-17",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -349,7 +384,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "zeshengzong",
    "labels": [
     "need_design",
@@ -360,7 +397,7 @@
    ],
    "comments": 5,
    "createdAt": "2026-07-10",
-   "updatedAt": "2026-07-10",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -384,9 +421,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 69,
+   "comments": 84,
    "createdAt": "2026-07-09",
-   "updatedAt": "2026-07-17",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -407,11 +444,12 @@
    "labels": [
     "accepted",
     "task",
-    "sig/infratructure"
+    "sig/infratructure",
+    "complete-develop"
    ],
    "comments": 5,
    "createdAt": "2026-07-09",
-   "updatedAt": "2026-07-10",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -425,7 +463,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "flysky22222",
    "labels": [
     "accepted",
@@ -437,7 +477,7 @@
    ],
    "comments": 21,
    "createdAt": "2026-07-09",
-   "updatedAt": "2026-07-10",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -469,31 +509,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1263,
-   "title": "洞察页面权限放开",
-   "rawTitle": "[任务] 洞察页面权限放开",
-   "url": "https://github.com/opensourceways/backlog/issues/1263",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure"
-   ],
-   "comments": 6,
-   "createdAt": "2026-07-06",
-   "updatedAt": "2026-07-07",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-07-31"
-  },
-  {
    "number": 1262,
    "title": "看板新增定时/一键推送某社区当前Issue等处理情况邮件给指定干系人",
    "rawTitle": "[需求] 看板新增定时/一键推送某社区当前Issue等处理情况邮件给指定干系人",
@@ -513,37 +528,12 @@
     "need_ux",
     "need_itest",
     "sig/infratructure",
-    "feature-request"
+    "feature-request",
+    "complete-analyze"
    ],
    "comments": 7,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-07-13",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1251,
-   "title": "用户组织信息查询接口需要支持跨社区批量查询固定平台的user信息",
-   "rawTitle": "[需求] 用户组织信息查询接口需要支持跨社区批量查询固定平台的user信息",
-   "url": "https://github.com/opensourceways/backlog/issues/1251",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "licy666",
-   "labels": [
-    "accepted",
-    "need_light",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 25,
-   "createdAt": "2026-07-06",
-   "updatedAt": "2026-07-10",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -557,7 +547,9 @@
    "state": "open",
    "stateReason": null,
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "Kaede10"
+   ],
    "author": "Creyson-peng",
    "labels": [
     "accepted",
@@ -566,7 +558,7 @@
    ],
    "comments": 20,
    "createdAt": "2026-07-01",
-   "updatedAt": "2026-07-15",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -623,55 +615,6 @@
    "plannedAt": "2026-07-31"
   },
   {
-   "number": 1157,
-   "title": "unifiedbus 社区的接口增加登录和灵衢的权限",
-   "rawTitle": "[缺陷] unifiedbus 社区的接口增加登录和灵衢的权限",
-   "url": "https://github.com/opensourceways/backlog/issues/1157",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 6,
-   "createdAt": "2026-06-29",
-   "updatedAt": "2026-06-29",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1156,
-   "title": "ttfhw-confirm 问题确认页 表格/筛选 UI 调整",
-   "rawTitle": "[datastat-manage-website] ttfhw-confirm 问题确认页 表格/筛选 UI 调整",
-   "url": "https://github.com/opensourceways/backlog/issues/1156",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "其他",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "flysky22222",
-   "labels": [
-    "task",
-    "sig/infratructure"
-   ],
-   "comments": 4,
-   "createdAt": "2026-06-28",
-   "updatedAt": "2026-07-14",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1153,
    "title": "蓝区(白盒)看板重构：拆「用户检查数据」+「采集数据维护」两菜单，并修复贡献数据恒「校验失败」",
    "rawTitle": "[需求] 蓝区(白盒)看板重构：拆「用户检查数据」+「采集数据维护」两菜单，并修复贡献数据恒「校验失败」",
@@ -708,7 +651,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Kaede10"
+   ],
    "author": "pkking",
    "labels": [
     "need_design",
@@ -718,32 +663,7 @@
    ],
    "comments": 5,
    "createdAt": "2026-06-27",
-   "updatedAt": "2026-07-15",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1121,
-   "title": "ttfhw 增加 issue 的业务逻辑确认是否为问题的页面",
-   "rawTitle": "[需求] ttfhw 增加 issue 的业务逻辑确认是否为问题的页面",
-   "url": "https://github.com/opensourceways/backlog/issues/1121",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 12,
-   "createdAt": "2026-06-26",
-   "updatedAt": "2026-07-06",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -827,31 +747,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 936,
-   "title": "计算开源技术雷达 - 开源洞察报告板块",
-   "rawTitle": "[需求] 计算开源技术雷达 - 开源洞察报告板块",
-   "url": "https://github.com/opensourceways/backlog/issues/936",
-   "status": "open",
-   "state": "open",
-   "stateReason": "reopened",
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "Yikun",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 41,
-   "createdAt": "2026-06-17",
-   "updatedAt": "2026-07-08",
-   "closedAt": "",
-   "priority": "High",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 878,
    "title": "昇腾系列社区指标表 TTFHW 列接入（开发者全流程体验·用户场景四阶段）",
    "rawTitle": "[datastat-manage-website] 昇腾系列社区指标表 TTFHW 列接入（开发者全流程体验·用户场景四阶段）",
@@ -886,7 +781,9 @@
    "state": "open",
    "stateReason": null,
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "accepted",
@@ -895,7 +792,7 @@
    ],
    "comments": 29,
    "createdAt": "2026-06-11",
-   "updatedAt": "2026-07-15",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "High",
    "plannedAt": "2026-06-30"
@@ -985,7 +882,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "Yikun",
    "labels": [
     "accepted",
@@ -996,7 +895,7 @@
    ],
    "comments": 12,
    "createdAt": "2026-07-15",
-   "updatedAt": "2026-07-17",
+   "updatedAt": "2026-07-20",
    "closedAt": "2026-07-17",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -1126,6 +1025,31 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1263,
+   "title": "洞察页面权限放开",
+   "rawTitle": "[任务] 洞察页面权限放开",
+   "url": "https://github.com/opensourceways/backlog/issues/1263",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 6,
+   "createdAt": "2026-07-06",
+   "updatedAt": "2026-07-20",
+   "closedAt": "2026-07-20",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
+  {
    "number": 1257,
    "title": "：新增openGauss社区运营看板“下载版本数据”，统一数据来源",
    "rawTitle": "[需求]：新增openGauss社区运营看板“下载版本数据”，统一数据来源",
@@ -1173,6 +1097,32 @@
    "createdAt": "2026-07-06",
    "updatedAt": "2026-07-09",
    "closedAt": "2026-07-09",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1251,
+   "title": "用户组织信息查询接口需要支持跨社区批量查询固定平台的user信息",
+   "rawTitle": "[需求] 用户组织信息查询接口需要支持跨社区批量查询固定平台的user信息",
+   "url": "https://github.com/opensourceways/backlog/issues/1251",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "licy666",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 25,
+   "createdAt": "2026-07-06",
+   "updatedAt": "2026-07-20",
+   "closedAt": "2026-07-20",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
@@ -1301,6 +1251,55 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1157,
+   "title": "unifiedbus 社区的接口增加登录和灵衢的权限",
+   "rawTitle": "[缺陷] unifiedbus 社区的接口增加登录和灵衢的权限",
+   "url": "https://github.com/opensourceways/backlog/issues/1157",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 6,
+   "createdAt": "2026-06-29",
+   "updatedAt": "2026-07-20",
+   "closedAt": "2026-07-20",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1156,
+   "title": "ttfhw-confirm 问题确认页 表格/筛选 UI 调整",
+   "rawTitle": "[datastat-manage-website] ttfhw-confirm 问题确认页 表格/筛选 UI 调整",
+   "url": "https://github.com/opensourceways/backlog/issues/1156",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "其他",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 4,
+   "createdAt": "2026-06-28",
+   "updatedAt": "2026-07-20",
+   "closedAt": "2026-07-20",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1137,
    "title": "采集并展示openPangu社区的模型/仓库下载量",
    "rawTitle": "[需求] 采集并展示openPangu社区的模型/仓库下载量",
@@ -1398,6 +1397,31 @@
    "createdAt": "2026-06-26",
    "updatedAt": "2026-06-29",
    "closedAt": "2026-06-26",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1121,
+   "title": "ttfhw 增加 issue 的业务逻辑确认是否为问题的页面",
+   "rawTitle": "[需求] ttfhw 增加 issue 的业务逻辑确认是否为问题的页面",
+   "url": "https://github.com/opensourceways/backlog/issues/1121",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 12,
+   "createdAt": "2026-06-26",
+   "updatedAt": "2026-07-20",
+   "closedAt": "2026-07-20",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
@@ -1698,6 +1722,31 @@
    "createdAt": "2026-06-17",
    "updatedAt": "2026-07-06",
    "closedAt": "2026-07-06",
+   "priority": "High",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 936,
+   "title": "计算开源技术雷达 - 开源洞察报告板块",
+   "rawTitle": "[需求] 计算开源技术雷达 - 开源洞察报告板块",
+   "url": "https://github.com/opensourceways/backlog/issues/936",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "Yikun",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 41,
+   "createdAt": "2026-06-17",
+   "updatedAt": "2026-07-20",
+   "closedAt": "2026-07-20",
    "priority": "High",
    "plannedAt": "2026-06-30"
   },
