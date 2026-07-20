@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-20 16:43",
+ "generatedAt": "2026-07-20 21:50",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 103,
@@ -13,13 +13,17 @@
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "bug",
-    "sig/infratructure"
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
    ],
-   "comments": 2,
+   "comments": 7,
    "createdAt": "2026-07-20",
    "updatedAt": "2026-07-20",
    "closedAt": "",
@@ -66,12 +70,11 @@
    "labels": [
     "accepted",
     "task",
-    "sig/infratructure",
-    "complete-develop"
+    "sig/infratructure"
    ],
-   "comments": 4,
+   "comments": 8,
    "createdAt": "2026-07-17",
-   "updatedAt": "2026-07-17",
+   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -122,9 +125,10 @@
     "need_ux",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 8,
+   "comments": 10,
    "createdAt": "2026-07-16",
    "updatedAt": "2026-07-20",
    "closedAt": "",
@@ -368,7 +372,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 34,
+   "comments": 51,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-20",
    "closedAt": "",
@@ -909,7 +913,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "bug",
@@ -918,7 +924,7 @@
    ],
    "comments": 4,
    "createdAt": "2026-07-14",
-   "updatedAt": "2026-07-14",
+   "updatedAt": "2026-07-20",
    "closedAt": "2026-07-14",
    "priority": "",
    "plannedAt": "2026-06-30"
