@@ -1,9 +1,62 @@
 {
- "generatedAt": "2026-07-21 16:10",
+ "generatedAt": "2026-07-21 21:19",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 104,
+ "total": 106,
  "records": [
+  {
+   "number": 1420,
+   "title": "token_task 任务鉴权方式修改",
+   "rawTitle": "[任务] token_task 任务鉴权方式修改",
+   "url": "https://github.com/opensourceways/backlog/issues/1420",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-07-21",
+   "updatedAt": "2026-07-21",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1419,
+   "title": "openUBMC 社区新增 “AI 度量看板”",
+   "rawTitle": "[需求] openUBMC 社区新增 “AI 度量看板”",
+   "url": "https://github.com/opensourceways/backlog/issues/1419",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 12,
+   "createdAt": "2026-07-21",
+   "updatedAt": "2026-07-21",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
   {
    "number": 1415,
    "title": "界面时间筛选数据不一致",
@@ -23,61 +76,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 4,
+   "comments": 11,
    "createdAt": "2026-07-21",
    "updatedAt": "2026-07-21",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1408,
-   "title": "界面没有权限的报错提示错误",
-   "rawTitle": "[缺陷] 界面没有权限的报错提示错误",
-   "url": "https://github.com/opensourceways/backlog/issues/1408",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 7,
-   "createdAt": "2026-07-20",
-   "updatedAt": "2026-07-20",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1395,
-   "title": "社区discussion渠道讨论数据采集缺失社区中的discussion",
-   "rawTitle": "[缺陷] 社区discussion渠道讨论数据采集缺失社区中的discussion",
-   "url": "https://github.com/opensourceways/backlog/issues/1395",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Mjennie",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 44,
-   "createdAt": "2026-07-16",
-   "updatedAt": "2026-07-17",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -105,9 +106,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 10,
+   "comments": 14,
    "createdAt": "2026-07-16",
-   "updatedAt": "2026-07-20",
+   "updatedAt": "2026-07-21",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -352,7 +353,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 92,
+   "comments": 102,
    "createdAt": "2026-07-09",
    "updatedAt": "2026-07-21",
    "closedAt": "",
@@ -434,7 +435,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 12,
+   "comments": 18,
    "createdAt": "2026-07-06",
    "updatedAt": "2026-07-21",
    "closedAt": "",
@@ -492,33 +493,6 @@
    "comments": 20,
    "createdAt": "2026-07-01",
    "updatedAt": "2026-07-20",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1200,
-   "title": "昇腾总看板（周报）中闭环率为Issue关闭率，需切换为解决率",
-   "rawTitle": "[需求] 昇腾总看板（周报）中闭环率为Issue关闭率，需切换为解决率",
-   "url": "https://github.com/opensourceways/backlog/issues/1200",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "zeshengzong",
-   "labels": [
-    "accepted",
-    "need_ux",
-    "need_itest",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 23,
-   "createdAt": "2026-07-01",
-   "updatedAt": "2026-07-06",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -704,31 +678,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 840,
-   "title": "当issue被打上triaged或triage-review两个分类但没有评论回复时，也当作看板的响应率",
-   "rawTitle": "[需求] 当issue被打上triaged或triage-review两个分类但没有评论回复时，也当作看板的响应率",
-   "url": "https://github.com/opensourceways/backlog/issues/840",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Tian-Fantasea",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 145,
-   "createdAt": "2026-06-11",
-   "updatedAt": "2026-07-08",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 312,
    "title": ": openUBMC社区运营看板及热点话题周报新增PR、Issue、论坛等响应情况",
    "rawTitle": "[需求]: openUBMC社区运营看板及热点话题周报新增PR、Issue、论坛等响应情况",
@@ -780,6 +729,32 @@
    "plannedAt": "2026-07-31"
   },
   {
+   "number": 1408,
+   "title": "界面没有权限的报错提示错误",
+   "rawTitle": "[缺陷] 界面没有权限的报错提示错误",
+   "url": "https://github.com/opensourceways/backlog/issues/1408",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 7,
+   "createdAt": "2026-07-20",
+   "updatedAt": "2026-07-21",
+   "closedAt": "2026-07-21",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1405,
    "title": "ascend统一资源池贵阳001集群资源名称有误，名称修正后同步修改历史数据",
    "rawTitle": "[任务] ascend统一资源池贵阳001集群资源名称有误，名称修正后同步修改历史数据",
@@ -824,6 +799,32 @@
    ],
    "comments": 16,
    "createdAt": "2026-07-17",
+   "updatedAt": "2026-07-21",
+   "closedAt": "2026-07-21",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1395,
+   "title": "社区discussion渠道讨论数据采集缺失社区中的discussion",
+   "rawTitle": "[缺陷] 社区discussion渠道讨论数据采集缺失社区中的discussion",
+   "url": "https://github.com/opensourceways/backlog/issues/1395",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 44,
+   "createdAt": "2026-07-16",
    "updatedAt": "2026-07-21",
    "closedAt": "2026-07-21",
    "priority": "",
@@ -1232,6 +1233,33 @@
    "createdAt": "2026-07-02",
    "updatedAt": "2026-07-13",
    "closedAt": "2026-07-13",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1200,
+   "title": "昇腾总看板（周报）中闭环率为Issue关闭率，需切换为解决率",
+   "rawTitle": "[需求] 昇腾总看板（周报）中闭环率为Issue关闭率，需切换为解决率",
+   "url": "https://github.com/opensourceways/backlog/issues/1200",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "accepted",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 23,
+   "createdAt": "2026-07-01",
+   "updatedAt": "2026-07-21",
+   "closedAt": "2026-07-21",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
@@ -1933,6 +1961,31 @@
    "createdAt": "2026-06-11",
    "updatedAt": "2026-06-22",
    "closedAt": "2026-06-22",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 840,
+   "title": "当issue被打上triaged或triage-review两个分类但没有评论回复时，也当作看板的响应率",
+   "rawTitle": "[需求] 当issue被打上triaged或triage-review两个分类但没有评论回复时，也当作看板的响应率",
+   "url": "https://github.com/opensourceways/backlog/issues/840",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 145,
+   "createdAt": "2026-06-11",
+   "updatedAt": "2026-07-21",
+   "closedAt": "2026-07-21",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
