@@ -1,9 +1,35 @@
 {
- "generatedAt": "2026-07-21 21:19",
+ "generatedAt": "2026-07-22 03:05",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 106,
+ "total": 107,
  "records": [
+  {
+   "number": 1424,
+   "title": "新增清洗规则刷新关闭状态issue的已解决标签",
+   "rawTitle": "[需求] 新增清洗规则刷新关闭状态issue的已解决标签",
+   "url": "https://github.com/opensourceways/backlog/issues/1424",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "need_light",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 5,
+   "createdAt": "2026-07-21",
+   "updatedAt": "2026-07-21",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1420,
    "title": "token_task 任务鉴权方式修改",
@@ -76,7 +102,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 11,
+   "comments": 15,
    "createdAt": "2026-07-21",
    "updatedAt": "2026-07-21",
    "closedAt": "",
