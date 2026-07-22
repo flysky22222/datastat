@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-22 11:57",
+ "generatedAt": "2026-07-22 17:07",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 598,
@@ -92,11 +92,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 5,
-    "implement": 2,
+    "implement": 5,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 7,
+   "roundsTotal": 10,
    "ai": true
   },
   {
@@ -111,11 +111,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 3,
    "ai": false
   },
   {
@@ -130,11 +130,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 7,
+    "implement": 14,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 9,
+   "roundsTotal": 16,
    "ai": true
   },
   {
@@ -358,11 +358,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 5,
+    "implement": 6,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 7,
+   "roundsTotal": 8,
    "ai": true
   },
   {
@@ -795,12 +795,12 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
-   "ai": false
+   "roundsTotal": 3,
+   "ai": true
   },
   {
    "n": 1309,
@@ -2049,11 +2049,11 @@
    "service": "security-cve-all",
    "rounds": {
     "analyze": 2,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
