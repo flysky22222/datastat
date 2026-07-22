@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-22 17:07",
+ "generatedAt": "2026-07-22 22:34",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 598,
@@ -92,11 +92,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 5,
-    "implement": 5,
+    "implement": 6,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 10,
+   "roundsTotal": 11,
    "ai": true
   },
   {
