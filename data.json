@@ -1,9 +1,39 @@
 {
- "generatedAt": "2026-07-23 16:14",
+ "generatedAt": "2026-07-23 21:27",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 109,
+ "total": 110,
  "records": [
+  {
+   "number": 1453,
+   "title": "Prometheus NPU 监控面板（APIMagic 后端转发）",
+   "rawTitle": "[需求] Prometheus NPU 监控面板（APIMagic 后端转发）",
+   "url": "https://github.com/opensourceways/backlog/issues/1453",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_security",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 11,
+   "createdAt": "2026-07-23",
+   "updatedAt": "2026-07-23",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
   {
    "number": 1448,
    "title": "昇腾社区D2贡献者统计计算逻辑优化",
@@ -75,7 +105,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 48,
+   "comments": 63,
    "createdAt": "2026-07-21",
    "updatedAt": "2026-07-23",
    "closedAt": "",
@@ -214,9 +244,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 20,
+   "comments": 26,
    "createdAt": "2026-07-14",
-   "updatedAt": "2026-07-16",
+   "updatedAt": "2026-07-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -352,9 +382,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 63,
+   "comments": 66,
    "createdAt": "2026-07-13",
-   "updatedAt": "2026-07-21",
+   "updatedAt": "2026-07-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -591,7 +621,7 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 62,
+   "comments": 63,
    "createdAt": "2026-06-23",
    "updatedAt": "2026-07-23",
    "closedAt": "",
