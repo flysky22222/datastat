@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-22 21:24",
+ "generatedAt": "2026-07-23 09:58",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 107,
@@ -25,9 +25,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 32,
+   "comments": 34,
    "createdAt": "2026-07-21",
-   "updatedAt": "2026-07-22",
+   "updatedAt": "2026-07-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -51,9 +51,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 8,
+   "comments": 10,
    "createdAt": "2026-07-21",
-   "updatedAt": "2026-07-22",
+   "updatedAt": "2026-07-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -330,9 +330,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 8,
+   "comments": 10,
    "createdAt": "2026-07-10",
-   "updatedAt": "2026-07-22",
+   "updatedAt": "2026-07-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -383,34 +383,6 @@
     "complete-develop"
    ],
    "comments": 5,
-   "createdAt": "2026-07-09",
-   "updatedAt": "2026-07-20",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1294,
-   "title": "TTFHW 测试总汇看板接入 datastat「公共」区 TTFHW 菜单",
-   "rawTitle": "[需求] TTFHW 测试总汇看板接入 datastat「公共」区 TTFHW 菜单",
-   "url": "https://github.com/opensourceways/backlog/issues/1294",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "flysky22222",
-   "labels": [
-    "accepted",
-    "need_ux",
-    "need_itest",
-    "need_light",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 21,
    "createdAt": "2026-07-09",
    "updatedAt": "2026-07-20",
    "closedAt": "",
@@ -525,34 +497,6 @@
    "plannedAt": "2026-07-31"
   },
   {
-   "number": 1153,
-   "title": "蓝区(白盒)看板重构：拆「用户检查数据」+「采集数据维护」两菜单，并修复贡献数据恒「校验失败」",
-   "rawTitle": "[需求] 蓝区(白盒)看板重构：拆「用户检查数据」+「采集数据维护」两菜单，并修复贡献数据恒「校验失败」",
-   "url": "https://github.com/opensourceways/backlog/issues/1153",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "flysky22222",
-   "labels": [
-    "accepted",
-    "need_design",
-    "need_security",
-    "need_ux",
-    "need_itest",
-    "sig/infratructure"
-   ],
-   "comments": 13,
-   "createdAt": "2026-06-28",
-   "updatedAt": "2026-06-30",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1140,
    "title": "支持统计AI Core，AI vector等NPU exporter指标，并在看板进行展示",
    "rawTitle": "[需求] 支持统计AI Core，AI vector等NPU exporter指标，并在看板进行展示",
@@ -627,57 +571,6 @@
    "updatedAt": "2026-06-29",
    "closedAt": "",
    "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 878,
-   "title": "昇腾系列社区指标表 TTFHW 列接入（开发者全流程体验·用户场景四阶段）",
-   "rawTitle": "[datastat-manage-website] 昇腾系列社区指标表 TTFHW 列接入（开发者全流程体验·用户场景四阶段）",
-   "url": "https://github.com/opensourceways/backlog/issues/878",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "其他",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "flysky22222",
-   "labels": [
-    "enhancement",
-    "accepted",
-    "task",
-    "sig/infratructure"
-   ],
-   "comments": 26,
-   "createdAt": "2026-06-13",
-   "updatedAt": "2026-06-22",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 844,
-   "title": "数据中台 【昇腾系列】社区增加表格叫做 ”NPU社区总计表“",
-   "rawTitle": "[任务] 数据中台 【昇腾系列】社区增加表格叫做 ”NPU社区总计表“",
-   "url": "https://github.com/opensourceways/backlog/issues/844",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure"
-   ],
-   "comments": 29,
-   "createdAt": "2026-06-11",
-   "updatedAt": "2026-07-20",
-   "closedAt": "",
-   "priority": "High",
    "plannedAt": "2026-06-30"
   },
   {
@@ -1037,6 +930,34 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1294,
+   "title": "TTFHW 测试总汇看板接入 datastat「公共」区 TTFHW 菜单",
+   "rawTitle": "[需求] TTFHW 测试总汇看板接入 datastat「公共」区 TTFHW 菜单",
+   "url": "https://github.com/opensourceways/backlog/issues/1294",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "accepted",
+    "need_ux",
+    "need_itest",
+    "need_light",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 21,
+   "createdAt": "2026-07-09",
+   "updatedAt": "2026-07-23",
+   "closedAt": "2026-07-23",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1284,
    "title": "HiFloat社区下载路径调整和新增统计文件",
    "rawTitle": "[需求] HiFloat社区下载路径调整和新增统计文件",
@@ -1363,6 +1284,34 @@
    "createdAt": "2026-06-28",
    "updatedAt": "2026-07-20",
    "closedAt": "2026-07-20",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1153,
+   "title": "蓝区(白盒)看板重构：拆「用户检查数据」+「采集数据维护」两菜单，并修复贡献数据恒「校验失败」",
+   "rawTitle": "[需求] 蓝区(白盒)看板重构：拆「用户检查数据」+「采集数据维护」两菜单，并修复贡献数据恒「校验失败」",
+   "url": "https://github.com/opensourceways/backlog/issues/1153",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_security",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure"
+   ],
+   "comments": 13,
+   "createdAt": "2026-06-28",
+   "updatedAt": "2026-07-23",
+   "closedAt": "2026-07-23",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
@@ -1945,6 +1894,32 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 878,
+   "title": "昇腾系列社区指标表 TTFHW 列接入（开发者全流程体验·用户场景四阶段）",
+   "rawTitle": "[datastat-manage-website] 昇腾系列社区指标表 TTFHW 列接入（开发者全流程体验·用户场景四阶段）",
+   "url": "https://github.com/opensourceways/backlog/issues/878",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "其他",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "enhancement",
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 26,
+   "createdAt": "2026-06-13",
+   "updatedAt": "2026-07-23",
+   "closedAt": "2026-07-23",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 850,
    "title": "测试测试 ---  数据中台服务把首页的总览  改成  运营总览",
    "rawTitle": "[需求] 测试测试 ---  数据中台服务把首页的总览  改成  运营总览",
@@ -1966,6 +1941,31 @@
    "updatedAt": "2026-06-22",
    "closedAt": "2026-06-22",
    "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 844,
+   "title": "数据中台 【昇腾系列】社区增加表格叫做 ”NPU社区总计表“",
+   "rawTitle": "[任务] 数据中台 【昇腾系列】社区增加表格叫做 ”NPU社区总计表“",
+   "url": "https://github.com/opensourceways/backlog/issues/844",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 29,
+   "createdAt": "2026-06-11",
+   "updatedAt": "2026-07-23",
+   "closedAt": "2026-07-23",
+   "priority": "High",
    "plannedAt": "2026-06-30"
   },
   {
