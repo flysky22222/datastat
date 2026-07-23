@@ -1,9 +1,59 @@
 {
- "generatedAt": "2026-07-23 09:58",
+ "generatedAt": "2026-07-23 16:14",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 107,
+ "total": 109,
  "records": [
+  {
+   "number": 1448,
+   "title": "昇腾社区D2贡献者统计计算逻辑优化",
+   "rawTitle": "[需求] 昇腾社区D2贡献者统计计算逻辑优化",
+   "url": "https://github.com/opensourceways/backlog/issues/1448",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "zeshengzong",
+   "labels": [
+    "need_light",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 5,
+   "createdAt": "2026-07-23",
+   "updatedAt": "2026-07-23",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1439,
+   "title": "数据总览活跃人数接口问题",
+   "rawTitle": "[缺陷] 数据总览活跃人数接口问题",
+   "url": "https://github.com/opensourceways/backlog/issues/1439",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 8,
+   "createdAt": "2026-07-23",
+   "updatedAt": "2026-07-23",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1424,
    "title": "新增清洗规则刷新关闭状态issue的已解决标签",
@@ -25,7 +75,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 34,
+   "comments": 48,
    "createdAt": "2026-07-21",
    "updatedAt": "2026-07-23",
    "closedAt": "",
@@ -51,7 +101,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 10,
+   "comments": 11,
    "createdAt": "2026-07-21",
    "updatedAt": "2026-07-23",
    "closedAt": "",
@@ -108,9 +158,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 20,
+   "comments": 23,
    "createdAt": "2026-07-16",
-   "updatedAt": "2026-07-22",
+   "updatedAt": "2026-07-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -330,7 +380,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 10,
+   "comments": 11,
    "createdAt": "2026-07-10",
    "updatedAt": "2026-07-23",
    "closedAt": "",
@@ -440,9 +490,9 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 7,
+   "comments": 10,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-07-20",
+   "updatedAt": "2026-07-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -541,9 +591,9 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 57,
+   "comments": 62,
    "createdAt": "2026-06-23",
-   "updatedAt": "2026-07-17",
+   "updatedAt": "2026-07-23",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
