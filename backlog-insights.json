@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-07-22 22:34",
+ "generatedAt": "2026-07-23 11:53",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 598,
+ "total": 601,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,63 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1439,
+   "type": "缺陷",
+   "scenario": "数据/指标",
+   "state": "open",
+   "created": "2026-07-23",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 1,
+    "implement": 1,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1438,
+   "type": "其他",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-07-23",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 0,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 0,
+   "ai": false
+  },
+  {
+   "n": 1437,
+   "type": "其他",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-07-23",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 0,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 0,
+   "ai": false
+  },
   {
    "n": 1434,
    "type": "任务",
@@ -92,11 +149,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 5,
-    "implement": 6,
+    "implement": 8,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 11,
+   "roundsTotal": 13,
    "ai": true
   },
   {
@@ -111,11 +168,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -201,7 +258,7 @@
    "state": "closed",
    "created": "2026-07-20",
    "createdMonth": "2026-07",
-   "closed": "2026-07-21",
+   "closed": "2026-07-23",
    "closedMonth": "2026-07",
    "service": "ascend-ci-project",
    "rounds": {
@@ -358,11 +415,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 6,
+    "implement": 7,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 8,
+   "roundsTotal": 9,
    "ai": true
   },
   {
@@ -795,11 +852,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": true
   },
   {
@@ -939,11 +996,11 @@
    "n": 1294,
    "type": "需求",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-09",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-23",
+   "closedMonth": "2026-07",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
@@ -1699,11 +1756,11 @@
    "n": 1153,
    "type": "需求",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-28",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-23",
+   "closedMonth": "2026-07",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
@@ -2429,11 +2486,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 25,
+    "implement": 26,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 27,
+   "roundsTotal": 28,
    "ai": true
   },
   {
@@ -3371,11 +3428,11 @@
    "n": 878,
    "type": "任务",
    "scenario": "数据/指标",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-13",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-23",
+   "closedMonth": "2026-07",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
@@ -3523,11 +3580,11 @@
    "n": 844,
    "type": "任务",
    "scenario": "数据/指标",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-11",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-23",
+   "closedMonth": "2026-07",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
