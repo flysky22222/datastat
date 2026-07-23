@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-07-23 17:06",
+ "generatedAt": "2026-07-23 22:40",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 611,
+ "total": 612,
  "stages": [
   {
    "key": "analyze",
@@ -24,6 +24,25 @@
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
   {
+   "n": 1457,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-07-23",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "ascend-ci-project",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
    "n": 1453,
    "type": "需求",
    "scenario": "接口/API",
@@ -35,11 +54,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": true
   },
   {
@@ -339,11 +358,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 5,
-    "implement": 11,
+    "implement": 14,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 16,
+   "roundsTotal": 19,
    "ai": true
   },
   {
@@ -719,11 +738,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 7,
+    "implement": 9,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 8,
+   "roundsTotal": 10,
    "ai": false
   },
   {
