@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-07-24 17:03",
+ "generatedAt": "2026-07-24 22:20",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 619,
+ "total": 621,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,44 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1479,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-07-24",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "cla-all",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
+   "n": 1478,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-07-24",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "cla-all",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
   {
    "n": 1472,
    "type": "缺陷",
@@ -54,12 +92,12 @@
    "service": "community-robots",
    "rounds": {
     "analyze": 2,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
-   "ai": false
+   "roundsTotal": 3,
+   "ai": true
   },
   {
    "n": 1469,
@@ -92,11 +130,11 @@
    "service": "oss-map",
    "rounds": {
     "analyze": 1,
-    "implement": 3,
-    "deploy": 0,
+    "implement": 5,
+    "deploy": 2,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 8,
    "ai": false
   },
   {
@@ -453,11 +491,11 @@
    "service": "community-robots",
    "rounds": {
     "analyze": 2,
-    "implement": 7,
+    "implement": 11,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 9,
+   "roundsTotal": 13,
    "ai": true
   },
   {
