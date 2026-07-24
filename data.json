@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-24 09:54",
+ "generatedAt": "2026-07-24 16:10",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 110,
@@ -19,15 +19,12 @@
    "author": "Kaede10",
    "labels": [
     "accepted",
-    "need_design",
-    "need_security",
-    "need_ux",
     "sig/infratructure",
     "feature-request",
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 14,
+   "comments": 20,
    "createdAt": "2026-07-23",
    "updatedAt": "2026-07-24",
    "closedAt": "",
@@ -105,7 +102,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 65,
+   "comments": 77,
    "createdAt": "2026-07-21",
    "updatedAt": "2026-07-24",
    "closedAt": "",
@@ -244,7 +241,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 31,
+   "comments": 35,
    "createdAt": "2026-07-14",
    "updatedAt": "2026-07-24",
    "closedAt": "",
@@ -271,36 +268,6 @@
    ],
    "comments": 1,
    "createdAt": "2026-07-14",
-   "updatedAt": "2026-07-20",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1348,
-   "title": "数据中台前端(datastat)看板 14 项优化",
-   "rawTitle": "[任务] 数据中台前端(datastat)看板 14 项优化",
-   "url": "https://github.com/opensourceways/backlog/issues/1348",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "zhongjun2",
-    "ssignik",
-    "Kaede10",
-    "Mjennie"
-   ],
-   "author": "flysky22222",
-   "labels": [
-    "accepted",
-    "task",
-    "need_light",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 42,
-   "createdAt": "2026-07-13",
    "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
@@ -382,9 +349,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 66,
+   "comments": 69,
    "createdAt": "2026-07-13",
-   "updatedAt": "2026-07-23",
+   "updatedAt": "2026-07-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -465,34 +432,6 @@
    "comments": 5,
    "createdAt": "2026-07-09",
    "updatedAt": "2026-07-20",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1273,
-   "title": "新增运营质量历史基线看板",
-   "rawTitle": "[需求] 新增运营质量历史基线看板",
-   "url": "https://github.com/opensourceways/backlog/issues/1273",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "need_design",
-    "need_ux",
-    "need_itest",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 18,
-   "createdAt": "2026-07-06",
-   "updatedAt": "2026-07-21",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -935,6 +874,36 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1348,
+   "title": "数据中台前端(datastat)看板 14 项优化",
+   "rawTitle": "[任务] 数据中台前端(datastat)看板 14 项优化",
+   "url": "https://github.com/opensourceways/backlog/issues/1348",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "zhongjun2",
+    "ssignik",
+    "Kaede10",
+    "Mjennie"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "accepted",
+    "task",
+    "need_light",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 42,
+   "createdAt": "2026-07-13",
+   "updatedAt": "2026-07-24",
+   "closedAt": "2026-07-24",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1336,
    "title": "修复人工错误识别的用户企业信息",
    "rawTitle": "[缺陷] 修复人工错误识别的用户企业信息",
@@ -1060,6 +1029,34 @@
    "createdAt": "2026-07-07",
    "updatedAt": "2026-07-08",
    "closedAt": "2026-07-08",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1273,
+   "title": "新增运营质量历史基线看板",
+   "rawTitle": "[需求] 新增运营质量历史基线看板",
+   "url": "https://github.com/opensourceways/backlog/issues/1273",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_ux",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 18,
+   "createdAt": "2026-07-06",
+   "updatedAt": "2026-07-24",
+   "closedAt": "2026-07-24",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
