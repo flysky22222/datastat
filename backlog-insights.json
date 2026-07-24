@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-07-24 11:52",
+ "generatedAt": "2026-07-24 17:03",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 615,
+ "total": 619,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,82 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1472,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-07-24",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
+   "n": 1471,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "state": "open",
+   "created": "2026-07-24",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "community-robots",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1469,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-07-24",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
+   "n": 1467,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-07-24",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "oss-map",
+   "rounds": {
+    "analyze": 1,
+    "implement": 3,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 4,
+   "ai": false
+  },
   {
    "n": 1462,
    "type": "缺陷",
@@ -111,11 +187,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 4,
+    "implement": 5,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 7,
    "ai": true
   },
   {
@@ -377,11 +453,11 @@
    "service": "community-robots",
    "rounds": {
     "analyze": 2,
-    "implement": 1,
+    "implement": 7,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 9,
    "ai": true
   },
   {
@@ -415,11 +491,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 5,
-    "implement": 16,
+    "implement": 19,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 21,
+   "roundsTotal": 24,
    "ai": true
   },
   {
