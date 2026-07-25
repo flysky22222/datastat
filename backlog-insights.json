@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-07-24 22:20",
+ "generatedAt": "2026-07-25 11:46",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 621,
+ "total": 623,
  "stages": [
   {
    "key": "analyze",
@@ -24,6 +24,44 @@
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
   {
+   "n": 1483,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-07-25",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "cla-all",
+   "rounds": {
+    "analyze": 1,
+    "implement": 1,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1482,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-07-25",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "cla-all",
+   "rounds": {
+    "analyze": 2,
+    "implement": 1,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 3,
+   "ai": true
+  },
+  {
    "n": 1479,
    "type": "缺陷",
    "scenario": "其他/未分",
@@ -35,11 +73,11 @@
    "service": "cla-all",
    "rounds": {
     "analyze": 1,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 1,
+   "roundsTotal": 2,
    "ai": false
   },
   {
@@ -122,19 +160,19 @@
    "n": 1467,
    "type": "任务",
    "scenario": "其他/未分",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-24",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-25",
+   "closedMonth": "2026-07",
    "service": "oss-map",
    "rounds": {
     "analyze": 1,
     "implement": 5,
-    "deploy": 2,
+    "deploy": 3,
     "release": 0
    },
-   "roundsTotal": 8,
+   "roundsTotal": 9,
    "ai": false
   },
   {
@@ -4606,11 +4644,11 @@
    "n": 712,
    "type": "需求",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-09",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-25",
+   "closedMonth": "2026-07",
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 4,
