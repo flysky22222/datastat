@@ -1,9 +1,34 @@
 {
- "generatedAt": "2026-07-24 21:20",
+ "generatedAt": "2026-07-25 15:52",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 110,
+ "total": 111,
  "records": [
+  {
+   "number": 1491,
+   "title": "社区统计看板支持BoostKit社区数据上线",
+   "rawTitle": "[需求] 社区统计看板支持BoostKit社区数据上线",
+   "url": "https://github.com/opensourceways/backlog/issues/1491",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "zeshengzong",
+   "labels": [
+    "need_design",
+    "need_security",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 5,
+   "createdAt": "2026-07-25",
+   "updatedAt": "2026-07-25",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1453,
    "title": "Prometheus NPU 监控面板（APIMagic 后端转发）",
@@ -24,9 +49,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 20,
+   "comments": 29,
    "createdAt": "2026-07-23",
-   "updatedAt": "2026-07-24",
+   "updatedAt": "2026-07-25",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
@@ -218,32 +243,6 @@
    "comments": 23,
    "createdAt": "2026-07-15",
    "updatedAt": "2026-07-17",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1368,
-   "title": "昇腾总览页面Issue汇总数据查询失败",
-   "rawTitle": "[缺陷] 昇腾总览页面Issue汇总数据查询失败",
-   "url": "https://github.com/opensourceways/backlog/issues/1368",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "ssignik",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 35,
-   "createdAt": "2026-07-14",
-   "updatedAt": "2026-07-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -795,6 +794,32 @@
    "createdAt": "2026-07-15",
    "updatedAt": "2026-07-20",
    "closedAt": "2026-07-17",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1368,
+   "title": "昇腾总览页面Issue汇总数据查询失败",
+   "rawTitle": "[缺陷] 昇腾总览页面Issue汇总数据查询失败",
+   "url": "https://github.com/opensourceways/backlog/issues/1368",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 35,
+   "createdAt": "2026-07-14",
+   "updatedAt": "2026-07-25",
+   "closedAt": "2026-07-25",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
