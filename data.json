@@ -1,9 +1,31 @@
 {
- "generatedAt": "2026-07-25 15:52",
+ "generatedAt": "2026-07-25 21:04",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 111,
+ "total": 112,
  "records": [
+  {
+   "number": 1497,
+   "title": "ttfhw数据录入缺少指定的目录",
+   "rawTitle": "[缺陷] ttfhw数据录入缺少指定的目录",
+   "url": "https://github.com/opensourceways/backlog/issues/1497",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
+   "comments": 2,
+   "createdAt": "2026-07-25",
+   "updatedAt": "2026-07-25",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1491,
    "title": "社区统计看板支持BoostKit社区数据上线",
@@ -102,34 +124,6 @@
    "comments": 8,
    "createdAt": "2026-07-23",
    "updatedAt": "2026-07-23",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1424,
-   "title": "新增清洗规则刷新关闭状态issue的已解决标签",
-   "rawTitle": "[需求] 新增清洗规则刷新关闭状态issue的已解决标签",
-   "url": "https://github.com/opensourceways/backlog/issues/1424",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Mjennie",
-   "labels": [
-    "accepted",
-    "need_light",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze",
-    "complete-develop"
-   ],
-   "comments": 78,
-   "createdAt": "2026-07-21",
-   "updatedAt": "2026-07-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -384,32 +378,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1303,
-   "title": "已解决指标相关问题",
-   "rawTitle": "[缺陷] 已解决指标相关问题",
-   "url": "https://github.com/opensourceways/backlog/issues/1303",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Mjennie",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 102,
-   "createdAt": "2026-07-09",
-   "updatedAt": "2026-07-21",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1297,
    "title": "调整开源社区文档评分接口",
    "rawTitle": "[任务] 调整开源社区文档评分接口",
@@ -641,6 +609,34 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1424,
+   "title": "新增清洗规则刷新关闭状态issue的已解决标签",
+   "rawTitle": "[需求] 新增清洗规则刷新关闭状态issue的已解决标签",
+   "url": "https://github.com/opensourceways/backlog/issues/1424",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 78,
+   "createdAt": "2026-07-21",
+   "updatedAt": "2026-07-25",
+   "closedAt": "2026-07-25",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1415,
@@ -977,6 +973,32 @@
    "closedAt": "2026-07-10",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1303,
+   "title": "已解决指标相关问题",
+   "rawTitle": "[缺陷] 已解决指标相关问题",
+   "url": "https://github.com/opensourceways/backlog/issues/1303",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 102,
+   "createdAt": "2026-07-09",
+   "updatedAt": "2026-07-25",
+   "closedAt": "2026-07-25",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1295,
