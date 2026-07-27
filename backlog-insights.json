@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-07-25 22:09",
+ "generatedAt": "2026-07-27 12:12",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 627,
+ "total": 628,
  "stages": [
   {
    "key": "analyze",
@@ -24,9 +24,28 @@
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
   {
-   "n": 1497,
+   "n": 1499,
    "type": "缺陷",
    "scenario": "数据/指标",
+   "state": "open",
+   "created": "2026-07-27",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
+   "n": 1497,
+   "type": "缺陷",
+   "scenario": "前端看板/UI",
    "state": "open",
    "created": "2026-07-25",
    "createdMonth": "2026-07",
@@ -56,9 +75,9 @@
     "analyze": 1,
     "implement": 2,
     "deploy": 1,
-    "release": 1
+    "release": 2
    },
-   "roundsTotal": 5,
+   "roundsTotal": 6,
    "ai": false
   },
   {
@@ -529,11 +548,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 2,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 5,
    "ai": false
   },
   {
@@ -673,11 +692,11 @@
    "n": 1419,
    "type": "需求",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-21",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-27",
+   "closedMonth": "2026-07",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
@@ -1053,11 +1072,11 @@
    "n": 1365,
    "type": "缺陷",
    "scenario": "数据/指标",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-14",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-27",
+   "closedMonth": "2026-07",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 0,
@@ -1726,12 +1745,12 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 4,
-   "ai": false
+   "roundsTotal": 5,
+   "ai": true
   },
   {
    "n": 1257,
