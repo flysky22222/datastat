@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-25 21:04",
+ "generatedAt": "2026-07-27 09:58",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 112,
@@ -155,33 +155,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1419,
-   "title": "openUBMC 社区新增 “AI 度量看板”",
-   "rawTitle": "[需求] openUBMC 社区新增 “AI 度量看板”",
-   "url": "https://github.com/opensourceways/backlog/issues/1419",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "need_light",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze"
-   ],
-   "comments": 27,
-   "createdAt": "2026-07-21",
-   "updatedAt": "2026-07-22",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-07-31"
-  },
-  {
    "number": 1392,
    "title": "开源技术雷达 新增精选、点赞功能",
    "rawTitle": "[需求] 开源技术雷达 新增精选、点赞功能",
@@ -237,31 +210,6 @@
    "comments": 23,
    "createdAt": "2026-07-15",
    "updatedAt": "2026-07-17",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1365,
-   "title": "/query/issues/agg mindall 返回 -1：resolved 查询 FROM fact_mindall_issue 但聚合社区无该原始表(生产只读实证)",
-   "rawTitle": "[缺陷] /query/issues/agg mindall 返回 -1：resolved 查询 FROM fact_mindall_issue 但聚合社区无该原始表(生产只读实证)",
-   "url": "https://github.com/opensourceways/backlog/issues/1365",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "flysky22222",
-   "labels": [
-    "bug",
-    "need_light",
-    "sig/infratructure"
-   ],
-   "comments": 1,
-   "createdAt": "2026-07-14",
-   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -401,7 +349,7 @@
    "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
-   "plannedAt": "2026-06-30"
+   "plannedAt": "2026-07-31"
   },
   {
    "number": 1262,
@@ -506,7 +454,7 @@
    "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
-   "plannedAt": "2026-06-30"
+   "plannedAt": "2026-07-31"
   },
   {
    "number": 1049,
@@ -637,6 +585,33 @@
    "closedAt": "2026-07-25",
    "priority": "",
    "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1419,
+   "title": "openUBMC 社区新增 “AI 度量看板”",
+   "rawTitle": "[需求] openUBMC 社区新增 “AI 度量看板”",
+   "url": "https://github.com/opensourceways/backlog/issues/1419",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 27,
+   "createdAt": "2026-07-21",
+   "updatedAt": "2026-07-27",
+   "closedAt": "2026-07-27",
+   "priority": "",
+   "plannedAt": "2026-07-31"
   },
   {
    "number": 1415,
@@ -843,6 +818,31 @@
    "closedAt": "2026-07-21",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1365,
+   "title": "/query/issues/agg mindall 返回 -1：resolved 查询 FROM fact_mindall_issue 但聚合社区无该原始表(生产只读实证)",
+   "rawTitle": "[缺陷] /query/issues/agg mindall 返回 -1：resolved 查询 FROM fact_mindall_issue 但聚合社区无该原始表(生产只读实证)",
+   "url": "https://github.com/opensourceways/backlog/issues/1365",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "bug",
+    "need_light",
+    "sig/infratructure"
+   ],
+   "comments": 1,
+   "createdAt": "2026-07-14",
+   "updatedAt": "2026-07-27",
+   "closedAt": "2026-07-27",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1358,
