@@ -1,19 +1,47 @@
 {
- "generatedAt": "2026-07-27 09:58",
+ "generatedAt": "2026-07-27 17:34",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 112,
+ "total": 113,
  "records": [
   {
+   "number": 1503,
+   "title": "总览看板使用情况接口数据错误",
+   "rawTitle": "[缺陷] 总览看板使用情况接口数据错误",
+   "url": "https://github.com/opensourceways/backlog/issues/1503",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 6,
+   "createdAt": "2026-07-27",
+   "updatedAt": "2026-07-27",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1497,
-   "title": "ttfhw数据录入缺少指定的目录",
-   "rawTitle": "[缺陷] ttfhw数据录入缺少指定的目录",
+   "title": "ttfhw数据看板页面更新",
+   "rawTitle": "[缺陷] ttfhw数据看板页面更新",
    "url": "https://github.com/opensourceways/backlog/issues/1497",
    "status": "open",
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "bug",
@@ -21,7 +49,7 @@
    ],
    "comments": 2,
    "createdAt": "2026-07-25",
-   "updatedAt": "2026-07-25",
+   "updatedAt": "2026-07-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -35,7 +63,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "zeshengzong",
    "labels": [
     "need_design",
@@ -46,7 +76,7 @@
    ],
    "comments": 5,
    "createdAt": "2026-07-25",
-   "updatedAt": "2026-07-25",
+   "updatedAt": "2026-07-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -121,9 +151,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 8,
+   "comments": 20,
    "createdAt": "2026-07-23",
-   "updatedAt": "2026-07-23",
+   "updatedAt": "2026-07-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -138,7 +168,7 @@
    "stateReason": null,
    "type": "任务",
    "assignees": [
-    "ssignik"
+    "Mjennie"
    ],
    "author": "zhongjun2",
    "labels": [
@@ -149,7 +179,7 @@
    ],
    "comments": 11,
    "createdAt": "2026-07-21",
-   "updatedAt": "2026-07-23",
+   "updatedAt": "2026-07-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -361,7 +391,7 @@
    "stateReason": null,
    "type": "需求",
    "assignees": [
-    "ssignik"
+    "Mjennie"
    ],
    "author": "Tian-Fantasea",
    "labels": [
@@ -374,9 +404,9 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 10,
+   "comments": 17,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-07-23",
+   "updatedAt": "2026-07-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
