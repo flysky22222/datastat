@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-27 18:26",
+ "generatedAt": "2026-07-27 23:23",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 631,
@@ -1802,11 +1802,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 7,
    "ai": true
   },
   {
@@ -3048,11 +3048,11 @@
    "n": 1049,
    "type": "需求",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-23",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-27",
+   "closedMonth": "2026-07",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
@@ -3086,11 +3086,11 @@
    "n": 1043,
    "type": "需求",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-23",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-27",
+   "closedMonth": "2026-07",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
