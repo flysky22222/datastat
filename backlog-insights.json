@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-07-27 12:12",
+ "generatedAt": "2026-07-27 18:26",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 628,
+ "total": 631,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,63 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1506,
+   "type": "任务",
+   "scenario": "安全/CVE",
+   "state": "open",
+   "created": "2026-07-27",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "xihe-all",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
+   "n": 1503,
+   "type": "缺陷",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-07-27",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 1,
+    "implement": 2,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 3,
+   "ai": false
+  },
+  {
+   "n": 1501,
+   "type": "缺陷",
+   "scenario": "安全/CVE",
+   "state": "open",
+   "created": "2026-07-27",
+   "createdMonth": "2026-07",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
   {
    "n": 1499,
    "type": "缺陷",
@@ -548,11 +605,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 4,
+    "implement": 6,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 5,
+   "roundsTotal": 7,
    "ai": false
   },
   {
@@ -1745,11 +1802,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 5,
+   "roundsTotal": 6,
    "ai": true
   },
   {
@@ -2638,11 +2695,11 @@
    "service": "community-robots",
    "rounds": {
     "analyze": 3,
-    "implement": 4,
+    "implement": 8,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 7,
+   "roundsTotal": 11,
    "ai": true
   },
   {
@@ -3770,11 +3827,11 @@
    "n": 910,
    "type": "需求",
    "scenario": "机器人/自动化",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-15",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-27",
+   "closedMonth": "2026-07",
    "service": "community-robots",
    "rounds": {
     "analyze": 3,
