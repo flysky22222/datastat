@@ -1,9 +1,57 @@
 {
- "generatedAt": "2026-07-28 16:18",
+ "generatedAt": "2026-07-28 21:43",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 114,
+ "total": 116,
  "records": [
+  {
+   "number": 1517,
+   "title": "开源洞察需求对应的pr关闭后改为关闭状态",
+   "rawTitle": "[缺陷] 开源洞察需求对应的pr关闭后改为关闭状态",
+   "url": "https://github.com/opensourceways/backlog/issues/1517",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-07-28",
+   "updatedAt": "2026-07-28",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1516,
+   "title": "TTFHW贡献者场景接口提供",
+   "rawTitle": "[任务] TTFHW贡献者场景接口提供",
+   "url": "https://github.com/opensourceways/backlog/issues/1516",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 8,
+   "createdAt": "2026-07-28",
+   "updatedAt": "2026-07-28",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1508,
    "title": "om-dataarts AI Agent 与模型解析模板兼容性扩展",
@@ -177,39 +225,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 11,
+   "comments": 14,
    "createdAt": "2026-07-21",
-   "updatedAt": "2026-07-27",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1392,
-   "title": "开源技术雷达 新增精选、点赞功能",
-   "rawTitle": "[需求] 开源技术雷达 新增精选、点赞功能",
-   "url": "https://github.com/opensourceways/backlog/issues/1392",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Yikun",
-   "labels": [
-    "accepted",
-    "need_design",
-    "need_security",
-    "need_ux",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze",
-    "complete-develop"
-   ],
-   "comments": 23,
-   "createdAt": "2026-07-16",
-   "updatedAt": "2026-07-23",
+   "updatedAt": "2026-07-28",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -319,7 +337,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 14,
+   "comments": 21,
    "createdAt": "2026-07-10",
    "updatedAt": "2026-07-28",
    "closedAt": "",
@@ -715,6 +733,36 @@
    "createdAt": "2026-07-16",
    "updatedAt": "2026-07-21",
    "closedAt": "2026-07-21",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1392,
+   "title": "开源技术雷达 新增精选、点赞功能",
+   "rawTitle": "[需求] 开源技术雷达 新增精选、点赞功能",
+   "url": "https://github.com/opensourceways/backlog/issues/1392",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Yikun",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_security",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 23,
+   "createdAt": "2026-07-16",
+   "updatedAt": "2026-07-28",
+   "closedAt": "2026-07-28",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
