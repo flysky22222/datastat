@@ -1,9 +1,35 @@
 {
- "generatedAt": "2026-07-28 09:47",
+ "generatedAt": "2026-07-28 16:18",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 113,
+ "total": 114,
  "records": [
+  {
+   "number": 1508,
+   "title": "om-dataarts AI Agent 与模型解析模板兼容性扩展",
+   "rawTitle": "[任务] om-dataarts AI Agent 与模型解析模板兼容性扩展",
+   "url": "https://github.com/opensourceways/backlog/issues/1508",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 8,
+   "createdAt": "2026-07-28",
+   "updatedAt": "2026-07-28",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
   {
    "number": 1497,
    "title": "ttfhw数据看板页面更新",
@@ -208,7 +234,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 23,
+   "comments": 26,
    "createdAt": "2026-07-15",
    "updatedAt": "2026-07-28",
    "closedAt": "",
@@ -293,9 +319,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 11,
+   "comments": 14,
    "createdAt": "2026-07-10",
-   "updatedAt": "2026-07-23",
+   "updatedAt": "2026-07-28",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
