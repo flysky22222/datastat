@@ -1,35 +1,9 @@
 {
- "generatedAt": "2026-07-27 22:13",
+ "generatedAt": "2026-07-28 09:47",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 113,
  "records": [
-  {
-   "number": 1503,
-   "title": "总览看板使用情况接口数据错误",
-   "rawTitle": "[缺陷] 总览看板使用情况接口数据错误",
-   "url": "https://github.com/opensourceways/backlog/issues/1503",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "ssignik",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 6,
-   "createdAt": "2026-07-27",
-   "updatedAt": "2026-07-27",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
   {
    "number": 1497,
    "title": "ttfhw数据看板页面更新",
@@ -151,9 +125,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 21,
+   "comments": 24,
    "createdAt": "2026-07-23",
-   "updatedAt": "2026-07-27",
+   "updatedAt": "2026-07-28",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -229,9 +203,6 @@
    "author": "ssignik",
    "labels": [
     "accepted",
-    "need_design",
-    "need_security",
-    "need_itest",
     "sig/infratructure",
     "feature-request",
     "complete-analyze",
@@ -239,7 +210,7 @@
    ],
    "comments": 23,
    "createdAt": "2026-07-15",
-   "updatedAt": "2026-07-17",
+   "updatedAt": "2026-07-28",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -297,32 +268,6 @@
    "comments": 7,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-20",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1332,
-   "title": "新增脱敏后的openUBMC的用户登录注册数据表",
-   "rawTitle": "[任务] 新增脱敏后的openUBMC的用户登录注册数据表",
-   "url": "https://github.com/opensourceways/backlog/issues/1332",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 69,
-   "createdAt": "2026-07-13",
-   "updatedAt": "2026-07-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -537,6 +482,32 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1503,
+   "title": "总览看板使用情况接口数据错误",
+   "rawTitle": "[缺陷] 总览看板使用情况接口数据错误",
+   "url": "https://github.com/opensourceways/backlog/issues/1503",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 6,
+   "createdAt": "2026-07-27",
+   "updatedAt": "2026-07-28",
+   "closedAt": "2026-07-28",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1424,
@@ -928,6 +899,32 @@
    "closedAt": "2026-07-14",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1332,
+   "title": "新增脱敏后的openUBMC的用户登录注册数据表",
+   "rawTitle": "[任务] 新增脱敏后的openUBMC的用户登录注册数据表",
+   "url": "https://github.com/opensourceways/backlog/issues/1332",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 69,
+   "createdAt": "2026-07-13",
+   "updatedAt": "2026-07-28",
+   "closedAt": "2026-07-28",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1322,
