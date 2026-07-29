@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-28 22:58",
+ "generatedAt": "2026-07-29 11:49",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 639,
@@ -54,11 +54,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 1,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 5,
    "ai": false
   },
   {
@@ -73,11 +73,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -149,11 +149,11 @@
    "service": "community-robots",
    "rounds": {
     "analyze": 2,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": true
   },
   {
@@ -757,11 +757,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 7,
+    "implement": 8,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 8,
+   "roundsTotal": 9,
    "ai": false
   },
   {
@@ -890,11 +890,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 5,
+    "implement": 9,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 10,
    "ai": false
   },
   {
@@ -1167,11 +1167,11 @@
    "n": 1376,
    "type": "需求",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-15",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-07-29",
+   "closedMonth": "2026-07",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 6,
@@ -1574,11 +1574,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 6,
+    "implement": 9,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 8,
+   "roundsTotal": 11,
    "ai": true
   },
   {
@@ -1954,11 +1954,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 3,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 7,
+   "roundsTotal": 8,
    "ai": true
   },
   {
