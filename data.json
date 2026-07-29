@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-29 03:10",
+ "generatedAt": "2026-07-29 09:50",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 116,
@@ -21,9 +21,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 4,
+   "comments": 11,
    "createdAt": "2026-07-28",
-   "updatedAt": "2026-07-28",
+   "updatedAt": "2026-07-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -45,9 +45,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 8,
+   "comments": 11,
    "createdAt": "2026-07-28",
-   "updatedAt": "2026-07-28",
+   "updatedAt": "2026-07-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -225,36 +225,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 18,
+   "comments": 22,
    "createdAt": "2026-07-21",
-   "updatedAt": "2026-07-28",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1376,
-   "title": "openlibing获取CI信息机机接口切换",
-   "rawTitle": "[需求] openlibing获取CI信息机机接口切换",
-   "url": "https://github.com/opensourceways/backlog/issues/1376",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "ssignik",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze",
-    "complete-develop"
-   ],
-   "comments": 26,
-   "createdAt": "2026-07-15",
-   "updatedAt": "2026-07-28",
+   "updatedAt": "2026-07-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -337,9 +310,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 21,
+   "comments": 26,
    "createdAt": "2026-07-10",
-   "updatedAt": "2026-07-28",
+   "updatedAt": "2026-07-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -763,6 +736,33 @@
    "createdAt": "2026-07-16",
    "updatedAt": "2026-07-28",
    "closedAt": "2026-07-28",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1376,
+   "title": "openlibing获取CI信息机机接口切换",
+   "rawTitle": "[需求] openlibing获取CI信息机机接口切换",
+   "url": "https://github.com/opensourceways/backlog/issues/1376",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 26,
+   "createdAt": "2026-07-15",
+   "updatedAt": "2026-07-29",
+   "closedAt": "2026-07-29",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
