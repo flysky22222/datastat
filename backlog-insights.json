@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-29 17:21",
+ "generatedAt": "2026-07-29 22:40",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 644,
@@ -34,12 +34,12 @@
    "closedMonth": null,
    "service": "community-robots",
    "rounds": {
-    "analyze": 4,
+    "analyze": 5,
     "implement": 0,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 5,
    "ai": false
   },
   {
@@ -92,12 +92,12 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 4,
-   "ai": false
+   "roundsTotal": 5,
+   "ai": true
   },
   {
    "n": 1523,
@@ -244,11 +244,11 @@
    "service": "community-robots",
    "rounds": {
     "analyze": 2,
-    "implement": 6,
+    "implement": 7,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 8,
+   "roundsTotal": 9,
    "ai": true
   },
   {
@@ -985,11 +985,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 12,
+    "implement": 13,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 13,
+   "roundsTotal": 14,
    "ai": false
   },
   {
@@ -2049,11 +2049,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 6,
+    "implement": 7,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 10,
+   "roundsTotal": 11,
    "ai": true
   },
   {
