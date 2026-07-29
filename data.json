@@ -1,28 +1,73 @@
 {
- "generatedAt": "2026-07-29 09:50",
+ "generatedAt": "2026-07-29 16:23",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 116,
+ "total": 119,
  "records": [
   {
-   "number": 1517,
-   "title": "开源洞察需求对应的pr关闭后改为关闭状态",
-   "rawTitle": "[缺陷] 开源洞察需求对应的pr关闭后改为关闭状态",
-   "url": "https://github.com/opensourceways/backlog/issues/1517",
+   "number": 1528,
+   "title": "看板支持issue刷新标签后重新进行分类统计",
+   "rawTitle": "[需求] 看板支持issue刷新标签后重新进行分类统计",
+   "url": "https://github.com/opensourceways/backlog/issues/1528",
    "status": "open",
    "state": "open",
    "stateReason": null,
-   "type": "缺陷",
+   "type": "需求",
    "assignees": [],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 3,
+   "createdAt": "2026-07-29",
+   "updatedAt": "2026-07-29",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1526,
+   "title": "基础设施需求/缺陷/任务看板",
+   "rawTitle": "[需求] 基础设施需求/缺陷/任务看板",
+   "url": "https://github.com/opensourceways/backlog/issues/1526",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
-    "accepted",
-    "task",
     "sig/infratructure",
-    "complete-develop"
+    "feature-request"
    ],
-   "comments": 11,
-   "createdAt": "2026-07-28",
+   "comments": 3,
+   "createdAt": "2026-07-29",
+   "updatedAt": "2026-07-29",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1523,
+   "title": "PTA 社区更名为AscendForPyTorch",
+   "rawTitle": "[需求] PTA 社区更名为AscendForPyTorch",
+   "url": "https://github.com/opensourceways/backlog/issues/1523",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "zeshengzong",
+   "labels": [
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 4,
+   "createdAt": "2026-07-29",
    "updatedAt": "2026-07-29",
    "closedAt": "",
    "priority": "",
@@ -37,7 +82,9 @@
    "state": "open",
    "stateReason": null,
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "accepted",
@@ -181,32 +228,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1439,
-   "title": "数据总览活跃人数接口问题",
-   "rawTitle": "[缺陷] 数据总览活跃人数接口问题",
-   "url": "https://github.com/opensourceways/backlog/issues/1439",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "ssignik",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 24,
-   "createdAt": "2026-07-23",
-   "updatedAt": "2026-07-28",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1420,
    "title": "token_task 任务鉴权方式修改",
    "rawTitle": "[任务] token_task 任务鉴权方式修改",
@@ -225,7 +246,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 22,
+   "comments": 37,
    "createdAt": "2026-07-21",
    "updatedAt": "2026-07-29",
    "closedAt": "",
@@ -308,9 +329,10 @@
     "need_ux",
     "need_itest",
     "sig/infratructure",
-    "feature-request"
+    "feature-request",
+    "complete-develop"
    ],
-   "comments": 26,
+   "comments": 36,
    "createdAt": "2026-07-10",
    "updatedAt": "2026-07-29",
    "closedAt": "",
@@ -367,9 +389,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 20,
+   "comments": 30,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-07-27",
+   "updatedAt": "2026-07-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -501,6 +523,32 @@
    "plannedAt": "2026-07-31"
   },
   {
+   "number": 1517,
+   "title": "开源洞察需求对应的pr关闭后改为关闭状态",
+   "rawTitle": "[缺陷] 开源洞察需求对应的pr关闭后改为关闭状态",
+   "url": "https://github.com/opensourceways/backlog/issues/1517",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 14,
+   "createdAt": "2026-07-28",
+   "updatedAt": "2026-07-29",
+   "closedAt": "2026-07-29",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1503,
    "title": "总览看板使用情况接口数据错误",
    "rawTitle": "[缺陷] 总览看板使用情况接口数据错误",
@@ -523,6 +571,32 @@
    "createdAt": "2026-07-27",
    "updatedAt": "2026-07-28",
    "closedAt": "2026-07-28",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1439,
+   "title": "数据总览活跃人数接口问题",
+   "rawTitle": "[缺陷] 数据总览活跃人数接口问题",
+   "url": "https://github.com/opensourceways/backlog/issues/1439",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 31,
+   "createdAt": "2026-07-23",
+   "updatedAt": "2026-07-29",
+   "closedAt": "2026-07-29",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
