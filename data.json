@@ -1,9 +1,34 @@
 {
- "generatedAt": "2026-07-30 09:42",
+ "generatedAt": "2026-07-30 16:09",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 119,
+ "total": 121,
  "records": [
+  {
+   "number": 1539,
+   "title": "修复 openlibing_ci_info_task 任务执行失败",
+   "rawTitle": "[缺陷] 修复 openlibing_ci_info_task 任务执行失败",
+   "url": "https://github.com/opensourceways/backlog/issues/1539",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 8,
+   "createdAt": "2026-07-30",
+   "updatedAt": "2026-07-30",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
   {
    "number": 1528,
    "title": "看板支持issue刷新标签后重新进行分类统计",
@@ -48,7 +73,7 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 14,
+   "comments": 17,
    "createdAt": "2026-07-29",
    "updatedAt": "2026-07-30",
    "closedAt": "",
@@ -251,9 +276,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 40,
+   "comments": 45,
    "createdAt": "2026-07-21",
-   "updatedAt": "2026-07-29",
+   "updatedAt": "2026-07-30",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -330,16 +355,13 @@
    "author": "zeshengzong",
    "labels": [
     "accepted",
-    "need_design",
-    "need_ux",
-    "need_itest",
     "sig/infratructure",
     "feature-request",
     "complete-develop"
    ],
-   "comments": 37,
+   "comments": 52,
    "createdAt": "2026-07-10",
-   "updatedAt": "2026-07-29",
+   "updatedAt": "2026-07-30",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -477,6 +499,58 @@
    "plannedAt": "2026-07-31"
   },
   {
+   "number": 1049,
+   "title": "HPCKit数据中台看板，需支持采集仓库下载量详情",
+   "rawTitle": "[需求] HPCKit数据中台看板，需支持采集仓库下载量详情",
+   "url": "https://github.com/opensourceways/backlog/issues/1049",
+   "status": "open",
+   "state": "open",
+   "stateReason": "reopened",
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "123-prog",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request",
+    "complete-develop"
+   ],
+   "comments": 68,
+   "createdAt": "2026-06-23",
+   "updatedAt": "2026-07-30",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1043,
+   "title": "HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
+   "rawTitle": "[需求] HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
+   "url": "https://github.com/opensourceways/backlog/issues/1043",
+   "status": "open",
+   "state": "open",
+   "stateReason": "reopened",
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "123-prog",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request",
+    "complete-develop"
+   ],
+   "comments": 9,
+   "createdAt": "2026-06-23",
+   "updatedAt": "2026-07-30",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 312,
    "title": ": openUBMC社区运营看板及热点话题周报新增PR、Issue、论坛等响应情况",
    "rawTitle": "[需求]: openUBMC社区运营看板及热点话题周报新增PR、Issue、论坛等响应情况",
@@ -526,6 +600,30 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1535,
+   "title": "ttfhw接口增加TTFHW通过率返回值",
+   "rawTitle": "[任务] ttfhw接口增加TTFHW通过率返回值",
+   "url": "https://github.com/opensourceways/backlog/issues/1535",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 8,
+   "createdAt": "2026-07-30",
+   "updatedAt": "2026-07-30",
+   "closedAt": "2026-07-30",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1517,
@@ -1823,32 +1921,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1049,
-   "title": "HPCKit数据中台看板，需支持采集仓库下载量详情",
-   "rawTitle": "[需求] HPCKit数据中台看板，需支持采集仓库下载量详情",
-   "url": "https://github.com/opensourceways/backlog/issues/1049",
-   "status": "merged",
-   "state": "closed",
-   "stateReason": "completed",
-   "type": "需求",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "123-prog",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request",
-    "complete-develop"
-   ],
-   "comments": 63,
-   "createdAt": "2026-06-23",
-   "updatedAt": "2026-07-27",
-   "closedAt": "2026-07-27",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1048,
    "title": "修改openUBMC社区的健康度模型的NSS净满意度",
    "rawTitle": "[任务] 修改openUBMC社区的健康度模型的NSS净满意度",
@@ -1869,31 +1941,6 @@
    "createdAt": "2026-06-23",
    "updatedAt": "2026-06-23",
    "closedAt": "2026-06-23",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1043,
-   "title": "HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
-   "rawTitle": "[需求] HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
-   "url": "https://github.com/opensourceways/backlog/issues/1043",
-   "status": "merged",
-   "state": "closed",
-   "stateReason": "completed",
-   "type": "需求",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "123-prog",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 6,
-   "createdAt": "2026-06-23",
-   "updatedAt": "2026-07-27",
-   "closedAt": "2026-07-27",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
