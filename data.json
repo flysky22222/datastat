@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-30 21:30",
+ "generatedAt": "2026-07-31 09:59",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 121,
@@ -73,9 +73,9 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 20,
+   "comments": 22,
    "createdAt": "2026-07-29",
-   "updatedAt": "2026-07-30",
+   "updatedAt": "2026-07-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
@@ -99,82 +99,6 @@
    "comments": 4,
    "createdAt": "2026-07-29",
    "updatedAt": "2026-07-29",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1516,
-   "title": "TTFHW贡献者场景接口提供",
-   "rawTitle": "[任务] TTFHW贡献者场景接口提供",
-   "url": "https://github.com/opensourceways/backlog/issues/1516",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 11,
-   "createdAt": "2026-07-28",
-   "updatedAt": "2026-07-29",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1508,
-   "title": "om-dataarts AI Agent 与模型解析模板兼容性扩展",
-   "rawTitle": "[任务] om-dataarts AI Agent 与模型解析模板兼容性扩展",
-   "url": "https://github.com/opensourceways/backlog/issues/1508",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 8,
-   "createdAt": "2026-07-28",
-   "updatedAt": "2026-07-28",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-07-31"
-  },
-  {
-   "number": 1497,
-   "title": "ttfhw数据看板页面更新",
-   "rawTitle": "[缺陷] ttfhw数据看板页面更新",
-   "url": "https://github.com/opensourceways/backlog/issues/1497",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "bug",
-    "sig/infratructure"
-   ],
-   "comments": 2,
-   "createdAt": "2026-07-25",
-   "updatedAt": "2026-07-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -205,33 +129,6 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1453,
-   "title": "Prometheus NPU 监控面板（APIMagic 后端转发）",
-   "rawTitle": "[需求] Prometheus NPU 监控面板（APIMagic 后端转发）",
-   "url": "https://github.com/opensourceways/backlog/issues/1453",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze",
-    "complete-develop"
-   ],
-   "comments": 29,
-   "createdAt": "2026-07-23",
-   "updatedAt": "2026-07-25",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-07-31"
   },
   {
    "number": 1448,
@@ -367,32 +264,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1297,
-   "title": "调整开源社区文档评分接口",
-   "rawTitle": "[任务] 调整开源社区文档评分接口",
-   "url": "https://github.com/opensourceways/backlog/issues/1297",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 5,
-   "createdAt": "2026-07-09",
-   "updatedAt": "2026-07-20",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-07-31"
-  },
-  {
    "number": 1262,
    "title": "看板新增定时/一键推送某社区当前Issue等处理情况邮件给指定干系人",
    "rawTitle": "[需求] 看板新增定时/一键推送某社区当前Issue等处理情况邮件给指定干系人",
@@ -447,30 +318,6 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1172,
-   "title": "支持蓝区代码检视区分PR、issue以及评论和回复的能力",
-   "rawTitle": "[需求] 支持蓝区代码检视区分PR、issue以及评论和回复的能力",
-   "url": "https://github.com/opensourceways/backlog/issues/1172",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "sig/infratructure",
-    "feature-request"
-   ],
-   "comments": 3,
-   "createdAt": "2026-06-29",
-   "updatedAt": "2026-07-06",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-07-31"
   },
   {
    "number": 1140,
@@ -652,6 +499,58 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1516,
+   "title": "TTFHW贡献者场景接口提供",
+   "rawTitle": "[任务] TTFHW贡献者场景接口提供",
+   "url": "https://github.com/opensourceways/backlog/issues/1516",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 11,
+   "createdAt": "2026-07-28",
+   "updatedAt": "2026-07-31",
+   "closedAt": "2026-07-31",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1508,
+   "title": "om-dataarts AI Agent 与模型解析模板兼容性扩展",
+   "rawTitle": "[任务] om-dataarts AI Agent 与模型解析模板兼容性扩展",
+   "url": "https://github.com/opensourceways/backlog/issues/1508",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 8,
+   "createdAt": "2026-07-28",
+   "updatedAt": "2026-07-31",
+   "closedAt": "2026-07-31",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
+  {
    "number": 1503,
    "title": "总览看板使用情况接口数据错误",
    "rawTitle": "[缺陷] 总览看板使用情况接口数据错误",
@@ -676,6 +575,57 @@
    "closedAt": "2026-07-28",
    "priority": "",
    "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1497,
+   "title": "ttfhw数据看板页面更新",
+   "rawTitle": "[缺陷] ttfhw数据看板页面更新",
+   "url": "https://github.com/opensourceways/backlog/issues/1497",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
+   "comments": 2,
+   "createdAt": "2026-07-25",
+   "updatedAt": "2026-07-31",
+   "closedAt": "2026-07-31",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1453,
+   "title": "Prometheus NPU 监控面板（APIMagic 后端转发）",
+   "rawTitle": "[需求] Prometheus NPU 监控面板（APIMagic 后端转发）",
+   "url": "https://github.com/opensourceways/backlog/issues/1453",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 29,
+   "createdAt": "2026-07-23",
+   "updatedAt": "2026-07-31",
+   "closedAt": "2026-07-31",
+   "priority": "",
+   "plannedAt": "2026-07-31"
   },
   {
    "number": 1439,
@@ -1229,6 +1179,32 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1297,
+   "title": "调整开源社区文档评分接口",
+   "rawTitle": "[任务] 调整开源社区文档评分接口",
+   "url": "https://github.com/opensourceways/backlog/issues/1297",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 5,
+   "createdAt": "2026-07-09",
+   "updatedAt": "2026-07-31",
+   "closedAt": "2026-07-31",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
+  {
    "number": 1295,
    "title": "中台看板缺陷修复",
    "rawTitle": "[缺陷] 中台看板缺陷修复",
@@ -1564,6 +1540,30 @@
    "closedAt": "2026-07-21",
    "priority": "",
    "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1172,
+   "title": "支持蓝区代码检视区分PR、issue以及评论和回复的能力",
+   "rawTitle": "[需求] 支持蓝区代码检视区分PR、issue以及评论和回复的能力",
+   "url": "https://github.com/opensourceways/backlog/issues/1172",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 3,
+   "createdAt": "2026-06-29",
+   "updatedAt": "2026-07-31",
+   "closedAt": "2026-07-31",
+   "priority": "",
+   "plannedAt": "2026-07-31"
   },
   {
    "number": 1162,
