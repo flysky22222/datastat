@@ -1,34 +1,9 @@
 {
- "generatedAt": "2026-07-31 09:59",
+ "generatedAt": "2026-07-31 16:36",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 121,
+ "total": 122,
  "records": [
-  {
-   "number": 1539,
-   "title": "修复 openlibing_ci_info_task 任务执行失败",
-   "rawTitle": "[缺陷] 修复 openlibing_ci_info_task 任务执行失败",
-   "url": "https://github.com/opensourceways/backlog/issues/1539",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 8,
-   "createdAt": "2026-07-30",
-   "updatedAt": "2026-07-30",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-07-31"
-  },
   {
    "number": 1528,
    "title": "看板支持issue刷新标签后重新进行分类统计",
@@ -71,9 +46,10 @@
     "need_ux",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 22,
+   "comments": 34,
    "createdAt": "2026-07-29",
    "updatedAt": "2026-07-31",
    "closedAt": "",
@@ -155,6 +131,32 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1439,
+   "title": "数据总览活跃人数接口问题",
+   "rawTitle": "[缺陷] 数据总览活跃人数接口问题",
+   "url": "https://github.com/opensourceways/backlog/issues/1439",
+   "status": "open",
+   "state": "open",
+   "stateReason": "reopened",
+   "type": "缺陷",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 37,
+   "createdAt": "2026-07-23",
+   "updatedAt": "2026-07-31",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1420,
    "title": "token_task 任务鉴权方式修改",
    "rawTitle": "[任务] token_task 任务鉴权方式修改",
@@ -176,33 +178,6 @@
    "comments": 47,
    "createdAt": "2026-07-21",
    "updatedAt": "2026-07-30",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1345,
-   "title": "dws_community_user 企业信息按社区聚合为 JSON",
-   "rawTitle": "[需求] dws_community_user 企业信息按社区聚合为 JSON",
-   "url": "https://github.com/opensourceways/backlog/issues/1345",
-   "status": "open",
-   "state": "open",
-   "stateReason": "reopened",
-   "type": "需求",
-   "assignees": [
-    "licy666"
-   ],
-   "author": "licy666",
-   "labels": [
-    "need_design",
-    "need_itest",
-    "sig/infratructure",
-    "feature-request",
-    "complete-develop"
-   ],
-   "comments": 18,
-   "createdAt": "2026-07-13",
-   "updatedAt": "2026-07-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -256,9 +231,9 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 52,
+   "comments": 58,
    "createdAt": "2026-07-10",
-   "updatedAt": "2026-07-30",
+   "updatedAt": "2026-07-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -364,9 +339,9 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 68,
+   "comments": 77,
    "createdAt": "2026-06-23",
-   "updatedAt": "2026-07-30",
+   "updatedAt": "2026-07-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -390,9 +365,9 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 9,
+   "comments": 12,
    "createdAt": "2026-06-23",
-   "updatedAt": "2026-07-30",
+   "updatedAt": "2026-07-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -445,6 +420,55 @@
    "createdAt": "2026-04-27",
    "updatedAt": "2026-06-22",
    "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1548,
+   "title": "修改openUBMC社区的健康度模型的NSS净满意度",
+   "rawTitle": "[任务] 修改openUBMC社区的健康度模型的NSS净满意度",
+   "url": "https://github.com/opensourceways/backlog/issues/1548",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 2,
+   "createdAt": "2026-07-31",
+   "updatedAt": "2026-07-31",
+   "closedAt": "2026-07-31",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1539,
+   "title": "修复 openlibing_ci_info_task 任务执行失败",
+   "rawTitle": "[缺陷] 修复 openlibing_ci_info_task 任务执行失败",
+   "url": "https://github.com/opensourceways/backlog/issues/1539",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 8,
+   "createdAt": "2026-07-30",
+   "updatedAt": "2026-07-31",
+   "closedAt": "2026-07-31",
    "priority": "",
    "plannedAt": "2026-07-31"
   },
@@ -626,32 +650,6 @@
    "closedAt": "2026-07-31",
    "priority": "",
    "plannedAt": "2026-07-31"
-  },
-  {
-   "number": 1439,
-   "title": "数据总览活跃人数接口问题",
-   "rawTitle": "[缺陷] 数据总览活跃人数接口问题",
-   "url": "https://github.com/opensourceways/backlog/issues/1439",
-   "status": "merged",
-   "state": "closed",
-   "stateReason": "completed",
-   "type": "缺陷",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "ssignik",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 31,
-   "createdAt": "2026-07-23",
-   "updatedAt": "2026-07-29",
-   "closedAt": "2026-07-29",
-   "priority": "",
-   "plannedAt": "2026-06-30"
   },
   {
    "number": 1424,
@@ -1073,6 +1071,33 @@
    "createdAt": "2026-07-13",
    "updatedAt": "2026-07-24",
    "closedAt": "2026-07-24",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1345,
+   "title": "dws_community_user 企业信息按社区聚合为 JSON",
+   "rawTitle": "[需求] dws_community_user 企业信息按社区聚合为 JSON",
+   "url": "https://github.com/opensourceways/backlog/issues/1345",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "licy666"
+   ],
+   "author": "licy666",
+   "labels": [
+    "need_design",
+    "need_itest",
+    "sig/infratructure",
+    "feature-request",
+    "complete-develop"
+   ],
+   "comments": 18,
+   "createdAt": "2026-07-13",
+   "updatedAt": "2026-07-31",
+   "closedAt": "2026-07-31",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
