@@ -1,9 +1,57 @@
 {
- "generatedAt": "2026-07-31 16:36",
+ "generatedAt": "2026-08-01 16:06",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 122,
+ "total": 124,
  "records": [
+  {
+   "number": 1557,
+   "title": "重新采集数据的参数重新定义",
+   "rawTitle": "[缺陷] 重新采集数据的参数重新定义",
+   "url": "https://github.com/opensourceways/backlog/issues/1557",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-01",
+   "updatedAt": "2026-08-01",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1553,
+   "title": "开源技术雷达支持周级信息刷新",
+   "rawTitle": "[需求] 开源技术雷达支持周级信息刷新",
+   "url": "https://github.com/opensourceways/backlog/issues/1553",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "Yikun",
+   "labels": [
+    "need_light",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 5,
+   "createdAt": "2026-08-01",
+   "updatedAt": "2026-08-01",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1528,
    "title": "看板支持issue刷新标签后重新进行分类统计",
