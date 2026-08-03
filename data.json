@@ -1,9 +1,58 @@
 {
- "generatedAt": "2026-08-01 16:06",
+ "generatedAt": "2026-08-03 17:26",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 124,
+ "total": 127,
  "records": [
+  {
+   "number": 1564,
+   "title": "CI 看板新增 sglang Nightly Test (NPU) workflow 数据采集（sgl-project/sglang）",
+   "rawTitle": "[任务] CI 看板新增 sglang Nightly Test (NPU) workflow 数据采集（sgl-project/sglang）",
+   "url": "https://github.com/opensourceways/backlog/issues/1564",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Goalina",
+   "labels": [
+    "sig/infratructure"
+   ],
+   "comments": 2,
+   "createdAt": "2026-08-03",
+   "updatedAt": "2026-08-03",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1562,
+   "title": "优化 APIMagic 的接口 /res/npu/dict 的响应时长",
+   "rawTitle": "[缺陷] 优化 APIMagic 的接口 /res/npu/dict 的响应时长",
+   "url": "https://github.com/opensourceways/backlog/issues/1562",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 7,
+   "createdAt": "2026-08-03",
+   "updatedAt": "2026-08-03",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-08-31"
+  },
   {
    "number": 1557,
    "title": "重新采集数据的参数重新定义",
@@ -13,7 +62,9 @@
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "bug",
@@ -23,7 +74,33 @@
    ],
    "comments": 4,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-01",
+   "updatedAt": "2026-08-03",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1555,
+   "title": "开源技术雷达：数据支持tab切换、各组件支持全屏",
+   "rawTitle": "[需求] 开源技术雷达：数据支持tab切换、各组件支持全屏",
+   "url": "https://github.com/opensourceways/backlog/issues/1555",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Yikun",
+   "labels": [
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 6,
+   "createdAt": "2026-08-01",
+   "updatedAt": "2026-08-03",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -37,17 +114,20 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "Yikun",
    "labels": [
-    "need_light",
+    "need_design",
+    "need_security",
     "sig/infratructure",
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 5,
+   "comments": 9,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-01",
+   "updatedAt": "2026-08-03",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -61,7 +141,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "Tian-Fantasea",
    "labels": [
     "sig/infratructure",
@@ -69,7 +151,7 @@
    ],
    "comments": 3,
    "createdAt": "2026-07-29",
-   "updatedAt": "2026-07-29",
+   "updatedAt": "2026-08-03",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -113,7 +195,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "zeshengzong",
    "labels": [
     "sig/infratructure",
@@ -122,7 +206,7 @@
    ],
    "comments": 4,
    "createdAt": "2026-07-29",
-   "updatedAt": "2026-07-29",
+   "updatedAt": "2026-08-03",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -223,9 +307,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 47,
+   "comments": 54,
    "createdAt": "2026-07-21",
-   "updatedAt": "2026-07-30",
+   "updatedAt": "2026-08-03",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -310,34 +394,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 35,
+   "comments": 38,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-07-30",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1210,
-   "title": "NPU折线图增加统计时间范围内的 NPU使用率（平均/P50/P90/P95）",
-   "rawTitle": "[任务] NPU折线图增加统计时间范围内的 NPU使用率（平均/P50/P90/P95）",
-   "url": "https://github.com/opensourceways/backlog/issues/1210",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Creyson-peng",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure"
-   ],
-   "comments": 20,
-   "createdAt": "2026-07-01",
-   "updatedAt": "2026-07-20",
+   "updatedAt": "2026-08-03",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -387,9 +446,9 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 77,
+   "comments": 87,
    "createdAt": "2026-06-23",
-   "updatedAt": "2026-07-31",
+   "updatedAt": "2026-08-03",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -413,9 +472,9 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 12,
+   "comments": 21,
    "createdAt": "2026-06-23",
-   "updatedAt": "2026-07-31",
+   "updatedAt": "2026-08-03",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -529,7 +588,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "accepted",
@@ -539,7 +600,7 @@
    ],
    "comments": 8,
    "createdAt": "2026-07-30",
-   "updatedAt": "2026-07-30",
+   "updatedAt": "2026-08-03",
    "closedAt": "2026-07-30",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -1584,6 +1645,31 @@
    "createdAt": "2026-07-02",
    "updatedAt": "2026-07-13",
    "closedAt": "2026-07-13",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1210,
+   "title": "NPU折线图增加统计时间范围内的 NPU使用率（平均/P50/P90/P95）",
+   "rawTitle": "[任务] NPU折线图增加统计时间范围内的 NPU使用率（平均/P50/P90/P95）",
+   "url": "https://github.com/opensourceways/backlog/issues/1210",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Creyson-peng",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 20,
+   "createdAt": "2026-07-01",
+   "updatedAt": "2026-08-03",
+   "closedAt": "2026-08-03",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
