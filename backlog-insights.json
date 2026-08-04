@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-03 23:25",
+ "generatedAt": "2026-08-04 11:47",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 658,
@@ -54,11 +54,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -130,12 +130,12 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 3,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
-   "ai": false
+   "roundsTotal": 4,
+   "ai": true
   },
   {
    "n": 1553,
@@ -148,12 +148,12 @@
    "closedMonth": null,
    "service": "om-datacenter",
    "rounds": {
-    "analyze": 3,
+    "analyze": 4,
     "implement": 0,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -319,13 +319,13 @@
    "closedMonth": null,
    "service": "om-datacenter",
    "rounds": {
-    "analyze": 2,
-    "implement": 0,
+    "analyze": 3,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
-   "ai": false
+   "roundsTotal": 4,
+   "ai": true
   },
   {
    "n": 1527,
@@ -549,10 +549,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 3,
-    "deploy": 1,
+    "deploy": 2,
     "release": 1
    },
-   "roundsTotal": 6,
+   "roundsTotal": 7,
    "ai": false
   },
   {
@@ -721,9 +721,9 @@
     "analyze": 2,
     "implement": 1,
     "deploy": 8,
-    "release": 0
+    "release": 1
    },
-   "roundsTotal": 11,
+   "roundsTotal": 12,
    "ai": true
   },
   {
@@ -2315,11 +2315,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 11,
+    "implement": 13,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 15,
+   "roundsTotal": 17,
    "ai": true
   },
   {
@@ -3607,11 +3607,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 6,
+    "implement": 7,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 8,
+   "roundsTotal": 9,
    "ai": true
   },
   {
@@ -4359,11 +4359,11 @@
    "n": 909,
    "type": "其他",
    "scenario": "其他/未分",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-15",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-04",
+   "closedMonth": "2026-08",
    "service": "cla-all",
    "rounds": {
     "analyze": 8,
