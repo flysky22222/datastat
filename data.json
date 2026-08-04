@@ -1,9 +1,35 @@
 {
- "generatedAt": "2026-08-04 16:23",
+ "generatedAt": "2026-08-04 21:50",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 129,
+ "total": 130,
  "records": [
+  {
+   "number": 1588,
+   "title": "PrometheusModule查询能力增强与数据过滤优化",
+   "rawTitle": "[任务]  PrometheusModule查询能力增强与数据过滤优化",
+   "url": "https://github.com/opensourceways/backlog/issues/1588",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 7,
+   "createdAt": "2026-08-04",
+   "updatedAt": "2026-08-04",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-08-31"
+  },
   {
    "number": 1564,
    "title": "CI 看板新增 sglang Nightly Test (NPU) workflow 数据采集（sgl-project/sglang）",
@@ -95,13 +121,15 @@
    ],
    "author": "Yikun",
    "labels": [
+    "accepted",
     "need_design",
     "need_security",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 15,
+   "comments": 21,
    "createdAt": "2026-08-01",
    "updatedAt": "2026-08-04",
    "closedAt": "",
@@ -129,7 +157,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 13,
+   "comments": 22,
    "createdAt": "2026-07-29",
    "updatedAt": "2026-08-04",
    "closedAt": "",
@@ -185,7 +213,7 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 6,
+   "comments": 7,
    "createdAt": "2026-07-29",
    "updatedAt": "2026-08-04",
    "closedAt": "",
@@ -234,7 +262,7 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 10,
+   "comments": 11,
    "createdAt": "2026-07-28",
    "updatedAt": "2026-08-04",
    "closedAt": "",
@@ -290,7 +318,7 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 8,
+   "comments": 9,
    "createdAt": "2026-07-23",
    "updatedAt": "2026-08-04",
    "closedAt": "",
@@ -342,7 +370,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 62,
+   "comments": 65,
    "createdAt": "2026-07-21",
    "updatedAt": "2026-08-04",
    "closedAt": "",
@@ -429,7 +457,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 47,
+   "comments": 50,
    "createdAt": "2026-07-06",
    "updatedAt": "2026-08-04",
    "closedAt": "",
@@ -456,7 +484,7 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 7,
+   "comments": 8,
    "createdAt": "2026-06-27",
    "updatedAt": "2026-08-04",
    "closedAt": "",
