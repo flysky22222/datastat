@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-04 09:45",
+ "generatedAt": "2026-08-04 16:23",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 127,
+ "total": 129,
  "records": [
   {
    "number": 1564,
@@ -20,33 +20,7 @@
    "labels": [
     "sig/infratructure"
    ],
-   "comments": 2,
-   "createdAt": "2026-08-03",
-   "updatedAt": "2026-08-03",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1562,
-   "title": "优化 APIMagic 的接口 /res/npu/dict 的响应时长",
-   "rawTitle": "[缺陷] 优化 APIMagic 的接口 /res/npu/dict 的响应时长",
-   "url": "https://github.com/opensourceways/backlog/issues/1562",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 9,
+   "comments": 3,
    "createdAt": "2026-08-03",
    "updatedAt": "2026-08-04",
    "closedAt": "",
@@ -93,14 +67,16 @@
    ],
    "author": "Yikun",
    "labels": [
+    "accepted",
     "need_ux",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 6,
+   "comments": 9,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-03",
+   "updatedAt": "2026-08-04",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -125,9 +101,9 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 9,
+   "comments": 15,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-03",
+   "updatedAt": "2026-08-04",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -146,12 +122,16 @@
    ],
    "author": "Tian-Fantasea",
    "labels": [
+    "accepted",
+    "need_design",
     "sig/infratructure",
-    "feature-request"
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 3,
+   "comments": 13,
    "createdAt": "2026-07-29",
-   "updatedAt": "2026-08-03",
+   "updatedAt": "2026-08-04",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -200,13 +180,63 @@
    ],
    "author": "zeshengzong",
    "labels": [
+    "accepted",
     "sig/infratructure",
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 4,
+   "comments": 6,
    "createdAt": "2026-07-29",
-   "updatedAt": "2026-08-03",
+   "updatedAt": "2026-08-04",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1515,
+   "title": "看板-运营看板-贡献者-贡献者排名存在开发者重复在排行榜多页上出现",
+   "rawTitle": "[缺陷] 看板-运营看板-贡献者-贡献者排名存在开发者重复在排行榜多页上出现",
+   "url": "https://github.com/opensourceways/backlog/issues/1515",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
+   "comments": 4,
+   "createdAt": "2026-07-28",
+   "updatedAt": "2026-08-04",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1512,
+   "title": "看板-贡献者-贡献者排名模块新增3个需求",
+   "rawTitle": "[需求] 看板-贡献者-贡献者排名模块新增3个需求",
+   "url": "https://github.com/opensourceways/backlog/issues/1512",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "accepted",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 10,
+   "createdAt": "2026-07-28",
+   "updatedAt": "2026-08-04",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -225,15 +255,17 @@
    ],
    "author": "zeshengzong",
    "labels": [
+    "accepted",
     "need_design",
     "need_security",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 5,
+   "comments": 8,
    "createdAt": "2026-07-25",
-   "updatedAt": "2026-07-27",
+   "updatedAt": "2026-08-04",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -247,17 +279,20 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "zeshengzong",
    "labels": [
+    "accepted",
     "need_light",
     "sig/infratructure",
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 5,
+   "comments": 8,
    "createdAt": "2026-07-23",
-   "updatedAt": "2026-07-23",
+   "updatedAt": "2026-08-04",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -307,9 +342,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 57,
+   "comments": 62,
    "createdAt": "2026-07-21",
-   "updatedAt": "2026-08-03",
+   "updatedAt": "2026-08-04",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -394,9 +429,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 41,
+   "comments": 47,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-08-03",
+   "updatedAt": "2026-08-04",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -415,14 +450,15 @@
    ],
    "author": "pkking",
    "labels": [
+    "accepted",
     "need_design",
     "need_itest",
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 5,
+   "comments": 7,
    "createdAt": "2026-06-27",
-   "updatedAt": "2026-07-20",
+   "updatedAt": "2026-08-04",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
@@ -472,9 +508,9 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 22,
+   "comments": 25,
    "createdAt": "2026-06-23",
-   "updatedAt": "2026-08-03",
+   "updatedAt": "2026-08-04",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -529,6 +565,32 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1562,
+   "title": "优化 APIMagic 的接口 /res/npu/dict 的响应时长",
+   "rawTitle": "[缺陷] 优化 APIMagic 的接口 /res/npu/dict 的响应时长",
+   "url": "https://github.com/opensourceways/backlog/issues/1562",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 10,
+   "createdAt": "2026-08-03",
+   "updatedAt": "2026-08-04",
+   "closedAt": "2026-08-04",
+   "priority": "",
+   "plannedAt": "2026-08-31"
   },
   {
    "number": 1548,
