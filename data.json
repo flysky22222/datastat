@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-08-05 16:21",
+ "generatedAt": "2026-08-05 21:46",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 132,
+ "total": 133,
  "records": [
   {
-   "number": 1596,
-   "title": "NPU监控页面趋势图legend与横坐标重叠",
-   "rawTitle": "[缺陷] NPU监控页面趋势图legend与横坐标重叠",
-   "url": "https://github.com/opensourceways/backlog/issues/1596",
+   "number": 1601,
+   "title": "om-dataarts 流水线执行sql脚本时报错表不存在",
+   "rawTitle": "[缺陷] om-dataarts 流水线执行sql脚本时报错表不存在",
+   "url": "https://github.com/opensourceways/backlog/issues/1601",
    "status": "open",
    "state": "open",
    "stateReason": null,
@@ -20,15 +20,14 @@
    "labels": [
     "bug",
     "accepted",
-    "sig/infratructure",
-    "complete-develop"
+    "sig/infratructure"
    ],
    "comments": 4,
    "createdAt": "2026-08-05",
    "updatedAt": "2026-08-05",
    "closedAt": "",
    "priority": "",
-   "plannedAt": "2026-06-30"
+   "plannedAt": "2026-08-31"
   },
   {
    "number": 1594,
@@ -56,32 +55,6 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1588,
-   "title": "PrometheusModule查询能力增强与数据过滤优化",
-   "rawTitle": "[任务]  PrometheusModule查询能力增强与数据过滤优化",
-   "url": "https://github.com/opensourceways/backlog/issues/1588",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 10,
-   "createdAt": "2026-08-04",
-   "updatedAt": "2026-08-05",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-08-31"
   },
   {
    "number": 1564,
@@ -256,15 +229,19 @@
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "Tian-Fantasea",
    "labels": [
     "bug",
-    "sig/infratructure"
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
    ],
-   "comments": 4,
+   "comments": 6,
    "createdAt": "2026-07-28",
-   "updatedAt": "2026-08-04",
+   "updatedAt": "2026-08-05",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -563,9 +540,9 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 25,
+   "comments": 34,
    "createdAt": "2026-06-23",
-   "updatedAt": "2026-08-04",
+   "updatedAt": "2026-08-05",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -620,6 +597,58 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1596,
+   "title": "NPU监控页面趋势图legend与横坐标重叠",
+   "rawTitle": "[缺陷] NPU监控页面趋势图legend与横坐标重叠",
+   "url": "https://github.com/opensourceways/backlog/issues/1596",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-05",
+   "updatedAt": "2026-08-05",
+   "closedAt": "2026-08-05",
+   "priority": "",
+   "plannedAt": "2026-08-31"
+  },
+  {
+   "number": 1588,
+   "title": "PrometheusModule查询能力增强与数据过滤优化",
+   "rawTitle": "[任务]  PrometheusModule查询能力增强与数据过滤优化",
+   "url": "https://github.com/opensourceways/backlog/issues/1588",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 10,
+   "createdAt": "2026-08-04",
+   "updatedAt": "2026-08-05",
+   "closedAt": "2026-08-05",
+   "priority": "",
+   "plannedAt": "2026-08-31"
   },
   {
    "number": 1562,
