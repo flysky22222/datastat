@@ -1,9 +1,62 @@
 {
- "generatedAt": "2026-08-04 21:50",
+ "generatedAt": "2026-08-05 16:21",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 130,
+ "total": 132,
  "records": [
+  {
+   "number": 1596,
+   "title": "NPU监控页面趋势图legend与横坐标重叠",
+   "rawTitle": "[缺陷] NPU监控页面趋势图legend与横坐标重叠",
+   "url": "https://github.com/opensourceways/backlog/issues/1596",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-05",
+   "updatedAt": "2026-08-05",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1594,
+   "title": "运营质量基线页面数据动态获取",
+   "rawTitle": "[需求] 运营质量基线页面数据动态获取",
+   "url": "https://github.com/opensourceways/backlog/issues/1594",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "need_design",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 6,
+   "createdAt": "2026-08-05",
+   "updatedAt": "2026-08-05",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1588,
    "title": "PrometheusModule查询能力增强与数据过滤优化",
@@ -23,9 +76,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 7,
+   "comments": 10,
    "createdAt": "2026-08-04",
-   "updatedAt": "2026-08-04",
+   "updatedAt": "2026-08-05",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-08-31"
@@ -52,32 +105,6 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-08-31"
-  },
-  {
-   "number": 1557,
-   "title": "重新采集数据的参数重新定义",
-   "rawTitle": "[缺陷] 重新采集数据的参数重新定义",
-   "url": "https://github.com/opensourceways/backlog/issues/1557",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 4,
-   "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-03",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
   },
   {
    "number": 1555,
@@ -129,9 +156,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 21,
+   "comments": 24,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-04",
+   "updatedAt": "2026-08-05",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -157,9 +184,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 22,
+   "comments": 35,
    "createdAt": "2026-07-29",
-   "updatedAt": "2026-08-04",
+   "updatedAt": "2026-08-05",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -370,9 +397,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 65,
+   "comments": 71,
    "createdAt": "2026-07-21",
-   "updatedAt": "2026-08-04",
+   "updatedAt": "2026-08-05",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -457,9 +484,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 50,
+   "comments": 53,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-08-04",
+   "updatedAt": "2026-08-05",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -619,6 +646,32 @@
    "closedAt": "2026-08-04",
    "priority": "",
    "plannedAt": "2026-08-31"
+  },
+  {
+   "number": 1557,
+   "title": "重新采集数据的参数重新定义",
+   "rawTitle": "[缺陷] 重新采集数据的参数重新定义",
+   "url": "https://github.com/opensourceways/backlog/issues/1557",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-01",
+   "updatedAt": "2026-08-05",
+   "closedAt": "2026-08-05",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1548,
