@@ -1,9 +1,35 @@
 {
- "generatedAt": "2026-08-06 09:48",
+ "generatedAt": "2026-08-06 16:18",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 133,
+ "total": 134,
  "records": [
+  {
+   "number": 1603,
+   "title": "NPU 看板资源使用率筛选维度扩展",
+   "rawTitle": "[任务] NPU 看板资源使用率筛选维度扩展",
+   "url": "https://github.com/opensourceways/backlog/issues/1603",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 16,
+   "createdAt": "2026-08-06",
+   "updatedAt": "2026-08-06",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-08-31"
+  },
   {
    "number": 1594,
    "title": "运营质量基线页面数据动态获取",
@@ -155,8 +181,6 @@
    "labels": [
     "accepted",
     "need_design",
-    "need_security",
-    "need_ux",
     "sig/infratructure",
     "feature-request",
     "complete-analyze",
@@ -164,7 +188,7 @@
    ],
    "comments": 34,
    "createdAt": "2026-07-29",
-   "updatedAt": "2026-07-31",
+   "updatedAt": "2026-08-06",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
@@ -305,32 +329,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1439,
-   "title": "数据总览活跃人数接口问题",
-   "rawTitle": "[缺陷] 数据总览活跃人数接口问题",
-   "url": "https://github.com/opensourceways/backlog/issues/1439",
-   "status": "open",
-   "state": "open",
-   "stateReason": "reopened",
-   "type": "缺陷",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "ssignik",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 37,
-   "createdAt": "2026-07-23",
-   "updatedAt": "2026-07-31",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1420,
    "title": "token_task 任务鉴权方式修改",
    "rawTitle": "[任务] token_task 任务鉴权方式修改",
@@ -349,9 +347,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 71,
+   "comments": 77,
    "createdAt": "2026-07-21",
-   "updatedAt": "2026-08-05",
+   "updatedAt": "2026-08-06",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -542,9 +540,9 @@
     "need_ux",
     "need_itest"
    ],
-   "comments": 71,
+   "comments": 74,
    "createdAt": "2026-05-08",
-   "updatedAt": "2026-07-09",
+   "updatedAt": "2026-08-06",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
@@ -932,6 +930,32 @@
    "closedAt": "2026-07-31",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1439,
+   "title": "数据总览活跃人数接口问题",
+   "rawTitle": "[缺陷] 数据总览活跃人数接口问题",
+   "url": "https://github.com/opensourceways/backlog/issues/1439",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 37,
+   "createdAt": "2026-07-23",
+   "updatedAt": "2026-08-06",
+   "closedAt": "2026-08-06",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1424,
