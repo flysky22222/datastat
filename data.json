@@ -1,34 +1,9 @@
 {
- "generatedAt": "2026-08-05 21:46",
+ "generatedAt": "2026-08-06 09:48",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 133,
  "records": [
-  {
-   "number": 1601,
-   "title": "om-dataarts 流水线执行sql脚本时报错表不存在",
-   "rawTitle": "[缺陷] om-dataarts 流水线执行sql脚本时报错表不存在",
-   "url": "https://github.com/opensourceways/backlog/issues/1601",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure"
-   ],
-   "comments": 4,
-   "createdAt": "2026-08-05",
-   "updatedAt": "2026-08-05",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-08-31"
-  },
   {
    "number": 1594,
    "title": "运营质量基线页面数据动态获取",
@@ -597,6 +572,32 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1601,
+   "title": "om-dataarts 流水线执行sql脚本时报错表不存在",
+   "rawTitle": "[缺陷] om-dataarts 流水线执行sql脚本时报错表不存在",
+   "url": "https://github.com/opensourceways/backlog/issues/1601",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 10,
+   "createdAt": "2026-08-05",
+   "updatedAt": "2026-08-06",
+   "closedAt": "2026-08-06",
+   "priority": "",
+   "plannedAt": "2026-08-31"
   },
   {
    "number": 1596,
