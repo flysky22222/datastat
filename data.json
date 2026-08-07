@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-07 07:51",
+ "generatedAt": "2026-08-07 10:11",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 134,
@@ -166,34 +166,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1526,
-   "title": "基础设施需求/缺陷/任务看板",
-   "rawTitle": "[需求] 基础设施需求/缺陷/任务看板",
-   "url": "https://github.com/opensourceways/backlog/issues/1526",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "need_design",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze",
-    "complete-develop"
-   ],
-   "comments": 34,
-   "createdAt": "2026-07-29",
-   "updatedAt": "2026-08-06",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-07-31"
-  },
-  {
    "number": 1523,
    "title": "PTA 社区更名为AscendForPyTorch",
    "rawTitle": "[需求] PTA 社区更名为AscendForPyTorch",
@@ -347,9 +319,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 86,
+   "comments": 91,
    "createdAt": "2026-07-21",
-   "updatedAt": "2026-08-06",
+   "updatedAt": "2026-08-07",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -775,6 +747,34 @@
    "closedAt": "2026-07-30",
    "priority": "",
    "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1526,
+   "title": "基础设施需求/缺陷/任务看板",
+   "rawTitle": "[需求] 基础设施需求/缺陷/任务看板",
+   "url": "https://github.com/opensourceways/backlog/issues/1526",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "need_design",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 34,
+   "createdAt": "2026-07-29",
+   "updatedAt": "2026-08-07",
+   "closedAt": "2026-08-07",
+   "priority": "",
+   "plannedAt": "2026-07-31"
   },
   {
    "number": 1517,
