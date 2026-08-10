@@ -1,9 +1,34 @@
 {
- "generatedAt": "2026-08-10 15:14",
+ "generatedAt": "2026-08-10 20:48",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 137,
+ "total": 138,
  "records": [
+  {
+   "number": 1641,
+   "title": "RAG服务打印关键日志",
+   "rawTitle": "[需求] RAG服务打印关键日志",
+   "url": "https://github.com/opensourceways/backlog/issues/1641",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "ssignik",
+   "labels": [
+    "need_design",
+    "need_security",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 6,
+   "createdAt": "2026-08-10",
+   "updatedAt": "2026-08-10",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1630,
    "title": "NPU 监控看板维度取值选择框优化",
@@ -23,7 +48,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 4,
+   "comments": 7,
    "createdAt": "2026-08-10",
    "updatedAt": "2026-08-10",
    "closedAt": "",
@@ -77,9 +102,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 14,
+   "comments": 17,
    "createdAt": "2026-08-07",
-   "updatedAt": "2026-08-07",
+   "updatedAt": "2026-08-10",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -161,7 +186,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 32,
+   "comments": 36,
    "createdAt": "2026-08-01",
    "updatedAt": "2026-08-10",
    "closedAt": "",
