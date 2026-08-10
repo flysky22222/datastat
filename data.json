@@ -1,9 +1,35 @@
 {
- "generatedAt": "2026-08-10 02:26",
+ "generatedAt": "2026-08-10 15:14",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 136,
+ "total": 137,
  "records": [
+  {
+   "number": 1630,
+   "title": "NPU 监控看板维度取值选择框优化",
+   "rawTitle": "[任务] NPU 监控看板维度取值选择框优化",
+   "url": "https://github.com/opensourceways/backlog/issues/1630",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-10",
+   "updatedAt": "2026-08-10",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1627,
    "title": "白盒的数据诊断没有考虑到评论的诊断",
@@ -21,9 +47,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 4,
+   "comments": 7,
    "createdAt": "2026-08-09",
-   "updatedAt": "2026-08-09",
+   "updatedAt": "2026-08-10",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -59,32 +85,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1603,
-   "title": "NPU 看板资源使用率筛选维度扩展",
-   "rawTitle": "[任务] NPU 看板资源使用率筛选维度扩展",
-   "url": "https://github.com/opensourceways/backlog/issues/1603",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 16,
-   "createdAt": "2026-08-06",
-   "updatedAt": "2026-08-06",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-08-31"
-  },
-  {
    "number": 1594,
    "title": "运营质量基线页面数据动态获取",
    "rawTitle": "[需求] 运营质量基线页面数据动态获取",
@@ -110,29 +110,6 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1564,
-   "title": "CI 看板新增 sglang Nightly Test (NPU) workflow 数据采集（sgl-project/sglang）",
-   "rawTitle": "[任务] CI 看板新增 sglang Nightly Test (NPU) workflow 数据采集（sgl-project/sglang）",
-   "url": "https://github.com/opensourceways/backlog/issues/1564",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Goalina",
-   "labels": [
-    "sig/infratructure"
-   ],
-   "comments": 3,
-   "createdAt": "2026-08-03",
-   "updatedAt": "2026-08-04",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-08-31"
   },
   {
    "number": 1555,
@@ -184,9 +161,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 30,
+   "comments": 32,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-07",
+   "updatedAt": "2026-08-10",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -598,6 +575,32 @@
    "plannedAt": "2026-07-31"
   },
   {
+   "number": 1603,
+   "title": "NPU 看板资源使用率筛选维度扩展",
+   "rawTitle": "[任务] NPU 看板资源使用率筛选维度扩展",
+   "url": "https://github.com/opensourceways/backlog/issues/1603",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 16,
+   "createdAt": "2026-08-06",
+   "updatedAt": "2026-08-10",
+   "closedAt": "2026-08-10",
+   "priority": "",
+   "plannedAt": "2026-08-31"
+  },
+  {
    "number": 1601,
    "title": "om-dataarts 流水线执行sql脚本时报错表不存在",
    "rawTitle": "[缺陷] om-dataarts 流水线执行sql脚本时报错表不存在",
@@ -672,6 +675,29 @@
    "createdAt": "2026-08-04",
    "updatedAt": "2026-08-05",
    "closedAt": "2026-08-05",
+   "priority": "",
+   "plannedAt": "2026-08-31"
+  },
+  {
+   "number": 1564,
+   "title": "CI 看板新增 sglang Nightly Test (NPU) workflow 数据采集（sgl-project/sglang）",
+   "rawTitle": "[任务] CI 看板新增 sglang Nightly Test (NPU) workflow 数据采集（sgl-project/sglang）",
+   "url": "https://github.com/opensourceways/backlog/issues/1564",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Goalina",
+   "labels": [
+    "sig/infratructure"
+   ],
+   "comments": 3,
+   "createdAt": "2026-08-03",
+   "updatedAt": "2026-08-10",
+   "closedAt": "2026-08-10",
    "priority": "",
    "plannedAt": "2026-08-31"
   },
