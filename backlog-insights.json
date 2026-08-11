@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-11 03:29",
+ "generatedAt": "2026-08-11 10:34",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 691,
@@ -54,11 +54,11 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 4,
-    "implement": 3,
+    "implement": 6,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 7,
+   "roundsTotal": 10,
    "ai": true
   },
   {
@@ -207,10 +207,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 2,
-    "deploy": 3,
+    "deploy": 4,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 7,
    "ai": false
   },
   {
@@ -1167,11 +1167,11 @@
    "n": 1506,
    "type": "任务",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-27",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-11",
+   "closedMonth": "2026-08",
    "service": "xihe-all",
    "rounds": {
     "analyze": 1,
@@ -2068,11 +2068,11 @@
    "service": "xihe-all",
    "rounds": {
     "analyze": 1,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 3,
    "ai": false
   },
   {
@@ -4017,11 +4017,11 @@
    "n": 1074,
    "type": "需求",
    "scenario": "其他/未分",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-24",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-11",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 1,
@@ -5223,10 +5223,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 6,
-    "deploy": 5,
+    "deploy": 6,
     "release": 0
    },
-   "roundsTotal": 12,
+   "roundsTotal": 13,
    "ai": false
   },
   {
@@ -10598,12 +10598,12 @@
    "closedMonth": null,
    "service": "bigfiles-lfs-all",
    "rounds": {
-    "analyze": 2,
+    "analyze": 3,
     "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
