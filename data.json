@@ -1,9 +1,33 @@
 {
- "generatedAt": "2026-08-12 15:10",
+ "generatedAt": "2026-08-12 20:47",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 139,
+ "total": 140,
  "records": [
+  {
+   "number": 1676,
+   "title": "APIMagic ms-reload 被判为需构建：修改文档(.md)时误走镜像构建流水线",
+   "rawTitle": "[缺陷] APIMagic ms-reload 被判为需构建：修改文档(.md)时误走镜像构建流水线",
+   "url": "https://github.com/opensourceways/backlog/issues/1676",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
+   "comments": 1,
+   "createdAt": "2026-08-12",
+   "updatedAt": "2026-08-12",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1673,
    "title": "NPU 监控看板交互优化：维度联动、Tips 提示与模糊搜索",
@@ -23,7 +47,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 12,
+   "comments": 22,
    "createdAt": "2026-08-12",
    "updatedAt": "2026-08-12",
    "closedAt": "",
@@ -159,7 +183,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 24,
+   "comments": 27,
    "createdAt": "2026-08-05",
    "updatedAt": "2026-08-12",
    "closedAt": "",
