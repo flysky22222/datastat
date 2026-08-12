@@ -1,9 +1,35 @@
 {
- "generatedAt": "2026-08-12 09:11",
+ "generatedAt": "2026-08-12 15:10",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 138,
+ "total": 139,
  "records": [
+  {
+   "number": 1673,
+   "title": "NPU 监控看板交互优化：维度联动、Tips 提示与模糊搜索",
+   "rawTitle": "[任务] NPU 监控看板交互优化：维度联动、Tips 提示与模糊搜索",
+   "url": "https://github.com/opensourceways/backlog/issues/1673",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 12,
+   "createdAt": "2026-08-12",
+   "updatedAt": "2026-08-12",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-08-31"
+  },
   {
    "number": 1641,
    "title": "RAG服务打印关键日志",
@@ -64,7 +90,9 @@
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "bug",
@@ -74,7 +102,7 @@
    ],
    "comments": 7,
    "createdAt": "2026-08-09",
-   "updatedAt": "2026-08-10",
+   "updatedAt": "2026-08-12",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -128,11 +156,12 @@
     "need_ux",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 15,
+   "comments": 24,
    "createdAt": "2026-08-05",
-   "updatedAt": "2026-08-11",
+   "updatedAt": "2026-08-12",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -158,9 +187,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 9,
+   "comments": 12,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-04",
+   "updatedAt": "2026-08-12",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -432,7 +461,7 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 66,
+   "comments": 67,
    "createdAt": "2026-07-10",
    "updatedAt": "2026-08-12",
    "closedAt": "",
@@ -570,9 +599,9 @@
     "need_itest",
     "complete-develop"
    ],
-   "comments": 83,
+   "comments": 86,
    "createdAt": "2026-05-08",
-   "updatedAt": "2026-08-11",
+   "updatedAt": "2026-08-12",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
