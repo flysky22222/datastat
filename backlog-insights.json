@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-12 15:59",
+ "generatedAt": "2026-08-12 21:55",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 696,
+ "total": 698,
  "stages": [
   {
    "key": "analyze",
@@ -24,6 +24,44 @@
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
   {
+   "n": 1678,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-12",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "eur-build-all",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1676,
+   "type": "缺陷",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-12",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 0,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 0,
+   "ai": false
+  },
+  {
    "n": 1673,
    "type": "任务",
    "scenario": "前端看板/UI",
@@ -35,11 +73,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 3,
-    "deploy": 1,
+    "implement": 4,
+    "deploy": 3,
     "release": 0
    },
-   "roundsTotal": 5,
+   "roundsTotal": 8,
    "ai": false
   },
   {
@@ -92,11 +130,11 @@
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 1,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -605,11 +643,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 4,
+    "implement": 5,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 8,
+   "roundsTotal": 9,
    "ai": true
   },
   {
@@ -1802,11 +1840,11 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 2,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 5,
    "ai": true
   },
   {
