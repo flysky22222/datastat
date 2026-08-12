@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-12 03:34",
+ "generatedAt": "2026-08-12 11:04",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 695,
@@ -131,10 +131,10 @@
    "rounds": {
     "analyze": 4,
     "implement": 6,
-    "deploy": 0,
+    "deploy": 1,
     "release": 0
    },
-   "roundsTotal": 10,
+   "roundsTotal": 11,
    "ai": true
   },
   {
@@ -206,12 +206,12 @@
    "service": "easysoftware",
    "rounds": {
     "analyze": 2,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
-   "ai": false
+   "roundsTotal": 3,
+   "ai": true
   },
   {
    "n": 1633,
@@ -586,11 +586,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 1,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 5,
+   "roundsTotal": 8,
    "ai": true
   },
   {
@@ -1414,11 +1414,11 @@
    "n": 1482,
    "type": "需求",
    "scenario": "其他/未分",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-25",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-12",
+   "closedMonth": "2026-08",
    "service": "cla-all",
    "rounds": {
     "analyze": 2,
@@ -2638,11 +2638,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 22,
+    "implement": 23,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 24,
+   "roundsTotal": 25,
    "ai": true
   },
   {
