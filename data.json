@@ -1,9 +1,61 @@
 {
- "generatedAt": "2026-08-13 09:12",
+ "generatedAt": "2026-08-13 15:14",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 140,
+ "total": 143,
  "records": [
+  {
+   "number": 1685,
+   "title": "TTFHW看板【运行详情】页中，某社区底下有多个测试记录无法自动跳转，需支持",
+   "rawTitle": "[需求] TTFHW看板【运行详情】页中，某社区底下有多个测试记录无法自动跳转，需支持",
+   "url": "https://github.com/opensourceways/backlog/issues/1685",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "need_light",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 6,
+   "createdAt": "2026-08-13",
+   "updatedAt": "2026-08-13",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1682,
+   "title": "NPU 利用率指标监控与预警",
+   "rawTitle": "[需求] NPU 利用率指标监控与预警",
+   "url": "https://github.com/opensourceways/backlog/issues/1682",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "need_design",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 25,
+   "createdAt": "2026-08-13",
+   "updatedAt": "2026-08-13",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-08-31"
+  },
   {
    "number": 1676,
    "title": "APIMagic ms-reload 被判为需构建：修改文档(.md)时误走镜像构建流水线",
@@ -45,9 +97,10 @@
     "accepted",
     "task",
     "sig/infratructure",
-    "complete-develop"
+    "complete-develop",
+    "complete-test"
    ],
-   "comments": 24,
+   "comments": 28,
    "createdAt": "2026-08-12",
    "updatedAt": "2026-08-13",
    "closedAt": "",
@@ -63,7 +116,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "yyl-support"
+   ],
    "author": "ssignik",
    "labels": [
     "need_design",
@@ -74,7 +129,7 @@
    ],
    "comments": 6,
    "createdAt": "2026-08-10",
-   "updatedAt": "2026-08-10",
+   "updatedAt": "2026-08-13",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -183,9 +238,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 27,
+   "comments": 30,
    "createdAt": "2026-08-05",
-   "updatedAt": "2026-08-12",
+   "updatedAt": "2026-08-13",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -211,9 +266,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 12,
+   "comments": 16,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-12",
+   "updatedAt": "2026-08-13",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -411,6 +466,34 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1441,
+   "title": "topN看板展示易用性优化",
+   "rawTitle": "[需求] topN看板展示易用性优化",
+   "url": "https://github.com/opensourceways/backlog/issues/1441",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "accepted",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 20,
+   "createdAt": "2026-07-23",
+   "updatedAt": "2026-08-13",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1420,
    "title": "token_task 任务鉴权方式修改",
    "rawTitle": "[任务] token_task 任务鉴权方式修改",
@@ -485,9 +568,9 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 67,
+   "comments": 71,
    "createdAt": "2026-07-10",
-   "updatedAt": "2026-08-12",
+   "updatedAt": "2026-08-13",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -623,9 +706,9 @@
     "need_itest",
     "complete-develop"
    ],
-   "comments": 86,
+   "comments": 89,
    "createdAt": "2026-05-08",
-   "updatedAt": "2026-08-12",
+   "updatedAt": "2026-08-13",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
