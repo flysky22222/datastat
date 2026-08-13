@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-13 11:07",
+ "generatedAt": "2026-08-13 16:00",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 701,
+ "total": 703,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,44 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1694,
+   "type": "缺陷",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-13",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "ascend-ci-project",
+   "rounds": {
+    "analyze": 1,
+    "implement": 1,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1691,
+   "type": "缺陷",
+   "scenario": "文档/流程",
+   "state": "open",
+   "created": "2026-08-13",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "search-all",
+   "rounds": {
+    "analyze": 1,
+    "implement": 1,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
   {
    "n": 1686,
    "type": "需求",
@@ -51,14 +89,14 @@
    "createdMonth": "2026-08",
    "closed": null,
    "closedMonth": null,
-   "service": "未分服务",
+   "service": "om-datacenter",
    "rounds": {
-    "analyze": 1,
+    "analyze": 2,
     "implement": 0,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 1,
+   "roundsTotal": 2,
    "ai": false
   },
   {
@@ -73,11 +111,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 3,
-    "implement": 4,
+    "implement": 7,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 7,
+   "roundsTotal": 10,
    "ai": true
   },
   {
@@ -131,10 +169,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 4,
-    "deploy": 4,
+    "deploy": 5,
     "release": 0
    },
-   "roundsTotal": 9,
+   "roundsTotal": 10,
    "ai": false
   },
   {
@@ -274,11 +312,11 @@
    "n": 1645,
    "type": "任务",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-10",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "ci-all",
    "rounds": {
     "analyze": 1,
@@ -397,10 +435,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 2,
-    "deploy": 6,
-    "release": 0
+    "deploy": 9,
+    "release": 1
    },
-   "roundsTotal": 9,
+   "roundsTotal": 13,
    "ai": false
   },
   {
@@ -700,11 +738,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 6,
+    "implement": 7,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 10,
+   "roundsTotal": 11,
    "ai": true
   },
   {
@@ -948,10 +986,10 @@
    "rounds": {
     "analyze": 3,
     "implement": 2,
-    "deploy": 0,
+    "deploy": 1,
     "release": 0
    },
-   "roundsTotal": 5,
+   "roundsTotal": 6,
    "ai": true
   },
   {
@@ -2753,10 +2791,10 @@
    "rounds": {
     "analyze": 2,
     "implement": 23,
-    "deploy": 1,
+    "deploy": 2,
     "release": 0
    },
-   "roundsTotal": 26,
+   "roundsTotal": 27,
    "ai": true
   },
   {
@@ -4815,11 +4853,11 @@
    "n": 956,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-17",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 1,
@@ -4834,11 +4872,11 @@
    "n": 955,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-17",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 1,
@@ -4853,11 +4891,11 @@
    "n": 954,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-17",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 1,
@@ -4872,11 +4910,11 @@
    "n": 953,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-17",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 1,
@@ -4891,11 +4929,11 @@
    "n": 952,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-17",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 1,
@@ -4910,11 +4948,11 @@
    "n": 951,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-17",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 1,
@@ -4929,11 +4967,11 @@
    "n": 950,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-17",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 1,
@@ -5404,19 +5442,19 @@
    "n": 862,
    "type": "CVE",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-12",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "security-cve-all",
    "rounds": {
     "analyze": 1,
     "implement": 6,
-    "deploy": 8,
-    "release": 0
+    "deploy": 9,
+    "release": 1
    },
-   "roundsTotal": 15,
+   "roundsTotal": 17,
    "ai": false
   },
   {
@@ -5689,11 +5727,11 @@
    "n": 804,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-10",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 0,
@@ -5708,11 +5746,11 @@
    "n": 803,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-10",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 0,
@@ -5727,11 +5765,11 @@
    "n": 802,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-10",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 0,
@@ -5746,11 +5784,11 @@
    "n": 801,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-10",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 0,
@@ -5765,11 +5803,11 @@
    "n": 800,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-10",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 0,
@@ -5784,11 +5822,11 @@
    "n": 799,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-10",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 0,
@@ -5803,11 +5841,11 @@
    "n": 798,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-10",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 0,
@@ -8653,11 +8691,11 @@
    "n": 323,
    "type": "缺陷",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-05-09",
    "createdMonth": "2026-05",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-13",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 0,
@@ -8851,11 +8889,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 8,
-    "implement": 23,
+    "implement": 24,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 31,
+   "roundsTotal": 32,
    "ai": true
   },
   {
