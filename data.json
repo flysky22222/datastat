@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-13 15:14",
+ "generatedAt": "2026-08-13 20:50",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 143,
@@ -100,7 +100,7 @@
     "complete-develop",
     "complete-test"
    ],
-   "comments": 28,
+   "comments": 41,
    "createdAt": "2026-08-12",
    "updatedAt": "2026-08-13",
    "closedAt": "",
@@ -238,7 +238,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 30,
+   "comments": 33,
    "createdAt": "2026-08-05",
    "updatedAt": "2026-08-13",
    "closedAt": "",
@@ -260,7 +260,7 @@
    "author": "Yikun",
    "labels": [
     "accepted",
-    "need_ux",
+    "need_light",
     "sig/infratructure",
     "feature-request",
     "complete-analyze",
@@ -375,9 +375,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 6,
+   "comments": 9,
    "createdAt": "2026-07-28",
-   "updatedAt": "2026-08-05",
+   "updatedAt": "2026-08-13",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -568,7 +568,7 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 71,
+   "comments": 75,
    "createdAt": "2026-07-10",
    "updatedAt": "2026-08-13",
    "closedAt": "",
@@ -706,7 +706,7 @@
     "need_itest",
     "complete-develop"
    ],
-   "comments": 89,
+   "comments": 94,
    "createdAt": "2026-05-08",
    "updatedAt": "2026-08-13",
    "closedAt": "",
