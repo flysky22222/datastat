@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-14 11:06",
+ "generatedAt": "2026-08-14 15:57",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 708,
+ "total": 709,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,25 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1722,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-08-14",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 1,
+    "implement": 1,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
   {
    "n": 1713,
    "type": "CVE",
@@ -73,30 +92,30 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 5,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 7,
+   "roundsTotal": 8,
    "ai": true
   },
   {
    "n": 1700,
    "type": "需求",
    "scenario": "机器人/自动化",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-13",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-14",
+   "closedMonth": "2026-08",
    "service": "community-robots",
    "rounds": {
     "analyze": 2,
     "implement": 4,
     "deploy": 1,
-    "release": 0
+    "release": 2
    },
-   "roundsTotal": 7,
+   "roundsTotal": 9,
    "ai": true
   },
   {
@@ -111,11 +130,11 @@
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 1,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 1,
+   "roundsTotal": 2,
    "ai": false
   },
   {
@@ -149,11 +168,11 @@
    "service": "search-all",
    "rounds": {
     "analyze": 1,
-    "implement": 2,
-    "deploy": 0,
+    "implement": 4,
+    "deploy": 3,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 8,
    "ai": false
   },
   {
@@ -454,10 +473,10 @@
    "rounds": {
     "analyze": 2,
     "implement": 1,
-    "deploy": 2,
+    "deploy": 4,
     "release": 0
    },
-   "roundsTotal": 5,
+   "roundsTotal": 7,
    "ai": true
   },
   {
@@ -473,10 +492,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 3,
-    "deploy": 11,
+    "deploy": 15,
     "release": 0
    },
-   "roundsTotal": 15,
+   "roundsTotal": 19,
    "ai": true
   },
   {
@@ -492,10 +511,10 @@
    "rounds": {
     "analyze": 2,
     "implement": 2,
-    "deploy": 5,
+    "deploy": 11,
     "release": 0
    },
-   "roundsTotal": 9,
+   "roundsTotal": 15,
    "ai": true
   },
   {
@@ -7521,11 +7540,11 @@
    "service": "oneid-all",
    "rounds": {
     "analyze": 13,
-    "implement": 20,
+    "implement": 21,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 33,
+   "roundsTotal": 34,
    "ai": true
   },
   {
