@@ -1,9 +1,35 @@
 {
- "generatedAt": "2026-08-14 15:11",
+ "generatedAt": "2026-08-14 20:44",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 144,
+ "total": 146,
  "records": [
+  {
+   "number": 1726,
+   "title": "Docker Hub镜像下载量采集增加认证",
+   "rawTitle": "[任务] Docker Hub镜像下载量采集增加认证",
+   "url": "https://github.com/opensourceways/backlog/issues/1726",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 5,
+   "createdAt": "2026-08-14",
+   "updatedAt": "2026-08-14",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1722,
    "title": "界面显示的时间多了8小时",
@@ -20,9 +46,10 @@
    "labels": [
     "bug",
     "accepted",
-    "sig/infratructure"
+    "sig/infratructure",
+    "complete-develop"
    ],
-   "comments": 3,
+   "comments": 5,
    "createdAt": "2026-08-14",
    "updatedAt": "2026-08-14",
    "closedAt": "",
@@ -292,7 +319,7 @@
     "complete-develop",
     "complete-test"
    ],
-   "comments": 23,
+   "comments": 30,
    "createdAt": "2026-08-01",
    "updatedAt": "2026-08-14",
    "closedAt": "",
@@ -512,7 +539,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 23,
+   "comments": 31,
    "createdAt": "2026-07-23",
    "updatedAt": "2026-08-14",
    "closedAt": "",
@@ -707,6 +734,31 @@
    "comments": 34,
    "createdAt": "2026-06-23",
    "updatedAt": "2026-08-06",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 805,
+   "title": "为社区健康度看板增加社区官网页面 AI 平台访问量数据看板",
+   "rawTitle": "[需求] 为社区健康度看板增加社区官网页面 AI 平台访问量数据看板",
+   "url": "https://github.com/opensourceways/backlog/issues/805",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "sunshuang1866",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 4,
+   "createdAt": "2026-06-10",
+   "updatedAt": "2026-08-14",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
