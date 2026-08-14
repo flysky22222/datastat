@@ -1,9 +1,34 @@
 {
- "generatedAt": "2026-08-14 02:51",
+ "generatedAt": "2026-08-14 15:11",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 143,
+ "total": 144,
  "records": [
+  {
+   "number": 1722,
+   "title": "界面显示的时间多了8小时",
+   "rawTitle": "[缺陷] 界面显示的时间多了8小时",
+   "url": "https://github.com/opensourceways/backlog/issues/1722",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 3,
+   "createdAt": "2026-08-14",
+   "updatedAt": "2026-08-14",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1685,
    "title": "TTFHW看板【运行详情】页中，某社区底下有多个测试记录无法自动跳转，需支持",
@@ -100,9 +125,9 @@
     "complete-develop",
     "complete-test"
    ],
-   "comments": 41,
+   "comments": 45,
    "createdAt": "2026-08-12",
-   "updatedAt": "2026-08-13",
+   "updatedAt": "2026-08-14",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-08-31"
@@ -238,9 +263,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 33,
+   "comments": 36,
    "createdAt": "2026-08-05",
-   "updatedAt": "2026-08-13",
+   "updatedAt": "2026-08-14",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -264,11 +289,12 @@
     "sig/infratructure",
     "feature-request",
     "complete-analyze",
-    "complete-develop"
+    "complete-develop",
+    "complete-test"
    ],
-   "comments": 16,
+   "comments": 23,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-13",
+   "updatedAt": "2026-08-14",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -486,9 +512,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 20,
+   "comments": 23,
    "createdAt": "2026-07-23",
-   "updatedAt": "2026-08-13",
+   "updatedAt": "2026-08-14",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -568,9 +594,9 @@
     "feature-request",
     "complete-develop"
    ],
-   "comments": 75,
+   "comments": 78,
    "createdAt": "2026-07-10",
-   "updatedAt": "2026-08-13",
+   "updatedAt": "2026-08-14",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
