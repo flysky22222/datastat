@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-17 21:15",
+ "generatedAt": "2026-08-18 03:07",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 725,
@@ -663,10 +663,10 @@
    "rounds": {
     "analyze": 0,
     "implement": 1,
-    "deploy": 16,
+    "deploy": 17,
     "release": 0
    },
-   "roundsTotal": 17,
+   "roundsTotal": 18,
    "ai": false
   },
   {
