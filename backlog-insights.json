@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-17 10:01",
+ "generatedAt": "2026-08-17 15:31",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 713,
+ "total": 718,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,101 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1741,
+   "type": "缺陷",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1740,
+   "type": "缺陷",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1737,
+   "type": "缺陷",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1736,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 3,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 3,
+   "ai": false
+  },
+  {
+   "n": 1734,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "state": "open",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "forum-reply-robot",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
   {
    "n": 1730,
    "type": "缺陷",
@@ -54,11 +149,11 @@
    "service": "forum-reply-robot",
    "rounds": {
     "analyze": 1,
-    "implement": 4,
+    "implement": 6,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 5,
+   "roundsTotal": 7,
    "ai": false
   },
   {
@@ -73,11 +168,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 3,
    "ai": false
   },
   {
@@ -168,11 +263,11 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 5,
-    "implement": 10,
+    "implement": 12,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 15,
+   "roundsTotal": 17,
    "ai": true
   },
   {
@@ -320,11 +415,11 @@
    "service": "eur-build-all",
    "rounds": {
     "analyze": 2,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 5,
    "ai": true
   },
   {
@@ -1194,11 +1289,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 5,
-    "implement": 15,
+    "implement": 17,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 20,
+   "roundsTotal": 22,
    "ai": true
   },
   {
@@ -2487,10 +2582,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 4,
-    "deploy": 1,
+    "deploy": 2,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 7,
    "ai": false
   },
   {
@@ -3428,11 +3523,11 @@
    "n": 1248,
    "type": "需求",
    "scenario": "机器人/自动化",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-06",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-17",
+   "closedMonth": "2026-08",
    "service": "forum-reply-robot",
    "rounds": {
     "analyze": 3,
@@ -7616,11 +7711,11 @@
    "service": "oneid-all",
    "rounds": {
     "analyze": 13,
-    "implement": 23,
+    "implement": 26,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 36,
+   "roundsTotal": 39,
    "ai": true
   },
   {
@@ -9080,10 +9175,10 @@
    "rounds": {
     "analyze": 8,
     "implement": 25,
-    "deploy": 0,
+    "deploy": 1,
     "release": 0
    },
-   "roundsTotal": 33,
+   "roundsTotal": 34,
    "ai": true
   },
   {
@@ -11161,11 +11256,11 @@
    "n": 167,
    "type": "任务",
    "scenario": "安全/CVE",
-   "state": "open",
+   "state": "closed",
    "created": "2026-04-13",
    "createdMonth": "2026-04",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-17",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 0,
@@ -11427,11 +11522,11 @@
    "n": 148,
    "type": "需求",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-04-07",
    "createdMonth": "2026-04",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-17",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 0,
