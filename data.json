@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-17 20:24",
+ "generatedAt": "2026-08-18 02:24",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 156,
@@ -64,9 +64,10 @@
    "labels": [
     "accepted",
     "task",
-    "sig/infratructure"
+    "sig/infratructure",
+    "complete-develop"
    ],
-   "comments": 9,
+   "comments": 11,
    "createdAt": "2026-08-17",
    "updatedAt": "2026-08-17",
    "closedAt": "",
@@ -483,7 +484,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 62,
+   "comments": 65,
    "createdAt": "2026-08-01",
    "updatedAt": "2026-08-17",
    "closedAt": "",
