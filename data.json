@@ -1,9 +1,104 @@
 {
- "generatedAt": "2026-08-17 14:35",
+ "generatedAt": "2026-08-17 20:24",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 150,
+ "total": 156,
  "records": [
+  {
+   "number": 1752,
+   "title": "提供仅含有公仓的comment有效评论、issue响应与关闭时长、当期活跃开发者、贡献组织等统计数据接口",
+   "rawTitle": "[需求] 提供仅含有公仓的comment有效评论、issue响应与关闭时长、当期活跃开发者、贡献组织等统计数据接口",
+   "url": "https://github.com/opensourceways/backlog/issues/1752",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "hellowaywewe",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 3,
+   "createdAt": "2026-08-17",
+   "updatedAt": "2026-08-17",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1751,
+   "title": "数据面板组织分析页面-修正CLA签署组织总数错误、组织总数显示支持“ALL”和仅组织（不含个人和robot）",
+   "rawTitle": "[需求] 数据面板组织分析页面-修正CLA签署组织总数错误、组织总数显示支持“ALL”和仅组织（不含个人和robot）",
+   "url": "https://github.com/opensourceways/backlog/issues/1751",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "hellowaywewe",
+   "labels": [
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 3,
+   "createdAt": "2026-08-17",
+   "updatedAt": "2026-08-17",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1749,
+   "title": "修改数据中台 NPU 监控看板总卡数来源为 custom_npu_total_count",
+   "rawTitle": "[任务] 修改数据中台 NPU 监控看板总卡数来源为 custom_npu_total_count",
+   "url": "https://github.com/opensourceways/backlog/issues/1749",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 9,
+   "createdAt": "2026-08-17",
+   "updatedAt": "2026-08-17",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1743,
+   "title": "支持运营人员获取贡献者邮箱数据",
+   "rawTitle": "[需求] 支持运营人员获取贡献者邮箱数据",
+   "url": "https://github.com/opensourceways/backlog/issues/1743",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "zeshengzong",
+   "labels": [
+    "need_design",
+    "need_security",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 5,
+   "createdAt": "2026-08-17",
+   "updatedAt": "2026-08-17",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1741,
    "title": "openGauss 社区看板核心仓库数据统计范围修改",
@@ -359,9 +454,9 @@
     "complete-develop",
     "complete-test"
    ],
-   "comments": 30,
+   "comments": 37,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-14",
+   "updatedAt": "2026-08-17",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -388,9 +483,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 50,
+   "comments": 62,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-11",
+   "updatedAt": "2026-08-17",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -854,6 +949,53 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1748,
+   "title": "移除/stats/company接口返回社区组织多样性数据中的robot和个人贡献者数据",
+   "rawTitle": "[缺陷] 移除/stats/company接口返回社区组织多样性数据中的robot和个人贡献者数据",
+   "url": "https://github.com/opensourceways/backlog/issues/1748",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [],
+   "author": "hellowaywewe",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
+   "comments": 2,
+   "createdAt": "2026-08-17",
+   "updatedAt": "2026-08-17",
+   "closedAt": "2026-08-17",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1746,
+   "title": "数据面板组织分析页面-修正CLA签署组织总数错误与增加贡献组织数",
+   "rawTitle": "[需求] 数据面板组织分析页面-修正CLA签署组织总数错误与增加贡献组织数",
+   "url": "https://github.com/opensourceways/backlog/issues/1746",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [],
+   "author": "hellowaywewe",
+   "labels": [
+    "need_design",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 5,
+   "createdAt": "2026-08-17",
+   "updatedAt": "2026-08-17",
+   "closedAt": "2026-08-17",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1722,
