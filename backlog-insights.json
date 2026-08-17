@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-17 15:31",
+ "generatedAt": "2026-08-17 21:15",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 718,
+ "total": 725,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,139 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1754,
+   "type": "需求",
+   "scenario": "接口/API",
+   "state": "open",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "search-all",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1752,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "state": "open",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1751,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "state": "open",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1749,
+   "type": "任务",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 0,
+    "implement": 4,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 4,
+   "ai": false
+  },
+  {
+   "n": 1748,
+   "type": "缺陷",
+   "scenario": "机器人/自动化",
+   "state": "closed",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": "2026-08-17",
+   "closedMonth": "2026-08",
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
+   "n": 1746,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "state": "closed",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": "2026-08-17",
+   "closedMonth": "2026-08",
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1743,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "state": "open",
+   "created": "2026-08-17",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
   {
    "n": 1741,
    "type": "缺陷",
@@ -149,11 +282,11 @@
    "service": "forum-reply-robot",
    "rounds": {
     "analyze": 1,
-    "implement": 6,
-    "deploy": 0,
+    "implement": 8,
+    "deploy": 2,
     "release": 0
    },
-   "roundsTotal": 7,
+   "roundsTotal": 11,
    "ai": false
   },
   {
@@ -263,11 +396,11 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 5,
-    "implement": 12,
+    "implement": 16,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 17,
+   "roundsTotal": 21,
    "ai": true
   },
   {
@@ -530,10 +663,10 @@
    "rounds": {
     "analyze": 0,
     "implement": 1,
-    "deploy": 15,
+    "deploy": 16,
     "release": 0
    },
-   "roundsTotal": 16,
+   "roundsTotal": 17,
    "ai": false
   },
   {
@@ -1271,10 +1404,10 @@
    "rounds": {
     "analyze": 3,
     "implement": 2,
-    "deploy": 3,
-    "release": 2
+    "deploy": 4,
+    "release": 3
    },
-   "roundsTotal": 10,
+   "roundsTotal": 12,
    "ai": true
   },
   {
@@ -1289,11 +1422,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 5,
-    "implement": 17,
+    "implement": 22,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 22,
+   "roundsTotal": 27,
    "ai": true
   },
   {
@@ -1841,10 +1974,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 1,
-    "deploy": 0,
+    "deploy": 2,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -2582,10 +2715,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 4,
-    "deploy": 2,
-    "release": 0
+    "deploy": 3,
+    "release": 1
    },
-   "roundsTotal": 7,
+   "roundsTotal": 9,
    "ai": false
   },
   {
@@ -6753,11 +6886,11 @@
    "n": 616,
    "type": "需求",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-06-04",
    "createdMonth": "2026-06",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-17",
+   "closedMonth": "2026-08",
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 6,
@@ -7711,11 +7844,11 @@
    "service": "oneid-all",
    "rounds": {
     "analyze": 13,
-    "implement": 26,
+    "implement": 31,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 39,
+   "roundsTotal": 44,
    "ai": true
   },
   {
