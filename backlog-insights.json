@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-16 21:09",
+ "generatedAt": "2026-08-17 10:01",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 713,
@@ -34,12 +34,12 @@
    "closedMonth": null,
    "service": "未分服务",
    "rounds": {
-    "analyze": 2,
+    "analyze": 3,
     "implement": 0,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 3,
    "ai": false
   },
   {
@@ -54,11 +54,11 @@
    "service": "forum-reply-robot",
    "rounds": {
     "analyze": 1,
-    "implement": 2,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 5,
    "ai": false
   },
   {
@@ -103,11 +103,11 @@
    "n": 1722,
    "type": "缺陷",
    "scenario": "其他/未分",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-14",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-17",
+   "closedMonth": "2026-08",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
@@ -168,11 +168,11 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 5,
-    "implement": 8,
+    "implement": 10,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 13,
+   "roundsTotal": 15,
    "ai": true
   },
   {
@@ -635,11 +635,11 @@
    "n": 1627,
    "type": "缺陷",
    "scenario": "数据/指标",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-09",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-17",
+   "closedMonth": "2026-08",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
@@ -7616,11 +7616,11 @@
    "service": "oneid-all",
    "rounds": {
     "analyze": 13,
-    "implement": 22,
+    "implement": 23,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 35,
+   "roundsTotal": 36,
    "ai": true
   },
   {
