@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-18 02:24",
+ "generatedAt": "2026-08-18 08:43",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 156,
@@ -127,28 +127,6 @@
    "title": "openEuler/openGauss 社区看板论坛帖子统计逻辑修改",
    "rawTitle": "[缺陷] openEuler/openGauss 社区看板论坛帖子统计逻辑修改",
    "url": "https://github.com/opensourceways/backlog/issues/1740",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [],
-   "author": "sunshuang1866",
-   "labels": [
-    "bug",
-    "sig/infratructure"
-   ],
-   "comments": 3,
-   "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-17",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1737,
-   "title": "修正社区看板 MCP 导出的 Issue 平均响应时间数据",
-   "rawTitle": "[缺陷] 修正社区看板 MCP 导出的 Issue 平均响应时间数据",
-   "url": "https://github.com/opensourceways/backlog/issues/1737",
    "status": "open",
    "state": "open",
    "stateReason": null,
@@ -992,6 +970,28 @@
     "complete-analyze"
    ],
    "comments": 5,
+   "createdAt": "2026-08-17",
+   "updatedAt": "2026-08-17",
+   "closedAt": "2026-08-17",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1737,
+   "title": "修正社区看板 MCP 导出的 Issue 平均响应时间数据",
+   "rawTitle": "[缺陷] 修正社区看板 MCP 导出的 Issue 平均响应时间数据",
+   "url": "https://github.com/opensourceways/backlog/issues/1737",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [],
+   "author": "sunshuang1866",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
+   "comments": 3,
    "createdAt": "2026-08-17",
    "updatedAt": "2026-08-17",
    "closedAt": "2026-08-17",
