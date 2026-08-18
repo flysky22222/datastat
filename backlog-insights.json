@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-18 03:07",
+ "generatedAt": "2026-08-18 09:57",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 725,
@@ -34,13 +34,13 @@
    "closedMonth": null,
    "service": "search-all",
    "rounds": {
-    "analyze": 2,
-    "implement": 0,
+    "analyze": 3,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
-   "ai": false
+   "roundsTotal": 4,
+   "ai": true
   },
   {
    "n": 1752,
@@ -198,11 +198,11 @@
    "n": 1737,
    "type": "缺陷",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-17",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-17",
+   "closedMonth": "2026-08",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
