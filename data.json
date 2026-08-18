@@ -1,9 +1,57 @@
 {
- "generatedAt": "2026-08-18 08:43",
+ "generatedAt": "2026-08-18 14:27",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 156,
+ "total": 158,
  "records": [
+  {
+   "number": 1770,
+   "title": "om-dataarts ci_workflow_task 采集配置迁移至 om-deployment（yaml）+ 指标字段文档化",
+   "rawTitle": "[任务] om-dataarts ci_workflow_task 采集配置迁移至 om-deployment（yaml）+ 指标字段文档化",
+   "url": "https://github.com/opensourceways/backlog/issues/1770",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 3,
+   "createdAt": "2026-08-18",
+   "updatedAt": "2026-08-18",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1760,
+   "title": "指标字典代码同步 + 数据血缘展示 + codegraph 索引（预览验证）",
+   "rawTitle": "[任务] 指标字典代码同步 + 数据血缘展示 + codegraph 索引（预览验证）",
+   "url": "https://github.com/opensourceways/backlog/issues/1760",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 2,
+   "createdAt": "2026-08-18",
+   "updatedAt": "2026-08-18",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1752,
    "title": "提供仅含有公仓的comment有效评论、issue响应与关闭时长、当期活跃开发者、贡献组织等统计数据接口",
@@ -72,7 +120,7 @@
    "updatedAt": "2026-08-17",
    "closedAt": "",
    "priority": "",
-   "plannedAt": "2026-06-30"
+   "plannedAt": "2026-08-31"
   },
   {
    "number": 1743,
@@ -101,28 +149,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1741,
-   "title": "openGauss 社区看板核心仓库数据统计范围修改",
-   "rawTitle": "[缺陷] openGauss 社区看板核心仓库数据统计范围修改",
-   "url": "https://github.com/opensourceways/backlog/issues/1741",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [],
-   "author": "sunshuang1866",
-   "labels": [
-    "bug",
-    "sig/infratructure"
-   ],
-   "comments": 3,
-   "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-17",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1740,
    "title": "openEuler/openGauss 社区看板论坛帖子统计逻辑修改",
    "rawTitle": "[缺陷] openEuler/openGauss 社区看板论坛帖子统计逻辑修改",
@@ -139,31 +165,7 @@
    ],
    "comments": 3,
    "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-17",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1736,
-   "title": "openGauss 优化社区看板论坛平均关闭时间统计规则",
-   "rawTitle": "[需求] openGauss 优化社区看板论坛平均关闭时间统计规则",
-   "url": "https://github.com/opensourceways/backlog/issues/1736",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [],
-   "author": "sunshuang1866",
-   "labels": [
-    "need_design",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze"
-   ],
-   "comments": 6,
-   "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-17",
+   "updatedAt": "2026-08-18",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -208,14 +210,16 @@
    ],
    "author": "Tian-Fantasea",
    "labels": [
+    "accepted",
     "need_light",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 6,
+   "comments": 9,
    "createdAt": "2026-08-13",
-   "updatedAt": "2026-08-17",
+   "updatedAt": "2026-08-18",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -462,9 +466,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 65,
+   "comments": 68,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-17",
+   "updatedAt": "2026-08-18",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -567,11 +571,12 @@
     "need_ux",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 14,
+   "comments": 17,
    "createdAt": "2026-07-28",
-   "updatedAt": "2026-08-11",
+   "updatedAt": "2026-08-18",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -896,11 +901,12 @@
     "need_design",
     "need_ux",
     "need_itest",
-    "complete-develop"
+    "complete-develop",
+    "complete-test"
    ],
-   "comments": 99,
+   "comments": 111,
    "createdAt": "2026-05-08",
-   "updatedAt": "2026-08-17",
+   "updatedAt": "2026-08-18",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -977,6 +983,28 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1741,
+   "title": "openGauss 社区看板核心仓库数据统计范围修改",
+   "rawTitle": "[缺陷] openGauss 社区看板核心仓库数据统计范围修改",
+   "url": "https://github.com/opensourceways/backlog/issues/1741",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [],
+   "author": "sunshuang1866",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
+   "comments": 3,
+   "createdAt": "2026-08-17",
+   "updatedAt": "2026-08-18",
+   "closedAt": "2026-08-18",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1737,
    "title": "修正社区看板 MCP 导出的 Issue 平均响应时间数据",
    "rawTitle": "[缺陷] 修正社区看板 MCP 导出的 Issue 平均响应时间数据",
@@ -995,6 +1023,30 @@
    "createdAt": "2026-08-17",
    "updatedAt": "2026-08-17",
    "closedAt": "2026-08-17",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1736,
+   "title": "openGauss 优化社区看板论坛平均关闭时间统计规则",
+   "rawTitle": "[需求] openGauss 优化社区看板论坛平均关闭时间统计规则",
+   "url": "https://github.com/opensourceways/backlog/issues/1736",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [],
+   "author": "sunshuang1866",
+   "labels": [
+    "need_design",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 6,
+   "createdAt": "2026-08-17",
+   "updatedAt": "2026-08-18",
+   "closedAt": "2026-08-18",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
