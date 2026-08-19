@@ -1,9 +1,31 @@
 {
- "generatedAt": "2026-08-19 14:28",
+ "generatedAt": "2026-08-19 20:27",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 161,
+ "total": 162,
  "records": [
+  {
+   "number": 1806,
+   "title": "TTFHW看板--问题确认页签，确认某个问题是问题后，新增只确认不提Issue按钮",
+   "rawTitle": "[缺陷] TTFHW看板--问题确认页签，确认某个问题是问题后，新增只确认不提Issue按钮",
+   "url": "https://github.com/opensourceways/backlog/issues/1806",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
+   "comments": 2,
+   "createdAt": "2026-08-19",
+   "updatedAt": "2026-08-19",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1792,
    "title": "各社区健康度报告 MCP 新增论坛「问题咨询」过滤接口",
@@ -145,9 +167,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 6,
+   "comments": 10,
    "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-18",
+   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -177,32 +199,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1749,
-   "title": "修改数据中台 NPU 监控看板总卡数来源为 custom_npu_total_count",
-   "rawTitle": "[任务] 修改数据中台 NPU 监控看板总卡数来源为 custom_npu_total_count",
-   "url": "https://github.com/opensourceways/backlog/issues/1749",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 11,
-   "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-17",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-08-31"
-  },
-  {
    "number": 1743,
    "title": "支持运营人员获取贡献者邮箱数据",
    "rawTitle": "[需求] 支持运营人员获取贡献者邮箱数据",
@@ -224,9 +220,9 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 9,
+   "comments": 13,
    "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-18",
+   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -310,85 +306,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1682,
-   "title": "NPU 利用率指标监控与预警",
-   "rawTitle": "[需求] NPU 利用率指标监控与预警",
-   "url": "https://github.com/opensourceways/backlog/issues/1682",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "need_design",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze",
-    "complete-develop"
-   ],
-   "comments": 25,
-   "createdAt": "2026-08-13",
-   "updatedAt": "2026-08-13",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-08-31"
-  },
-  {
-   "number": 1676,
-   "title": "APIMagic ms-reload 被判为需构建：修改文档(.md)时误走镜像构建流水线",
-   "rawTitle": "[缺陷] APIMagic ms-reload 被判为需构建：修改文档(.md)时误走镜像构建流水线",
-   "url": "https://github.com/opensourceways/backlog/issues/1676",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "bug",
-    "sig/infratructure"
-   ],
-   "comments": 1,
-   "createdAt": "2026-08-12",
-   "updatedAt": "2026-08-12",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-08-31"
-  },
-  {
-   "number": 1673,
-   "title": "NPU 监控看板交互优化：维度联动、Tips 提示与模糊搜索",
-   "rawTitle": "[任务] NPU 监控看板交互优化：维度联动、Tips 提示与模糊搜索",
-   "url": "https://github.com/opensourceways/backlog/issues/1673",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop",
-    "complete-test"
-   ],
-   "comments": 45,
-   "createdAt": "2026-08-12",
-   "updatedAt": "2026-08-14",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-08-31"
-  },
-  {
    "number": 1641,
    "title": "RAG服务打印关键日志",
    "rawTitle": "[需求] RAG服务打印关键日志",
@@ -418,32 +335,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1630,
-   "title": "NPU 监控看板维度取值选择框优化",
-   "rawTitle": "[任务] NPU 监控看板维度取值选择框优化",
-   "url": "https://github.com/opensourceways/backlog/issues/1630",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 7,
-   "createdAt": "2026-08-10",
-   "updatedAt": "2026-08-10",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-08-31"
-  },
-  {
    "number": 1594,
    "title": "运营质量基线页面数据动态获取",
    "rawTitle": "[需求] 运营质量基线页面数据动态获取",
@@ -465,9 +356,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 36,
+   "comments": 39,
    "createdAt": "2026-08-05",
-   "updatedAt": "2026-08-14",
+   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -523,37 +414,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 89,
+   "comments": 92,
    "createdAt": "2026-08-01",
    "updatedAt": "2026-08-19",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1528,
-   "title": "看板支持issue刷新标签后重新进行分类统计",
-   "rawTitle": "[需求] 看板支持issue刷新标签后重新进行分类统计",
-   "url": "https://github.com/opensourceways/backlog/issues/1528",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Tian-Fantasea",
-   "labels": [
-    "accepted",
-    "need_design",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze",
-    "complete-develop"
-   ],
-   "comments": 35,
-   "createdAt": "2026-07-29",
-   "updatedAt": "2026-08-05",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -585,32 +448,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1515,
-   "title": "看板-运营看板-贡献者-贡献者排名存在开发者重复在排行榜多页上出现",
-   "rawTitle": "[缺陷] 看板-运营看板-贡献者-贡献者排名存在开发者重复在排行榜多页上出现",
-   "url": "https://github.com/opensourceways/backlog/issues/1515",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Tian-Fantasea",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 15,
-   "createdAt": "2026-07-28",
-   "updatedAt": "2026-08-19",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1512,
    "title": "看板-贡献者-贡献者排名模块新增3个需求",
    "rawTitle": "[需求] 看板-贡献者-贡献者排名模块新增3个需求",
@@ -631,7 +468,7 @@
     "complete-develop",
     "complete-test"
    ],
-   "comments": 26,
+   "comments": 27,
    "createdAt": "2026-07-28",
    "updatedAt": "2026-08-19",
    "closedAt": "",
@@ -828,9 +665,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 53,
+   "comments": 54,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-08-05",
+   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -878,10 +715,13 @@
    "author": "sunshuang1866",
    "labels": [
     "accepted",
+    "need_design",
+    "need_ux",
     "sig/infratructure",
-    "feature-request"
+    "feature-request",
+    "complete-analyze"
    ],
-   "comments": 7,
+   "comments": 12,
    "createdAt": "2026-06-10",
    "updatedAt": "2026-08-19",
    "closedAt": "",
@@ -940,6 +780,33 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1749,
+   "title": "修改数据中台 NPU 监控看板总卡数来源为 custom_npu_total_count",
+   "rawTitle": "[任务] 修改数据中台 NPU 监控看板总卡数来源为 custom_npu_total_count",
+   "url": "https://github.com/opensourceways/backlog/issues/1749",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop",
+    "complete-test"
+   ],
+   "comments": 17,
+   "createdAt": "2026-08-17",
+   "updatedAt": "2026-08-19",
+   "closedAt": "2026-08-19",
+   "priority": "",
+   "plannedAt": "2026-08-31"
   },
   {
    "number": 1748,
@@ -1081,6 +948,111 @@
    "closedAt": "2026-08-17",
    "priority": "",
    "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1682,
+   "title": "NPU 利用率指标监控与预警",
+   "rawTitle": "[需求] NPU 利用率指标监控与预警",
+   "url": "https://github.com/opensourceways/backlog/issues/1682",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "need_design",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 25,
+   "createdAt": "2026-08-13",
+   "updatedAt": "2026-08-19",
+   "closedAt": "2026-08-19",
+   "priority": "",
+   "plannedAt": "2026-08-31"
+  },
+  {
+   "number": 1676,
+   "title": "APIMagic ms-reload 被判为需构建：修改文档(.md)时误走镜像构建流水线",
+   "rawTitle": "[缺陷] APIMagic ms-reload 被判为需构建：修改文档(.md)时误走镜像构建流水线",
+   "url": "https://github.com/opensourceways/backlog/issues/1676",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
+   "comments": 1,
+   "createdAt": "2026-08-12",
+   "updatedAt": "2026-08-19",
+   "closedAt": "2026-08-19",
+   "priority": "",
+   "plannedAt": "2026-08-31"
+  },
+  {
+   "number": 1673,
+   "title": "NPU 监控看板交互优化：维度联动、Tips 提示与模糊搜索",
+   "rawTitle": "[任务] NPU 监控看板交互优化：维度联动、Tips 提示与模糊搜索",
+   "url": "https://github.com/opensourceways/backlog/issues/1673",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop",
+    "complete-test"
+   ],
+   "comments": 45,
+   "createdAt": "2026-08-12",
+   "updatedAt": "2026-08-19",
+   "closedAt": "2026-08-19",
+   "priority": "",
+   "plannedAt": "2026-08-31"
+  },
+  {
+   "number": 1630,
+   "title": "NPU 监控看板维度取值选择框优化",
+   "rawTitle": "[任务] NPU 监控看板维度取值选择框优化",
+   "url": "https://github.com/opensourceways/backlog/issues/1630",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 7,
+   "createdAt": "2026-08-10",
+   "updatedAt": "2026-08-19",
+   "closedAt": "2026-08-19",
+   "priority": "",
+   "plannedAt": "2026-08-31"
   },
   {
    "number": 1627,
@@ -1393,6 +1365,34 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1528,
+   "title": "看板支持issue刷新标签后重新进行分类统计",
+   "rawTitle": "[需求] 看板支持issue刷新标签后重新进行分类统计",
+   "url": "https://github.com/opensourceways/backlog/issues/1528",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "accepted",
+    "need_design",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 35,
+   "createdAt": "2026-07-29",
+   "updatedAt": "2026-08-19",
+   "closedAt": "2026-08-19",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1526,
    "title": "基础设施需求/缺陷/任务看板",
    "rawTitle": "[需求] 基础设施需求/缺陷/任务看板",
@@ -1469,6 +1469,33 @@
    "createdAt": "2026-07-28",
    "updatedAt": "2026-07-31",
    "closedAt": "2026-07-31",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1515,
+   "title": "看板-运营看板-贡献者-贡献者排名存在开发者重复在排行榜多页上出现",
+   "rawTitle": "[缺陷] 看板-运营看板-贡献者-贡献者排名存在开发者重复在排行榜多页上出现",
+   "url": "https://github.com/opensourceways/backlog/issues/1515",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop",
+    "complete-test"
+   ],
+   "comments": 26,
+   "createdAt": "2026-07-28",
+   "updatedAt": "2026-08-19",
+   "closedAt": "2026-08-19",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
