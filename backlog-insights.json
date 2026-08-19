@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-19 03:07",
+ "generatedAt": "2026-08-19 09:59",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 731,
@@ -787,11 +787,11 @@
    "n": 1653,
    "type": "任务",
    "scenario": "数据/指标",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-10",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-19",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 1,
@@ -1536,11 +1536,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 5,
-    "implement": 30,
+    "implement": 32,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 35,
+   "roundsTotal": 37,
    "ai": true
   },
   {
