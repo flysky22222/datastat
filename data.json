@@ -1,9 +1,81 @@
 {
- "generatedAt": "2026-08-19 08:43",
+ "generatedAt": "2026-08-19 14:28",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 158,
+ "total": 161,
  "records": [
+  {
+   "number": 1792,
+   "title": "各社区健康度报告 MCP 新增论坛「问题咨询」过滤接口",
+   "rawTitle": "[需求] 各社区健康度报告 MCP 新增论坛「问题咨询」过滤接口",
+   "url": "https://github.com/opensourceways/backlog/issues/1792",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "sunshuang1866",
+   "labels": [
+    "need_design",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 6,
+   "createdAt": "2026-08-19",
+   "updatedAt": "2026-08-19",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1791,
+   "title": "token_task 任务鉴权方式修改",
+   "rawTitle": "[任务] token_task 任务鉴权方式修改",
+   "url": "https://github.com/opensourceways/backlog/issues/1791",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-19",
+   "updatedAt": "2026-08-19",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1788,
+   "title": "TTFHW看板--TTFHW问题确认--预览issue模块展示格式调整",
+   "rawTitle": "[缺陷] TTFHW看板--TTFHW问题确认--预览issue模块展示格式调整",
+   "url": "https://github.com/opensourceways/backlog/issues/1788",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "bug",
+    "sig/infratructure"
+   ],
+   "comments": 3,
+   "createdAt": "2026-08-19",
+   "updatedAt": "2026-08-19",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1770,
    "title": "om-dataarts ci_workflow_task 采集配置迁移至 om-deployment（yaml）+ 指标字段文档化",
@@ -48,9 +120,9 @@
     "task",
     "sig/infratructure"
    ],
-   "comments": 5,
+   "comments": 6,
    "createdAt": "2026-08-18",
-   "updatedAt": "2026-08-18",
+   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -230,9 +302,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 9,
+   "comments": 12,
    "createdAt": "2026-08-13",
-   "updatedAt": "2026-08-18",
+   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -372,36 +444,6 @@
    "plannedAt": "2026-08-31"
   },
   {
-   "number": 1622,
-   "title": "TTFHW页面加上增加场景自动测试页面",
-   "rawTitle": "[需求] TTFHW页面加上增加场景自动测试页面",
-   "url": "https://github.com/opensourceways/backlog/issues/1622",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "need_design",
-    "need_security",
-    "need_ux",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze",
-    "complete-develop"
-   ],
-   "comments": 17,
-   "createdAt": "2026-08-07",
-   "updatedAt": "2026-08-10",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1594,
    "title": "运营质量基线页面数据动态获取",
    "rawTitle": "[需求] 运营质量基线页面数据动态获取",
@@ -481,9 +523,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 86,
+   "comments": 89,
    "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-18",
+   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -561,9 +603,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 9,
+   "comments": 15,
    "createdAt": "2026-07-28",
-   "updatedAt": "2026-08-13",
+   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -583,15 +625,15 @@
    "author": "Tian-Fantasea",
    "labels": [
     "accepted",
-    "need_ux",
     "sig/infratructure",
     "feature-request",
     "complete-analyze",
-    "complete-develop"
+    "complete-develop",
+    "complete-test"
    ],
-   "comments": 17,
+   "comments": 26,
    "createdAt": "2026-07-28",
-   "updatedAt": "2026-08-18",
+   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -822,58 +864,6 @@
    "plannedAt": "2026-07-31"
   },
   {
-   "number": 1049,
-   "title": "HPCKit数据中台看板，需支持采集仓库下载量详情",
-   "rawTitle": "[需求] HPCKit数据中台看板，需支持采集仓库下载量详情",
-   "url": "https://github.com/opensourceways/backlog/issues/1049",
-   "status": "open",
-   "state": "open",
-   "stateReason": "reopened",
-   "type": "需求",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "123-prog",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request",
-    "complete-develop"
-   ],
-   "comments": 87,
-   "createdAt": "2026-06-23",
-   "updatedAt": "2026-08-06",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1043,
-   "title": "HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
-   "rawTitle": "[需求] HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
-   "url": "https://github.com/opensourceways/backlog/issues/1043",
-   "status": "open",
-   "state": "open",
-   "stateReason": "reopened",
-   "type": "需求",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "123-prog",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request",
-    "complete-develop"
-   ],
-   "comments": 34,
-   "createdAt": "2026-06-23",
-   "updatedAt": "2026-08-06",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 805,
    "title": "为社区健康度看板增加社区官网页面 AI 平台访问量数据看板",
    "rawTitle": "[需求] 为社区健康度看板增加社区官网页面 AI 平台访问量数据看板",
@@ -891,9 +881,9 @@
     "sig/infratructure",
     "feature-request"
    ],
-   "comments": 4,
+   "comments": 7,
    "createdAt": "2026-06-10",
-   "updatedAt": "2026-08-14",
+   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -1115,6 +1105,36 @@
    "createdAt": "2026-08-09",
    "updatedAt": "2026-08-17",
    "closedAt": "2026-08-17",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1622,
+   "title": "TTFHW页面加上增加场景自动测试页面",
+   "rawTitle": "[需求] TTFHW页面加上增加场景自动测试页面",
+   "url": "https://github.com/opensourceways/backlog/issues/1622",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_security",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 17,
+   "createdAt": "2026-08-07",
+   "updatedAt": "2026-08-19",
+   "closedAt": "2026-08-19",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
@@ -2901,6 +2921,32 @@
    "plannedAt": "2026-06-30"
   },
   {
+   "number": 1049,
+   "title": "HPCKit数据中台看板，需支持采集仓库下载量详情",
+   "rawTitle": "[需求] HPCKit数据中台看板，需支持采集仓库下载量详情",
+   "url": "https://github.com/opensourceways/backlog/issues/1049",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "123-prog",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request",
+    "complete-develop"
+   ],
+   "comments": 87,
+   "createdAt": "2026-06-23",
+   "updatedAt": "2026-08-19",
+   "closedAt": "2026-08-19",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1048,
    "title": "修改openUBMC社区的健康度模型的NSS净满意度",
    "rawTitle": "[任务] 修改openUBMC社区的健康度模型的NSS净满意度",
@@ -2921,6 +2967,32 @@
    "createdAt": "2026-06-23",
    "updatedAt": "2026-06-23",
    "closedAt": "2026-06-23",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1043,
+   "title": "HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
+   "rawTitle": "[需求] HPCkit数据中台看板，需支持指定仓库列表收集，排除非hpckit仓库",
+   "url": "https://github.com/opensourceways/backlog/issues/1043",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "123-prog",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request",
+    "complete-develop"
+   ],
+   "comments": 34,
+   "createdAt": "2026-06-23",
+   "updatedAt": "2026-08-19",
+   "closedAt": "2026-08-19",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
