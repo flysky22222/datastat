@@ -1,9 +1,32 @@
 {
- "generatedAt": "2026-08-20 02:21",
+ "generatedAt": "2026-08-20 14:29",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 162,
+ "total": 163,
  "records": [
+  {
+   "number": 1826,
+   "title": "ttfhw对外获取接口增加时间范围筛选",
+   "rawTitle": "[任务] ttfhw对外获取接口增加时间范围筛选",
+   "url": "https://github.com/opensourceways/backlog/issues/1826",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 3,
+   "createdAt": "2026-08-20",
+   "updatedAt": "2026-08-20",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1806,
    "title": "TTFHW看板--问题确认页签，确认某个问题是问题后，新增只确认不提Issue按钮",
@@ -165,11 +188,12 @@
    "labels": [
     "accepted",
     "sig/infratructure",
-    "feature-request"
+    "feature-request",
+    "complete-analyze"
    ],
-   "comments": 10,
+   "comments": 13,
    "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-19",
+   "updatedAt": "2026-08-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -220,9 +244,9 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 13,
+   "comments": 19,
    "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-19",
+   "updatedAt": "2026-08-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -356,9 +380,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 39,
+   "comments": 45,
    "createdAt": "2026-08-05",
-   "updatedAt": "2026-08-19",
+   "updatedAt": "2026-08-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -665,9 +689,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 54,
+   "comments": 60,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-08-19",
+   "updatedAt": "2026-08-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -722,9 +746,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 14,
+   "comments": 19,
    "createdAt": "2026-06-10",
-   "updatedAt": "2026-08-19",
+   "updatedAt": "2026-08-20",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
