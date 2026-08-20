@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-20 20:29",
+ "generatedAt": "2026-08-21 02:25",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 164,
@@ -20,33 +20,10 @@
    "labels": [
     "accepted",
     "task",
-    "sig/infratructure"
-   ],
-   "comments": 4,
-   "createdAt": "2026-08-20",
-   "updatedAt": "2026-08-20",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1826,
-   "title": "ttfhw对外获取接口增加时间范围筛选",
-   "rawTitle": "[任务] ttfhw对外获取接口增加时间范围筛选",
-   "url": "https://github.com/opensourceways/backlog/issues/1826",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "task",
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 4,
+   "comments": 5,
    "createdAt": "2026-08-20",
    "updatedAt": "2026-08-20",
    "closedAt": "",
@@ -215,9 +192,10 @@
     "accepted",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 15,
+   "comments": 16,
    "createdAt": "2026-08-17",
    "updatedAt": "2026-08-20",
    "closedAt": "",
@@ -716,7 +694,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 60,
+   "comments": 63,
    "createdAt": "2026-07-06",
    "updatedAt": "2026-08-20",
    "closedAt": "",
@@ -832,6 +810,30 @@
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1826,
+   "title": "ttfhw对外获取接口增加时间范围筛选",
+   "rawTitle": "[任务] ttfhw对外获取接口增加时间范围筛选",
+   "url": "https://github.com/opensourceways/backlog/issues/1826",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-20",
+   "updatedAt": "2026-08-20",
+   "closedAt": "2026-08-20",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1749,
