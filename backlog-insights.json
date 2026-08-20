@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-20 21:27",
+ "generatedAt": "2026-08-21 03:10",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 750,
@@ -65,11 +65,11 @@
    "n": 1826,
    "type": "任务",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-20",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-20",
+   "closedMonth": "2026-08",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
@@ -4614,11 +4614,11 @@
    "service": "meeting-server",
    "rounds": {
     "analyze": 4,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 7,
    "ai": true
   },
   {
