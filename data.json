@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-21 14:31",
+ "generatedAt": "2026-08-21 20:28",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 164,
@@ -21,11 +21,12 @@
     "accepted",
     "task",
     "sig/infratructure",
-    "complete-develop"
+    "complete-develop",
+    "complete-test"
    ],
-   "comments": 5,
+   "comments": 11,
    "createdAt": "2026-08-20",
-   "updatedAt": "2026-08-20",
+   "updatedAt": "2026-08-21",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -470,7 +471,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 22,
+   "comments": 29,
    "createdAt": "2026-07-29",
    "updatedAt": "2026-08-21",
    "closedAt": "",
@@ -498,9 +499,9 @@
     "complete-develop",
     "complete-test"
    ],
-   "comments": 27,
+   "comments": 28,
    "createdAt": "2026-07-28",
-   "updatedAt": "2026-08-19",
+   "updatedAt": "2026-08-21",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -641,32 +642,6 @@
    "comments": 7,
    "createdAt": "2026-07-13",
    "updatedAt": "2026-08-06",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1312,
-   "title": "昇腾系列看板按主导、参与开源进行归类",
-   "rawTitle": "[需求] 昇腾系列看板按主导、参与开源进行归类",
-   "url": "https://github.com/opensourceways/backlog/issues/1312",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "ssignik"
-   ],
-   "author": "zeshengzong",
-   "labels": [
-    "accepted",
-    "sig/infratructure",
-    "feature-request",
-    "complete-develop"
-   ],
-   "comments": 78,
-   "createdAt": "2026-07-10",
-   "updatedAt": "2026-08-14",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -2208,6 +2183,32 @@
    "closedAt": "2026-07-10",
    "priority": "",
    "plannedAt": "2026-07-31"
+  },
+  {
+   "number": 1312,
+   "title": "昇腾系列看板按主导、参与开源进行归类",
+   "rawTitle": "[需求] 昇腾系列看板按主导、参与开源进行归类",
+   "url": "https://github.com/opensourceways/backlog/issues/1312",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request",
+    "complete-develop"
+   ],
+   "comments": 79,
+   "createdAt": "2026-07-10",
+   "updatedAt": "2026-08-21",
+   "closedAt": "2026-08-21",
+   "priority": "",
+   "plannedAt": "2026-06-30"
   },
   {
    "number": 1303,
