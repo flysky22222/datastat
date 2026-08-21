@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-21 08:47",
+ "generatedAt": "2026-08-21 14:31",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 164,
@@ -195,7 +195,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 18,
+   "comments": 21,
    "createdAt": "2026-08-17",
    "updatedAt": "2026-08-21",
    "closedAt": "",
@@ -249,7 +249,7 @@
     "complete-develop",
     "complete-test"
    ],
-   "comments": 31,
+   "comments": 35,
    "createdAt": "2026-08-17",
    "updatedAt": "2026-08-21",
    "closedAt": "",
@@ -385,9 +385,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 52,
+   "comments": 55,
    "createdAt": "2026-08-05",
-   "updatedAt": "2026-08-20",
+   "updatedAt": "2026-08-21",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -470,9 +470,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 14,
+   "comments": 22,
    "createdAt": "2026-07-29",
-   "updatedAt": "2026-08-20",
+   "updatedAt": "2026-08-21",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -695,9 +695,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 63,
+   "comments": 69,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-08-20",
+   "updatedAt": "2026-08-21",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -752,9 +752,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 25,
+   "comments": 28,
    "createdAt": "2026-06-10",
-   "updatedAt": "2026-08-20",
+   "updatedAt": "2026-08-21",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
