@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-21 15:23",
+ "generatedAt": "2026-08-21 21:26",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 755,
@@ -35,11 +35,11 @@
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 1,
-    "implement": 0,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 1,
+   "roundsTotal": 3,
    "ai": false
   },
   {
@@ -54,11 +54,11 @@
    "service": "community-robots",
    "rounds": {
     "analyze": 2,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": true
   },
   {
@@ -131,10 +131,10 @@
    "rounds": {
     "analyze": 2,
     "implement": 2,
-    "deploy": 0,
+    "deploy": 1,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 5,
    "ai": false
   },
   {
@@ -320,11 +320,11 @@
    "service": "upstream-dashboard",
    "rounds": {
     "analyze": 2,
-    "implement": 5,
+    "implement": 9,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 7,
+   "roundsTotal": 11,
    "ai": true
   },
   {
@@ -606,10 +606,10 @@
    "rounds": {
     "analyze": 3,
     "implement": 10,
-    "deploy": 3,
+    "deploy": 5,
     "release": 0
    },
-   "roundsTotal": 16,
+   "roundsTotal": 18,
    "ai": true
   },
   {
@@ -1289,11 +1289,11 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 2,
-    "implement": 4,
+    "implement": 6,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 8,
    "ai": true
   },
   {
@@ -2220,11 +2220,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 7,
+    "implement": 9,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 9,
+   "roundsTotal": 11,
    "ai": true
   },
   {
@@ -3770,11 +3770,11 @@
    "n": 1312,
    "type": "需求",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-10",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-21",
+   "closedMonth": "2026-08",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
@@ -8415,10 +8415,10 @@
    "rounds": {
     "analyze": 13,
     "implement": 52,
-    "deploy": 1,
+    "deploy": 4,
     "release": 0
    },
-   "roundsTotal": 66,
+   "roundsTotal": 69,
    "ai": true
   },
   {
