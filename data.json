@@ -1,9 +1,83 @@
 {
- "generatedAt": "2026-08-24 14:38",
+ "generatedAt": "2026-08-24 20:29",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 165,
+ "total": 168,
  "records": [
+  {
+   "number": 1884,
+   "title": "昇腾社区软件支持分仓统计下载量",
+   "rawTitle": "[需求] 昇腾社区软件支持分仓统计下载量",
+   "url": "https://github.com/opensourceways/backlog/issues/1884",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "zeshengzong",
+   "labels": [
+    "need_design",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 5,
+   "createdAt": "2026-08-24",
+   "updatedAt": "2026-08-24",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1882,
+   "title": "开源技术雷达：雷达图表格数据支持tab切换",
+   "rawTitle": "[任务] 开源技术雷达：雷达图表格数据支持tab切换",
+   "url": "https://github.com/opensourceways/backlog/issues/1882",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 7,
+   "createdAt": "2026-08-24",
+   "updatedAt": "2026-08-24",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1877,
+   "title": "SGLang社区贡献统计机制优化",
+   "rawTitle": "[需求] SGLang社区贡献统计机制优化",
+   "url": "https://github.com/opensourceways/backlog/issues/1877",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "zeshengzong",
+   "labels": [
+    "need_design",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 5,
+   "createdAt": "2026-08-24",
+   "updatedAt": "2026-08-24",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1863,
    "title": "AI自然语言取数",
@@ -507,9 +581,10 @@
     "sig/infratructure",
     "feature-request",
     "complete-analyze",
-    "complete-develop"
+    "complete-develop",
+    "complete-test"
    ],
-   "comments": 32,
+   "comments": 46,
    "createdAt": "2026-07-29",
    "updatedAt": "2026-08-24",
    "closedAt": "",
@@ -620,7 +695,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 31,
+   "comments": 37,
    "createdAt": "2026-07-23",
    "updatedAt": "2026-08-24",
    "closedAt": "",
@@ -764,7 +839,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 30,
+   "comments": 31,
    "createdAt": "2026-06-10",
    "updatedAt": "2026-08-24",
    "closedAt": "",
