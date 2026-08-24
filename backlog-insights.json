@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-21 21:26",
+ "generatedAt": "2026-08-24 10:07",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 755,
+ "total": 756,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,25 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1858,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-24",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
   {
    "n": 1853,
    "type": "任务",
@@ -141,11 +160,11 @@
    "n": 1828,
    "type": "任务",
    "scenario": "机器人/自动化",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-20",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-24",
+   "closedMonth": "2026-08",
    "service": "community-robots",
    "rounds": {
     "analyze": 1,
@@ -236,11 +255,11 @@
    "n": 1815,
    "type": "任务",
    "scenario": "机器人/自动化",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-19",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-24",
+   "closedMonth": "2026-08",
    "service": "community-robots",
    "rounds": {
     "analyze": 1,
@@ -263,11 +282,11 @@
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 3,
-    "implement": 3,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 7,
    "ai": true
   },
   {
@@ -453,11 +472,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 1,
+   "roundsTotal": 2,
    "ai": false
   },
   {
@@ -928,11 +947,11 @@
    "service": "security-cve-all",
    "rounds": {
     "analyze": 2,
-    "implement": 3,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 5,
+   "roundsTotal": 6,
    "ai": false
   },
   {
@@ -1289,11 +1308,11 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 2,
-    "implement": 6,
+    "implement": 7,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 8,
+   "roundsTotal": 9,
    "ai": true
   },
   {
@@ -2687,11 +2706,11 @@
    "n": 1462,
    "type": "缺陷",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-24",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-24",
+   "closedMonth": "2026-08",
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 1,
@@ -8415,10 +8434,10 @@
    "rounds": {
     "analyze": 13,
     "implement": 52,
-    "deploy": 4,
+    "deploy": 5,
     "release": 0
    },
-   "roundsTotal": 69,
+   "roundsTotal": 70,
    "ai": true
   },
   {
