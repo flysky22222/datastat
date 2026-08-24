@@ -1,9 +1,37 @@
 {
- "generatedAt": "2026-08-21 20:28",
+ "generatedAt": "2026-08-24 14:38",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 164,
+ "total": 165,
  "records": [
+  {
+   "number": 1863,
+   "title": "AI自然语言取数",
+   "rawTitle": "[需求] AI自然语言取数",
+   "url": "https://github.com/opensourceways/backlog/issues/1863",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "need_design",
+    "need_security",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 5,
+   "createdAt": "2026-08-24",
+   "updatedAt": "2026-08-24",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1834,
    "title": "NPU看板的`利用`相关指标改名为`使用`相关指标",
@@ -40,15 +68,19 @@
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "Tian-Fantasea",
    "labels": [
     "bug",
-    "sig/infratructure"
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
    ],
-   "comments": 2,
+   "comments": 4,
    "createdAt": "2026-08-19",
-   "updatedAt": "2026-08-19",
+   "updatedAt": "2026-08-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -62,7 +94,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "sunshuang1866",
    "labels": [
     "need_design",
@@ -72,7 +106,7 @@
    ],
    "comments": 6,
    "createdAt": "2026-08-19",
-   "updatedAt": "2026-08-19",
+   "updatedAt": "2026-08-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -112,15 +146,19 @@
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "Tian-Fantasea",
    "labels": [
     "bug",
-    "sig/infratructure"
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
    ],
-   "comments": 3,
+   "comments": 8,
    "createdAt": "2026-08-19",
-   "updatedAt": "2026-08-19",
+   "updatedAt": "2026-08-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -471,9 +509,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 29,
+   "comments": 32,
    "createdAt": "2026-07-29",
-   "updatedAt": "2026-08-21",
+   "updatedAt": "2026-08-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -577,7 +615,6 @@
    "author": "zeshengzong",
    "labels": [
     "accepted",
-    "need_ux",
     "sig/infratructure",
     "feature-request",
     "complete-analyze",
@@ -585,7 +622,7 @@
    ],
    "comments": 31,
    "createdAt": "2026-07-23",
-   "updatedAt": "2026-08-14",
+   "updatedAt": "2026-08-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -727,9 +764,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 28,
+   "comments": 30,
    "createdAt": "2026-06-10",
-   "updatedAt": "2026-08-21",
+   "updatedAt": "2026-08-24",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -796,7 +833,9 @@
    "state": "closed",
    "stateReason": "completed",
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "accepted",
@@ -806,7 +845,7 @@
    ],
    "comments": 4,
    "createdAt": "2026-08-20",
-   "updatedAt": "2026-08-20",
+   "updatedAt": "2026-08-24",
    "closedAt": "2026-08-20",
    "priority": "",
    "plannedAt": "2026-06-30"
