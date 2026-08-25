@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-25 03:09",
+ "generatedAt": "2026-08-25 09:59",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 767,
+ "total": 769,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,44 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1898,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-25",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
+   "n": 1897,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-25",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
   {
    "n": 1895,
    "type": "需求",
@@ -92,11 +130,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -244,11 +282,11 @@
    "service": "os-patch",
    "rounds": {
     "analyze": 1,
-    "implement": 2,
+    "implement": 6,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 7,
    "ai": false
   },
   {
@@ -453,11 +491,11 @@
    "service": "xihe-all",
    "rounds": {
     "analyze": 2,
-    "implement": 3,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 5,
+   "roundsTotal": 6,
    "ai": false
   },
   {
