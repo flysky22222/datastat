@@ -1,9 +1,36 @@
 {
- "generatedAt": "2026-08-24 20:29",
+ "generatedAt": "2026-08-25 14:31",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 168,
+ "total": 169,
  "records": [
+  {
+   "number": 1901,
+   "title": "计算开源雷达项目导出PPT内容/格式修改",
+   "rawTitle": "[缺陷] 计算开源雷达项目导出PPT内容/格式修改",
+   "url": "https://github.com/opensourceways/backlog/issues/1901",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop",
+    "complete-test"
+   ],
+   "comments": 14,
+   "createdAt": "2026-08-25",
+   "updatedAt": "2026-08-25",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1884,
    "title": "昇腾社区软件支持分仓统计下载量",
@@ -38,17 +65,20 @@
    "state": "open",
    "stateReason": null,
    "type": "任务",
-   "assignees": [],
+   "assignees": [
+    "zhongjun2"
+   ],
    "author": "zhongjun2",
    "labels": [
     "accepted",
     "task",
     "sig/infratructure",
-    "complete-develop"
+    "complete-develop",
+    "complete-test"
    ],
-   "comments": 7,
+   "comments": 13,
    "createdAt": "2026-08-24",
-   "updatedAt": "2026-08-24",
+   "updatedAt": "2026-08-25",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -71,9 +101,9 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 5,
+   "comments": 6,
    "createdAt": "2026-08-24",
-   "updatedAt": "2026-08-24",
+   "updatedAt": "2026-08-25",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -152,9 +182,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 4,
+   "comments": 7,
    "createdAt": "2026-08-19",
-   "updatedAt": "2026-08-24",
+   "updatedAt": "2026-08-25",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
