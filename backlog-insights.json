@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-25 15:24",
+ "generatedAt": "2026-08-25 21:28",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 775,
+ "total": 779,
  "stages": [
   {
    "key": "analyze",
@@ -24,6 +24,82 @@
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
   {
+   "n": 1922,
+   "type": "任务",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-25",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "upstream-dashboard",
+   "rounds": {
+    "analyze": 1,
+    "implement": 2,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 3,
+   "ai": false
+  },
+  {
+   "n": 1920,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-08-25",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "hotopic-all",
+   "rounds": {
+    "analyze": 3,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 3,
+   "ai": false
+  },
+  {
+   "n": 1917,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "state": "open",
+   "created": "2026-08-25",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "community-robots",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1912,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-25",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "ascend-ci-project",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
    "n": 1908,
    "type": "缺陷",
    "scenario": "其他/未分",
@@ -35,11 +111,11 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 1,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 3,
    "ai": false
   },
   {
@@ -73,11 +149,11 @@
    "service": "oneid-all",
    "rounds": {
     "analyze": 2,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 5,
    "ai": false
   },
   {
@@ -92,11 +168,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 3,
+    "implement": 5,
     "deploy": 1,
     "release": 1
    },
-   "roundsTotal": 6,
+   "roundsTotal": 8,
    "ai": false
   },
   {
@@ -282,12 +358,12 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
-   "ai": false
+   "roundsTotal": 3,
+   "ai": true
   },
   {
    "n": 1874,
@@ -397,10 +473,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 13,
-    "deploy": 0,
+    "deploy": 6,
     "release": 0
    },
-   "roundsTotal": 14,
+   "roundsTotal": 20,
    "ai": false
   },
   {
@@ -643,11 +719,11 @@
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 3,
-    "implement": 5,
+    "implement": 6,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 8,
+   "roundsTotal": 9,
    "ai": true
   },
   {
@@ -662,11 +738,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 2,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -700,11 +776,11 @@
    "service": "upstream-dashboard",
    "rounds": {
     "analyze": 2,
-    "implement": 10,
+    "implement": 12,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 12,
+   "roundsTotal": 14,
    "ai": true
   },
   {
@@ -1137,11 +1213,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 3,
    "ai": false
   },
   {
@@ -4538,11 +4614,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 21,
+    "implement": 22,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 25,
+   "roundsTotal": 26,
    "ai": true
   },
   {
