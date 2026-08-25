@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-25 14:31",
+ "generatedAt": "2026-08-25 20:30",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
  "total": 169,
@@ -24,7 +24,7 @@
     "complete-develop",
     "complete-test"
    ],
-   "comments": 14,
+   "comments": 15,
    "createdAt": "2026-08-25",
    "updatedAt": "2026-08-25",
    "closedAt": "",
@@ -95,13 +95,13 @@
    "assignees": [],
    "author": "zeshengzong",
    "labels": [
+    "accepted",
     "need_design",
-    "need_ux",
     "sig/infratructure",
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 6,
+   "comments": 9,
    "createdAt": "2026-08-24",
    "updatedAt": "2026-08-25",
    "closedAt": "",
@@ -182,7 +182,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 7,
+   "comments": 10,
    "createdAt": "2026-08-19",
    "updatedAt": "2026-08-25",
    "closedAt": "",
@@ -416,9 +416,9 @@
     "bug",
     "sig/infratructure"
    ],
-   "comments": 3,
+   "comments": 6,
    "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-18",
+   "updatedAt": "2026-08-25",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -812,9 +812,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 69,
+   "comments": 71,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-08-21",
+   "updatedAt": "2026-08-25",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
