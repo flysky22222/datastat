@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-26 21:33",
+ "generatedAt": "2026-08-27 04:30",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 790,
+ "total": 791,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,25 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1944,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-26",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
   {
    "n": 1943,
    "type": "缺陷",
@@ -4823,11 +4842,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 25,
+    "implement": 26,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 29,
+   "roundsTotal": 30,
    "ai": true
   },
   {
