@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-26 15:25",
+ "generatedAt": "2026-08-26 21:33",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 785,
+ "total": 790,
  "stages": [
   {
    "key": "analyze",
@@ -24,6 +24,101 @@
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
   {
+   "n": 1943,
+   "type": "缺陷",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-08-26",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
+   "n": 1942,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-26",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1941,
+   "type": "任务",
+   "scenario": "数据/指标",
+   "state": "open",
+   "created": "2026-08-26",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "ascend-ci-project",
+   "rounds": {
+    "analyze": 1,
+    "implement": 2,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 3,
+   "ai": false
+  },
+  {
+   "n": 1938,
+   "type": "需求",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-08-26",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 5,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 5,
+   "ai": false
+  },
+  {
+   "n": 1936,
+   "type": "缺陷",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-26",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
    "n": 1934,
    "type": "缺陷",
    "scenario": "前端看板/UI",
@@ -35,11 +130,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 1,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -73,12 +168,12 @@
    "service": "community-robots",
    "rounds": {
     "analyze": 2,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
-   "ai": false
+   "roundsTotal": 3,
+   "ai": true
   },
   {
    "n": 1929,
@@ -131,10 +226,10 @@
    "rounds": {
     "analyze": 0,
     "implement": 4,
-    "deploy": 1,
-    "release": 0
+    "deploy": 3,
+    "release": 1
    },
-   "roundsTotal": 5,
+   "roundsTotal": 8,
    "ai": false
   },
   {
@@ -283,10 +378,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 9,
-    "deploy": 1,
-    "release": 1
+    "deploy": 2,
+    "release": 4
    },
-   "roundsTotal": 12,
+   "roundsTotal": 16,
    "ai": false
   },
   {
@@ -317,14 +412,14 @@
    "createdMonth": "2026-08",
    "closed": null,
    "closedMonth": null,
-   "service": "未分服务",
+   "service": "om-datacenter",
    "rounds": {
-    "analyze": 1,
+    "analyze": 3,
     "implement": 0,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 1,
+   "roundsTotal": 3,
    "ai": false
   },
   {
@@ -472,11 +567,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 2,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 6,
    "ai": true
   },
   {
@@ -833,11 +928,11 @@
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 3,
-    "implement": 7,
+    "implement": 8,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 10,
+   "roundsTotal": 11,
    "ai": true
   },
   {
@@ -1327,11 +1422,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 4,
+    "implement": 5,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 7,
    "ai": false
   },
   {
@@ -1689,10 +1784,10 @@
    "rounds": {
     "analyze": 3,
     "implement": 7,
-    "deploy": 10,
+    "deploy": 12,
     "release": 0
    },
-   "roundsTotal": 20,
+   "roundsTotal": 22,
    "ai": true
   },
   {
@@ -6316,11 +6411,11 @@
    "n": 972,
    "type": "需求",
    "scenario": "机器人/自动化",
-   "state": "closed",
+   "state": "open",
    "created": "2026-06-18",
    "createdMonth": "2026-06",
-   "closed": "2026-08-06",
-   "closedMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
    "service": "未分服务",
    "rounds": {
     "analyze": 1,
