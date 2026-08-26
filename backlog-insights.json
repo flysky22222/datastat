@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-26 10:08",
+ "generatedAt": "2026-08-26 15:25",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 780,
+ "total": 785,
  "stages": [
   {
    "key": "analyze",
@@ -24,6 +24,101 @@
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
   {
+   "n": 1934,
+   "type": "缺陷",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-26",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 1,
+    "implement": 1,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1932,
+   "type": "需求",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-26",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 5,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 5,
+   "ai": false
+  },
+  {
+   "n": 1930,
+   "type": "需求",
+   "scenario": "机器人/自动化",
+   "state": "open",
+   "created": "2026-08-26",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "community-robots",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1929,
+   "type": "任务",
+   "scenario": "接口/API",
+   "state": "open",
+   "created": "2026-08-26",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 1,
+    "implement": 2,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 3,
+   "ai": false
+  },
+  {
+   "n": 1926,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-26",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "ascend-ci-project",
+   "rounds": {
+    "analyze": 1,
+    "implement": 1,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
    "n": 1923,
    "type": "任务",
    "scenario": "前端看板/UI",
@@ -35,11 +130,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 0,
-    "implement": 2,
-    "deploy": 0,
+    "implement": 4,
+    "deploy": 1,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 5,
    "ai": false
   },
   {
@@ -122,11 +217,11 @@
    "n": 1908,
    "type": "缺陷",
    "scenario": "其他/未分",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-25",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-26",
+   "closedMonth": "2026-08",
    "service": "hotopic-all",
    "rounds": {
     "analyze": 1,
@@ -141,19 +236,19 @@
    "n": 1907,
    "type": "缺陷",
    "scenario": "数据/指标",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-25",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-26",
+   "closedMonth": "2026-08",
    "service": "hotopic-all",
    "rounds": {
     "analyze": 1,
     "implement": 1,
     "deploy": 1,
-    "release": 0
+    "release": 1
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -169,10 +264,10 @@
    "rounds": {
     "analyze": 2,
     "implement": 3,
-    "deploy": 2,
+    "deploy": 4,
     "release": 0
    },
-   "roundsTotal": 7,
+   "roundsTotal": 9,
    "ai": false
   },
   {
@@ -187,11 +282,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 7,
+    "implement": 9,
     "deploy": 1,
     "release": 1
    },
-   "roundsTotal": 10,
+   "roundsTotal": 12,
    "ai": false
   },
   {
@@ -331,11 +426,11 @@
    "n": 1882,
    "type": "任务",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-24",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-26",
+   "closedMonth": "2026-08",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
@@ -377,11 +472,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 1,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": true
   },
   {
@@ -493,9 +588,9 @@
     "analyze": 1,
     "implement": 13,
     "deploy": 7,
-    "release": 0
+    "release": 2
    },
-   "roundsTotal": 21,
+   "roundsTotal": 23,
    "ai": false
   },
   {
@@ -597,11 +692,11 @@
    "n": 1834,
    "type": "任务",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-20",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-26",
+   "closedMonth": "2026-08",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
@@ -700,11 +795,11 @@
    "service": "xihe-all",
    "rounds": {
     "analyze": 2,
-    "implement": 4,
+    "implement": 5,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 6,
+   "roundsTotal": 7,
    "ai": false
   },
   {
@@ -738,11 +833,11 @@
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 3,
-    "implement": 6,
+    "implement": 7,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 9,
+   "roundsTotal": 10,
    "ai": true
   },
   {
@@ -825,11 +920,11 @@
    "n": 1799,
    "type": "任务",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-19",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-26",
+   "closedMonth": "2026-08",
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 1,
@@ -1100,10 +1195,10 @@
    "rounds": {
     "analyze": 6,
     "implement": 2,
-    "deploy": 1,
+    "deploy": 2,
     "release": 0
    },
-   "roundsTotal": 9,
+   "roundsTotal": 10,
    "ai": true
   },
   {
@@ -1186,11 +1281,11 @@
    "n": 1743,
    "type": "需求",
    "scenario": "数据/指标",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-17",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-26",
+   "closedMonth": "2026-08",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
@@ -1232,11 +1327,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 2,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 6,
    "ai": false
   },
   {
@@ -1404,10 +1499,10 @@
    "rounds": {
     "analyze": 2,
     "implement": 4,
-    "deploy": 0,
-    "release": 0
+    "deploy": 1,
+    "release": 1
    },
-   "roundsTotal": 6,
+   "roundsTotal": 8,
    "ai": false
   },
   {
@@ -1642,11 +1737,11 @@
    "n": 1670,
    "type": "任务",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-11",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-26",
+   "closedMonth": "2026-08",
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 1,
@@ -1680,11 +1775,11 @@
    "n": 1660,
    "type": "任务",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-11",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-26",
+   "closedMonth": "2026-08",
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 1,
@@ -1927,11 +2022,11 @@
    "n": 1626,
    "type": "缺陷",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-07",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-26",
+   "closedMonth": "2026-08",
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 1,
@@ -2440,11 +2535,11 @@
    "n": 1555,
    "type": "需求",
    "scenario": "前端看板/UI",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-01",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-26",
+   "closedMonth": "2026-08",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 3,
@@ -4633,11 +4728,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 22,
+    "implement": 25,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 26,
+   "roundsTotal": 29,
    "ai": true
   },
   {
@@ -4929,11 +5024,11 @@
    "n": 1203,
    "type": "需求",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-01",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-26",
+   "closedMonth": "2026-08",
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 3,
