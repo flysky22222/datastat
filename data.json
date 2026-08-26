@@ -1,9 +1,59 @@
 {
- "generatedAt": "2026-08-26 02:26",
+ "generatedAt": "2026-08-26 14:32",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 169,
+ "total": 171,
  "records": [
+  {
+   "number": 1929,
+   "title": "ttfhw显示接口取消缓存",
+   "rawTitle": "[任务] ttfhw显示接口取消缓存",
+   "url": "https://github.com/opensourceways/backlog/issues/1929",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 7,
+   "createdAt": "2026-08-26",
+   "updatedAt": "2026-08-26",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1923,
+   "title": "NPU监控看板和接口的end时间戳取整及总卡数查询方式调整",
+   "rawTitle": "[任务] NPU监控看板和接口的end时间戳取整及总卡数查询方式调整",
+   "url": "https://github.com/opensourceways/backlog/issues/1923",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 11,
+   "createdAt": "2026-08-26",
+   "updatedAt": "2026-08-26",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1901,
    "title": "计算开源雷达项目导出PPT内容/格式修改",
@@ -24,9 +74,9 @@
     "complete-develop",
     "complete-test"
    ],
-   "comments": 24,
+   "comments": 32,
    "createdAt": "2026-08-25",
-   "updatedAt": "2026-08-25",
+   "updatedAt": "2026-08-26",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -57,33 +107,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1882,
-   "title": "开源技术雷达：雷达图表格数据支持tab切换",
-   "rawTitle": "[任务] 开源技术雷达：雷达图表格数据支持tab切换",
-   "url": "https://github.com/opensourceways/backlog/issues/1882",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop",
-    "complete-test"
-   ],
-   "comments": 13,
-   "createdAt": "2026-08-24",
-   "updatedAt": "2026-08-25",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1877,
    "title": "SGLang社区贡献统计机制优化",
    "rawTitle": "[需求] SGLang社区贡献统计机制优化",
@@ -92,7 +115,9 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "zeshengzong",
    "labels": [
     "accepted",
@@ -101,9 +126,9 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 9,
+   "comments": 11,
    "createdAt": "2026-08-24",
-   "updatedAt": "2026-08-25",
+   "updatedAt": "2026-08-26",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -132,33 +157,6 @@
    "comments": 5,
    "createdAt": "2026-08-24",
    "updatedAt": "2026-08-24",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1834,
-   "title": "NPU看板的`利用`相关指标改名为`使用`相关指标",
-   "rawTitle": "[任务] NPU看板的`利用`相关指标改名为`使用`相关指标",
-   "url": "https://github.com/opensourceways/backlog/issues/1834",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "Kaede10",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop",
-    "complete-test"
-   ],
-   "comments": 11,
-   "createdAt": "2026-08-20",
-   "updatedAt": "2026-08-21",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -336,11 +334,12 @@
     "sig/infratructure",
     "feature-request",
     "complete-analyze",
-    "complete-develop"
+    "complete-develop",
+    "complete-test"
    ],
-   "comments": 21,
+   "comments": 24,
    "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-21",
+   "updatedAt": "2026-08-26",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -370,36 +369,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1743,
-   "title": "支持运营人员获取贡献者邮箱数据",
-   "rawTitle": "[需求] 支持运营人员获取贡献者邮箱数据",
-   "url": "https://github.com/opensourceways/backlog/issues/1743",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Kaede10"
-   ],
-   "author": "zeshengzong",
-   "labels": [
-    "accepted",
-    "need_design",
-    "need_security",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze",
-    "complete-develop",
-    "complete-test"
-   ],
-   "comments": 35,
-   "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-21",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1740,
    "title": "openEuler/openGauss 社区看板论坛帖子统计逻辑修改",
    "rawTitle": "[缺陷] openEuler/openGauss 社区看板论坛帖子统计逻辑修改",
@@ -414,11 +383,12 @@
    "author": "sunshuang1866",
    "labels": [
     "bug",
-    "sig/infratructure"
+    "sig/infratructure",
+    "complete-develop"
    ],
-   "comments": 6,
+   "comments": 11,
    "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-25",
+   "updatedAt": "2026-08-26",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -531,35 +501,6 @@
    "comments": 55,
    "createdAt": "2026-08-05",
    "updatedAt": "2026-08-21",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1555,
-   "title": "开源技术雷达：数据支持tab切换、各组件支持全屏",
-   "rawTitle": "[需求] 开源技术雷达：数据支持tab切换、各组件支持全屏",
-   "url": "https://github.com/opensourceways/backlog/issues/1555",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "Mjennie"
-   ],
-   "author": "Yikun",
-   "labels": [
-    "accepted",
-    "need_light",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze",
-    "complete-develop",
-    "complete-test"
-   ],
-   "comments": 37,
-   "createdAt": "2026-08-01",
-   "updatedAt": "2026-08-17",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -812,9 +753,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 72,
+   "comments": 79,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-08-25",
+   "updatedAt": "2026-08-26",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -930,6 +871,60 @@
    "plannedAt": "2026-07-31"
   },
   {
+   "number": 1882,
+   "title": "开源技术雷达：雷达图表格数据支持tab切换",
+   "rawTitle": "[任务] 开源技术雷达：雷达图表格数据支持tab切换",
+   "url": "https://github.com/opensourceways/backlog/issues/1882",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop",
+    "complete-test"
+   ],
+   "comments": 13,
+   "createdAt": "2026-08-24",
+   "updatedAt": "2026-08-26",
+   "closedAt": "2026-08-26",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1834,
+   "title": "NPU看板的`利用`相关指标改名为`使用`相关指标",
+   "rawTitle": "[任务] NPU看板的`利用`相关指标改名为`使用`相关指标",
+   "url": "https://github.com/opensourceways/backlog/issues/1834",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop",
+    "complete-test"
+   ],
+   "comments": 11,
+   "createdAt": "2026-08-20",
+   "updatedAt": "2026-08-26",
+   "closedAt": "2026-08-26",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1826,
    "title": "ttfhw对外获取接口增加时间范围筛选",
    "rawTitle": "[任务] ttfhw对外获取接口增加时间范围筛选",
@@ -1026,6 +1021,36 @@
    "createdAt": "2026-08-17",
    "updatedAt": "2026-08-17",
    "closedAt": "2026-08-17",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1743,
+   "title": "支持运营人员获取贡献者邮箱数据",
+   "rawTitle": "[需求] 支持运营人员获取贡献者邮箱数据",
+   "url": "https://github.com/opensourceways/backlog/issues/1743",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "zeshengzong",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_security",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop",
+    "complete-test"
+   ],
+   "comments": 35,
+   "createdAt": "2026-08-17",
+   "updatedAt": "2026-08-26",
+   "closedAt": "2026-08-26",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
@@ -1460,6 +1485,35 @@
    "createdAt": "2026-08-01",
    "updatedAt": "2026-08-05",
    "closedAt": "2026-08-05",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1555,
+   "title": "开源技术雷达：数据支持tab切换、各组件支持全屏",
+   "rawTitle": "[需求] 开源技术雷达：数据支持tab切换、各组件支持全屏",
+   "url": "https://github.com/opensourceways/backlog/issues/1555",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Yikun",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop",
+    "complete-test"
+   ],
+   "comments": 37,
+   "createdAt": "2026-08-01",
+   "updatedAt": "2026-08-26",
+   "closedAt": "2026-08-26",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
