@@ -1,9 +1,35 @@
 {
- "generatedAt": "2026-08-26 14:32",
+ "generatedAt": "2026-08-26 20:32",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 171,
+ "total": 173,
  "records": [
+  {
+   "number": 1934,
+   "title": "昇腾子社区总览Issue /PR /CI详情列表和右上角时间筛选没有联动",
+   "rawTitle": "[缺陷] 昇腾子社区总览Issue /PR /CI详情列表和右上角时间筛选没有联动",
+   "url": "https://github.com/opensourceways/backlog/issues/1934",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "ssignik"
+   ],
+   "author": "ssignik",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 10,
+   "createdAt": "2026-08-26",
+   "updatedAt": "2026-08-26",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1929,
    "title": "ttfhw显示接口取消缓存",
@@ -45,9 +71,10 @@
     "accepted",
     "task",
     "sig/infratructure",
-    "complete-develop"
+    "complete-develop",
+    "complete-test"
    ],
-   "comments": 11,
+   "comments": 24,
    "createdAt": "2026-08-26",
    "updatedAt": "2026-08-26",
    "closedAt": "",
@@ -74,7 +101,32 @@
     "complete-develop",
     "complete-test"
    ],
-   "comments": 32,
+   "comments": 48,
+   "createdAt": "2026-08-25",
+   "updatedAt": "2026-08-26",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1899,
+   "title": "openUBMC数据看板上的默认时间改为2025年1月1日",
+   "rawTitle": "[需求] openUBMC数据看板上的默认时间改为2025年1月1日",
+   "url": "https://github.com/opensourceways/backlog/issues/1899",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "qiuxiahuang1234",
+   "labels": [
+    "accepted",
+    "sig/infratructure",
+    "feature-request"
+   ],
+   "comments": 5,
    "createdAt": "2026-08-25",
    "updatedAt": "2026-08-26",
    "closedAt": "",
@@ -124,9 +176,10 @@
     "need_design",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 11,
+   "comments": 18,
    "createdAt": "2026-08-24",
    "updatedAt": "2026-08-26",
    "closedAt": "",
@@ -386,7 +439,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 11,
+   "comments": 18,
    "createdAt": "2026-08-17",
    "updatedAt": "2026-08-26",
    "closedAt": "",
@@ -753,7 +806,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 79,
+   "comments": 80,
    "createdAt": "2026-07-06",
    "updatedAt": "2026-08-26",
    "closedAt": "",
