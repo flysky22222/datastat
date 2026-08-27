@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-27 18:06",
+ "generatedAt": "2026-08-28 06:29",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 801,
+ "total": 807,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,120 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1971,
+   "type": "任务",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-27",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "ascend-ci-project",
+   "rounds": {
+    "analyze": 1,
+    "implement": 1,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1970,
+   "type": "任务",
+   "scenario": "数据/指标",
+   "state": "open",
+   "created": "2026-08-27",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
+   "n": 1968,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "state": "open",
+   "created": "2026-08-27",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "ascend-ci-project",
+   "rounds": {
+    "analyze": 2,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1966,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-08-27",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
+   "n": 1965,
+   "type": "缺陷",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-27",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "ascend-ci-project",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
+  {
+   "n": 1964,
+   "type": "缺陷",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-27",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "ascend-ci-project",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
   {
    "n": 1962,
    "type": "需求",
@@ -150,10 +264,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 3,
-    "deploy": 0,
+    "deploy": 1,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 5,
    "ai": true
   },
   {
@@ -206,11 +320,11 @@
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 2,
-    "implement": 1,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 5,
    "ai": false
   },
   {
@@ -825,11 +939,11 @@
    "n": 1864,
    "type": "任务",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-24",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-27",
+   "closedMonth": "2026-08",
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 1,
@@ -1992,11 +2106,11 @@
    "service": "copr_docker",
    "rounds": {
     "analyze": 3,
-    "implement": 10,
-    "deploy": 15,
+    "implement": 11,
+    "deploy": 18,
     "release": 0
    },
-   "roundsTotal": 28,
+   "roundsTotal": 32,
    "ai": true
   },
   {
@@ -2155,11 +2269,11 @@
    "n": 1648,
    "type": "需求",
    "scenario": "其他/未分",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-10",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-27",
+   "closedMonth": "2026-08",
    "service": "hotopic-all",
    "rounds": {
     "analyze": 2,
@@ -2611,11 +2725,11 @@
    "n": 1593,
    "type": "任务",
    "scenario": "其他/未分",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-05",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-27",
+   "closedMonth": "2026-08",
    "service": "cla-all",
    "rounds": {
     "analyze": 1,
@@ -3048,11 +3162,11 @@
    "n": 1527,
    "type": "需求",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-29",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-27",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 2,
@@ -3675,11 +3789,11 @@
    "n": 1449,
    "type": "需求",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-07-23",
    "createdMonth": "2026-07",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-27",
+   "closedMonth": "2026-08",
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 2,
@@ -5032,11 +5146,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 4,
-    "implement": 28,
+    "implement": 29,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 32,
+   "roundsTotal": 33,
    "ai": true
   },
   {
@@ -14030,11 +14144,11 @@
    "n": 78,
    "type": "需求",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-03-19",
    "createdMonth": "2026-03",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-27",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 0,
