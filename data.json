@@ -1,9 +1,35 @@
 {
- "generatedAt": "2026-08-27 03:38",
+ "generatedAt": "2026-08-27 13:57",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 173,
+ "total": 174,
  "records": [
+  {
+   "number": 1947,
+   "title": "NPU监控看板：汇总卡片数据源切换与利用率计算修正",
+   "rawTitle": "[缺陷] NPU监控看板：汇总卡片数据源切换与利用率计算修正",
+   "url": "https://github.com/opensourceways/backlog/issues/1947",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 7,
+   "createdAt": "2026-08-27",
+   "updatedAt": "2026-08-27",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1934,
    "title": "昇腾子社区总览Issue /PR /CI详情列表和右上角时间筛选没有联动",
@@ -173,7 +199,6 @@
    "author": "zeshengzong",
    "labels": [
     "accepted",
-    "need_design",
     "sig/infratructure",
     "feature-request",
     "complete-analyze",
@@ -181,7 +206,7 @@
    ],
    "comments": 18,
    "createdAt": "2026-08-24",
-   "updatedAt": "2026-08-26",
+   "updatedAt": "2026-08-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -806,9 +831,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 83,
+   "comments": 86,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-08-26",
+   "updatedAt": "2026-08-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -863,9 +888,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 31,
+   "comments": 34,
    "createdAt": "2026-06-10",
-   "updatedAt": "2026-08-24",
+   "updatedAt": "2026-08-27",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
