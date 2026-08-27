@@ -1,9 +1,57 @@
 {
- "generatedAt": "2026-08-27 13:57",
+ "generatedAt": "2026-08-28 01:19",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 174,
+ "total": 176,
  "records": [
+  {
+   "number": 1960,
+   "title": "数据中台 dws_{community}_contribute_repo_user_daily 表中 date 字段存在空值",
+   "rawTitle": "[缺陷] 数据中台 dws_{community}_contribute_repo_user_daily 表中 date 字段存在空值",
+   "url": "https://github.com/opensourceways/backlog/issues/1960",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-27",
+   "updatedAt": "2026-08-27",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1956,
+   "title": "数据源增加微信群聊天数据",
+   "rawTitle": "[任务] 数据源增加微信群聊天数据",
+   "url": "https://github.com/opensourceways/backlog/issues/1956",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 2,
+   "createdAt": "2026-08-27",
+   "updatedAt": "2026-08-27",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1947,
    "title": "NPU监控看板：汇总卡片数据源切换与利用率计算修正",
@@ -21,9 +69,10 @@
     "bug",
     "accepted",
     "sig/infratructure",
-    "complete-develop"
+    "complete-develop",
+    "complete-test"
    ],
-   "comments": 7,
+   "comments": 20,
    "createdAt": "2026-08-27",
    "updatedAt": "2026-08-27",
    "closedAt": "",
@@ -831,7 +880,7 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 86,
+   "comments": 92,
    "createdAt": "2026-07-06",
    "updatedAt": "2026-08-27",
    "closedAt": "",
