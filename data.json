@@ -1,9 +1,85 @@
 {
- "generatedAt": "2026-08-28 01:19",
+ "generatedAt": "2026-08-29 01:56",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 176,
+ "total": 179,
  "records": [
+  {
+   "number": 1988,
+   "title": "平均issue解决时间计算修改",
+   "rawTitle": "[缺陷] 平均issue解决时间计算修改",
+   "url": "https://github.com/opensourceways/backlog/issues/1988",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [],
+   "author": "Mjennie",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-28",
+   "updatedAt": "2026-08-28",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1982,
+   "title": "NPU 监控看板时间选择器操作体验问题：起始/结束时间变更均立即触发请求",
+   "rawTitle": "[缺陷] NPU 监控看板时间选择器操作体验问题：起始/结束时间变更均立即触发请求",
+   "url": "https://github.com/opensourceways/backlog/issues/1982",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure"
+   ],
+   "comments": 7,
+   "createdAt": "2026-08-28",
+   "updatedAt": "2026-08-28",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1980,
+   "title": "Redis 连接池耗尽导致服务\"假死\"",
+   "rawTitle": "[缺陷] Redis 连接池耗尽导致服务\"假死\"",
+   "url": "https://github.com/opensourceways/backlog/issues/1980",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "缺陷",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop",
+    "complete-test"
+   ],
+   "comments": 7,
+   "createdAt": "2026-08-28",
+   "updatedAt": "2026-08-28",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1960,
    "title": "数据中台 dws_{community}_contribute_repo_user_daily 表中 date 字段存在空值",
@@ -880,9 +956,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 92,
+   "comments": 101,
    "createdAt": "2026-07-06",
-   "updatedAt": "2026-08-27",
+   "updatedAt": "2026-08-28",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
