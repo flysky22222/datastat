@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-28 19:37",
+ "generatedAt": "2026-08-29 06:31",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 816,
+ "total": 817,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,25 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1991,
+   "type": "需求",
+   "scenario": "CI/部署",
+   "state": "open",
+   "created": "2026-08-28",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
   {
    "n": 1988,
    "type": "缺陷",
@@ -111,11 +130,11 @@
    "service": "ascend-ci-project",
    "rounds": {
     "analyze": 1,
-    "implement": 3,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 5,
    "ai": false
   },
   {
