@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-29 15:15",
+ "generatedAt": "2026-08-30 00:50",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 820,
+ "total": 821,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,25 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 2001,
+   "type": "需求",
+   "scenario": "数据/指标",
+   "state": "open",
+   "created": "2026-08-29",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "未分服务",
+   "rounds": {
+    "analyze": 1,
+    "implement": 0,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 1,
+   "ai": false
+  },
   {
    "n": 1996,
    "type": "任务",
@@ -74,10 +93,10 @@
    "rounds": {
     "analyze": 1,
     "implement": 2,
-    "deploy": 0,
-    "release": 0
+    "deploy": 1,
+    "release": 1
    },
-   "roundsTotal": 3,
+   "roundsTotal": 5,
    "ai": false
   },
   {
@@ -111,11 +130,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 4,
+    "implement": 5,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 5,
+   "roundsTotal": 6,
    "ai": false
   },
   {
@@ -131,10 +150,10 @@
    "rounds": {
     "analyze": 0,
     "implement": 4,
-    "deploy": 0,
+    "deploy": 2,
     "release": 0
    },
-   "roundsTotal": 4,
+   "roundsTotal": 6,
    "ai": false
   },
   {
@@ -149,11 +168,11 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 2,
-    "implement": 1,
+    "implement": 3,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 5,
    "ai": true
   },
   {
@@ -263,11 +282,11 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 2,
-    "implement": 1,
+    "implement": 7,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 9,
    "ai": true
   },
   {
@@ -578,11 +597,11 @@
    "n": 1944,
    "type": "任务",
    "scenario": "CI/部署",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-26",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-29",
+   "closedMonth": "2026-08",
    "service": "未分服务",
    "rounds": {
     "analyze": 1,
@@ -984,12 +1003,12 @@
    "closedMonth": null,
    "service": "om-datacenter",
    "rounds": {
-    "analyze": 3,
+    "analyze": 4,
     "implement": 0,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -1642,11 +1661,11 @@
    "n": 1791,
    "type": "任务",
    "scenario": "其他/未分",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-19",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-29",
+   "closedMonth": "2026-08",
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
@@ -1992,11 +2011,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 2,
-    "implement": 5,
+    "implement": 6,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 7,
+   "roundsTotal": 8,
    "ai": false
   },
   {
@@ -2353,11 +2372,11 @@
    "service": "copr_docker",
    "rounds": {
     "analyze": 3,
-    "implement": 13,
+    "implement": 14,
     "deploy": 22,
     "release": 1
    },
-   "roundsTotal": 39,
+   "roundsTotal": 40,
    "ai": true
   },
   {
@@ -4158,11 +4177,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 3,
-    "implement": 9,
+    "implement": 10,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 12,
+   "roundsTotal": 13,
    "ai": true
   },
   {
