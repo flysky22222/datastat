@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-08-29 06:31",
+ "generatedAt": "2026-08-29 15:15",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
- "total": 817,
+ "total": 820,
  "stages": [
   {
    "key": "analyze",
@@ -23,6 +23,63 @@
  ],
  "roundSource": "机器人流程评论 🟢[N] 阶段启动标记（含 accepted 自动触发，非仅 /命令）",
  "records": [
+  {
+   "n": 1996,
+   "type": "任务",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-29",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 1,
+    "implement": 1,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1995,
+   "type": "任务",
+   "scenario": "其他/未分",
+   "state": "open",
+   "created": "2026-08-29",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "search-all",
+   "rounds": {
+    "analyze": 1,
+    "implement": 1,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 2,
+   "ai": false
+  },
+  {
+   "n": 1992,
+   "type": "任务",
+   "scenario": "前端看板/UI",
+   "state": "open",
+   "created": "2026-08-29",
+   "createdMonth": "2026-08",
+   "closed": null,
+   "closedMonth": null,
+   "service": "om-datacenter",
+   "rounds": {
+    "analyze": 1,
+    "implement": 2,
+    "deploy": 0,
+    "release": 0
+   },
+   "roundsTotal": 3,
+   "ai": false
+  },
   {
    "n": 1991,
    "type": "需求",
@@ -54,11 +111,11 @@
    "service": "om-datacenter",
    "rounds": {
     "analyze": 1,
-    "implement": 1,
+    "implement": 4,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
+   "roundsTotal": 5,
    "ai": false
   },
   {
@@ -92,12 +149,12 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 2,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
-   "ai": false
+   "roundsTotal": 3,
+   "ai": true
   },
   {
    "n": 1982,
@@ -151,9 +208,9 @@
     "analyze": 1,
     "implement": 1,
     "deploy": 1,
-    "release": 0
+    "release": 1
    },
-   "roundsTotal": 3,
+   "roundsTotal": 4,
    "ai": false
   },
   {
@@ -206,12 +263,12 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 2,
-    "implement": 0,
+    "implement": 1,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 2,
-   "ai": false
+   "roundsTotal": 3,
+   "ai": true
   },
   {
    "n": 1971,
@@ -673,11 +730,11 @@
    "n": 1930,
    "type": "需求",
    "scenario": "机器人/自动化",
-   "state": "open",
+   "state": "closed",
    "created": "2026-08-26",
    "createdMonth": "2026-08",
-   "closed": null,
-   "closedMonth": null,
+   "closed": "2026-08-29",
+   "closedMonth": "2026-08",
    "service": "community-robots",
    "rounds": {
     "analyze": 2,
@@ -776,12 +833,12 @@
    "service": "hotopic-all",
    "rounds": {
     "analyze": 3,
-    "implement": 0,
+    "implement": 2,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 3,
-   "ai": false
+   "roundsTotal": 5,
+   "ai": true
   },
   {
    "n": 1917,
