@@ -1,9 +1,62 @@
 {
- "generatedAt": "2026-08-29 09:22",
+ "generatedAt": "2026-08-29 20:00",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 179,
+ "total": 181,
  "records": [
+  {
+   "number": 1996,
+   "title": "下线数据看板【CI时间分析】【资源看板】中NPU指标相关模块",
+   "rawTitle": "[任务] 下线数据看板【CI时间分析】【资源看板】中NPU指标相关模块",
+   "url": "https://github.com/opensourceways/backlog/issues/1996",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "Kaede10",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-29",
+   "updatedAt": "2026-08-29",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1992,
+   "title": "计算开源雷达项目类型名修改",
+   "rawTitle": "[任务] 计算开源雷达项目类型名修改",
+   "url": "https://github.com/opensourceways/backlog/issues/1992",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "任务",
+   "assignees": [
+    "Mjennie"
+   ],
+   "author": "Mjennie",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop",
+    "complete-test"
+   ],
+   "comments": 17,
+   "createdAt": "2026-08-29",
+   "updatedAt": "2026-08-29",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 1988,
    "title": "平均issue解决时间计算修改",
@@ -21,9 +74,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 4,
+   "comments": 16,
    "createdAt": "2026-08-28",
-   "updatedAt": "2026-08-28",
+   "updatedAt": "2026-08-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -73,7 +126,7 @@
     "complete-develop",
     "complete-test"
    ],
-   "comments": 12,
+   "comments": 16,
    "createdAt": "2026-08-28",
    "updatedAt": "2026-08-29",
    "closedAt": "",
@@ -274,12 +327,14 @@
    "author": "qiuxiahuang1234",
    "labels": [
     "accepted",
+    "need_light",
     "sig/infratructure",
-    "feature-request"
+    "feature-request",
+    "complete-analyze"
    ],
-   "comments": 5,
+   "comments": 9,
    "createdAt": "2026-08-25",
-   "updatedAt": "2026-08-26",
+   "updatedAt": "2026-08-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -412,32 +467,6 @@
    "comments": 6,
    "createdAt": "2026-08-19",
    "updatedAt": "2026-08-24",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1791,
-   "title": "token_task 任务鉴权方式修改",
-   "rawTitle": "[任务] token_task 任务鉴权方式修改",
-   "url": "https://github.com/opensourceways/backlog/issues/1791",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 4,
-   "createdAt": "2026-08-19",
-   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -589,9 +618,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 18,
+   "comments": 21,
    "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-26",
+   "updatedAt": "2026-08-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -869,9 +898,9 @@
     "complete-analyze",
     "complete-develop"
    ],
-   "comments": 37,
+   "comments": 40,
    "createdAt": "2026-07-23",
-   "updatedAt": "2026-08-24",
+   "updatedAt": "2026-08-29",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -1150,6 +1179,32 @@
    "createdAt": "2026-08-20",
    "updatedAt": "2026-08-24",
    "closedAt": "2026-08-20",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1791,
+   "title": "token_task 任务鉴权方式修改",
+   "rawTitle": "[任务] token_task 任务鉴权方式修改",
+   "url": "https://github.com/opensourceways/backlog/issues/1791",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-19",
+   "updatedAt": "2026-08-29",
+   "closedAt": "2026-08-29",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
