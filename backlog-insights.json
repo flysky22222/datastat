@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-30 00:50",
+ "generatedAt": "2026-08-30 20:06",
  "source": "opensourceways/backlog",
  "since": "2026-01-01",
  "total": 821,
@@ -680,12 +680,12 @@
    "closedMonth": null,
    "service": "未分服务",
    "rounds": {
-    "analyze": 8,
+    "analyze": 11,
     "implement": 0,
     "deploy": 0,
     "release": 0
    },
-   "roundsTotal": 8,
+   "roundsTotal": 11,
    "ai": false
   },
   {
