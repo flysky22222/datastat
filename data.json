@@ -1,9 +1,63 @@
 {
- "generatedAt": "2026-08-31 10:34",
+ "generatedAt": "2026-08-31 20:15",
  "source": "opensourceways/backlog",
  "label": "project:om-datacenter",
- "total": 182,
+ "total": 185,
  "records": [
+  {
+   "number": 2011,
+   "title": "希望看板的NPU监控能增加占用率监控",
+   "rawTitle": "[需求] 希望看板的NPU监控能增加占用率监控",
+   "url": "https://github.com/opensourceways/backlog/issues/2011",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [
+    "Kaede10"
+   ],
+   "author": "KadenZhang3321",
+   "labels": [
+    "accepted",
+    "need_design",
+    "need_ux",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze"
+   ],
+   "comments": 8,
+   "createdAt": "2026-08-31",
+   "updatedAt": "2026-08-31",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 2009,
+   "title": "社区issue首次响应时间、闭环时间计算，支持过滤区分不同类型issue（缺陷、任务、需求）",
+   "rawTitle": "[需求] 社区issue首次响应时间、闭环时间计算，支持过滤区分不同类型issue（缺陷、任务、需求）",
+   "url": "https://github.com/opensourceways/backlog/issues/2009",
+   "status": "open",
+   "state": "open",
+   "stateReason": null,
+   "type": "需求",
+   "assignees": [],
+   "author": "hellowaywewe",
+   "labels": [
+    "accepted",
+    "need_design",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 9,
+   "createdAt": "2026-08-31",
+   "updatedAt": "2026-08-31",
+   "closedAt": "",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
   {
    "number": 2002,
    "title": "看板Issue筛选增加CVE类型筛选选项",
@@ -22,7 +76,7 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 5,
+   "comments": 6,
    "createdAt": "2026-08-31",
    "updatedAt": "2026-08-31",
    "closedAt": "",
@@ -46,11 +100,12 @@
     "accepted",
     "task",
     "sig/infratructure",
-    "complete-develop"
+    "complete-develop",
+    "complete-test"
    ],
-   "comments": 4,
+   "comments": 12,
    "createdAt": "2026-08-29",
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-08-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -91,7 +146,9 @@
    "state": "open",
    "stateReason": null,
    "type": "缺陷",
-   "assignees": [],
+   "assignees": [
+    "Mjennie"
+   ],
    "author": "Mjennie",
    "labels": [
     "bug",
@@ -99,9 +156,9 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 16,
+   "comments": 22,
    "createdAt": "2026-08-28",
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-08-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -159,30 +216,6 @@
    "plannedAt": "2026-06-30"
   },
   {
-   "number": 1960,
-   "title": "数据中台 dws_{community}_contribute_repo_user_daily 表中 date 字段存在空值",
-   "rawTitle": "[缺陷] 数据中台 dws_{community}_contribute_repo_user_daily 表中 date 字段存在空值",
-   "url": "https://github.com/opensourceways/backlog/issues/1960",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [],
-   "author": "Kaede10",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 4,
-   "createdAt": "2026-08-27",
-   "updatedAt": "2026-08-27",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
    "number": 1956,
    "title": "数据源增加微信群聊天数据",
    "rawTitle": "[任务] 数据源增加微信群聊天数据",
@@ -192,7 +225,7 @@
    "stateReason": null,
    "type": "任务",
    "assignees": [
-    "zhongjun2"
+    "ssignik"
    ],
    "author": "zhongjun2",
    "labels": [
@@ -201,7 +234,7 @@
    ],
    "comments": 2,
    "createdAt": "2026-08-27",
-   "updatedAt": "2026-08-27",
+   "updatedAt": "2026-08-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -253,30 +286,6 @@
     "complete-develop"
    ],
    "comments": 10,
-   "createdAt": "2026-08-26",
-   "updatedAt": "2026-08-26",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1929,
-   "title": "ttfhw显示接口取消缓存",
-   "rawTitle": "[任务] ttfhw显示接口取消缓存",
-   "url": "https://github.com/opensourceways/backlog/issues/1929",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "任务",
-   "assignees": [],
-   "author": "zhongjun2",
-   "labels": [
-    "accepted",
-    "task",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 7,
    "createdAt": "2026-08-26",
    "updatedAt": "2026-08-26",
    "closedAt": "",
@@ -355,11 +364,12 @@
     "need_light",
     "sig/infratructure",
     "feature-request",
-    "complete-analyze"
+    "complete-analyze",
+    "complete-develop"
    ],
-   "comments": 9,
+   "comments": 12,
    "createdAt": "2026-08-25",
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-08-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -373,18 +383,21 @@
    "state": "open",
    "stateReason": null,
    "type": "需求",
-   "assignees": [],
+   "assignees": [
+    "ssignik"
+   ],
    "author": "zeshengzong",
    "labels": [
+    "accepted",
     "need_design",
     "need_ux",
     "sig/infratructure",
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 5,
+   "comments": 9,
    "createdAt": "2026-08-24",
-   "updatedAt": "2026-08-24",
+   "updatedAt": "2026-08-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -430,6 +443,7 @@
    ],
    "author": "zhongjun2",
    "labels": [
+    "accepted",
     "need_design",
     "need_security",
     "need_ux",
@@ -437,9 +451,9 @@
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 5,
+   "comments": 9,
    "createdAt": "2026-08-24",
-   "updatedAt": "2026-08-24",
+   "updatedAt": "2026-08-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -484,40 +498,15 @@
    ],
    "author": "sunshuang1866",
    "labels": [
+    "accepted",
     "need_design",
     "sig/infratructure",
     "feature-request",
     "complete-analyze"
    ],
-   "comments": 6,
+   "comments": 10,
    "createdAt": "2026-08-19",
-   "updatedAt": "2026-08-24",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1788,
-   "title": "TTFHW看板--TTFHW问题确认--预览issue模块展示格式调整",
-   "rawTitle": "[缺陷] TTFHW看板--TTFHW问题确认--预览issue模块展示格式调整",
-   "url": "https://github.com/opensourceways/backlog/issues/1788",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "缺陷",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "Tian-Fantasea",
-   "labels": [
-    "bug",
-    "accepted",
-    "sig/infratructure",
-    "complete-develop"
-   ],
-   "comments": 8,
-   "createdAt": "2026-08-19",
-   "updatedAt": "2026-08-24",
+   "updatedAt": "2026-08-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -611,7 +600,7 @@
    "stateReason": null,
    "type": "需求",
    "assignees": [
-    "zhongjun2"
+    "Kaede10"
    ],
    "author": "hellowaywewe",
    "labels": [
@@ -620,7 +609,7 @@
    ],
    "comments": 4,
    "createdAt": "2026-08-17",
-   "updatedAt": "2026-08-18",
+   "updatedAt": "2026-08-31",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -643,7 +632,7 @@
     "sig/infratructure",
     "complete-develop"
    ],
-   "comments": 24,
+   "comments": 35,
    "createdAt": "2026-08-17",
    "updatedAt": "2026-08-31",
    "closedAt": "",
@@ -672,34 +661,6 @@
    "comments": 9,
    "createdAt": "2026-08-14",
    "updatedAt": "2026-08-17",
-   "closedAt": "",
-   "priority": "",
-   "plannedAt": "2026-06-30"
-  },
-  {
-   "number": 1685,
-   "title": "TTFHW看板【运行详情】页中，某社区底下有多个测试记录无法自动跳转，需支持",
-   "rawTitle": "[需求] TTFHW看板【运行详情】页中，某社区底下有多个测试记录无法自动跳转，需支持",
-   "url": "https://github.com/opensourceways/backlog/issues/1685",
-   "status": "open",
-   "state": "open",
-   "stateReason": null,
-   "type": "需求",
-   "assignees": [
-    "zhongjun2"
-   ],
-   "author": "Tian-Fantasea",
-   "labels": [
-    "accepted",
-    "need_light",
-    "sig/infratructure",
-    "feature-request",
-    "complete-analyze",
-    "complete-develop"
-   ],
-   "comments": 12,
-   "createdAt": "2026-08-13",
-   "updatedAt": "2026-08-19",
    "closedAt": "",
    "priority": "",
    "plannedAt": "2026-06-30"
@@ -1128,6 +1089,80 @@
    "plannedAt": "2026-07-31"
   },
   {
+   "number": 1970,
+   "title": "白盒蓝区诊断树：DWS→蓝区贡献表之间常显同步按钮（绿色也显示）+ 蓝区用户贡献表改查 ES 实表",
+   "rawTitle": "[任务] 白盒蓝区诊断树：DWS→蓝区贡献表之间常显同步按钮（绿色也显示）+ 蓝区用户贡献表改查 ES 实表",
+   "url": "https://github.com/opensourceways/backlog/issues/1970",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "flysky22222",
+   "labels": [
+    "task",
+    "sig/infratructure"
+   ],
+   "comments": 3,
+   "createdAt": "2026-08-27",
+   "updatedAt": "2026-08-31",
+   "closedAt": "2026-08-31",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1960,
+   "title": "数据中台 dws_{community}_contribute_repo_user_daily 表中 date 字段存在空值",
+   "rawTitle": "[缺陷] 数据中台 dws_{community}_contribute_repo_user_daily 表中 date 字段存在空值",
+   "url": "https://github.com/opensourceways/backlog/issues/1960",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [],
+   "author": "Kaede10",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 4,
+   "createdAt": "2026-08-27",
+   "updatedAt": "2026-08-31",
+   "closedAt": "2026-08-31",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1929,
+   "title": "ttfhw显示接口取消缓存",
+   "rawTitle": "[任务] ttfhw显示接口取消缓存",
+   "url": "https://github.com/opensourceways/backlog/issues/1929",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "任务",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "zhongjun2",
+   "labels": [
+    "accepted",
+    "task",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 7,
+   "createdAt": "2026-08-26",
+   "updatedAt": "2026-08-31",
+   "closedAt": "2026-08-31",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
    "number": 1882,
    "title": "开源技术雷达：雷达图表格数据支持tab切换",
    "rawTitle": "[任务] 开源技术雷达：雷达图表格数据支持tab切换",
@@ -1230,6 +1265,32 @@
    "createdAt": "2026-08-19",
    "updatedAt": "2026-08-29",
    "closedAt": "2026-08-29",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1788,
+   "title": "TTFHW看板--TTFHW问题确认--预览issue模块展示格式调整",
+   "rawTitle": "[缺陷] TTFHW看板--TTFHW问题确认--预览issue模块展示格式调整",
+   "url": "https://github.com/opensourceways/backlog/issues/1788",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "缺陷",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "bug",
+    "accepted",
+    "sig/infratructure",
+    "complete-develop"
+   ],
+   "comments": 8,
+   "createdAt": "2026-08-19",
+   "updatedAt": "2026-08-31",
+   "closedAt": "2026-08-31",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
@@ -1428,6 +1489,34 @@
    "createdAt": "2026-08-14",
    "updatedAt": "2026-08-17",
    "closedAt": "2026-08-17",
+   "priority": "",
+   "plannedAt": "2026-06-30"
+  },
+  {
+   "number": 1685,
+   "title": "TTFHW看板【运行详情】页中，某社区底下有多个测试记录无法自动跳转，需支持",
+   "rawTitle": "[需求] TTFHW看板【运行详情】页中，某社区底下有多个测试记录无法自动跳转，需支持",
+   "url": "https://github.com/opensourceways/backlog/issues/1685",
+   "status": "merged",
+   "state": "closed",
+   "stateReason": "completed",
+   "type": "需求",
+   "assignees": [
+    "zhongjun2"
+   ],
+   "author": "Tian-Fantasea",
+   "labels": [
+    "accepted",
+    "need_light",
+    "sig/infratructure",
+    "feature-request",
+    "complete-analyze",
+    "complete-develop"
+   ],
+   "comments": 12,
+   "createdAt": "2026-08-13",
+   "updatedAt": "2026-08-31",
+   "closedAt": "2026-08-31",
    "priority": "",
    "plannedAt": "2026-06-30"
   },
